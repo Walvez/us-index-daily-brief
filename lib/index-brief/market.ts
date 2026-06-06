@@ -6,6 +6,13 @@ export type Fetcher = (
   symbol: string,
 ) => Promise<TickerRawData | null>;
 
+export interface MarketLoadOptions {
+  timeoutMs?: number;
+  logger?: (message: string) => void;
+}
+
+const DEFAULT_TIMEOUT_MS = 10_000;
+
 const CORE = [
   {
     id: "nasdaq100" as const,
@@ -40,14 +47,111 @@ function newYorkDateKey(date: Date): string {
   return `${parts.year}-${parts.month}-${parts.day}`;
 }
 
+function describeError(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+async function withTimeout<T>(
+  operation: () => Promise<T>,
+  timeoutMs: number,
+  label: string,
+): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(
+      () => reject(new Error(`${label} timed out after ${timeoutMs}ms`)),
+      timeoutMs,
+    );
+  });
+
+  try {
+    return await Promise.race([
+      Promise.resolve().then(operation),
+      timeout,
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
+function validateCoreData(raw: TickerRawData): void {
+  if (raw.candles.length < 21) {
+    throw new Error("at least 21 candles are required");
+  }
+
+  for (const candle of raw.candles) {
+    const prices = [candle.open, candle.high, candle.low, candle.close];
+    if (prices.some((price) => !Number.isFinite(price) || price <= 0)) {
+      throw new Error("candles must contain only finite positive prices");
+    }
+  }
+
+  const latestDate = raw.candles.at(-1)!.date;
+  if (!Number.isFinite(latestDate.getTime())) {
+    throw new Error("latest candle date is invalid");
+  }
+}
+
+async function loadCoreIndex(
+  definition: (typeof CORE)[number],
+  fetcher: Fetcher,
+  timeoutMs: number,
+  logger: (message: string) => void,
+): Promise<IndexSnapshot> {
+  for (const symbol of definition.symbols) {
+    try {
+      const raw = await withTimeout(
+        () => fetcher(symbol),
+        timeoutMs,
+        symbol,
+      );
+      if (!raw) throw new Error("no data returned");
+
+      validateCoreData(raw);
+      return {
+        id: definition.id,
+        name: definition.name,
+        symbol,
+        marketDate: newYorkDateKey(raw.candles.at(-1)!.date),
+        metrics: calculateMetrics(raw.candles.map(({ close }) => close)),
+      };
+    } catch (error) {
+      try {
+        logger(
+          `market candidate ${symbol} failed: ${describeError(error)}`,
+        );
+      } catch {
+        // Logging must not prevent fallback to the next market candidate.
+      }
+    }
+  }
+
+  throw new Error(`missing core market data: ${definition.name}`);
+}
+
 async function latestValue(
   symbol: string,
   fetcher: Fetcher,
+  timeoutMs: number,
+  marketDate: string,
 ): Promise<number | undefined> {
   try {
-    const raw = await fetcher(symbol);
-    const close = raw?.candles.at(-1)?.close;
-    return close != null && Number.isFinite(close) ? close : undefined;
+    const raw = await withTimeout(
+      () => fetcher(symbol),
+      timeoutMs,
+      symbol,
+    );
+    const latest = raw?.candles.at(-1);
+    if (
+      !latest ||
+      !Number.isFinite(latest.close) ||
+      latest.close <= 0 ||
+      !Number.isFinite(latest.date.getTime()) ||
+      newYorkDateKey(latest.date) !== marketDate
+    ) {
+      return undefined;
+    }
+    return latest.close;
   } catch {
     return undefined;
   }
@@ -55,46 +159,43 @@ async function latestValue(
 
 export async function loadMarketContext(
   fetcher: Fetcher = fetchTickerData,
+  options: MarketLoadOptions = {},
 ): Promise<MarketContext> {
-  const indices: IndexSnapshot[] = [];
-
-  for (const definition of CORE) {
-    let raw: TickerRawData | null = null;
-    let symbol = "";
-
-    for (const candidate of definition.symbols) {
-      raw = await fetcher(candidate);
-      if (raw?.candles.length) {
-        symbol = candidate;
-        break;
-      }
-    }
-
-    if (!raw?.candles.length) {
-      throw new Error(`missing core market data: ${definition.name}`);
-    }
-
-    indices.push({
-      id: definition.id,
-      name: definition.name,
-      symbol,
-      marketDate: newYorkDateKey(raw.candles.at(-1)!.date),
-      metrics: calculateMetrics(raw.candles.map(({ close }) => close)),
-    });
+  const timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS;
+  if (!Number.isFinite(timeoutMs) || timeoutMs <= 0) {
+    throw new Error("timeoutMs must be a finite positive number");
   }
+  const logger = options.logger ?? console.warn;
+
+  const coreResults = await Promise.allSettled(
+    CORE.map((definition) =>
+      loadCoreIndex(definition, fetcher, timeoutMs, logger),
+    ),
+  );
+  const failedCore = coreResults.find(
+    (result) => result.status === "rejected",
+  );
+  if (failedCore?.status === "rejected") throw failedCore.reason;
+  const indices = coreResults.map((result) => {
+    if (result.status !== "fulfilled") {
+      throw new Error("unreachable rejected core result");
+    }
+    return result.value;
+  });
 
   if (new Set(indices.map(({ marketDate }) => marketDate)).size !== 1) {
     throw new Error("core market dates differ");
   }
 
+  const marketDate = indices[0].marketDate;
   const [vix, treasury10y, dxy] = await Promise.all([
-    latestValue("^VIX", fetcher),
-    latestValue("^TNX", fetcher),
-    latestValue("DX-Y.NYB", fetcher),
+    latestValue("^VIX", fetcher, timeoutMs, marketDate),
+    latestValue("^TNX", fetcher, timeoutMs, marketDate),
+    latestValue("DX-Y.NYB", fetcher, timeoutMs, marketDate),
   ]);
 
   return {
-    marketDate: indices[0].marketDate,
+    marketDate,
     indices,
     vix,
     treasury10y,
