@@ -8,8 +8,11 @@ const drawdown = (values: number[]): number =>
   pct(values.at(-1)!, Math.max(...values));
 
 export function calculateMetrics(closes: number[]): MarketMetrics {
-  if (closes.length < 20) {
-    throw new Error("at least 20 closes are required");
+  if (closes.length < 21) {
+    throw new Error("at least 21 closes are required");
+  }
+  if (closes.some((close) => !Number.isFinite(close) || close <= 0)) {
+    throw new Error("closes must contain only finite positive numbers");
   }
 
   const close = closes.at(-1)!;
@@ -26,8 +29,8 @@ export function calculateMetrics(closes: number[]): MarketMetrics {
   return {
     close,
     pct1Day: pct(close, closes.at(-2)!),
-    pct5Day: pct(close, closes.at(-6) ?? closes[0]),
-    pct20Day: pct(close, closes.at(-21) ?? closes[0]),
+    pct5Day: pct(close, closes.at(-6)!),
+    pct20Day: pct(close, closes.at(-21)!),
     drawdown20: drawdown(closes.slice(-20)),
     drawdown60: drawdown(closes.slice(-60)),
     drawdownAll: drawdown(closes),
