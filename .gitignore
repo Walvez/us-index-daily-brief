@@ -1,1 +1,11 @@
 .worktrees/
+/node_modules
+.DS_Store
+.env*
+!.env.example
+/daily_reports/
+/logs/
+.claude/state/
+.claude/cache/
+*.tsbuildinfo
+/docs/screenshots/originals/
