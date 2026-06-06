@@ -59,9 +59,10 @@ interface YahooChartResp {
  */
 export async function fetchTickerData(
   symbol: string,
+  signal?: AbortSignal,
 ): Promise<TickerRawData | null> {
   const url = `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1y&interval=1d`;
-  const res = await fetch(url, { headers: HEADERS });
+  const res = await fetch(url, { headers: HEADERS, signal });
   if (!res.ok) return null;
   const data = (await res.json()) as YahooChartResp;
   const r = data.chart?.result?.[0];

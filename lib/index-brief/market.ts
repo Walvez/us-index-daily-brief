@@ -4,6 +4,7 @@ import type { IndexSnapshot, MarketContext } from "./types";
 
 export type Fetcher = (
   symbol: string,
+  signal?: AbortSignal,
 ) => Promise<TickerRawData | null>;
 
 export interface MarketLoadOptions {
@@ -51,24 +52,25 @@ function describeError(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
 }
 
-async function withTimeout<T>(
-  operation: () => Promise<T>,
+async function fetchWithTimeout(
+  fetcher: Fetcher,
+  symbol: string,
   timeoutMs: number,
-  label: string,
-): Promise<T> {
+): Promise<TickerRawData | null> {
+  const controller = new AbortController();
   let timer: ReturnType<typeof setTimeout> | undefined;
-  const timeout = new Promise<never>((_, reject) => {
-    timer = setTimeout(
-      () => reject(new Error(`${label} timed out after ${timeoutMs}ms`)),
-      timeoutMs,
-    );
-  });
 
   try {
-    return await Promise.race([
-      Promise.resolve().then(operation),
-      timeout,
-    ]);
+    return await new Promise<TickerRawData | null>((resolve, reject) => {
+      timer = setTimeout(() => {
+        controller.abort();
+        reject(new Error(`${symbol} timed out after ${timeoutMs}ms`));
+      }, timeoutMs);
+
+      Promise.resolve()
+        .then(() => fetcher(symbol, controller.signal))
+        .then(resolve, reject);
+    });
   } finally {
     if (timer) clearTimeout(timer);
   }
@@ -100,11 +102,7 @@ async function loadCoreIndex(
 ): Promise<IndexSnapshot> {
   for (const symbol of definition.symbols) {
     try {
-      const raw = await withTimeout(
-        () => fetcher(symbol),
-        timeoutMs,
-        symbol,
-      );
+      const raw = await fetchWithTimeout(fetcher, symbol, timeoutMs);
       if (!raw) throw new Error("no data returned");
 
       validateCoreData(raw);
@@ -136,11 +134,7 @@ async function latestValue(
   marketDate: string,
 ): Promise<number | undefined> {
   try {
-    const raw = await withTimeout(
-      () => fetcher(symbol),
-      timeoutMs,
-      symbol,
-    );
+    const raw = await fetchWithTimeout(fetcher, symbol, timeoutMs);
     const latest = raw?.candles.at(-1);
     if (
       !latest ||

@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadMarketContext } from "../../lib/index-brief/market";
+import {
+  loadMarketContext,
+  type Fetcher,
+} from "../../lib/index-brief/market";
 import type { TickerRawData } from "../../lib/trading/yahoo";
 
 const TEST_TIMEOUT_MS = 10;
@@ -53,7 +56,7 @@ function coreFixture(symbol: string, marketDate = "2026-06-05"): TickerRawData {
 }
 
 function load(
-  fetcher: (symbol: string) => Promise<TickerRawData | null>,
+  fetcher: Fetcher,
   timeoutMs = TEST_TIMEOUT_MS,
 ) {
   return loadMarketContext(fetcher, { timeoutMs, logger: silentLogger });
@@ -109,10 +112,18 @@ test("uses QQQ fallback when ^NDX fetch rejects", async () => {
   assert.match(logs[0], /\^NDX.*primary failed/);
 });
 
-test("uses QQQ fallback when ^NDX fetch times out", async () => {
-  const fetcher = async (symbol: string) => {
+test("aborts a timed-out ^NDX request before falling back to QQQ", async () => {
+  let ndxSignal: AbortSignal | undefined;
+  const fetcher: Fetcher = async (symbol, signal) => {
     if (symbol === "^NDX") {
-      return new Promise<TickerRawData | null>(() => {});
+      ndxSignal = signal;
+      return new Promise<TickerRawData | null>((_, reject) => {
+        signal?.addEventListener(
+          "abort",
+          () => reject(new Error("NDX request aborted")),
+          { once: true },
+        );
+      });
     }
     if (symbol === "QQQ" || symbol === "^GSPC") return coreFixture(symbol);
     return null;
@@ -121,6 +132,7 @@ test("uses QQQ fallback when ^NDX fetch times out", async () => {
   const context = await settleWithin(load(fetcher));
 
   assert.equal(context.indices[0].symbol, "QQQ");
+  assert.equal(ndxSignal?.aborted, true);
 });
 
 test("uses QQQ fallback when ^NDX data is unusable", async () => {
@@ -236,13 +248,21 @@ test("optional macro failures do not invalidate core data and successes are expo
   }
 });
 
-test("a hanging optional macro times out without blocking market context", async () => {
-  const fetcher = async (symbol: string) => {
+test("aborts a timed-out optional macro without blocking market context", async () => {
+  let vixSignal: AbortSignal | undefined;
+  const fetcher: Fetcher = async (symbol, signal) => {
     if (symbol === "^NDX" || symbol === "^GSPC") {
       return coreFixture(symbol);
     }
     if (symbol === "^VIX") {
-      return new Promise<TickerRawData | null>(() => {});
+      vixSignal = signal;
+      return new Promise<TickerRawData | null>((_, reject) => {
+        signal?.addEventListener(
+          "abort",
+          () => reject(new Error("VIX request aborted")),
+          { once: true },
+        );
+      });
     }
     return null;
   };
@@ -251,6 +271,7 @@ test("a hanging optional macro times out without blocking market context", async
 
   assert.equal(context.indices.length, 2);
   assert.equal(context.vix, undefined);
+  assert.equal(vixSignal?.aborted, true);
 });
 
 test("optional macro values must match the validated core market date", async () => {
