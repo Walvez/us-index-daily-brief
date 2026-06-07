@@ -14,8 +14,8 @@ function writeGithubOutputs(result: {
     output,
     [
       `status=${result.status}`,
-      `market-date=${result.marketDate}`,
-      `report-dir=${result.reportDir}`,
+      `market_date=${result.marketDate}`,
+      `report_dir=${result.reportDir}`,
       "",
     ].join("\n"),
     "utf8",

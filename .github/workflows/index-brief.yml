@@ -74,7 +74,7 @@ jobs:
           GMAIL_USER: ${{ vars.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           REPORT_RECIPIENT: ${{ vars.REPORT_RECIPIENT }}
-        run: npm run send-index-brief -- "${{ steps.brief.outputs.market-date }}"
+        run: npm run send-index-brief -- "${{ steps.brief.outputs.market_date }}"
 
       - name: Rebuild site with delivery marker
         if: steps.brief.outputs.status != 'skip'
