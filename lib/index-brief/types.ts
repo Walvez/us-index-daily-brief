@@ -37,3 +37,31 @@ export interface AdviceResult {
   reasons: string[];
   highVolatility: boolean;
 }
+
+export type ValuationTemperature =
+  | "低于长期均值"
+  | "接近长期均值"
+  | "高于长期均值"
+  | "明显高于长期均值";
+
+export interface IndexValuation {
+  id: IndexId;
+  forwardPe: number;
+  tenYearAveragePe: number;
+  premiumPct: number;
+  temperature: ValuationTemperature;
+}
+
+export interface ValuationSnapshot {
+  asOf: string;
+  sourceUrl: string;
+  indices: IndexValuation[];
+}
+
+export type ValuationContext =
+  | { status: "available"; snapshot: ValuationSnapshot }
+  | {
+      status: "unavailable";
+      reason: "fetch-failed" | "invalid-data" | "stale";
+      message: string;
+    };
