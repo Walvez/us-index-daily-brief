@@ -38,6 +38,19 @@ test("parses both official forward-PE rows and recomputes premiums", () => {
   assert.ok(Math.abs(snapshot.indices[0].premiumPct - 2.1834) < 0.001);
 });
 
+test("skips repeated index names in PDF headers before the data rows", () => {
+  const snapshot = parseNasdaqValuationText(
+    dashboardText.replace(
+      "Global Equities",
+      "Nasdaq-100 S&P 500 Russell 2000 Global Equities",
+    ),
+    "official",
+  );
+
+  assert.equal(snapshot.indices[0].forwardPe, 23.4);
+  assert.equal(snapshot.indices[1].forwardPe, 20.73);
+});
+
 test("uses fixed valuation-temperature boundaries", () => {
   assert.equal(classifyValuation(-10), "低于长期均值");
   assert.equal(classifyValuation(-9.99), "接近长期均值");
