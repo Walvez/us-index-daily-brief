@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   classifyValuation,
+  loadValuationContext,
   parseNasdaqValuationText,
   validateValuationFreshness,
 } from "../../lib/index-brief/valuation";
@@ -77,4 +78,31 @@ test("hides data older than 45 calendar days", () => {
     ).status,
     "unavailable",
   );
+});
+
+test("loads and validates an official document through injected adapters", async () => {
+  const result = await loadValuationContext({
+    now: new Date("2026-06-07T00:00:00Z"),
+    fetchPdf: async () => new Uint8Array([1, 2, 3]),
+    extractText: async () => dashboardText,
+  });
+
+  assert.equal(result.status, "available");
+  if (result.status === "available") {
+    assert.equal(result.snapshot.asOf, "2026-05-05");
+  }
+});
+
+test("degrades instead of throwing when the official document is unavailable", async () => {
+  const result = await loadValuationContext({
+    fetchPdf: async () => {
+      throw new Error("503");
+    },
+  });
+
+  assert.deepEqual(result, {
+    status: "unavailable",
+    reason: "fetch-failed",
+    message: "官方估值数据暂不可用",
+  });
 });

@@ -12,14 +12,16 @@ import {
 } from "./news";
 import type { IndexBriefReport } from "./render";
 import { inspectState, reportPaths, writeReportFiles } from "./state";
-import type { MarketContext } from "./types";
+import type { MarketContext, ValuationContext } from "./types";
+import { appendValuationSnapshot } from "./valuation-history";
+import { loadValuationContext } from "./valuation";
 
 export interface RunDependencies {
   outputRoot?: string;
-  reportBaseUrl?: string;
   now?: () => Date;
   loadMarket?: () => Promise<MarketContext>;
   loadNews?: () => Promise<MarketNews[]>;
+  loadValuation?: () => Promise<ValuationContext>;
   explain?: (input: CommentaryInput) => Promise<BriefCommentary>;
 }
 
@@ -27,11 +29,6 @@ export interface RunResult {
   status: "generated" | "email-only" | "skip";
   marketDate: string;
   reportDir: string;
-}
-
-function reportUrl(baseUrl: string | undefined, marketDate: string) {
-  if (!baseUrl) return undefined;
-  return `${baseUrl.replace(/\/$/, "")}/${marketDate}/${marketDate}.html`;
 }
 
 export async function runIndexBrief(
@@ -59,6 +56,18 @@ export async function runIndexBrief(
 
   const loadedNews = await (dependencies.loadNews ?? fetchMarketNews)();
   const news = selectRelevantNews(loadedNews, now);
+  const valuation = await (
+    dependencies.loadValuation ?? (() => loadValuationContext({ now }))
+  )().catch(
+    (): ValuationContext => ({
+      status: "unavailable",
+      reason: "fetch-failed",
+      message: "官方估值数据暂不可用",
+    }),
+  );
+  if (valuation.status === "available") {
+    appendValuationSnapshot(outputRoot, valuation.snapshot);
+  }
   const advice = classifyAdvice(market.indices.map((index) => index.metrics));
   const commentary = await (dependencies.explain ?? writeCommentary)({
     market,
@@ -69,13 +78,10 @@ export async function runIndexBrief(
     market,
     advice,
     commentary,
+    valuation,
     generatedAt: now.toISOString(),
   };
-  writeReportFiles(
-    outputRoot,
-    report,
-    reportUrl(dependencies.reportBaseUrl, market.marketDate),
-  );
+  writeReportFiles(outputRoot, report);
   return {
     status: "generated",
     marketDate: market.marketDate,

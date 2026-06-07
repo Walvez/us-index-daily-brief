@@ -76,7 +76,7 @@ test("keeps only source URLs and preserves the deterministic advice label", asyn
       advice_label: "全部卖出",
       drivers: [
         {
-          title: "Fed discusses interest rates",
+          title: "美联储讨论利率路径",
           explanation: "利率预期可能相关。",
           url: "https://example.com/fed",
           relationship: "possibly-related",
@@ -93,6 +93,7 @@ test("keeps only source URLs and preserves the deterministic advice label", asyn
   }));
 
   assert.equal(result.adviceLabel, input.advice.label);
+  assert.equal(result.translationAvailable, true);
   assert.deepEqual(result.drivers.map((driver) => driver.url), [
     "https://example.com/fed",
   ]);
@@ -118,5 +119,28 @@ test("falls back to a deterministic Chinese explanation when the LLM fails", asy
   );
   assert.match(result.summary, /纳斯达克100.*-1\.20%/);
   assert.equal(result.adviceLabel, input.advice.label);
+  assert.equal(result.translationAvailable, false);
   assert.equal(result.drivers[0].url, "https://example.com/fed");
+  assert.match(result.drivers[0].explanation, /中文翻译暂不可用/);
+});
+
+test("rejects model output that does not actually translate display text", async () => {
+  const result = await writeCommentary(input, async () => ({
+    text: JSON.stringify({
+      headline: "US market recap",
+      summary: "Rates may have affected growth stocks.",
+      drivers: [
+        {
+          title: "Fed discusses interest rates",
+          explanation: "Inflation remains uncertain.",
+          url: "https://example.com/fed",
+          relationship: "possibly-related",
+        },
+      ],
+    }),
+    durationMs: 1,
+  }));
+
+  assert.equal(result.translationAvailable, false);
+  assert.match(result.drivers[0].explanation, /中文翻译暂不可用/);
 });

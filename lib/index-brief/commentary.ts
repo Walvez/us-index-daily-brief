@@ -1,7 +1,8 @@
 import { extractJson } from "../ai/json-util";
-import { runLlm, type LlmRunResult } from "../ai/llm";
+import type { LlmRunResult } from "../ai/llm";
 import type { AdviceResult, MarketContext } from "./types";
 import type { MarketNews } from "./news";
+import { runGithubModels } from "./github-models";
 
 export interface CommentaryDriver {
   title: string;
@@ -15,6 +16,7 @@ export interface BriefCommentary {
   summary: string;
   adviceLabel: string;
   drivers: CommentaryDriver[];
+  translationAvailable: boolean;
 }
 
 export interface CommentaryInput {
@@ -70,10 +72,13 @@ function fallbackCommentary(input: CommentaryInput): BriefCommentary {
     adviceLabel: input.advice.label,
     drivers: rankedNews.slice(0, 5).map((article) => ({
       title: article.title,
-      explanation: article.excerpt || "近期市场相关报道，具体影响请查看原文。",
+      explanation: `中文翻译暂不可用：${
+        article.excerpt || "近期市场相关报道，具体影响请查看原文。"
+      }`,
       url: article.url,
       relationship: "possibly-related",
     })),
+    translationAvailable: false,
   };
 }
 
@@ -81,9 +86,13 @@ function isRelationship(value: unknown): value is CommentaryDriver["relationship
   return value === "direct" || value === "possibly-related";
 }
 
+function containsChinese(value: string): boolean {
+  return /\p{Script=Han}/u.test(value);
+}
+
 export async function writeCommentary(
   input: CommentaryInput,
-  llm: CommentaryLlm = runLlm,
+  llm: CommentaryLlm = runGithubModels,
 ): Promise<BriefCommentary> {
   const allowedUrls = new Set(input.news.map((article) => article.url));
   const payload = {
@@ -101,7 +110,7 @@ export async function writeCommentary(
   try {
     const { text } = await llm({
       systemPrompt:
-        "你是克制的美股指数复盘编辑。只解释输入数据，不预测下一交易日。必须区分直接事实与可能相关因素。不得修改 advice.label，不得生成输入之外的链接。输出单一 JSON 对象。",
+        "你是克制的中文美股指数复盘编辑。headline、summary、每条 driver.title 和 driver.explanation 必须使用简体中文；公司名和指数缩写可以保留英文。只解释输入数据，不预测下一交易日。必须区分直接事实与可能相关因素。不得修改 advice.label，不得生成输入之外的链接。输出单一 JSON 对象。",
       userPrompt: [
         "请输出：headline、summary、drivers。",
         'drivers 每项包含 title、explanation、url、relationship；relationship 只能是 "direct" 或 "possibly-related"。',
@@ -136,7 +145,14 @@ export async function writeCommentary(
       typeof parsed.headline !== "string" ||
       typeof parsed.summary !== "string" ||
       parsed.headline.trim().length === 0 ||
-      parsed.summary.trim().length === 0
+      parsed.summary.trim().length === 0 ||
+      !containsChinese(parsed.headline) ||
+      !containsChinese(parsed.summary) ||
+      drivers.some(
+        (driver) =>
+          !containsChinese(driver.title) ||
+          !containsChinese(driver.explanation),
+      )
     ) {
       throw new Error("invalid commentary shape");
     }
@@ -146,6 +162,7 @@ export async function writeCommentary(
       summary: parsed.summary,
       adviceLabel: input.advice.label,
       drivers,
+      translationAvailable: true,
     };
   } catch {
     return fallbackCommentary(input);

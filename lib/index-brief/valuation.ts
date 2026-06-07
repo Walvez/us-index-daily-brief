@@ -1,3 +1,8 @@
+import { execFile } from "node:child_process";
+import fs from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import { promisify } from "node:util";
 import type {
   IndexId,
   IndexValuation,
@@ -7,6 +12,17 @@ import type {
 } from "./types";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const NASDAQ_VALUATION_URL =
+  "https://www.nasdaq.com/docs/index/global-index-investment-insights";
+const execFileAsync = promisify(execFile);
+
+export interface ValuationLoadOptions {
+  now?: Date;
+  sourceUrl?: string;
+  timeoutMs?: number;
+  fetchPdf?: (url: string, signal: AbortSignal) => Promise<Uint8Array>;
+  extractText?: (bytes: Uint8Array) => Promise<string>;
+}
 
 function normalize(text: string): string {
   return text
@@ -119,4 +135,64 @@ export function validateValuationFreshness(
     };
   }
   return { status: "available", snapshot };
+}
+
+async function defaultFetchPdf(
+  url: string,
+  signal: AbortSignal,
+): Promise<Uint8Array> {
+  const response = await fetch(url, {
+    signal,
+    headers: { "user-agent": "us-index-daily-brief/1.0" },
+  });
+  if (!response.ok) throw new Error(`valuation HTTP ${response.status}`);
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+async function defaultExtractText(bytes: Uint8Array): Promise<string> {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), "index-valuation-"));
+  const input = path.join(directory, "valuation.pdf");
+  try {
+    await fs.writeFile(input, bytes);
+    const { stdout } = await execFileAsync("pdftotext", [input, "-"], {
+      maxBuffer: 4 * 1024 * 1024,
+    });
+    if (!stdout.trim()) throw new Error("valuation PDF contained no text");
+    return stdout;
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true });
+  }
+}
+
+export async function loadValuationContext(
+  options: ValuationLoadOptions = {},
+): Promise<ValuationContext> {
+  const controller = new AbortController();
+  const timeout = setTimeout(
+    () => controller.abort(),
+    options.timeoutMs ?? 15_000,
+  );
+
+  try {
+    const sourceUrl = options.sourceUrl ?? NASDAQ_VALUATION_URL;
+    const bytes = await (options.fetchPdf ?? defaultFetchPdf)(
+      sourceUrl,
+      controller.signal,
+    );
+    const text = await (options.extractText ?? defaultExtractText)(bytes);
+    const snapshot = parseNasdaqValuationText(text, sourceUrl);
+    return validateValuationFreshness(snapshot, options.now ?? new Date());
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return {
+      status: "unavailable",
+      reason:
+        /missing|invalid|plausible|valuation row/i.test(message)
+          ? "invalid-data"
+          : "fetch-failed",
+      message: "官方估值数据暂不可用",
+    };
+  } finally {
+    clearTimeout(timeout);
+  }
 }

@@ -55,6 +55,7 @@ export const reportFixture: IndexBriefReport = {
     headline: "科技股承压",
     summary: "利率预期可能影响成长股估值。",
     adviceLabel: "正常定投，可按习惯略微增加",
+    translationAvailable: true,
     drivers: [
       {
         title: "Fed <statement>",
@@ -63,6 +64,30 @@ export const reportFixture: IndexBriefReport = {
         relationship: "possibly-related",
       },
     ],
+  },
+  valuation: {
+    status: "available",
+    snapshot: {
+      asOf: "2026-05-05",
+      sourceUrl:
+        "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      indices: [
+        {
+          id: "nasdaq100",
+          forwardPe: 23.4,
+          tenYearAveragePe: 22.9,
+          premiumPct: 2.18,
+          temperature: "接近长期均值",
+        },
+        {
+          id: "sp500",
+          forwardPe: 20.73,
+          tenYearAveragePe: 19.09,
+          premiumPct: 8.59,
+          temperature: "接近长期均值",
+        },
+      ],
+    },
   },
   generatedAt: "2026-06-06T00:05:00.000Z",
 };

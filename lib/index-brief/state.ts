@@ -39,13 +39,12 @@ function atomicWrite(filePath: string, content: string): void {
 export function writeReportFiles(
   root: string,
   report: IndexBriefReport,
-  reportUrl?: string,
 ): void {
   const paths = reportPaths(root, report.market.marketDate);
   fs.mkdirSync(paths.directory, { recursive: true });
   atomicWrite(paths.json, JSON.stringify(report, null, 2));
   atomicWrite(paths.html, renderFullHtml(report));
-  atomicWrite(paths.emailHtml, renderEmailHtml(report, { reportUrl }));
+  atomicWrite(paths.emailHtml, renderEmailHtml(report));
 }
 
 export function markEmailed(root: string, marketDate: string): void {

@@ -10,6 +10,7 @@ import {
   reportPaths,
   writeReportFiles,
 } from "../../lib/index-brief/state";
+import { readValuationHistory } from "../../lib/index-brief/valuation-history";
 import { reportFixture } from "./fixtures";
 
 function tempRoot(): string {
@@ -22,6 +23,7 @@ function dependencies(root: string): RunDependencies {
     now: () => new Date("2026-06-06T02:00:00Z"),
     loadMarket: async () => reportFixture.market,
     loadNews: async () => [],
+    loadValuation: async () => reportFixture.valuation,
     explain: async () => reportFixture.commentary,
   };
 }
@@ -61,6 +63,7 @@ test("generates report files for a new market session", async (t) => {
   assert.equal(fs.existsSync(paths.json), true);
   assert.equal(fs.existsSync(paths.html), true);
   assert.equal(fs.existsSync(paths.emailHtml), true);
+  assert.equal(readValuationHistory(root).length, 1);
 });
 
 test("does not create a normal report when core data is missing", async (t) => {

@@ -1,15 +1,16 @@
 import type { BriefCommentary } from "./commentary";
-import type { AdviceResult, MarketContext } from "./types";
+import type {
+  AdviceResult,
+  MarketContext,
+  ValuationContext,
+} from "./types";
 
 export interface IndexBriefReport {
   market: MarketContext;
   advice: AdviceResult;
   commentary: BriefCommentary;
+  valuation: ValuationContext;
   generatedAt: string;
-}
-
-export interface RenderOptions {
-  reportUrl?: string;
 }
 
 function escapeHtml(value: string): string {
@@ -31,7 +32,42 @@ function colorForMove(value: number): string {
   return "#475467";
 }
 
-function reportBody(report: IndexBriefReport, options: RenderOptions): string {
+function valuationSection(report: IndexBriefReport): string {
+  if (report.valuation.status === "unavailable") {
+    return `<tr><td style="padding:20px 24px;border-top:1px solid #e4e7ec;">
+      <h2 style="margin:0 0 10px;font-size:18px;color:#101828;">估值观察</h2>
+      <p style="margin:0;color:#667085;">${escapeHtml(report.valuation.message)}</p>
+    </td></tr>`;
+  }
+
+  const names = {
+    nasdaq100: "纳斯达克100",
+    sp500: "标普500",
+  } as const;
+  const items = report.valuation.snapshot.indices
+    .map(
+      (item) => `<div style="padding:12px 0;border-bottom:1px solid #e4e7ec;">
+        <div style="font-weight:700;color:#101828;">${names[item.id]}</div>
+        <div style="margin-top:5px;color:#344054;font-size:13px;line-height:1.7;">
+          预期 PE ${formatNumber(item.forwardPe)} · 10年均值 ${formatNumber(item.tenYearAveragePe)}
+        </div>
+        <div style="color:#667085;font-size:13px;line-height:1.7;">
+          相对均值 ${item.premiumPct >= 0 ? "+" : ""}${formatNumber(item.premiumPct, 1)}% · ${item.temperature}
+        </div>
+      </div>`,
+    )
+    .join("");
+
+  return `<tr><td style="padding:20px 24px;border-top:1px solid #e4e7ec;">
+    <h2 style="margin:0 0 4px;font-size:18px;color:#101828;">估值观察</h2>
+    ${items}
+    <p style="margin:10px 0 0;color:#667085;font-size:12px;line-height:1.6;">
+      数据日期 ${escapeHtml(report.valuation.snapshot.asOf)}；估值为定期发布数据，并非昨夜实时值。PE 百分位历史样本积累中。
+    </p>
+  </td></tr>`;
+}
+
+function reportBody(report: IndexBriefReport): string {
   const rows = report.market.indices
     .map(({ name, symbol, metrics }) => {
       const move = `${metrics.pct1Day >= 0 ? "+" : ""}${formatNumber(metrics.pct1Day)}%`;
@@ -66,10 +102,6 @@ function reportBody(report: IndexBriefReport, options: RenderOptions): string {
     .filter(Boolean)
     .join(" · ");
 
-  const fullLink = options.reportUrl
-    ? `<p style="margin:24px 0 0;"><a href="${escapeHtml(options.reportUrl)}" style="display:inline-block;color:#175cd3;font-weight:700;text-decoration:none;">查看完整报告 →</a></p>`
-    : "";
-
   return `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
     <tr><td align="center" style="padding:20px 12px;background:#f2f4f7;">
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width:100%;max-width:680px;border-collapse:collapse;background:#ffffff;border:1px solid #e4e7ec;">
@@ -97,10 +129,10 @@ function reportBody(report: IndexBriefReport, options: RenderOptions): string {
           </table>
           ${macro ? `<p style="margin:12px 0 0;color:#667085;font-size:13px;">${escapeHtml(macro)}</p>` : ""}
         </td></tr>
+        ${valuationSection(report)}
         <tr><td style="padding:20px 24px;border-top:1px solid #e4e7ec;">
           <h2 style="margin:0 0 14px;font-size:18px;color:#101828;">昨夜发生了什么</h2>
           <ul style="margin:0;padding-left:20px;line-height:1.55;">${drivers}</ul>
-          ${fullLink}
         </td></tr>
         <tr><td style="padding:18px 24px;background:#f9fafb;color:#667085;font-size:12px;line-height:1.65;">
           场外基金通常存在净值确认时差和 T+2 流程，最终结果还会受到人民币汇率、基金限购、申购确认时间及跟踪误差影响。本报告只分析指数与公开新闻，不预测下一交易日，也不构成投资建议。
@@ -112,9 +144,8 @@ function reportBody(report: IndexBriefReport, options: RenderOptions): string {
 
 export function renderEmailHtml(
   report: IndexBriefReport,
-  options: RenderOptions = {},
 ): string {
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>美股指数每日简报</title></head><body style="margin:0;background:#f2f4f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">${reportBody(report, options)}</body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>美股指数每日简报</title></head><body style="margin:0;background:#f2f4f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">${reportBody(report)}</body></html>`;
 }
 
 export function renderFullHtml(report: IndexBriefReport): string {
@@ -126,6 +157,6 @@ export function renderFullHtml(report: IndexBriefReport): string {
   <title>${escapeHtml(report.market.marketDate)} 美股指数每日简报</title>
   <style>body{margin:0;background:#f2f4f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a:hover{text-decoration:underline!important}</style>
 </head>
-<body>${reportBody(report, {})}</body>
+<body>${reportBody(report)}</body>
 </html>`;
 }

@@ -6,7 +6,7 @@
 
 **Architecture:** Add two optional adapters beside the existing deterministic market path: a GitHub Models commentary driver and a Nasdaq valuation loader. Both return validated domain objects or explicit degraded states, while the existing market metrics and contribution advice remain authoritative. The renderer consumes one complete report object and never emits a public-report URL.
 
-**Tech Stack:** Node.js 20, TypeScript, `node:test`, `tsx`, native `fetch`, GitHub Models REST API, `pdfjs-dist`, GitHub Actions, Gmail SMTP.
+**Tech Stack:** Node.js 20, TypeScript, `node:test`, `tsx`, native `fetch`, GitHub Models REST API, Poppler `pdftotext`, GitHub Actions, Gmail SMTP.
 
 ---
 
@@ -26,7 +26,7 @@
 - Modify `scripts/index-brief.ts`: remove `REPORT_BASE_URL` input.
 - Modify `.github/workflows/index-brief.yml`: grant `models: read`, pass `GITHUB_TOKEN`, and stop building/publishing a Pages site before email.
 - Modify `tests/index-brief/commentary.test.ts`, `fixtures.ts`, `render.test.ts`, and `run.test.ts`: cover the new report contract and degraded states.
-- Modify `package.json` and `package-lock.json`: add PDF.js for pure-JavaScript PDF text extraction.
+- Modify `.github/workflows/index-brief.yml`: install Poppler for deterministic PDF text extraction.
 - Modify `docs/index-brief-setup.md` and `.agents/skills/us-index-daily-brief/SKILL.md`: document the private-email workflow and diagnostics.
 
 ### Task 1: Define and Test Valuation Semantics
@@ -289,18 +289,16 @@ git commit -m "feat: define index valuation semantics"
 ### Task 2: Load the Official PDF and Persist Unique Snapshots
 
 **Files:**
-- Modify: `package.json`
-- Modify: `package-lock.json`
 - Modify: `lib/index-brief/valuation.ts`
 - Create: `lib/index-brief/valuation-history.ts`
 - Modify: `tests/index-brief/valuation.test.ts`
 - Create: `tests/index-brief/valuation-history.test.ts`
 
-- [ ] **Step 1: Install PDF.js**
+- [ ] **Step 1: Select the PDF extraction runtime**
 
-Run: `npm install pdfjs-dist@5.4.149`
+Use Poppler's `pdftotext`, installed from Ubuntu's official package repository in the GitHub Actions workflow. Keep extraction injectable so unit tests do not require the binary.
 
-Expected: `package.json` and `package-lock.json` include `pdfjs-dist`.
+Expected: no new npm dependency or API key is required.
 
 - [ ] **Step 2: Write failing loader and history tests**
 
@@ -405,23 +403,18 @@ async function defaultFetchPdf(
 }
 
 async function defaultExtractText(bytes: Uint8Array): Promise<string> {
-  const { getDocument } = await import("pdfjs-dist/legacy/build/pdf.mjs");
-  const document = await getDocument({ data: bytes }).promise;
-  const pages: string[] = [];
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), "index-valuation-"));
+  const input = path.join(directory, "valuation.pdf");
   try {
-    for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber += 1) {
-      const page = await document.getPage(pageNumber);
-      const content = await page.getTextContent();
-      pages.push(
-        content.items
-          .map((item) => ("str" in item ? item.str : ""))
-          .join(" "),
-      );
-    }
+    await fs.writeFile(input, bytes);
+    const { stdout } = await execFileAsync("pdftotext", [input, "-"], {
+      maxBuffer: 4 * 1024 * 1024,
+    });
+    if (!stdout.trim()) throw new Error("valuation PDF contained no text");
+    return stdout;
   } finally {
-    await document.destroy();
+    await fs.rm(directory, { recursive: true, force: true });
   }
-  return pages.join("\n");
 }
 
 export async function loadValuationContext(
@@ -509,7 +502,7 @@ npm run typecheck
 Expected: all focused tests PASS and TypeScript reports no errors.
 
 ```bash
-git add package.json package-lock.json lib/index-brief/valuation.ts lib/index-brief/valuation-history.ts tests/index-brief/valuation.test.ts tests/index-brief/valuation-history.test.ts
+git add lib/index-brief/valuation.ts lib/index-brief/valuation-history.ts tests/index-brief/valuation.test.ts tests/index-brief/valuation-history.test.ts
 git commit -m "feat: load and retain official index valuations"
 ```
 
@@ -935,6 +928,15 @@ env:
 ```
 
 Remove `REPORT_BASE_URL`, `LLM_BACKEND`, all external model API keys, `LLM_BASE_URL`, and `LLM_MODEL` from this workflow.
+
+Install the official Ubuntu PDF text utility after `npm ci`:
+
+```yaml
+- name: Install PDF text extractor
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y poppler-utils
+```
 
 Remove both pre-email site steps:
 

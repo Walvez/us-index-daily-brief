@@ -4,13 +4,11 @@
 
 将 `codex/us-index-daily-brief` 分支推送到一个 GitHub 仓库，并把该分支合并为默认分支。进入仓库的 **Settings → Actions → General**，允许 GitHub Actions 运行。
 
-## 2. 配置 GitHub Pages
+## 2. 私有报告存储
 
-进入 **Settings → Pages**：
+仓库保持私有，不需要启用 GitHub Pages，也不需要配置 `REPORT_BASE_URL`。邮件正文就是完整报告。
 
-1. Source 选择 **Deploy from a branch**。
-2. Branch 选择 `gh-pages`，目录选择 `/ (root)`。
-3. 第一次工作流成功后，Pages 地址通常是 `https://<用户名>.github.io/<仓库名>/`。
+工作流仍使用私有 `gh-pages` 分支保存报告、估值历史和 `.emailed` 防重复标记。该分支只是内部存储，不是公开网站。
 
 ## 3. 配置 Gmail
 
@@ -26,9 +24,8 @@
 | 名称 | 内容 |
 | --- | --- |
 | `GMAIL_APP_PASSWORD` | Gmail 应用专用密码 |
-| `OPENAI_API_KEY` | 可选；所选 LLM 的 API Key |
 
-如果使用其他模型服务，可改用 `ANTHROPIC_API_KEY`、`DEEPSEEK_API_KEY`、`MINIMAX_API_KEY`、`ZHIPU_API_KEY` 或通用的 `LLM_API_KEY`。
+中文新闻使用 GitHub Models 和工作流自带的 `GITHUB_TOKEN`，不需要 OpenAI 或其他模型 API Key。
 
 ## 4. 配置 Variables
 
@@ -38,12 +35,9 @@
 | --- | --- |
 | `GMAIL_USER` | 发件 Gmail 地址 |
 | `REPORT_RECIPIENT` | 收件邮箱 |
-| `REPORT_BASE_URL` | `https://<用户名>.github.io/<仓库名>` |
-| `LLM_BACKEND` | `openai` |
-| `LLM_MODEL` | 可选模型名称 |
-| `LLM_BASE_URL` | 可选兼容接口地址 |
+| `GITHUB_MODELS_MODEL` | 可选；默认 `openai/gpt-4.1` |
 
-收件邮箱虽然不是密码，也不要硬编码进仓库。若未配置 LLM Key，报告仍会生成，但新闻解释会使用确定性降级文本。
+收件邮箱虽然不是密码，也不要硬编码进仓库。GitHub Models 调用失败时，报告仍会生成，并明确标注中文翻译暂不可用。
 
 ## 5. 首次验证
 
@@ -51,8 +45,15 @@
 
 1. Actions 日志显示最新美股交易日。
 2. `gh-pages` 分支出现对应日期目录。
-3. Pages 首页可在手机浏览器打开。
-4. 邮件中的指数涨跌、新闻链接和定投观察结论正常。
-5. 再手动运行一次，同一交易日不会重复发信。
+3. 邮件正文中没有“查看完整报告”按钮。
+4. 新闻标题和解释为中文，原文链接可以打开。
+5. 估值区块显示预期 PE、10 年均值、偏离、温度和官方数据日期。
+6. 再手动运行一次，同一交易日不会重复发信。
 
 定时任务设置为每天北京时间约 08:05。GitHub Actions 的计划任务可能延迟数分钟；周末和美国休市日会识别到已处理的最新交易日并跳过。
+
+## 6. 常见诊断
+
+- 中文翻译失败：检查工作流是否包含 `models: read`，并查看 GitHub Models HTTP 状态；不要在日志中输出令牌。
+- 估值不可用：检查 Nasdaq 官方文档是否仍可下载、`pdftotext` 安装步骤是否成功，以及资料的 `as of` 日期是否超过 45 天。
+- PE 数值过期：不要手工把旧数值复制进报告。系统会隐藏过期值，并等待官方资料更新。

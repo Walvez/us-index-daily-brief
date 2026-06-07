@@ -31,6 +31,8 @@ Never send until the report date and recipient configuration have been checked.
 - Returns, drawdowns, and volatility: `lib/index-brief/metrics.ts`
 - Deterministic contribution observation: `lib/index-brief/advice.ts`
 - News filtering and sourced explanation: `lib/index-brief/news.ts`, `commentary.ts`
+- GitHub Models translation: `lib/index-brief/github-models.ts`
+- Official PE context and history: `lib/index-brief/valuation.ts`, `valuation-history.ts`
 - Mobile HTML and Gmail: `lib/index-brief/render.ts`, `mail.ts`
 - Duplicate prevention and retries: `lib/index-brief/state.ts`, `run.ts`
 - Cloud schedule: `.github/workflows/index-brief.yml`
@@ -40,14 +42,16 @@ Never send until the report date and recipient configuration have been checked.
 
 1. Read the GitHub Actions failure step and error.
 2. Confirm Nasdaq-100 and S&P 500 resolve to the same New York market date.
-3. Inspect `daily_reports/<date>/` and whether `.emailed` exists.
-4. Distinguish an LLM fallback from a report-generation failure.
-5. Check Gmail Variables and Secret names without printing their values.
+3. Inspect `daily_reports/<date>/`, `valuation-history.json`, and whether `.emailed` exists.
+4. Distinguish a GitHub Models translation fallback from a report-generation failure.
+5. For missing valuation, check the Nasdaq document date and `pdftotext` step.
+6. Check Gmail Variables and Secret names without printing their values.
 
 ## Safety Rules
 
-- Never print, commit, or request a Gmail application password or API key in chat.
+- Never print, commit, or request a Gmail application password or token in chat.
 - The LLM may explain news but must never change the deterministic advice level.
 - Never claim a specific fund execution price, confirmed NAV, available quota, or guaranteed return.
 - Treat QQQ and SPY only as fallback market proxies for their indices.
 - Core market data failures stop the report; optional macro/news failures degrade gracefully.
+- Treat the private `gh-pages` branch as storage only; the email is the complete report.

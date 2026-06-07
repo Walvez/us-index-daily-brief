@@ -25,7 +25,6 @@ function writeGithubOutputs(result: {
 async function main() {
   const result = await runIndexBrief({
     outputRoot: process.env.REPORT_OUTPUT_DIR || "daily_reports",
-    reportBaseUrl: process.env.REPORT_BASE_URL,
   });
   writeGithubOutputs(result);
   console.log(
