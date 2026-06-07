@@ -10,6 +10,8 @@ import {
 import { parseNasdaqValuationText } from "../../lib/index-brief/valuation";
 
 const text = `
+Global Equities Last MTD % Change QTD % Change YTD % Change LTM % Change
+Dividend Yield NTM P/E NTM P/E 10yr Avg. Last vs. 10yr Avg.
 Nasdaq-100 28,015 2.1% 18.0% 11.0% 40.3% 0.6% 23.40 22.90 +2.2%
 S&P 500 7,259 0.7% 11.2% 6.0% 28.5% 1.1% 20.73 19.09 +8.6%
 Russell 2000 2,845 1.6% 14.6% 1.2% 24.80 23.21 +6.9%
