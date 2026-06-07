@@ -51,7 +51,9 @@ function parseRow(
   const row = tail.slice(0, endMatch?.index ?? tail.length);
   const values = row.match(/[+-]?\d[\d,]*(?:\.\d+)?%?/g) ?? [];
   if (values.length < 9) {
-    throw new Error(`missing valuation row values: ${id}`);
+    throw new Error(
+      `missing valuation row values: ${id} count=${values.length} row=${row.slice(0, 400)}`,
+    );
   }
 
   const forwardPe = numberToken(values[6]);
