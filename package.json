@@ -6,7 +6,7 @@
     "node": ">=20.18.1"
   },
   "scripts": {
-    "test": "tsx --test tests/**/*.test.ts",
+    "test": "tsx --test tests/smoke.test.ts tests/**/*.test.ts",
     "typecheck": "tsc --noEmit",
     "index-brief": "tsx scripts/index-brief.ts",
     "send-index-brief": "tsx scripts/send-index-brief.ts",
