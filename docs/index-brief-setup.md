@@ -41,7 +41,7 @@
 
 ## 5. 首次验证
 
-进入 **Actions → US Index Daily Brief → Run workflow** 手动运行一次，依次确认：
+进入 **Actions → US Index Daily Brief → Run workflow**。首次可勾选 `validation_only`，它会完整生成并验证中文与估值，但不发邮件、不写入正式归档。验证通过后再不勾选该选项运行一次，依次确认：
 
 1. Actions 日志显示最新美股交易日。
 2. `gh-pages` 分支出现对应日期目录。

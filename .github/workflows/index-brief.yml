@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "5 0 * * *" # 08:05 Asia/Shanghai
   workflow_dispatch:
+    inputs:
+      validation_only:
+        description: Generate and verify without sending or persisting
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,6 +41,7 @@ jobs:
           sudo apt-get install -y poppler-utils
 
       - name: Restore reports and delivery state
+        if: ${{ !inputs.validation_only }}
         run: |
           mkdir -p daily_reports
           if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
@@ -49,12 +55,31 @@ jobs:
         env:
           REPORT_TZ: Asia/Shanghai
           REPORT_LOCALE: zh
+          REPORT_OUTPUT_DIR: ${{ inputs.validation_only && 'validation_reports' || 'daily_reports' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4.1' }}
         run: npm run index-brief
 
+      - name: Verify generated translation and valuation
+        if: ${{ inputs.validation_only && steps.brief.outputs.status == 'generated' }}
+        env:
+          REPORT_DIR: ${{ steps.brief.outputs.report_dir }}
+        run: |
+          node -e '
+            const fs = require("node:fs");
+            const path = require("node:path");
+            const dir = process.env.REPORT_DIR;
+            const date = path.basename(dir);
+            const report = JSON.parse(fs.readFileSync(path.join(dir, `${date}.json`), "utf8"));
+            const email = fs.readFileSync(path.join(dir, `${date}-email.html`), "utf8");
+            if (!report.commentary.translationAvailable) throw new Error("Chinese translation unavailable");
+            if (report.valuation.status !== "available") throw new Error(`Valuation unavailable: ${report.valuation.reason}`);
+            if (/查看完整报告|github\.io/.test(email)) throw new Error("Stale public report link found");
+            console.log(`[validation] ${date}: Chinese translation and valuation available; email is self-contained`);
+          '
+
       - name: Send email
-        if: steps.brief.outputs.status != 'skip'
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
         env:
           GMAIL_USER: ${{ vars.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -62,11 +87,11 @@ jobs:
         run: npm run send-index-brief -- "${{ steps.brief.outputs.market_date }}"
 
       - name: Prepare private report archive
-        if: steps.brief.outputs.status != 'skip'
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
         run: npm run build-site
 
       - name: Persist private report and delivery state
-        if: steps.brief.outputs.status != 'skip'
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

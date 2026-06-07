@@ -24,6 +24,7 @@ npm run send-index-brief -- YYYY-MM-DD
 ```
 
 Never send until the report date and recipient configuration have been checked.
+Use the workflow's `validation_only` input to exercise translation and valuation without sending or persisting a report.
 
 ## Component Map
 
