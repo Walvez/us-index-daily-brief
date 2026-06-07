@@ -1,0 +1,4 @@
+interface:
+  display_name: "美股指数每日简报"
+  short_description: "运行和维护纳指100、标普500每日复盘邮件"
+  default_prompt: "使用 $us-index-daily-brief 检查并运行美股指数日报，报告行情日期、生成状态和投递状态。"
