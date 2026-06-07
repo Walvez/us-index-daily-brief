@@ -38,62 +38,58 @@ function numberToken(value: string): number {
   return Number(value.replace(/[,%]/g, ""));
 }
 
-function parseRow(
-  text: string,
+function valuationFromValues(
   id: IndexId,
-  start: RegExp,
-  end: RegExp,
+  values: string[],
+  offset: number,
 ): IndexValuation {
-  const matcher = new RegExp(start.source, `${start.flags.replace(/g/g, "")}g`);
-  let diagnosticRow = "";
-  let diagnosticCount = 0;
-  let foundStart = false;
-
-  for (const startMatch of text.matchAll(matcher)) {
-    const startIndex = startMatch.index;
-    if (startIndex == null) continue;
-    foundStart = true;
-    const tail = text.slice(startIndex + startMatch[0].length);
-    const endMatch = end.exec(tail);
-    const row = tail.slice(0, endMatch?.index ?? tail.length);
-    const values = row.match(/[+-]?\d[\d,]*(?:\.\d+)?%?/g) ?? [];
-    if (values.length < 9) {
-      if (values.length >= diagnosticCount) {
-        diagnosticCount = values.length;
-        diagnosticRow = row;
-      }
-      continue;
-    }
-
-    const forwardPe = numberToken(values[6]);
-    const tenYearAveragePe = numberToken(values[7]);
-    if (
-      !Number.isFinite(forwardPe) ||
-      !Number.isFinite(tenYearAveragePe) ||
-      forwardPe < 5 ||
-      forwardPe > 100 ||
-      tenYearAveragePe < 5 ||
-      tenYearAveragePe > 100
-    ) {
-      throw new Error(`valuation is outside plausible range: ${id}`);
-    }
-
-    const premiumPct = (forwardPe / tenYearAveragePe - 1) * 100;
-    return {
-      id,
-      forwardPe,
-      tenYearAveragePe,
-      premiumPct,
-      temperature: classifyValuation(premiumPct),
-    };
+  const forwardPe = numberToken(values[offset + 6]);
+  const tenYearAveragePe = numberToken(values[offset + 7]);
+  if (
+    !Number.isFinite(forwardPe) ||
+    !Number.isFinite(tenYearAveragePe) ||
+    forwardPe < 5 ||
+    forwardPe > 100 ||
+    tenYearAveragePe < 5 ||
+    tenYearAveragePe > 100
+  ) {
+    throw new Error(`valuation is outside plausible range: ${id}`);
   }
 
-  if (!foundStart) {
-    throw new Error(`missing valuation row: ${id}`);
+  const premiumPct = (forwardPe / tenYearAveragePe - 1) * 100;
+  return {
+    id,
+    forwardPe,
+    tenYearAveragePe,
+    premiumPct,
+    temperature: classifyValuation(premiumPct),
+  };
+}
+
+function parseGlobalEquities(text: string): IndexValuation[] {
+  const header = /Last vs\. 10yr Avg\./i.exec(text);
+  if (!header) throw new Error("missing valuation row: table header");
+
+  const tail = text.slice(header.index + header[0].length);
+  const end = /Russell 2000/i.exec(tail);
+  if (!end) throw new Error("missing valuation row: Russell 2000");
+
+  const tableText = tail
+    .slice(0, end.index)
+    .replace(/Nasdaq-100/gi, "")
+    .replace(/S&P 500/gi, "");
+  const values =
+    tableText.match(/[+-]?\d[\d,]*(?:\.\d+)?%?/g) ?? [];
+  if (values.length < 18) {
+    throw new Error(
+      `missing valuation table values: count=${values.length} text=${tableText.slice(0, 400)}`,
+    );
   }
-  throw new Error(
-    `missing valuation row values: ${id} count=${diagnosticCount} row=${diagnosticRow.slice(0, 400)}`,
-  );
+
+  return [
+    valuationFromValues("nasdaq100", values, 0),
+    valuationFromValues("sp500", values, 9),
+  ];
 }
 
 function isoDate(month: string, day: string, year: string): string {
@@ -128,10 +124,7 @@ export function parseNasdaqValuationText(
   return {
     asOf: isoDate(dateMatch[1], dateMatch[2], dateMatch[3]),
     sourceUrl,
-    indices: [
-      parseRow(text, "nasdaq100", /Nasdaq-100/i, /S&P 500/i),
-      parseRow(text, "sp500", /S&P 500/i, /Russell 2000/i),
-    ],
+    indices: parseGlobalEquities(text),
   };
 }
 

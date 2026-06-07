@@ -51,6 +51,23 @@ test("skips repeated index names in PDF headers before the data rows", () => {
   assert.equal(snapshot.indices[1].forwardPe, 20.73);
 });
 
+test("parses the column-first text order emitted by the official PDF", () => {
+  const columnFirstText = `
+  Global Equities Last MTD % Change QTD % Change YTD % Change LTM % Change
+  Dividend Yield NTM P/E NTM P/E 10yr Avg. Last vs. 10yr Avg.
+  28,015 2.1% 18.0% 11.0% 40.3% 0.6% 23.40 22.90 +2.2%
+  7,259 0.7% 11.2% 6.0% 28.5% 1.1% 20.73 19.09 +8.6%
+  Russell 2000 2,845 1.6% 14.0% 14.6% 41.9% 1.2% 24.80 23.21 +6.9%
+  Global Equities Last Nasdaq-100 S&P 500
+  Data as of 5/5/2026.
+  `;
+
+  const snapshot = parseNasdaqValuationText(columnFirstText, "official");
+
+  assert.equal(snapshot.indices[0].forwardPe, 23.4);
+  assert.equal(snapshot.indices[1].tenYearAveragePe, 19.09);
+});
+
 test("uses fixed valuation-temperature boundaries", () => {
   assert.equal(classifyValuation(-10), "低于长期均值");
   assert.equal(classifyValuation(-9.99), "接近长期均值");
