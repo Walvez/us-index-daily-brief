@@ -22,6 +22,7 @@ export interface ValuationLoadOptions {
   timeoutMs?: number;
   fetchPdf?: (url: string, signal: AbortSignal) => Promise<Uint8Array>;
   extractText?: (bytes: Uint8Array) => Promise<string>;
+  logger?: (message: string) => void;
 }
 
 function normalize(text: string): string {
@@ -184,6 +185,7 @@ export async function loadValuationContext(
     return validateValuationFreshness(snapshot, options.now ?? new Date());
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
+    (options.logger ?? console.warn)(`valuation load failed: ${message}`);
     return {
       status: "unavailable",
       reason:

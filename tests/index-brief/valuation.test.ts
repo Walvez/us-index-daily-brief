@@ -94,10 +94,12 @@ test("loads and validates an official document through injected adapters", async
 });
 
 test("degrades instead of throwing when the official document is unavailable", async () => {
+  const logs: string[] = [];
   const result = await loadValuationContext({
     fetchPdf: async () => {
       throw new Error("503");
     },
+    logger: (message) => logs.push(message),
   });
 
   assert.deepEqual(result, {
@@ -105,4 +107,5 @@ test("degrades instead of throwing when the official document is unavailable", a
     reason: "fetch-failed",
     message: "官方估值数据暂不可用",
   });
+  assert.deepEqual(logs, ["valuation load failed: 503"]);
 });
