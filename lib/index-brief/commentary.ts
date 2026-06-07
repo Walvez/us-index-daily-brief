@@ -33,11 +33,42 @@ function fallbackCommentary(input: CommentaryInput): BriefCommentary {
   const moves = input.market.indices
     .map((index) => `${index.name} ${index.metrics.pct1Day.toFixed(2)}%`)
     .join("，");
+  const priorityTerms = [
+    "nasdaq",
+    "s&p",
+    "wall street",
+    "federal reserve",
+    "fed ",
+    "interest rate",
+    "jobs",
+    "payroll",
+    "nvidia",
+    "broadcom",
+    "apple",
+    "microsoft",
+    "amazon",
+    "alphabet",
+    "meta",
+    "tesla",
+    "chip",
+    "semiconductor",
+  ];
+  const rankedNews = input.news
+    .map((article, position) => {
+      const title = `${article.title} `.toLowerCase();
+      const score = priorityTerms.reduce(
+        (total, term) => total + (title.includes(term) ? 1 : 0),
+        0,
+      );
+      return { article, position, score };
+    })
+    .sort((a, b) => b.score - a.score || a.position - b.position)
+    .map(({ article }) => article);
   return {
     headline: "昨夜美股指数复盘",
     summary: `${moves}。规则观察为「${input.advice.label}」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。`,
     adviceLabel: input.advice.label,
-    drivers: input.news.slice(0, 5).map((article) => ({
+    drivers: rankedNews.slice(0, 5).map((article) => ({
       title: article.title,
       explanation: article.excerpt || "近期市场相关报道，具体影响请查看原文。",
       url: article.url,

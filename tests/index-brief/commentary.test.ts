@@ -99,9 +99,23 @@ test("keeps only source URLs and preserves the deterministic advice label", asyn
 });
 
 test("falls back to a deterministic Chinese explanation when the LLM fails", async () => {
-  const result = await writeCommentary(input, async () => {
+  const result = await writeCommentary(
+    {
+      ...input,
+      news: [
+        {
+          ...input.news[0],
+          title: "Gold market update",
+          url: "https://example.com/gold",
+          publishedAt: new Date("2026-06-06T02:00:00Z"),
+        },
+        input.news[0],
+      ],
+    },
+    async () => {
     throw new Error("offline");
-  });
+    },
+  );
   assert.match(result.summary, /纳斯达克100.*-1\.20%/);
   assert.equal(result.adviceLabel, input.advice.label);
   assert.equal(result.drivers[0].url, "https://example.com/fed");
