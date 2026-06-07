@@ -53,10 +53,10 @@ const rows = dates
   .join("\n");
 
 const archiveHtml = `<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>daily-brief — archive</title>
+<title>美股指数每日简报归档</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root { color-scheme: light dark; }
@@ -95,10 +95,10 @@ const archiveHtml = `<!doctype html>
 </style>
 </head>
 <body>
-  <h1>daily-brief — archive</h1>
-  <p class="meta">${dates.length} report${dates.length === 1 ? "" : "s"} · newest first · generated ${new Date().toISOString().slice(0, 10)}</p>
+  <h1>美股指数每日简报归档</h1>
+  <p class="meta">共 ${dates.length} 份报告 · 最新优先 · 更新于 ${new Date().toISOString().slice(0, 10)}</p>
   <div class="top">
-    <a href="./index.html">→ Latest report (${latest})</a>
+    <a href="./index.html">→ 最新报告 (${latest})</a>
   </div>
   <ul>
 ${rows}

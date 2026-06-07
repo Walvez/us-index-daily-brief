@@ -1,0 +1,90 @@
+name: US Index Daily Brief
+
+on:
+  schedule:
+    - cron: "5 0 * * *" # 08:05 Asia/Shanghai
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: us-index-daily-brief
+  cancel-in-progress: false
+
+jobs:
+  build-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.18.1"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore reports and delivery state
+        run: |
+          mkdir -p daily_reports
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages --depth=1
+            git --work-tree=daily_reports checkout origin/gh-pages -- . || true
+            rm -f daily_reports/index.html daily_reports/archive.html
+          fi
+
+      - name: Generate or resume brief
+        id: brief
+        env:
+          REPORT_TZ: Asia/Shanghai
+          REPORT_BASE_URL: ${{ vars.REPORT_BASE_URL }}
+          REPORT_LOCALE: zh
+          LLM_BACKEND: ${{ vars.LLM_BACKEND || 'openai' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+        run: npm run index-brief
+
+      - name: Build site before email
+        if: steps.brief.outputs.status == 'generated'
+        run: npm run build-site
+
+      - name: Publish report before email
+        if: steps.brief.outputs.status == 'generated'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./daily_reports
+          publish_branch: gh-pages
+          keep_files: false
+
+      - name: Send email
+        if: steps.brief.outputs.status != 'skip'
+        env:
+          GMAIL_USER: ${{ vars.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_RECIPIENT: ${{ vars.REPORT_RECIPIENT }}
+        run: npm run send-index-brief -- "${{ steps.brief.outputs.market-date }}"
+
+      - name: Rebuild site with delivery marker
+        if: steps.brief.outputs.status != 'skip'
+        run: npm run build-site
+
+      - name: Persist delivery marker
+        if: steps.brief.outputs.status != 'skip'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./daily_reports
+          publish_branch: gh-pages
+          keep_files: false

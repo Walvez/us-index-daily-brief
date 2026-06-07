@@ -347,6 +347,19 @@
     ]
   },
   {
+    "id": "federal-reserve",
+    "name": "Federal Reserve",
+    "type": "rss",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "category": "finance",
+    "subcategory": "news",
+    "enabled": true,
+    "locales": [
+      "zh",
+      "en"
+    ]
+  },
+  {
     "id": "bloomberg-markets",
     "name": "Bloomberg Markets",
     "type": "rss",
