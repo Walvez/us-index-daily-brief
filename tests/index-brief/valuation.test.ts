@@ -122,3 +122,16 @@ test("degrades instead of throwing when the official document is unavailable", a
   });
   assert.deepEqual(logs, ["valuation load failed: 503"]);
 });
+
+test("includes a normalized public-text excerpt only when debug is enabled", async () => {
+  const logs: string[] = [];
+  await loadValuationContext({
+    debug: true,
+    fetchPdf: async () => new Uint8Array([1]),
+    extractText: async () =>
+      "Global Equities\nNasdaq-100\nS&P 500\nData as of 5/5/2026.",
+    logger: (message) => logs.push(message),
+  });
+
+  assert.match(logs[0], /text=Global Equities Nasdaq-100 S&P 500/);
+});

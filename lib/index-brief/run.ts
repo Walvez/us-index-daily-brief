@@ -57,7 +57,12 @@ export async function runIndexBrief(
   const loadedNews = await (dependencies.loadNews ?? fetchMarketNews)();
   const news = selectRelevantNews(loadedNews, now);
   const valuation = await (
-    dependencies.loadValuation ?? (() => loadValuationContext({ now }))
+    dependencies.loadValuation ??
+    (() =>
+      loadValuationContext({
+        now,
+        debug: process.env.VALUATION_DEBUG === "1",
+      }))
   )().catch(
     (): ValuationContext => ({
       status: "unavailable",

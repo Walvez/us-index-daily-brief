@@ -20,6 +20,7 @@ export interface ValuationLoadOptions {
   now?: Date;
   sourceUrl?: string;
   timeoutMs?: number;
+  debug?: boolean;
   fetchPdf?: (url: string, signal: AbortSignal) => Promise<Uint8Array>;
   extractText?: (bytes: Uint8Array) => Promise<string>;
   logger?: (message: string) => void;
@@ -28,7 +29,7 @@ export interface ValuationLoadOptions {
 function normalize(text: string): string {
   return text
     .replace(/\u00a0/g, " ")
-    .replace(/Nasdaq\s*-\s*100\s*®?/gi, "Nasdaq-100")
+    .replace(/Nasdaq\s*-\s*100(?:\s*®)?/gi, "Nasdaq-100")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -192,18 +193,24 @@ export async function loadValuationContext(
     options.timeoutMs ?? 15_000,
   );
 
+  let extractedText = "";
   try {
     const sourceUrl = options.sourceUrl ?? NASDAQ_VALUATION_URL;
     const bytes = await (options.fetchPdf ?? defaultFetchPdf)(
       sourceUrl,
       controller.signal,
     );
-    const text = await (options.extractText ?? defaultExtractText)(bytes);
-    const snapshot = parseNasdaqValuationText(text, sourceUrl);
+    extractedText = await (options.extractText ?? defaultExtractText)(bytes);
+    const snapshot = parseNasdaqValuationText(extractedText, sourceUrl);
     return validateValuationFreshness(snapshot, options.now ?? new Date());
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    (options.logger ?? console.warn)(`valuation load failed: ${message}`);
+    const excerpt = options.debug
+      ? ` text=${normalize(extractedText).slice(0, 3000)}`
+      : "";
+    (options.logger ?? console.warn)(
+      `valuation load failed: ${message}${excerpt}`,
+    );
     return {
       status: "unavailable",
       reason:

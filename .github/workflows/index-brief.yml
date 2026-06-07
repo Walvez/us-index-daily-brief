@@ -56,6 +56,7 @@ jobs:
           REPORT_TZ: Asia/Shanghai
           REPORT_LOCALE: zh
           REPORT_OUTPUT_DIR: ${{ inputs.validation_only && 'validation_reports' || 'daily_reports' }}
+          VALUATION_DEBUG: ${{ inputs.validation_only && '1' || '0' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4.1' }}
         run: npm run index-brief
