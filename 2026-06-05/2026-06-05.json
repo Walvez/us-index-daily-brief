@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-06-05",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-05",
+        "metrics": {
+          "close": 28957.599609375,
+          "pct1Day": -4.769205383151263,
+          "pct5Day": -4.53490234883573,
+          "pct20Day": 1.3781371322653078,
+          "drawdown20": -5.5543597375678155,
+          "drawdown60": -5.5543597375678155,
+          "drawdownAll": -5.5543597375678155,
+          "sma20": 29664.28896484375,
+          "sma50": 27446.0807421875,
+          "sma200": 25552.253349609375,
+          "realizedVol20": 23.70731743292089
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-05",
+        "metrics": {
+          "close": 7383.740234375,
+          "pct1Day": -2.6445361894386843,
+          "pct5Day": -2.5899507748118182,
+          "pct20Day": 0.6355414047581986,
+          "drawdown20": -2.970382286517228,
+          "drawdown60": -2.970382286517228,
+          "drawdownAll": -2.970382286517228,
+          "sma20": 7479.509033203125,
+          "sma50": 7155.958232421875,
+          "sma200": 6858.259794921875,
+          "realizedVol20": 13.487620830918337
+        }
+      }
+    ],
+    "vix": 21.510000228881836,
+    "treasury10y": 4.535999774932861,
+    "dxy": 100.06999969482422
+  },
+  "advice": {
+    "level": "notably-more",
+    "label": "出现较明显回撤，可按原计划增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -4.77%",
+      "较深的60日高点回撤为 -5.55%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "昨夜美股指数复盘",
+    "summary": "纳斯达克100 -4.77%，标普500 -2.64%。规则观察为「出现较明显回撤，可按原计划增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+    "adviceLabel": "出现较明显回撤，可按原计划增加",
+    "drivers": [
+      {
+        "title": "Fed’s Barr Warns of Risks Tied to Looser Wall Street Bank Rules",
+        "explanation": "Federal Reserve Governor Michael Barr criticized moves from regulators over the past year to relax the rules for US lenders, saying the proposals “considerably weaken bank regulation and supervision.”",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-06/fed-s-barr-warns-of-risks-tied-to-looser-wall-street-bank-rules",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "China’s PBOC Adds Gold Again as Bullion Remains Under Pressure",
+        "explanation": "China’s central bank extended its gold-buying streak in May, adding to holdings as prices of the precious metal remained under pressure.",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-07/china-s-pboc-adds-gold-again-as-bullion-remains-under-pressure",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "World’s Hottest Market Has Korea Bulls Reaching for Protection",
+        "explanation": "A wave of optimism over South Korean stocks is giving way to growing caution, as some investors hedge positions and pare back crowded trades on concerns that the rally has run too hot, too fast.",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-07/world-s-hottest-market-korea-has-bulls-reaching-for-protection",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "US Proposes New Tariffs Over Forced Labor",
+        "explanation": "The Trump administration has hit on a new way to impose tariffs on 60 nations that supply almost all US imports — accuse them of failing to enforce bans on foreign goods made with forced labor. Bloomberg News Global Trade Editor Brendan Murray joined David Gura and Christina Ruffini on Bloomberg Thi",
+        "url": "https://www.bloomberg.com/news/videos/2026-06-06/us-proposes-new-tariffs-over-forced-labor-video",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "Macro Soothsayers, Stock Analysts See Vastly Different Markets",
+        "explanation": "The strongest earnings season in years is coming to a close, and the Wall Street analysts who focus on individual companies have rarely been this bullish.",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-06/macro-soothsayers-stock-analysts-see-vastly-different-markets",
+        "relationship": "possibly-related"
+      }
+    ]
+  },
+  "generatedAt": "2026-06-07T05:48:52.120Z"
+}
