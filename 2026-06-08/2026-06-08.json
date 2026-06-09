@@ -1,0 +1,119 @@
+{
+  "market": {
+    "marketDate": "2026-06-08",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-08",
+        "metrics": {
+          "close": 29414.2578125,
+          "pct1Day": 1.5769891471845523,
+          "pct5Day": -3.6036135219293284,
+          "pct20Day": 0.6131952728146087,
+          "drawdown20": -4.0649622406402965,
+          "drawdown60": -4.0649622406402965,
+          "drawdownAll": -4.0649622406402965,
+          "sma20": 29673.25234375,
+          "sma50": 27562.62609375,
+          "sma200": 25583.076787109374,
+          "realizedVol20": 22.890753269108117
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-08",
+        "metrics": {
+          "close": 7405.72998046875,
+          "pct1Day": 0.2978131054960025,
+          "pct5Day": -2.5556711017828913,
+          "pct20Day": 0.09190253896107367,
+          "drawdown20": -2.6814153687538056,
+          "drawdown60": -2.6814153687538056,
+          "drawdownAll": -2.6814153687538056,
+          "sma20": 7479.8490234375,
+          "sma50": 7174.52962890625,
+          "sma200": 6863.309545898437,
+          "realizedVol20": 13.191369086029015
+        }
+      }
+    ],
+    "vix": 18.920000076293945,
+    "treasury10y": 4.552000045776367,
+    "dxy": 99.98500061035156
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.30%",
+      "较深的60日高点回撤为 -4.06%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100与标普500反弹，AI与芯片板块领涨",
+    "summary": "2026年6月8日，美股主要指数集体反弹。纳斯达克100上涨1.58%，标普500上涨0.30%。芯片与AI相关板块表现突出，市场情绪回暖。两大指数近20日波动率较高，回撤幅度仍在4%以内，整体趋势保持强势。VIX指数维持在18.92，10年期美债收益率为4.55%。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "芯片与AI板块带动市场反弹",
+        "explanation": "市场对AI相关股票的热情回升，芯片股如Intel和Micron领涨，推动纳斯达克100和标普500反弹。",
+        "url": "https://www.ft.com/content/2f0f727b-5315-445c-b8f1-6aa65bd7474c",
+        "relationship": "direct"
+      },
+      {
+        "title": "Apple发布Siri AI，强化AI生态竞争",
+        "explanation": "Apple推出全新Siri AI，强调隐私和安全，提升用户体验，进一步激发市场对科技板块的关注。",
+        "url": "https://www.ft.com/content/28205edf-baeb-4b97-a89d-e9f4838ff6ff",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "OpenAI递交IPO申请，AI板块估值受关注",
+        "explanation": "ChatGPT开发商OpenAI递交上市申请，市场对AI企业估值和成长性保持高度关注，提升相关板块热度。",
+        "url": "https://www.ft.com/content/a347e00a-2952-41ad-9f12-88c01ba199d6",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "中东局势缓和及中国经济数据预期改善",
+        "explanation": "中东紧张局势缓和，投资者关注中国贸易数据，全球风险偏好有所回升，有助于市场情绪改善。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-09/copper-holds-gain-with-easing-iran-tensions-china-data-in-focus",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "近期AI板块抛售引发全球市场波动",
+        "explanation": "此前AI板块大幅抛售导致全球市场波动，当前反弹部分修复前期跌幅，但波动率仍处于较高水平。",
+        "url": "https://www.ft.com/content/22a85739-e705-4569-8b42-4c080ead7afe",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-09T03:33:12.259Z"
+}
