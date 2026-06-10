@@ -1,0 +1,119 @@
+{
+  "market": {
+    "marketDate": "2026-06-09",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-09",
+        "metrics": {
+          "close": 29084.5,
+          "pct1Day": -1.1210880989443563,
+          "pct5Day": -5.1404722329470705,
+          "pct20Day": -0.8054394239130392,
+          "drawdown20": -5.1404722329470705,
+          "drawdown60": -5.1404722329470705,
+          "drawdownAll": -5.1404722329470705,
+          "sma20": 29661.44443359375,
+          "sma50": 27681.6607421875,
+          "sma200": 25612.786396484375,
+          "realizedVol20": 23.227652839348803
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-09",
+        "metrics": {
+          "close": 7386.64990234375,
+          "pct1Day": -0.25763939780845635,
+          "pct5Day": -2.9321463841534614,
+          "pct20Day": -0.35330510247474955,
+          "drawdown20": -2.9321463841534614,
+          "drawdown60": -2.9321463841534614,
+          "drawdownAll": -2.9321463841534614,
+          "sma20": 7478.539526367187,
+          "sma50": 7194.885625,
+          "sma200": 6868.391945800781,
+          "realizedVol20": 13.204148101620222
+        }
+      }
+    ],
+    "vix": 19.8700008392334,
+    "treasury10y": 4.5279998779296875,
+    "dxy": 99.92900085449219
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.12%",
+      "较深的60日高点回撤为 -5.14%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股主要指数下跌，科技股承压，市场关注通胀数据与地缘风险",
+    "summary": "2026年6月9日，美股主要指数收跌，纳斯达克100下跌1.12%，标普500下跌0.26%。科技板块表现较弱，市场整体回撤幅度加深。投资者在美国即将公布关键通胀数据前调整仓位，同时中东局势紧张及美联储加息预期影响风险偏好。波动率指数（VIX）处于19.87，显示市场情绪趋于谨慎。固定定投建议为：正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "科技股持续承压，纳斯达克100跌幅较大",
+        "explanation": "纳斯达克100指数单日下跌1.12%，五日跌幅达5.14%，反映科技板块近期表现疲弱。投资者在关键通胀数据公布前削减风险敞口，导致科技股回调。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-09/stock-market-today-dow-s-p-live-updates",
+        "relationship": "direct"
+      },
+      {
+        "title": "市场关注美国CPI数据，投资者调整仓位",
+        "explanation": "美股下跌部分原因是投资者在美国即将公布关键通胀数据（CPI）前调整仓位，反映对未来加息路径的不确定性。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-09/stock-market-today-dow-s-p-live-updates",
+        "relationship": "direct"
+      },
+      {
+        "title": "中东局势紧张影响全球风险偏好",
+        "explanation": "美国对伊朗发动军事打击，黄金价格下跌，全球市场风险偏好受到影响。地缘政治风险加剧，投资者趋于谨慎。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-09/gold-extends-fall-as-renewed-us-iran-clashes-test-fragile-truce",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美联储加息预期影响大宗商品与股市表现",
+        "explanation": "美联储加息预期导致工业金属（如铝）价格下跌，反映全球经济增长担忧，对股市构成压力。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-10/aluminum-falls-to-one-month-low-on-iran-tension-us-rate-outlook",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美联储即将公布年度银行压力测试结果",
+        "explanation": "美联储宣布将于6月24日公布年度银行压力测试结果，可能影响金融板块及整体市场情绪。",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260609a.htm",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-10T03:43:53.476Z"
+}
