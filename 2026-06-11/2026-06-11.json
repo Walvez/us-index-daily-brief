@@ -1,0 +1,119 @@
+{
+  "market": {
+    "marketDate": "2026-06-11",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-11",
+        "metrics": {
+          "close": 29446.1796875,
+          "pct1Day": 3.2908286323665257,
+          "pct5Day": -3.1624468913755006,
+          "pct20Day": 0.26982803060387645,
+          "drawdown20": -3.960848572262333,
+          "drawdown60": -3.960848572262333,
+          "drawdownAll": -3.960848572262333,
+          "sma20": 29637.56787109375,
+          "sma50": 27906.873515625,
+          "sma200": 25667.938798828123,
+          "realizedVol20": 26.603354715719878
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-11",
+        "metrics": {
+          "close": 7394.2998046875,
+          "pct1Day": 1.7518885564244784,
+          "pct5Day": -2.5053070409608345,
+          "pct20Day": -0.670990298720489,
+          "drawdown20": -2.8316191342234167,
+          "drawdown60": -2.8316191342234167,
+          "drawdownAll": -2.8316191342234167,
+          "sma20": 7469.343530273438,
+          "sma50": 7230.66662109375,
+          "sma200": 6877.16724609375,
+          "realizedVol20": 15.641658655364282
+        }
+      }
+    ],
+    "vix": 19.440000534057617,
+    "treasury10y": 4.463000297546387,
+    "dxy": 99.86000061035156
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 1.75%",
+      "较深的60日高点回撤为 -3.96%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股大幅反弹，纳斯达克100涨逾3%，市场波动仍高",
+    "summary": "2026年6月11日，美股主要指数大幅上涨，纳斯达克100涨幅达3.29%，标普500上涨1.75%。两大指数近五日仍处于回撤状态，20日波动率维持高位。市场受美伊和平进展、SpaceX IPO及AI相关消息影响，投资者情绪有所回暖。当前建议为正常定投。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "特朗普暗示美伊和平协议即将达成，黄金维持涨势",
+        "explanation": "美国总统特朗普表示可能在周末与伊朗签署协议，结束扰动全球市场的战争，推动市场风险偏好回升，黄金价格维持近期最大涨幅。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-11/gold-holds-gain-as-trump-signals-imminent-peace-deal-with-iran",
+        "relationship": "direct"
+      },
+      {
+        "title": "美股大幅反弹，受美伊和平预期推动",
+        "explanation": "特朗普暗示美伊协议临近，市场对地缘风险缓解的预期推动美股大幅上涨，油价下跌，投资者风险偏好提升。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-10/stock-market-today-dow-s-p-live-updates",
+        "relationship": "direct"
+      },
+      {
+        "title": "SpaceX IPO引发市场关注，推动科技板块情绪",
+        "explanation": "SpaceX全球最大IPO上市，投资者对科技板块热情提升，纳斯达克100受益明显。亚洲投资者寻求间接参与，市场波动加剧。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-11/locked-out-of-ipo-asia-investors-find-new-ways-to-bet-on-spacex",
+        "relationship": "direct"
+      },
+      {
+        "title": "AI相关企业与观点持续吸引资金与关注",
+        "explanation": "AI企业上市潮开启，亚马逊创始人贝索斯称AI将带来“黄金时代”，推动市场对科技创新的乐观预期。",
+        "url": "https://www.ft.com/content/da78ce3e-fd1a-472d-b486-ee199b7c427d",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美国通胀率创三年新高，市场关注政策动向",
+        "explanation": "美国通胀率达到三年最高水平，特朗普称“喜欢通胀”，但实际表态为不希望通胀更高。市场对美联储政策及经济前景保持关注。",
+        "url": "https://www.bbc.com/news/articles/c0myzxjkw99o?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-12T04:00:26.788Z"
+}
