@@ -1,0 +1,113 @@
+{
+  "market": {
+    "marketDate": "2026-06-12",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-12",
+        "metrics": {
+          "close": 29635.947265625,
+          "pct1Day": 0.6444556819897318,
+          "pct5Day": 2.342554857448839,
+          "pct20Day": 0.18812007621732,
+          "drawdown20": -3.341918803951555,
+          "drawdown60": -3.341918803951555,
+          "drawdownAll": -3.341918803951555,
+          "sma20": 29640.3501953125,
+          "sma50": 28019.19265625,
+          "sma200": 25698.49208984375,
+          "realizedVol20": 26.57604050683996
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-12",
+        "metrics": {
+          "close": 7431.4599609375,
+          "pct1Day": 0.5025513873057041,
+          "pct5Day": 0.6462812212751043,
+          "pct20Day": -0.9302498154602039,
+          "drawdown20": -2.3432980881599663,
+          "drawdown60": -2.3432980881599663,
+          "drawdownAll": -2.3432980881599663,
+          "sma20": 7465.854516601563,
+          "sma50": 7247.789423828125,
+          "sma200": 6881.994846191406,
+          "realizedVol20": 15.491983729339672
+        }
+      }
+    ],
+    "vix": 17.68000030517578,
+    "treasury10y": 4.486999988555908,
+    "dxy": 99.80699920654297
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.50%",
+      "较深的60日高点回撤为 -3.34%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100与标普500受SpaceX上市推动上涨，市场波动温和",
+    "summary": "2026年6月12日，美股主要指数纳斯达克100和标普500均录得上涨，分别上涨0.64%和0.50%。SpaceX在纳斯达克上市并成为全球最有价值公司之一，带动市场情绪。整体市场波动率（VIX）处于温和水平，回撤幅度较深但未出现极端波动。定投建议维持正常定投。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "SpaceX上市引发市场热潮，Elon Musk成为全球首位万亿富豪",
+        "explanation": "SpaceX在纳斯达克上市，市值高达2.2万亿美元，成为全球最有价值公司之一。Elon Musk个人财富突破1.11万亿美元，市场对SpaceX的上市表现高度关注，推动科技板块和整体市场情绪上扬。",
+        "url": "https://www.bbc.com/news/articles/c4gypy3wwl7o?at_medium=RSS&at_campaign=rss",
+        "relationship": "direct"
+      },
+      {
+        "title": "SpaceX上市成为全球最大IPO，吸引全球投资者关注",
+        "explanation": "SpaceX上市被认为是华尔街历史上最大IPO，全球投资者和散户积极参与，推动纳斯达克100指数上涨。市场对SpaceX的未来发展充满期待，科技板块表现突出。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-12/from-sydney-to-london-traders-ready-to-watch-spacex-s-debut",
+        "relationship": "direct"
+      },
+      {
+        "title": "SpaceX与Tesla合并传闻影响市场预期",
+        "explanation": "市场传闻SpaceX与Tesla合并为“板上钉钉”，投资者对相关公司股票表现抱有期待，进一步提升科技板块热度。",
+        "url": "https://www.bloomberg.com/news/videos/2026-06-12/spacex-tesla-merger-a-forgone-conclusion-says-gerber-video",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "能源市场波动与地缘冲突影响市场动态",
+        "explanation": "能源市场领导者讨论风险管理与回报，伊朗冲突影响能源供应和贸易流动，可能对整体市场波动产生影响。",
+        "url": "https://www.bloomberg.com/news/videos/2026-06-12/bloombergnef-global-energy-market-outlook-video",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-13T03:47:06.541Z"
+}
