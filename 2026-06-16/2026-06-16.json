@@ -1,0 +1,112 @@
+{
+  "market": {
+    "marketDate": "2026-06-16",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-16",
+        "metrics": {
+          "close": 29968.130859375,
+          "pct1Day": -1.8851184260983815,
+          "pct5Day": 3.038150421616325,
+          "pct20Day": 3.3584511324498147,
+          "drawdown20": -2.2584970901490977,
+          "drawdown60": -2.2584970901490977,
+          "drawdownAll": -2.2584970901490977,
+          "sma20": 29759.9744140625,
+          "sma50": 28264.6797265625,
+          "sma200": 25764.705859375,
+          "realizedVol20": 28.867326237679624
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-16",
+        "metrics": {
+          "close": 7511.35009765625,
+          "pct1Day": -0.5684179609759716,
+          "pct5Day": 1.6881833708259706,
+          "pct20Day": 1.4629145531369503,
+          "drawdown20": -1.293463020993044,
+          "drawdown60": -1.293463020993044,
+          "drawdownAll": -1.293463020993044,
+          "sma20": 7478.559033203125,
+          "sma50": 7285.211826171875,
+          "sma200": 6892.406748046875,
+          "realizedVol20": 16.07908387653288
+        }
+      }
+    ],
+    "vix": 16.40999984741211,
+    "treasury10y": 4.427999973297119
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.89%",
+      "较深的60日高点回撤为 -2.26%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100与标普500回调，科技板块波动加剧",
+    "summary": "2026年6月16日，美股主要指数出现回调，纳斯达克100单日跌幅达1.89%，标普500下跌0.57%。尽管短期回撤较深，但20日和60日高点回撤均控制在2.26%以内，整体波动性未显著上升。科技板块相关消息频繁，SpaceX市值跃升、AI投资活跃，市场关注点集中于科技与人工智能赛道。建议正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "SpaceX市值跃升，科技板块受关注",
+        "explanation": "SpaceX上市后市值迅速攀升，超越Amazon成为全球第五大公司，推动科技板块成为市场焦点。",
+        "url": "https://www.bbc.com/news/articles/cvgd5g7d7gyo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "AI与数据中心投资热潮",
+        "explanation": "Amazon、Nvidia、AMD等巨头参与AI初创公司融资，JPMorgan资产管理认为AI数据中心供应链仍有上行空间，科技板块投资热度持续。",
+        "url": "https://www.ft.com/content/1e0365db-a363-4d73-9960-23d25420e9f5",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "全球利率环境与债券市场动态",
+        "explanation": "全球债券市场反弹，但高利率环境仍被认为将持续，影响资金流向与风险偏好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-17/bond-rally-fails-to-allay-higher-for-longer-global-rates-threat",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "中国资本市场政策变化",
+        "explanation": "中国监管部门鼓励AI及港股公司在国内上市，并支持主动型ETF产品推出，显示全球科技与资本市场联动增强。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-17/china-watchdog-urges-more-ipos-from-ai-hong-kong-listed-firms",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-17T04:10:06.138Z"
+}
