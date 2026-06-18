@@ -1,0 +1,113 @@
+{
+  "market": {
+    "marketDate": "2026-06-17",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-17",
+        "metrics": {
+          "close": 29670.94921875,
+          "pct1Day": -0.9916589126613213,
+          "pct5Day": 4.079271526504559,
+          "pct20Day": 2.9567788974850027,
+          "drawdown20": -3.227759415123759,
+          "drawdown60": -3.227759415123759,
+          "drawdownAll": -3.227759415123759,
+          "sma20": 29802.5798828125,
+          "sma50": 28374.051328125,
+          "sma200": 25795.983505859374,
+          "realizedVol20": 29.038091445206533
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-17",
+        "metrics": {
+          "close": 7420.10009765625,
+          "pct1Day": -1.214828210822879,
+          "pct5Day": 2.1069226508244823,
+          "pct20Day": 0.9041849596482595,
+          "drawdown20": -2.4925778781403376,
+          "drawdown60": -2.4925778781403376,
+          "drawdownAll": -2.4925778781403376,
+          "sma20": 7481.883544921875,
+          "sma50": 7301.276826171875,
+          "sma200": 6897.205949707031,
+          "realizedVol20": 16.530505366489777
+        }
+      }
+    ],
+    "vix": 18.440000534057617,
+    "treasury10y": 4.463000297546387,
+    "dxy": 100.08999633789062
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.21%",
+      "较深的60日高点回撤为 -3.23%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股指数回调，受美联储鹰派信号与地缘政治影响",
+    "summary": "2026年6月17日，纳斯达克100和标普500指数分别下跌0.99%和1.21%，近期涨幅仍为正。美联储维持利率不变，但释放鹰派信号，市场关注后续加息可能。美国与伊朗签署临时和平协议，部分缓解风险情绪。整体波动率适中，定投建议维持正常，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "美联储维持利率不变并释放鹰派信号",
+        "explanation": "美联储在FOMC声明中宣布利率维持在3.5%-3.75%，但多位高管暗示若通胀持续，秋季可能加息。此举加剧市场对未来货币政策的不确定性，直接影响美股短期表现。",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+        "relationship": "direct"
+      },
+      {
+        "title": "美国与伊朗签署临时和平协议，风险情绪改善",
+        "explanation": "美国总统签署与伊朗的临时和平协议，重新开放霍尔木兹海峡，缓解地缘政治风险，推动美股期货上涨和黄金价格回升。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-17/asian-stocks-bonds-to-fall-on-hawkish-fed-signals-markets-wrap",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储鹰派立场影响全球汇率与风险资产",
+        "explanation": "美联储鹰派信号导致日元大幅下跌，市场关注日本央行可能干预。美元指数上升至100.09，全球风险资产短期承压。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-17/markets-alert-for-japan-intervention-after-fed-strategists-say",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "科技板块受芯片成本上涨影响，苹果计划涨价",
+        "explanation": "苹果公司因AI芯片成本上升计划提价，未明确具体产品和时间。科技板块成本压力可能影响盈利预期，间接影响指数表现。",
+        "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-18T04:01:06.278Z"
+}
