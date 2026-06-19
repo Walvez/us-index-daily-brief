@@ -1,0 +1,106 @@
+{
+  "market": {
+    "marketDate": "2026-06-18",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-18",
+        "metrics": {
+          "close": 30406.189453125,
+          "pct1Day": 2.477980158148694,
+          "pct5Day": 3.260218391021119,
+          "pct20Day": 3.783540223068391,
+          "drawdown20": -0.8297624948346077,
+          "drawdown60": -0.8297624948346077,
+          "drawdownAll": -0.8297624948346077,
+          "sma20": 29858.00439453125,
+          "sma50": 28484.11171875,
+          "sma200": 25831.85890625,
+          "realizedVol20": 29.717724536987607
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-18",
+        "metrics": {
+          "close": 7500.580078125,
+          "pct1Day": 1.0846212235623454,
+          "pct5Day": 1.437327079571825,
+          "pct20Day": 0.9095941639350594,
+          "drawdown20": -1.4349916832581224,
+          "drawdown60": -1.4349916832581224,
+          "drawdownAll": -1.4349916832581224,
+          "sma20": 7485.2640380859375,
+          "sma50": 7315.6322265625,
+          "sma200": 6902.631149902344,
+          "realizedVol20": 16.534938975330572
+        }
+      }
+    ],
+    "vix": 16.399999618530273,
+    "treasury10y": 4.450999736785889
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 1.08%",
+      "较深的60日高点回撤为 -1.43%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100与标普500指数大幅上涨，市场情绪积极",
+    "summary": "2026年6月18日，美股主要指数表现强劲。纳斯达克100指数上涨2.48%，标普500指数上涨1.08%。两大指数均创出新高，20日和60日高点回撤较小，波动率处于温和水平。市场整体情绪积极，定投建议维持正常定投。近期新闻显示美联储维持鹰派立场，美元走强，全球贸易与科技行业动态频繁，但未对美股当日走势造成直接影响。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "美联储维持鹰派立场，美元走强",
+        "explanation": "美联储近期政策声明偏鹰派，货币交易员加大美元看涨期权押注，强化市场对美国利率维持高位的预期，但未直接影响美股当日上涨。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-19/currency-traders-pile-into-dollar-call-options-after-hawkish-fed",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "科技行业动态：苹果因AI芯片成本上涨计划提价",
+        "explanation": "苹果公司宣布因AI芯片成本上升将提高产品价格，反映科技行业成本压力，但未直接影响纳斯达克100指数当日表现。",
+        "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "全球贸易与政策事件频发",
+        "explanation": "包括美国对德国药品支出发起贸易调查、澳大利亚牛肉出口受中国关税影响等事件，显示全球贸易环境复杂，但对美股当日走势影响有限。",
+        "url": "https://www.ft.com/content/ef3e7973-aa6f-454b-8a77-ae48de18aa34",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "available",
+    "snapshot": {
+      "asOf": "2026-05-05",
+      "sourceUrl": "https://www.nasdaq.com/docs/index/global-index-investment-insights",
+      "indices": [
+        {
+          "id": "nasdaq100",
+          "forwardPe": 23.4,
+          "tenYearAveragePe": 22.9,
+          "premiumPct": 2.183406113537112,
+          "temperature": "接近长期均值"
+        },
+        {
+          "id": "sp500",
+          "forwardPe": 20.73,
+          "tenYearAveragePe": 19.09,
+          "premiumPct": 8.590885280251449,
+          "temperature": "接近长期均值"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-06-19T04:20:41.084Z"
+}
