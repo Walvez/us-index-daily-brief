@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-06-22",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-22",
+        "metrics": {
+          "close": 30347.08203125,
+          "pct1Day": -0.19439273035551394,
+          "pct5Day": 2.3995614490055956,
+          "pct20Day": 3.371609539321673,
+          "drawdown20": -1.0225422272209466,
+          "drawdown60": -1.0225422272209466,
+          "drawdownAll": -1.0225422272209466,
+          "sma20": 29907.49501953125,
+          "sma50": 28589.4115625,
+          "sma200": 25866.5201171875,
+          "realizedVol20": 29.748145004798904
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-22",
+        "metrics": {
+          "close": 7472.7900390625,
+          "pct1Day": -0.3705051979052662,
+          "pct5Day": 0.5561501823631717,
+          "pct20Day": 0.36356219999757355,
+          "drawdown20": -1.800180162387409,
+          "drawdown60": -1.800180162387409,
+          "drawdownAll": -1.800180162387409,
+          "sma20": 7486.617529296875,
+          "sma50": 7328.59482421875,
+          "sma200": 6907.753801269531,
+          "realizedVol20": 16.592120643613868
+        }
+      }
+    ],
+    "vix": 17.280000686645508,
+    "treasury10y": 4.508999824523926,
+    "dxy": 101.04399871826172
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 -0.37%",
+      "较深的60日高点回撤为 -1.80%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股指数小幅回调，科技板块动态与全球宏观因素交织",
+    "summary": "2026年6月22日，纳斯达克100和标普500指数均出现小幅下跌，分别收跌0.19%和0.37%。近五日和近20日表现仍为正，回撤幅度较小，波动率处于正常水平。科技板块动态、全球货币政策、地缘政治与大宗商品价格变动等因素共同影响市场情绪。定投建议维持正常定投。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "Oracle裁员2.1万人，科技行业加速拥抱AI",
+        "explanation": "Oracle宣布裁员2.1万人，反映科技企业为AI转型投入巨资，行业结构调整加剧。此举可能影响科技板块短期情绪，但未直接导致指数当日回调。",
+        "url": "https://www.bbc.com/news/articles/c4gy0x0j5deo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "SK Hynix相关ETF资产激增，半导体板块热度持续",
+        "explanation": "SK Hynix相关ETF成为香港最大ETF，显示投资者对半导体板块风险偏好上升。该板块热度对纳斯达克100指数有积极影响，但未能抵消整体市场回调。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/hynix-etf-topples-hong-kong-tracker-fund-with-17-billion-assets",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美日货币政策沟通，日元短暂走强后再度承压",
+        "explanation": "美国与日本财政部长通话后，日元短暂走强但仍处于四十年低位。汇率波动可能影响全球资金流向和风险偏好，对美股指数有间接影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/japan-s-katayama-confirms-talks-with-bessent-on-fx-agreement",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "铝价下跌，和平谈判进展带来供应回归预期",
+        "explanation": "中东和平谈判进展推动铝价触及三个月低点，市场预期金属供应恢复。大宗商品价格变动对相关板块有影响，但对整体美股指数影响有限。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/aluminum-falls-as-peace-talk-progress-points-to-returning-supply",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-23T03:36:09.938Z"
+}
