@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-06-23",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-23",
+        "metrics": {
+          "close": 29347.2734375,
+          "pct1Day": -3.2945727827887064,
+          "pct5Day": -3.917789489481943,
+          "pct20Day": -0.4557656380427438,
+          "drawdown20": -4.283432772376142,
+          "drawdown60": -4.283432772376142,
+          "drawdownAll": -4.283432772376142,
+          "sma20": 29900.7765625,
+          "sma50": 28674.0301953125,
+          "sma200": 25895.09142578125,
+          "realizedVol20": 32.227117877945226
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-23",
+        "metrics": {
+          "close": 7365.4599609375,
+          "pct1Day": -1.4362785193208119,
+          "pct5Day": -2.499640299069509,
+          "pct20Day": -1.4452490048293878,
+          "drawdown20": -3.2106030807267762,
+          "drawdown60": -3.2106030807267762,
+          "drawdownAll": -3.2106030807267762,
+          "sma20": 7481.217016601562,
+          "sma50": 7339.566220703125,
+          "sma200": 6912.070700683594,
+          "realizedVol20": 17.317725777650956
+        }
+      }
+    ],
+    "vix": 19.489999771118164,
+    "treasury10y": 4.493000030517578,
+    "dxy": 101.49600219726562
+  },
+  "advice": {
+    "level": "notably-more",
+    "label": "出现较明显回撤，可按原计划增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -3.29%",
+      "较深的60日高点回撤为 -4.28%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "美股主要指数大幅回撤，科技板块领跌",
+    "summary": "2026年6月23日，纳斯达克100指数下跌3.29%，标普500指数下跌1.44%，均出现较明显回撤。科技板块表现尤为疲弱，市场波动率上升至19.49。近期高点回撤幅度较深，投资者情绪受多重因素影响，包括加息预期、科技公司压力及地缘政治风险。",
+    "adviceLabel": "出现较明显回撤，可按原计划增加",
+    "drivers": [
+      {
+        "title": "美联储加息预期加剧市场担忧",
+        "explanation": "市场对美国加息的担忧导致资金流出风险资产，芯片股领跌，纳斯达克连续第二日下跌。",
+        "url": "https://www.ft.com/content/10623865-5ff4-4357-9293-3c4ec841d1c4",
+        "relationship": "direct"
+      },
+      {
+        "title": "科技板块压力显著，Nvidia等公司受影响",
+        "explanation": "科技公司如Nvidia受出口限制及市场情绪影响，股价承压，推动纳斯达克100指数大幅回撤。",
+        "url": "https://www.ft.com/content/57fcd3ce-464f-4dc2-8ea2-5712d4972c69",
+        "relationship": "direct"
+      },
+      {
+        "title": "黄金价格下跌反映避险情绪减弱",
+        "explanation": "黄金连续第二日下跌，受美元走强和科技股抛售影响，投资者减少黄金持仓以弥补其他资产损失。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/gold-drops-below-4-100-as-tech-led-selloff-spurs-liquidation",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "地缘政治风险加剧全球贸易不确定性",
+        "explanation": "霍尔木兹海峡封锁导致大量货船滞留，全球贸易受阻，增加市场不确定性，可能影响投资者风险偏好。",
+        "url": "https://www.ft.com/content/4d3dd2b7-cb6b-410b-8c15-203904f32294",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "科技公司裁员与AI转型引发行业波动",
+        "explanation": "Oracle大规模裁员，反映科技行业为AI转型调整结构，短期内加剧板块波动。",
+        "url": "https://www.bbc.co.uk/news/articles/c4gy0x0j5deo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-24T03:37:03.707Z"
+}
