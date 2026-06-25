@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-06-24",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-24",
+        "metrics": {
+          "close": 29220.060546875,
+          "pct1Day": -0.43346105585578726,
+          "pct5Day": -2.496219453960304,
+          "pct20Day": -2.604084611901195,
+          "drawdown20": -4.698339500377973,
+          "drawdown60": -4.698339500377973,
+          "drawdownAll": -4.698339500377973,
+          "sma20": 29861.71337890625,
+          "sma50": 28750.7569140625,
+          "sma200": 25922.92951171875,
+          "realizedVol20": 31.561308862993293
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-24",
+        "metrics": {
+          "close": 7358.22021484375,
+          "pct1Day": -0.09829319733113452,
+          "pct5Day": -2.0386465924452217,
+          "pct20Day": -2.139876738715195,
+          "drawdown20": -3.3057404736362526,
+          "drawdown60": -3.3057404736362526,
+          "drawdownAll": -3.3057404736362526,
+          "sma20": 7473.172021484375,
+          "sma50": 7349.0058203125,
+          "sma200": 6916.454301757813,
+          "realizedVol20": 17.12938657513232
+        }
+      }
+    ],
+    "vix": 18.6299991607666,
+    "treasury10y": 4.4019999504089355,
+    "dxy": 101.61000061035156
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -0.43%",
+      "较深的60日高点回撤为 -4.70%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "美股指数小幅下跌，市场波动加剧，科技板块消息提振有限",
+    "summary": "2026年6月24日，纳斯达克100指数下跌0.43%，标普500指数下跌0.10%。两大指数近5日和20日均呈下行趋势，回撤幅度较深，波动率上升。尽管部分科技公司发布利好消息，但整体市场受宏观环境影响，表现偏弱。定投建议维持正常，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "Micron发布强劲销售展望，提振AI板块信心",
+        "explanation": "Micron Technology公布亮眼销售预期，带动美股期货和亚洲股市上涨，增强市场对人工智能相关股票的信心，但未能扭转整体指数下跌趋势。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-24/us-stock-futures-surge-on-micron-s-strong-forecast-markets-wrap",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "Qualcomm与Meta达成数据中心芯片合作，股价大涨",
+        "explanation": "Qualcomm宣布Meta成为其数据中心芯片首个大型科技客户，并上调营收预期，推动股价上涨15%，对科技板块形成局部利好。",
+        "url": "https://www.ft.com/content/e9c2ef9c-856c-48cf-a47e-48a807519a2b",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美元走强与加息预期压制大宗商品价格",
+        "explanation": "美元指数升至101.61，市场对美联储加息预期增强，黄金价格跌破4000美元，反映全球资金避险情绪上升，对美股形成一定压力。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-24/gold-steadies-near-4-000-as-stronger-dollar-rate-outlook-weigh",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美联储压力测试显示银行抗风险能力增强",
+        "explanation": "美联储压力测试结果显示美国银行业在经济危机下可承受7000亿美元损失，多家华尔街银行提升股东回报，增强金融板块稳定性。",
+        "url": "https://www.ft.com/content/7f33dfda-bc49-4645-8e71-422ba7cc4d17",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-25T04:06:06.249Z"
+}
