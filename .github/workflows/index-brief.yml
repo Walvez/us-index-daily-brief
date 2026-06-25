@@ -76,9 +76,15 @@ jobs:
             const report = JSON.parse(fs.readFileSync(path.join(dir, `${date}.json`), "utf8"));
             const email = fs.readFileSync(path.join(dir, `${date}-email.html`), "utf8");
             if (!report.commentary.translationAvailable) throw new Error("Chinese translation unavailable");
-            if (report.valuation.status !== "available") throw new Error(`Valuation unavailable: ${report.valuation.reason}`);
+            if (report.valuation.status !== "available") {
+              if (report.valuation.reason === "stale") {
+                console.warn(`[validation] ${date}: valuation stale; email should show unavailable valuation`);
+              } else {
+                throw new Error(`Valuation unavailable: ${report.valuation.reason}`);
+              }
+            }
             if (/查看完整报告|github\.io/.test(email)) throw new Error("Stale public report link found");
-            console.log(`[validation] ${date}: Chinese translation and valuation available; email is self-contained`);
+            console.log(`[validation] ${date}: Chinese translation verified; email is self-contained`);
           '
 
       - name: Send email
