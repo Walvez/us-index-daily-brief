@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-06-25",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-25",
+        "metrics": {
+          "close": 29440.322265625,
+          "pct1Day": 0.7538030881101523,
+          "pct5Day": -0.7772820189360832,
+          "pct20Day": -1.7790608236370742,
+          "drawdown20": -3.9799526405115686,
+          "drawdown60": -3.9799526405115686,
+          "drawdownAll": -3.9799526405115686,
+          "sma20": 29835.0509765625,
+          "sma50": 28822.723359375,
+          "sma200": 25951.319619140624,
+          "realizedVol20": 31.71691536156854
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-25",
+        "metrics": {
+          "close": 7357.490234375,
+          "pct1Day": -0.009920611879451625,
+          "pct5Day": -0.8437873136108536,
+          "pct20Day": -2.165715894813409,
+          "drawdown20": -3.3153331358335723,
+          "drawdown60": -3.3153331358335723,
+          "drawdownAll": -3.3153331358335723,
+          "sma20": 7465.028540039062,
+          "sma50": 7356.80802734375,
+          "sma200": 6920.766003417969,
+          "realizedVol20": 17.12709432277968
+        }
+      }
+    ],
+    "vix": 18.889999389648438,
+    "treasury10y": 4.3919997215271,
+    "dxy": 101.44100189208984
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 -0.01%",
+      "较深的60日高点回撤为 -3.98%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "纳斯达克100与标普500小幅波动，科技板块受价格上涨与业绩影响",
+    "summary": "2026年6月25日，美股主要指数表现分化。纳斯达克100上涨0.75%，标普500微跌0.01%。两大指数近20日均有较深回撤，波动率较高。科技板块受苹果涨价与存储芯片短缺影响，Micron业绩带动部分科技股反弹。美元表现强劲，油价回落至战前水平。整体市场情绪谨慎，定投建议维持正常。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "苹果大幅涨价，科技板块承压",
+        "explanation": "苹果宣布MacBook和iPad价格上涨20%，原因是AI驱动的存储芯片短缺，导致成本大幅上升。苹果市值蒸发2630亿美元，科技板块受影响。",
+        "url": "https://www.ft.com/content/0f067265-2baf-4b6e-8fb2-ed56daef6f3c",
+        "relationship": "direct"
+      },
+      {
+        "title": "Micron业绩超预期，带动科技股反弹",
+        "explanation": "Micron公布强劲业绩，推动科技板块部分股票反弹。市场对存储芯片需求与AI相关产业关注度提升。",
+        "url": "https://www.ft.com/content/b3ad976b-9967-4952-92ff-822a8e253fb1",
+        "relationship": "direct"
+      },
+      {
+        "title": "美元表现强劲，市场风险偏好变化",
+        "explanation": "美元指数本月表现为一年内最佳，部分华尔街银行看好美元走势。美元走强可能影响美股资金流向与风险偏好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-25/wall-street-embraces-the-dollar-as-warsh-s-fed-activates-bulls",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "油价回落至战前水平，地缘风险缓解",
+        "explanation": "布伦特原油价格回落至伊朗冲突前水平，海湾地区货运恢复。油价波动对能源板块及整体市场情绪有一定影响。",
+        "url": "https://www.ft.com/content/7a05c821-491f-41a7-8d03-53183fbbb719",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "联储发布执法行动，金融板块关注合规风险",
+        "explanation": "美联储对银行员工发布执法行动，金融板块合规风险受到关注。此类事件可能影响金融板块短期表现。",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-25T22:42:07.262Z"
+}
