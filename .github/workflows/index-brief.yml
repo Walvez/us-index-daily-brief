@@ -2,7 +2,9 @@ name: US Index Daily Brief
 
 on:
   schedule:
-    - cron: "5 0 * * *" # 08:05 Asia/Shanghai
+    - cron: "5 21 * * *" # 05:05 Asia/Shanghai, first early attempt
+    - cron: "35 21 * * *" # 05:35 Asia/Shanghai, retry if market data lags
+    - cron: "10 22 * * *" # 06:10 Asia/Shanghai, retry if Actions queue delays
   workflow_dispatch:
     inputs:
       validation_only:
