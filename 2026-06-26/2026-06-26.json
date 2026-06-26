@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-06-26",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-26",
+        "metrics": {
+          "close": 29118.23828125,
+          "pct1Day": -1.0940167356577568,
+          "pct5Day": -4.235819071839107,
+          "pct20Day": -3.65820654087283,
+          "drawdown20": -5.0304343286665425,
+          "drawdown60": -5.0304343286665425,
+          "drawdownAll": -5.0304343286665425,
+          "sma20": 29779.76826171875,
+          "sma50": 28880.996484375,
+          "sma200": 25977.711796875,
+          "realizedVol20": 31.713795731525213
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-26",
+        "metrics": {
+          "close": 7354.02001953125,
+          "pct1Day": -0.047165741757111364,
+          "pct5Day": -1.9539829862117435,
+          "pct20Day": -2.7712866246610623,
+          "drawdown20": -3.3609351761254485,
+          "drawdown60": -3.3609351761254485,
+          "drawdownAll": -3.3609351761254485,
+          "sma20": 7454.548046875,
+          "sma50": 7363.429423828125,
+          "sma200": 6924.9730541992185,
+          "realizedVol20": 16.939376234074565
+        }
+      }
+    ],
+    "vix": 18.40999984741211,
+    "treasury10y": 4.372000217437744,
+    "dxy": 101.36599731445312
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.09%",
+      "较深的60日高点回撤为 -5.03%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "美股主要指数连续下跌，科技板块领跌，市场波动加剧",
+    "summary": "2026年6月26日，美股主要指数表现疲弱。纳斯达克100指数下跌1.09%，标普500指数微跌0.05%，均录得五连跌，为近十个月最长连跌。科技板块和芯片股领跌，市场波动率上升。近期回撤较深，波动性显著提升。特朗普威胁对欧洲数字税征收100%关税，全球贸易紧张局势加剧。建议正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "标普500指数录得五连跌，创近十个月最长连跌",
+        "explanation": "标普500指数今日微跌0.05%，已连续五日下跌，创下近十个月最长连跌纪录，显示市场整体情绪偏弱。",
+        "url": "https://www.ft.com/content/bb70e272-5b09-4806-8b19-7c03c350f580",
+        "relationship": "direct"
+      },
+      {
+        "title": "科技板块与芯片股领跌，AI相关交易遭遇大幅回撤",
+        "explanation": "科技板块和芯片股成为本轮下跌主力，AI相关交易遭遇大幅回撤，暴露市场投机性增强及快速反转风险。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-26/ai-rout-exposes-wall-street-s-270-billion-speculation-machine",
+        "relationship": "direct"
+      },
+      {
+        "title": "特朗普威胁对欧洲数字税征收100%关税，全球贸易紧张加剧",
+        "explanation": "美国总统特朗普威胁对实施数字服务税的欧洲国家征收100%关税，可能加剧全球贸易紧张局势，对市场情绪产生负面影响。",
+        "url": "https://www.ft.com/content/5d886d47-c509-44a4-9077-bcd25158b61e",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "欧盟计划对铝废料出口征收15%税，贸易壁垒增加",
+        "explanation": "欧盟计划对铝废料出口征收15%税，旨在保护本土产业，可能引发全球贸易壁垒增加，影响相关企业与市场情绪。",
+        "url": "https://www.ft.com/content/f4ea27fb-9efe-4fd3-bc66-e7824916fe7e",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美国即将公布就业报告，市场关注经济数据",
+        "explanation": "市场关注即将公布的美国就业报告，经济数据可能影响后续市场走势与投资者信心。",
+        "url": "https://www.bloomberg.com/news/videos/2026-06-26/look-ahead-us-jobs-report-america-250-video",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-26T22:21:36.092Z"
+}
