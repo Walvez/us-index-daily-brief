@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-06-29",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-29",
+        "metrics": {
+          "close": 29774.751953125,
+          "pct1Day": 2.254640780025461,
+          "pct5Day": -1.8859413278859392,
+          "pct20Day": -1.8409798779028843,
+          "drawdown20": -2.8892052586575545,
+          "drawdown60": -2.8892052586575545,
+          "drawdownAll": -2.8892052586575545,
+          "sma20": 29751.84697265625,
+          "sma50": 28949.8315625,
+          "sma200": 26007.33921875,
+          "realizedVol20": 32.81600678874049
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-29",
+        "metrics": {
+          "close": 7440.43017578125,
+          "pct1Day": 1.1750057250389132,
+          "pct5Day": -0.4330358957242924,
+          "pct20Day": -1.8420682914536708,
+          "drawdown20": -2.225420631820856,
+          "drawdown60": -2.225420631820856,
+          "drawdownAll": -2.225420631820856,
+          "sma20": 7447.566552734375,
+          "sma50": 7371.412431640625,
+          "sma200": 6929.515004882813,
+          "realizedVol20": 17.531748998894052
+        }
+      }
+    ],
+    "vix": 17.649999618530273,
+    "treasury10y": 4.374000072479248,
+    "dxy": 101.11100006103516
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 1.18%",
+      "较深的60日高点回撤为 -2.89%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "纳斯达克100大涨逾2%，科技股反弹带动美股回升",
+    "summary": "2026年6月29日，美股主要指数显著反弹。纳斯达克100上涨2.25%，标普500上涨1.18%，均收复部分近期跌幅。科技板块表现突出，市场波动率依然较高（VIX为17.65），但整体回撤幅度仍接近3%。美联储独立性相关判决、美国新关税、日元创40年新低等宏观事件对市场情绪产生影响。定投建议维持“正常定投”。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "科技股反弹推动纳斯达克100大涨",
+        "explanation": "纳斯达克100指数上涨2.25%，主要受科技股反弹和“抄底”资金推动。此前科技板块经历回调，今日买盘积极，带动指数显著回升。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-29/us-futures-up-as-dip-buyers-lift-tech-us-iran-hostilities-fade",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储独立性获最高法院支持",
+        "explanation": "美国最高法院裁决阻止特朗普罢免美联储理事Lisa Cook，强化了美联储独立性。此举有助于稳定市场对货币政策的预期。",
+        "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美国新关税推动企业提前备货",
+        "explanation": "美国企业因新一轮关税加速囤货，带动相关物流和贸易需求上升。此举可能对部分板块形成支撑。",
+        "url": "https://www.ft.com/content/44094a86-b170-448f-8305-55625b16bd29",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "日元创40年新低，全球汇市波动加剧",
+        "explanation": "日元兑美元跌至1986年以来最低，全球汇市波动加剧，可能影响资金流向和风险偏好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-29/yen-jpy-usd-hits-four-decade-low-in-historic-slide-that-s-rattled-japan",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-29T22:17:57.134Z"
+}
