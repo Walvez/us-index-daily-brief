@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-06-30",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-06-30",
+        "metrics": {
+          "close": 30276.34765625,
+          "pct1Day": 1.6846410339297557,
+          "pct5Day": 3.165807721943894,
+          "pct20Day": -0.778373249450685,
+          "drawdown20": -1.253243439529827,
+          "drawdown60": -1.253243439529827,
+          "drawdownAll": -1.253243439529827,
+          "sma20": 29739.9712890625,
+          "sma50": 29021.9098828125,
+          "sma200": 26038.75814453125,
+          "realizedVol20": 33.333366758683766
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-06-30",
+        "metrics": {
+          "close": 7499.35986328125,
+          "pct1Day": 0.7920198981480575,
+          "pct5Day": 1.817943523607272,
+          "pct20Day": -1.3236924690829606,
+          "drawdown20": -1.4510265078943119,
+          "drawdown60": -1.4510265078943119,
+          "drawdownAll": -1.4510265078943119,
+          "sma20": 7442.536547851562,
+          "sma50": 7378.878427734375,
+          "sma200": 6934.074453125,
+          "realizedVol20": 17.771321457160703
+        }
+      }
+    ],
+    "vix": 16.450000762939453,
+    "treasury10y": 4.418000221252441,
+    "dxy": 101.1719970703125
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.79%",
+      "较深的60日高点回撤为 -1.45%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "美股指数收复跌幅，纳斯达克100与标普500创下六年来最佳季度表现",
+    "summary": "2026年6月30日，美股主要指数收盘上涨，纳斯达克100涨1.68%，标普500涨0.79%。两大指数均录得自2020年以来最佳季度表现。尽管20日与60日高点回撤略有加深，市场波动率仍处于较高水平。宏观环境方面，油价企稳、美国国债回升、美元走强，通胀压力持续。定投建议维持“正常定投”。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "纳斯达克100与标普500单日上涨，季度表现创六年新高",
+        "explanation": "纳斯达克100指数上涨1.68%，标普500上涨0.79%，均创下自2020年以来最佳季度表现，显示市场情绪积极。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-30/us-stocks-mixed-as-indexes-head-for-best-quarter-since-2020",
+        "relationship": "direct"
+      },
+      {
+        "title": "油价企稳，地缘政治影响有限",
+        "explanation": "油价在经历疫情以来最大季度跌幅后企稳，受美伊和平谈判及霍尔木兹海峡航运恢复影响，未对美股造成明显冲击。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-30/latest-oil-market-news-and-analysis-for-july-1",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美国国债回升，通胀预期下降",
+        "explanation": "美国国债收益率为4.418%，6月国债市场因通胀预期下降而回升，改善了市场流动性与风险偏好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-30/treasury-market-s-june-rally-bails-out-quarter-and-first-half",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美元走强，全球汇率波动加剧",
+        "explanation": "美元指数升至101.17，导致部分新兴市场货币（如巴西雷亚尔）承压，可能影响全球资金流向。",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-30/brazilian-real-becomes-collateral-damage-as-dollar-roars-back",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "Nike业绩受关税退税提振但基本面仍有压力",
+        "explanation": "Nike最新季度收入为110亿美元，为2022年2月以来最低，关税退税带来短期利好，但业绩仍显示压力。",
+        "url": "https://www.ft.com/content/0f0166ed-ab22-417a-9aae-7dd264256ad6",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-06-30T22:23:24.006Z"
+}
