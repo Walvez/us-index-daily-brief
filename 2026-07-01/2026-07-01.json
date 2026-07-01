@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-01",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-01",
+        "metrics": {
+          "close": 29809.1328125,
+          "pct1Day": -1.5431741372491201,
+          "pct5Day": 2.0159857803169388,
+          "pct20Day": -2.7770715762996674,
+          "drawdown20": -2.492890102044565,
+          "drawdown60": -2.7770715762996674,
+          "drawdownAll": -2.7770715762996674,
+          "sma20": 29697.398046875,
+          "sma50": 29086.28578125,
+          "sma200": 26067.34287109375,
+          "realizedVol20": 33.6939904022172
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-01",
+        "metrics": {
+          "close": 7483.22998046875,
+          "pct1Day": -0.21508346187620572,
+          "pct5Day": 1.698913079182077,
+          "pct20Day": -1.6629890517245969,
+          "drawdown20": -1.3327524500460868,
+          "drawdown60": -1.6629890517245969,
+          "drawdownAll": -1.6629890517245969,
+          "sma20": 7436.209057617188,
+          "sma50": 7386.360224609375,
+          "sma200": 6938.569152832031,
+          "realizedVol20": 17.763056778631462
+        }
+      }
+    ],
+    "vix": 16.59000015258789,
+    "treasury10y": 4.474999904632568,
+    "dxy": 101.41300201416016
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.54%",
+      "较深的60日高点回撤为 -2.78%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "美股主要指数回调，纳斯达克100跌幅较大，市场波动加剧",
+    "summary": "2026年7月1日，美股主要指数收跌，纳斯达克100下跌1.54%，标普500下跌0.22%。纳斯达克100近60日高点回撤达2.78%，波动率显著上升。市场受美联储主席Warsh讲话、芯片板块抛售、制造业数据等多重因素影响。建议正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "美联储主席Warsh讲话影响市场情绪",
+        "explanation": "美联储主席Kevin Warsh的最新讲话引发市场关注，投资者对未来货币政策和经济前景进行重新评估，导致美股盘中波动加剧。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-01/us-stocks-decline-as-traders-await-warsh-comments-fresh-data",
+        "relationship": "direct"
+      },
+      {
+        "title": "芯片板块抛售拖累纳斯达克100表现",
+        "explanation": "亚洲股市受美股芯片板块抛售影响，纳斯达克100指数跌幅较大，反映科技板块短期承压。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-01/asian-stocks-to-decline-as-traders-weigh-ai-warsh-markets-wrap",
+        "relationship": "direct"
+      },
+      {
+        "title": "制造业数据公布引发市场波动",
+        "explanation": "最新制造业数据公布后，投资者对经济复苏进程产生疑虑，导致美股盘中一度下跌。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-01/us-stocks-decline-as-traders-await-warsh-comments-fresh-data",
+        "relationship": "direct"
+      },
+      {
+        "title": "美国未续签北美贸易协定，转为年度滚动审查",
+        "explanation": "美国政府决定不续签16年北美贸易协定，改为年度滚动审查，可能影响跨境贸易与企业预期。",
+        "url": "https://www.ft.com/content/2c7b4dc8-1b1c-49f4-b51a-0dee0c1d216a",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "Cboe拟推出与企业业绩相关的预测型期权",
+        "explanation": "Cboe申请上市与企业业绩相关的全或无期权，反映市场对企业盈利波动的关注，可能影响投资者风险偏好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-01/cboe-seeks-to-list-prediction-market-type-options-on-earnings-metrics",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-01T22:25:06.695Z"
+}
