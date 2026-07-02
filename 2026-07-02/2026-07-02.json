@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-02",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-02",
+        "metrics": {
+          "close": 29329.212890625,
+          "pct1Day": -1.6099696801427046,
+          "pct5Day": -0.3773988213974192,
+          "pct20Day": -4.062731293293872,
+          "drawdown20": -3.9769192505643285,
+          "drawdown60": -4.342337513656798,
+          "drawdownAll": -4.342337513656798,
+          "sma20": 29635.29658203125,
+          "sma50": 29143.2805859375,
+          "sma200": 26092.520029296877,
+          "realizedVol20": 34.102016573163404
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-02",
+        "metrics": {
+          "close": 7483.240234375,
+          "pct1Day": 0.00013702513856667139,
+          "pct5Day": 1.7091426015420617,
+          "pct20Day": -0.9325248060156934,
+          "drawdown20": -1.3326172511134116,
+          "drawdown60": -1.662854305299083,
+          "drawdownAll": -1.662854305299083,
+          "sma20": 7432.687060546875,
+          "sma50": 7394.744833984375,
+          "sma200": 6942.908955078125,
+          "realizedVol20": 17.593959391963228
+        }
+      }
+    ],
+    "vix": 16.149999618530273,
+    "treasury10y": 4.484999656677246,
+    "dxy": 100.8479995727539
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.61%",
+      "较深的60日高点回撤为 -4.34%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "纳斯达克100下跌，标普500持平，科技板块拖累美股表现",
+    "summary": "2026年7月2日，美股主要指数表现分化。纳斯达克100指数下跌1.61%，近20日累计跌幅达4.06%，60日高点回撤为4.34%，波动率较高。标普500指数全天基本持平，近5日上涨1.71%，但20日累计跌幅为0.93%。科技板块表现疲弱，芯片股回调，成为拖累市场的主要因素。宏观环境方面，市场对就业数据和美联储利率路径保持关注，部分行业如消费信贷和汽车交付出现积极信号。整体来看，市场波动加剧，但未出现系统性风险，建议正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "纳斯达克100指数单日跌幅显著，科技板块回调",
+        "explanation": "纳斯达克100指数下跌1.61%，近20日累计跌幅达4.06%，60日高点回撤为4.34%。芯片股回调，科技板块连续两日表现弱于标普500，成为拖累市场的主要因素。",
+        "url": "https://www.ft.com/content/3b44b33f-40da-43e4-98a7-10658e82a781",
+        "relationship": "direct"
+      },
+      {
+        "title": "标普500指数持平，短期表现优于科技板块",
+        "explanation": "标普500指数全天基本持平，近5日上涨1.71%，但20日累计跌幅为0.93%。科技板块表现疲弱，标普500连续两日跑赢纳斯达克100。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-02/us-stocks-muted-as-traders-wait-on-jobs-data-for-rate-path-clues",
+        "relationship": "direct"
+      },
+      {
+        "title": "就业数据影响市场情绪，涨幅被回吐",
+        "explanation": "美股早盘受就业数据提振，但收盘时涨幅被回吐，科技股拖累整体表现。市场对就业数据和美联储利率路径保持关注。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-02/stocks-give-up-jobs-report-gains-closing-bell-video",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储官员讲话影响利率预期",
+        "explanation": "美联储官员Kevin Warsh发表讲话，提及通胀缓和和预期收窄，但未明确降息时间。市场对利率路径保持观望，影响短期风险偏好。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-02/td-securities-data-now-guiding-central-bank-rate-paths-video",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "消费信贷与私募信贷行业动态",
+        "explanation": "私募信贷行业加大对消费债务的投资，反映市场对经济复苏和消费能力的信心，但也存在风险。Buy Now, Pay Later等新型消费信贷模式受到关注。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-02/private-credit-is-betting-on-consumer-debt-video",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-02T22:16:34.043Z"
+}
