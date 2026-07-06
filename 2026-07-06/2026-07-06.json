@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-06",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-06",
+        "metrics": {
+          "close": 29697.873046875,
+          "pct1Day": 1.2569792967175695,
+          "pct5Day": 1.990617591703654,
+          "pct20Day": -2.334720873459796,
+          "drawdown20": -2.769935480331313,
+          "drawdown60": -3.139946950697044,
+          "drawdownAll": -3.139946950697044,
+          "sma20": 29599.799609375,
+          "sma50": 29198.492421875,
+          "sma200": 26119.638134765624,
+          "realizedVol20": 34.46069063539714
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-06",
+        "metrics": {
+          "close": 7537.43017578125,
+          "pct1Day": 0.7241507650298753,
+          "pct5Day": 2.49401219690575,
+          "pct20Day": -0.618116644102394,
+          "drawdown20": -0.2231826312475333,
+          "drawdown60": -0.9507451124423629,
+          "drawdownAll": -0.9507451124423629,
+          "sma20": 7430.34306640625,
+          "sma50": 7402.735439453125,
+          "sma200": 6947.5623071289065,
+          "realizedVol20": 17.73718261400505
+        }
+      }
+    ],
+    "vix": 15.569999694824219,
+    "treasury10y": 4.479000091552734,
+    "dxy": 100.8550033569336
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.72%",
+      "较深的60日高点回撤为 -3.14%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "科技股领涨，美股指数延续反弹，美元走强",
+    "summary": "2026年7月6日，美股主要指数收涨，纳斯达克100上涨1.26%，标普500上涨0.72%。科技板块表现突出，受AI相关交易复苏及芯片合作消息推动。美元指数升至100.86，为近年高位，市场对美联储加息预期增强。微软宣布大规模裁员，行业结构调整持续。整体波动率较高，定投建议维持正常。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "科技股延续反弹，AI交易复苏",
+        "explanation": "多家科技巨头带动美股上涨，市场对人工智能相关板块的热情回升，推动纳斯达克100和标普500指数走高。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-05/stock-market-today-dow-s-p-live-updates",
+        "relationship": "direct"
+      },
+      {
+        "title": "Broadcom与Apple延长芯片合作至2031年",
+        "explanation": "Apple与Broadcom宣布延长芯片合作协议，有助于双方在AI服务器等领域持续创新，增强科技板块信心。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-06/broadcom-apple-extend-chips-partnership-to-2031-video",
+        "relationship": "direct"
+      },
+      {
+        "title": "微软宣布裁员4800人，Xbox业务重组",
+        "explanation": "微软宣布裁员并重组Xbox业务，反映科技行业结构调整和硬件板块压力，但未影响整体科技板块上涨。",
+        "url": "https://www.bbc.co.uk/news/articles/c36yy27rnpeo?at_medium=RSS&at_campaign=rss",
+        "relationship": "direct"
+      },
+      {
+        "title": "美元指数创近年新高，市场对加息预期增强",
+        "explanation": "美元指数升至100.86，全球交易员对美元持最乐观态度，自2015年以来首次，受美联储可能维持高利率影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-06/traders-are-most-positive-on-dollar-since-2015-as-fed-hike-looms",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储加息预期影响市场情绪",
+        "explanation": "部分分析师认为美联储7月可能不会加息，但市场整体仍预期利率将维持高位，影响资金流向和风险偏好。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-06/i-don-t-expect-the-fed-to-hike-in-july-says-lavorgna-video",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-06T22:24:18.997Z"
+}
