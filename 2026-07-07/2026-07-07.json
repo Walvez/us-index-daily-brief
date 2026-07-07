@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-07",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-07",
+        "metrics": {
+          "close": 29173.017578125,
+          "pct1Day": -1.7673037752800682,
+          "pct5Day": -2.020948696042788,
+          "pct20Day": 0.7439082370634705,
+          "drawdown20": -4.488298644235853,
+          "drawdown60": -4.85177084010825,
+          "drawdownAll": -4.85177084010825,
+          "sma20": 29610.5703125,
+          "sma50": 29246.300078125,
+          "sma200": 26144.384755859373,
+          "realizedVol20": 30.270870630708007
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-07",
+        "metrics": {
+          "close": 7503.85009765625,
+          "pct1Day": -0.4455109678215951,
+          "pct5Day": 0.8523690213696665,
+          "pct20Day": 1.626680509724307,
+          "drawdown20": -0.6676992959686477,
+          "drawdown60": -1.3920204065119997,
+          "drawdownAll": -1.3920204065119997,
+          "sma20": 7436.348559570312,
+          "sma50": 7410.644443359375,
+          "sma200": 6952.079807128906,
+          "realizedVol20": 14.849559886824581
+        }
+      }
+    ],
+    "vix": 16.1299991607666,
+    "treasury10y": 4.529000282287598,
+    "dxy": 101.12200164794922
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.77%",
+      "较深的60日高点回撤为 -4.85%"
+    ],
+    "highVolatility": true
+  },
+  "commentary": {
+    "headline": "纳斯达克100大幅下跌，标普500小幅回调，科技板块承压",
+    "summary": "2026年7月7日，美股主要指数表现分化。纳斯达克100指数收跌1.77%，近五日累计下跌2.02%，20日涨幅仅0.74%，60日高点回撤达4.85%，波动率显著上升。标普500指数跌幅较小，仅为0.45%，近五日上涨0.85%，20日涨幅为1.63%，回撤有限。科技板块受芯片股拖累，市场对美联储加息路径和AI相关企业前景产生担忧。VIX波动率指数升至16.13，显示市场风险偏好下降。10年期美债收益率为4.53%，美元指数为101.12。整体建议为“正常定投，可按习惯略微增加”。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "科技股大幅下跌，芯片板块领跌",
+        "explanation": "三星电子业绩未达预期，引发投资者对今年热门AI交易的持续性担忧，导致美国科技股整体下跌，芯片制造商表现尤为疲弱，拖累纳斯达克100指数。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/tech-rout-deepens-as-chipmakers-fall-spacex-gets-bullish-calls",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储加息预期调整，市场波动加剧",
+        "explanation": "期权交易者押注美联储加息幅度可能被高估，市场对货币政策的不确定性加剧，推动波动率上升，对指数短期表现产生影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/traders-hedge-for-less-hawkish-fed-as-hikes-remain-priced-in",
+        "relationship": "direct"
+      },
+      {
+        "title": "美联储拟修改银行反洗钱规则",
+        "explanation": "美联储提出修改银行反洗钱要求，虽未直接影响指数，但反映监管环境变化，可能影响金融板块情绪。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-07/fed-proposes-changes-to-anti-money-laundering-rules-for-banks",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "AI相关企业新闻频发，市场关注度高",
+        "explanation": "Meta发布新图像模型，SpaceX获投行看好，Amazon发行新债用于AI基础设施建设，但市场热度有所降温，反映投资者对AI板块前景出现分歧。",
+        "url": "https://www.ft.com/content/389f9102-fb5d-471a-bc50-9c591b7f7994",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "微软裁员重组游戏业务",
+        "explanation": "微软宣布裁员4800人，游戏业务受硬件需求下滑和利润压力影响，反映科技行业部分板块面临挑战。",
+        "url": "https://www.ft.com/content/41091f2f-0916-4532-82c9-0634ab8ff64c",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-07T22:20:16.819Z"
+}
