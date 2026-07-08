@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-07-08",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-08",
+        "metrics": {
+          "close": 29252.5625,
+          "pct1Day": 0.2726593613828488,
+          "pct5Day": -3.3814747239475222,
+          "pct20Day": -0.5497240689156069,
+          "drawdown20": -4.227870637357693,
+          "drawdown60": -4.592333898598867,
+          "drawdownAll": -4.592333898598867,
+          "sma20": 29602.485546875,
+          "sma50": 29285.27796875,
+          "sma200": 26168.373125,
+          "realizedVol20": 29.74894606623053
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-08",
+        "metrics": {
+          "close": 7482.7099609375,
+          "pct1Day": -0.2817238676629868,
+          "pct5Day": -0.22201764746978078,
+          "pct20Day": 1.039465125946673,
+          "drawdown20": -0.9475420953506732,
+          "drawdown60": -1.6698226204471027,
+          "drawdownAll": -1.6698226204471027,
+          "sma20": 7440.19755859375,
+          "sma50": 7416.997041015625,
+          "sma200": 6956.333557128906,
+          "realizedVol20": 14.879842739709167
+        }
+      }
+    ],
+    "vix": 16.899999618530273,
+    "treasury10y": 4.568999767303467,
+    "dxy": 101.06600189208984
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -0.28%",
+      "较深的60日高点回撤为 -4.59%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100小幅反弹，标普500微跌，市场波动有限",
+    "summary": "2026年7月8日，美股主要指数表现分化。纳斯达克100上涨0.27%，但近五日仍下跌3.38%，20日跌幅为0.55%，60日高点回撤达4.59%。标普500下跌0.28%，近五日跌幅为0.22%，20日涨幅为1.04%，60日高点回撤为1.67%。整体波动率不高，VIX为16.90。10年期美债收益率升至4.57%，美元指数为101.07。市场消息面涉及贸易、科技、地缘政治等多领域。定投建议为「正常定投，可按习惯略微增加」。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "美债收益率上升，全球债市抛售加剧通胀担忧",
+        "explanation": "美国两年期和十年期国债收益率接近近期高点，全球债市因油价上涨引发抛售，市场对通胀压力再度关注，可能影响风险资产表现。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/german-bonds-slide-as-higher-oil-prices-reignite-inflation-fears",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "科技与贸易领域重大消息频发",
+        "explanation": "苹果宣布将向Broadcom采购300亿美元美国芯片，Meta因AI图片功能引发隐私争议，Zillow与Rocket面临FTC审查，显示科技与贸易领域政策和舆论风险加大。",
+        "url": "https://www.ft.com/content/1bc10dd1-2aac-472d-b3d8-b76a83fb4abf",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "地缘政治紧张加剧，影响市场情绪",
+        "explanation": "美国与伊朗因油轮袭击互相发动打击，特朗普称与伊朗停火协议已“结束”，地缘政治风险上升，可能影响投资者风险偏好。",
+        "url": "https://www.ft.com/content/c7dac217-4a77-4640-9aa4-17ae7b0d5c0c",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "中国加大美国大豆采购，贸易关系缓和",
+        "explanation": "中国采购美国大豆创下自2025年以来最大单日交易，显示中美农业贸易关系有所缓和，对相关板块形成利好。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/china-extends-us-soybean-buying-spree-as-trade-thaw-continues",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-08T22:15:04.419Z"
+}
