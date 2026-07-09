@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-09",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-09",
+        "metrics": {
+          "close": 29727.09765625,
+          "pct1Day": 1.6222070837682412,
+          "pct5Day": -0.27519488411786575,
+          "pct20Day": 2.20941620536712,
+          "drawdown20": -2.6742548687734304,
+          "drawdown60": -3.0446304541270806,
+          "drawdownAll": -3.0446304541270806,
+          "sma20": 29634.61533203125,
+          "sma50": 29333.7062890625,
+          "sma200": 26193.877353515625,
+          "realizedVol20": 29.992007491911178
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-09",
+        "metrics": {
+          "close": 7543.64013671875,
+          "pct1Day": 0.8142795337428278,
+          "pct5Day": 0.8072738163556468,
+          "pct20Day": 2.125323880927235,
+          "drawdown20": -0.14097820296388397,
+          "drawdown60": -0.8691401105523839,
+          "drawdownAll": -0.8691401105523839,
+          "sma20": 7448.0470703125,
+          "sma50": 7424.391640625,
+          "sma200": 6960.729958496094,
+          "realizedVol20": 15.067390463040159
+        }
+      }
+    ],
+    "vix": 15.84000015258789,
+    "treasury10y": 4.539000034332275,
+    "dxy": 100.93699645996094
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.81%",
+      "较深的60日高点回撤为 -3.04%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股主要指数反弹，纳斯达克100涨幅领先，市场波动性温和",
+    "summary": "2026年7月9日，美股主要指数表现积极，纳斯达克100上涨1.62%，标普500上涨0.81%。两大指数近20日均有小幅上涨，回撤幅度有限，波动性处于温和水平。市场情绪受芯片板块反弹、联储政策动态、油价波动及部分公司消息影响。定投建议维持正常定投。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "芯片板块反弹推动美股上涨",
+        "explanation": "亚洲股市有望跟随美股上涨，主要受美国大型芯片制造商反弹带动，人工智能相关基础设施需求持续推动市场情绪。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-09/stock-market-today-dow-s-p-live-updates",
+        "relationship": "direct"
+      },
+      {
+        "title": "SK Hynix在美上市提振科技板块",
+        "explanation": "SK Hynix Inc.在美国上市，带动亚洲科技公司赴美融资热潮，进一步强化市场对人工智能和芯片板块的关注。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-09/sk-hynix-s-26-5-billion-listing-reopens-asia-route-to-us-market",
+        "relationship": "direct"
+      },
+      {
+        "title": "联储政策动态影响市场波动",
+        "explanation": "联储宣布货币政策相关任务组领导及目标，市场对加息预期有所升温，部分官员支持2026年加息。新任主席保持低调，市场波动性略有提升。",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+        "relationship": "direct"
+      },
+      {
+        "title": "长期美债实际收益率接近金融危机水平",
+        "explanation": "30年期美债实际收益率升至近20年新高，投资者对政策风险和通胀保护需求增加，可能影响资金流向和风险偏好。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-09/30-year-real-yield-near-financial-crisis-level-video",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "油价波动与地缘风险",
+        "explanation": "油价在本周波动后趋于稳定，市场关注伊朗与美国冲突对能源供应的影响，短期内未对美股造成明显压力。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-09/latest-oil-market-news-and-analysis-for-july-10",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-09T22:41:25.429Z"
+}
