@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-10",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-10",
+        "metrics": {
+          "close": 29825.109375,
+          "pct1Day": 0.3296983792999798,
+          "pct5Day": 1.6908004738236917,
+          "pct20Day": 4.620032007155879,
+          "drawdown20": -2.35336704887116,
+          "drawdown60": -2.724963780941631,
+          "drawdownAll": -2.724963780941631,
+          "sma20": 29700.46943359375,
+          "sma50": 29389.6283203125,
+          "sma200": 26219.19755859375,
+          "realizedVol20": 28.93856689318849
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-10",
+        "metrics": {
+          "close": 7575.39013671875,
+          "pct1Day": 0.4208843399813908,
+          "pct5Day": 1.2314171329212493,
+          "pct20Day": 4.243846384778774,
+          "drawdown20": 0,
+          "drawdown60": -0.4519138451888051,
+          "drawdownAll": -0.4519138451888051,
+          "sma20": 7463.467065429688,
+          "sma50": 7433.123447265625,
+          "sma200": 6965.138159179687,
+          "realizedVol20": 13.618567696464106
+        }
+      }
+    ],
+    "vix": 15.029999732971191,
+    "treasury10y": 4.568999767303467,
+    "dxy": 100.96499633789062
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.33%",
+      "较深的60日高点回撤为 -2.72%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股主要指数小幅上涨，科技股表现突出",
+    "summary": "2026年7月10日，美股主要指数纳斯达克100和标普500均录得小幅上涨，分别上涨0.33%和0.42%。科技板块表现较为强劲，Meta股价创下自2025年4月以来最大单日涨幅，SK Hynix在纳斯达克上市首日大涨。市场整体波动性较低，VIX指数为15.03。尽管有部分公司新闻和地缘政治风险，但整体市场情绪偏向乐观。定投建议维持“正常定投”。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "Meta股价创自2025年4月以来最大单日涨幅",
+        "explanation": "Meta在本交易日表现突出，股价大幅上涨，成为推动纳斯达克100指数上涨的重要力量。",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-10/meta-shares-gain-most-since-april-2025-closing-bell-video",
+        "relationship": "direct"
+      },
+      {
+        "title": "SK Hynix美国上市首日股价大涨",
+        "explanation": "韩国存储芯片制造商SK Hynix在纳斯达克上市首日股价上涨13%，最高涨幅达17%，对科技板块形成积极影响。",
+        "url": "https://www.ft.com/content/33133a86-925e-4395-9f60-35e2a4052500",
+        "relationship": "direct"
+      },
+      {
+        "title": "苹果起诉OpenAI，硅谷两大巨头关系破裂",
+        "explanation": "苹果对OpenAI提起诉讼，指控其窃取机密信息，可能影响科技板块情绪，但未对指数产生直接影响。",
+        "url": "https://www.ft.com/content/5054739e-7f97-455c-910a-dd8a8150fed2",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "欧盟威胁对Meta处以罚款，关注平台“成瘾”问题",
+        "explanation": "欧盟监管机构关注Meta旗下平台的“无限滚动”等功能，认为其导致用户“强迫使用”，可能影响Meta未来表现。",
+        "url": "https://www.bbc.co.uk/news/articles/c8j2dje3pldo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "地缘政治风险：伊朗威胁与乌克兰袭击影响大宗商品",
+        "explanation": "伊朗威胁和乌克兰对俄罗斯的袭击导致小麦价格上涨，黄金价格下跌，反映地缘政治风险对市场情绪的影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/ai-echoes-the-dot-com-market-split-as-iran-threat-creeps-back",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-10T22:13:26.652Z"
+}
