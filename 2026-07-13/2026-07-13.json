@@ -1,0 +1,89 @@
+{
+  "market": {
+    "marketDate": "2026-07-13",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-13",
+        "metrics": {
+          "close": 29264.103515625,
+          "pct1Day": -1.8809850864964346,
+          "pct5Day": -1.4605951118783578,
+          "pct20Day": -0.6183354642513844,
+          "drawdown20": -4.190085652147807,
+          "drawdown60": -4.554692705106125,
+          "drawdownAll": -4.554692705106125,
+          "sma20": 29691.365625,
+          "sma50": 29431.17078125,
+          "sma200": 26242.6172265625,
+          "realizedVol20": 27.558880393235093
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-13",
+        "metrics": {
+          "close": 7515.33984375,
+          "pct1Day": -0.7927023147980143,
+          "pct5Day": -0.2930751133486998,
+          "pct20Day": 1.6369371307580545,
+          "drawdown20": -0.7927023147980143,
+          "drawdown60": -1.2410338284751152,
+          "drawdownAll": -1.2410338284751152,
+          "sma20": 7469.519067382813,
+          "sma50": 7440.711240234375,
+          "sma200": 6969.4302587890625,
+          "realizedVol20": 12.789423110148778
+        }
+      }
+    ],
+    "vix": 17.15999984741211,
+    "treasury10y": 4.609000205993652,
+    "dxy": 101.2760009765625
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.88%",
+      "较深的60日高点回撤为 -4.55%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股主要指数下跌，纳斯达克100跌幅较大，市场受加息预期与地缘风险影响",
+    "summary": "2026年7月13日，美股主要指数收跌，纳斯达克100下跌1.88%，标普500下跌0.79%。纳斯达克100近60日最大回撤达4.55%，波动率有所提升。市场情绪受美联储加息预期、油价上涨及地缘政治风险影响。建议正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "美联储加息预期升温，油价上涨推高通胀担忧",
+        "explanation": "多条新闻显示，油价因美伊冲突上涨，市场对美联储本月加息概率提升，10年期美债收益率升至4.61%。加息预期与能源价格波动加剧市场压力。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-13/treasury-two-year-yield-rises-to-highest-since-2025-on-oil-gain",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "地缘政治风险加剧，能源供应担忧影响市场",
+        "explanation": "美伊在霍尔木兹海峡的冲突导致油价上涨，黄金价格下跌，投资者避险情绪上升。地缘风险加剧对股市形成压力。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-12/oil-climbs-us-futures-dip-on-fresh-iran-strikes-markets-wrap",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "投资银行业务回暖，AI与消费推动部分板块",
+        "explanation": "新闻显示，投资银行业务因大型交易复苏和AI乐观情绪带动，部分板块表现相对坚挺，但整体市场仍受宏观因素影响。",
+        "url": "https://www.ft.com/content/98207dc6-4deb-47c4-bbc6-8b1dd6c3b18c",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-13T22:04:55.317Z"
+}
