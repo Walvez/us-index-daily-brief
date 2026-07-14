@@ -1,0 +1,95 @@
+{
+  "market": {
+    "marketDate": "2026-07-14",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-14",
+        "metrics": {
+          "close": 29586.287109375,
+          "pct1Day": 1.1009650195995935,
+          "pct5Day": 1.4166088555979257,
+          "pct20Day": -0.16757387795623532,
+          "drawdown20": -3.135264939632587,
+          "drawdown60": -3.5038861394984284,
+          "drawdownAll": -3.5038861394984284,
+          "sma20": 29688.88232421875,
+          "sma50": 29473.8540625,
+          "sma200": 26268.030791015626,
+          "realizedVol20": 27.75170410289094
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-14",
+        "metrics": {
+          "close": 7543.58984375,
+          "pct1Day": 0.37589783811963756,
+          "pct5Day": 0.529591417426666,
+          "pct20Day": 1.5088540260177152,
+          "drawdown20": -0.4197842275424269,
+          "drawdown60": -0.8698010096870488,
+          "drawdownAll": -0.8698010096870488,
+          "sma20": 7475.125561523438,
+          "sma50": 7447.402841796875,
+          "sma200": 6973.958356933594,
+          "realizedVol20": 12.742231005669485
+        }
+      }
+    ],
+    "vix": 16.5,
+    "treasury10y": 4.585000038146973,
+    "dxy": 100.93699645996094
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 0.38%",
+      "较深的60日高点回撤为 -3.50%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "美股主要指数上涨，银行业绩强劲，通胀回落但仍存隐忧",
+    "summary": "2026年7月14日，纳斯达克100指数上涨1.10%，标普500指数上涨0.38%。银行板块业绩表现突出，股市交易活跃。美国6月通胀率下降，油价上涨及中东局势引发后续担忧。整体市场波动性适中，定投建议维持正常。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "华尔街银行业绩创纪录，股市交易活跃",
+        "explanation": "JPMorgan、Goldman Sachs、Citigroup和BofA等大型银行公布强劲业绩，受益于股市交易热潮、AI相关投资和SpaceX IPO推动，带动市场情绪积极。",
+        "url": "https://www.ft.com/content/137efc01-087f-4b1d-b2a4-e18ea61197f2",
+        "relationship": "direct"
+      },
+      {
+        "title": "美国6月通胀率下降，油价上涨带来后续担忧",
+        "explanation": "美国6月通胀率下降，主要受汽油价格影响，但中东冲突导致油价升至每桶85美元以上，市场担心未来通胀压力可能回升。",
+        "url": "https://www.bbc.co.uk/news/articles/c98289j7lg7o?at_medium=RSS&at_campaign=rss",
+        "relationship": "direct"
+      },
+      {
+        "title": "油价上涨与中东局势可能影响后续市场表现",
+        "explanation": "油价突破85美元，受中东局势影响，可能对未来通胀和市场波动产生影响，但目前未直接影响指数表现。",
+        "url": "https://www.ft.com/content/0ba42c5c-c097-4584-9387-a211d5234275",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "中国汽车出口增长，全球竞争加剧",
+        "explanation": "中国汽车出口激增，全球汽车行业竞争加剧，可能影响相关美股板块，但对整体指数影响有限。",
+        "url": "https://www.ft.com/content/0ba42c5c-c097-4584-9387-a211d5234275",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-14T22:08:55.688Z"
+}
