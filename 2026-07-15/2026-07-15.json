@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-15",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-15",
+        "metrics": {
+          "close": 29502.595703125,
+          "pct1Day": -0.28287886729626927,
+          "pct5Day": 0.8547462224694405,
+          "pct20Day": -3.409268428589032,
+          "drawdown20": -2.971742813722201,
+          "drawdown60": -3.7768469012455994,
+          "drawdownAll": -3.7768469012455994,
+          "sma20": 29636.8162109375,
+          "sma50": 29509.698828125,
+          "sma200": 26293.5572265625,
+          "realizedVol20": 25.347105433381916
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-15",
+        "metrics": {
+          "close": 7572.39990234375,
+          "pct1Day": 0.38191443583878903,
+          "pct5Day": 1.198629131350333,
+          "pct20Day": 0.23972952041297932,
+          "drawdown20": -0.03947300826799672,
+          "drawdown60": -0.4912084694673262,
+          "drawdownAll": -0.4912084694673262,
+          "sma20": 7476.0310546875,
+          "sma50": 7454.2484375,
+          "sma200": 6978.796755371094,
+          "realizedVol20": 11.406030739571719
+        }
+      }
+    ],
+    "vix": 15.670000076293945,
+    "treasury10y": 4.545000076293945,
+    "dxy": 100.48300170898438
+  },
+  "advice": {
+    "level": "normal",
+    "label": "正常定投",
+    "reasons": [
+      "两大指数中较弱单日表现为 -0.28%",
+      "较深的60日高点回撤为 -3.78%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "标普500上涨，纳斯达克100小幅回落，市场波动有限",
+    "summary": "2026年7月15日，美股主要指数表现分化。标普500上涨0.38%，纳斯达克100下跌0.28%。标普500近20日涨幅为0.24%，纳斯达克100则下跌3.41%。整体波动率较低，VIX为15.67。美债收益率和美元指数均保持平稳。市场受SpaceX股价大幅下跌、油市紧张、美国通胀数据偏软等多重因素影响。定投建议维持正常定投。",
+    "adviceLabel": "正常定投",
+    "drivers": [
+      {
+        "title": "SpaceX股价大幅下跌，市值蒸发1万亿美元",
+        "explanation": "SpaceX股票首次跌破135美元，导致公司市值大幅缩水。这一事件对科技板块和市场情绪产生直接影响，尤其是纳斯达克100指数。",
+        "url": "https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede",
+        "relationship": "direct"
+      },
+      {
+        "title": "SpaceX IPO推动华尔街股权融资收入创2021年以来新高",
+        "explanation": "SpaceX上市及人工智能基础设施融资潮带动华尔街第二季度股权融资收入创新高，反映市场对新经济板块的关注，但短期内未能抵消SpaceX股价下跌带来的负面影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-15/record-ipos-spur-best-wall-street-share-sale-revenue-since-2021",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "霍尔木兹海峡再次关闭，油市库存告急",
+        "explanation": "霍尔木兹海峡因伊朗战争再次关闭，油市库存接近耗尽。能源市场紧张可能影响整体市场风险偏好，但对美股指数影响为间接。",
+        "url": "https://www.ft.com/content/6c314457-ce9a-4689-b3e1-ff637de0d6bf",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美国通胀数据偏软，债市延续上涨",
+        "explanation": "美国连续两天通胀数据低于预期，强化市场对美联储加息预期降温。美债收益率下行，美元指数走弱，对股市风险偏好有正面影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-15/treasuries-rise-as-producer-prices-reinforce-inflation-optimism",
+        "relationship": "direct"
+      },
+      {
+        "title": "新兴市场货币上涨，美元走弱",
+        "explanation": "美国PPI数据低于预期，交易员减少对美联储加息押注，美元指数下跌，新兴市场货币走强。美元走弱对美股有一定支撑作用。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-15/emerging-stocks-rise-as-asia-tech-rally-offsets-gold-miner-slump",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-15T22:10:50.856Z"
+}
