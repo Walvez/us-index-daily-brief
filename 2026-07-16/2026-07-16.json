@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-16",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-16",
+        "metrics": {
+          "close": 29025.76953125,
+          "pct1Day": -1.6162307201345008,
+          "pct5Day": -2.359228069138041,
+          "pct20Day": -3.1445448918620125,
+          "drawdown20": -4.5399306743223855,
+          "drawdown60": -5.332022527129975,
+          "drawdownAll": -5.332022527129975,
+          "sma20": 29589.69833984375,
+          "sma50": 29537.177890625,
+          "sma200": 26316.166845703126,
+          "realizedVol20": 25.116976835970583
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-16",
+        "metrics": {
+          "close": 7533.77001953125,
+          "pct1Day": -0.5101405539945609,
+          "pct5Day": -0.13084024434645417,
+          "pct20Day": 0.2984805871583011,
+          "drawdown20": -0.5494121944395011,
+          "drawdown60": -0.9988431698544784,
+          "drawdownAll": -0.9988431698544784,
+          "sma20": 7477.15205078125,
+          "sma50": 7460.908837890625,
+          "sma200": 6983.247104492188,
+          "realizedVol20": 11.368209791370187
+        }
+      }
+    ],
+    "vix": 16.729999542236328,
+    "treasury10y": 4.568999767303467,
+    "dxy": 100.71499633789062
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.62%",
+      "较深的60日高点回撤为 -5.33%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100大幅下跌，标普500小幅回调，芯片股领跌市场",
+    "summary": "2026年7月16日，美股主要指数表现分化。纳斯达克100指数收跌1.62%，近60日高点回撤达5.33%，波动率较高。标普500指数跌幅较小，仅为0.51%，近20日仍微涨。芯片与存储股领跌，市场对美联储加息预期出现波动。整体定投建议为“正常定投，可按习惯略微增加”。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "芯片与存储股大幅下跌，拖累纳斯达克100表现",
+        "explanation": "芯片和存储类公司股价大幅下滑，投资者撤离今年领涨板块，直接导致纳斯达克100指数单日跌幅显著。",
+        "url": "https://www.ft.com/content/c92a5a36-55a0-4d04-b84c-d1705976987b?syn-25a6b1a6=1",
+        "relationship": "direct"
+      },
+      {
+        "title": "韩国ETF（EWY）创纪录资金流入，投资者通过ETF间接布局SK Hynix",
+        "explanation": "美国上市的韩国ETF出现历史性资金流入，投资者借道ETF间接投资SK Hynix，反映芯片板块资金流动变化，可能影响相关指数表现。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-16/korea-etf-s-ewy-record-inflow-fuels-sk-hynix-proxy-play",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美联储官员倾向适度加息以抑制通胀",
+        "explanation": "达拉斯联储主席Logan表示支持适度加息，认为通胀尚未稳定回到2%目标，利率预期变化对市场情绪产生影响。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-16/fed-s-logan-favors-modestly-higher-rates-to-lower-inflation",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "债券交易员撤出加息押注，因通胀数据温和",
+        "explanation": "近期两份温和的通胀报告令债券市场看涨，交易员纷纷撤出对美联储加息的押注，利率预期波动影响股市走势。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-16/bond-traders-bail-on-fed-hike-wagers-on-softer-inflation-outlook",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "TSMC承诺再投100亿美元扩建美国产能",
+        "explanation": "芯片巨头TSMC宣布追加100亿美元投资美国生产基地，提升高科技就业和产能，可能对芯片板块中长期形成支撑。",
+        "url": "https://www.bbc.co.uk/news/articles/c62x8ldxr7eo?at_medium=RSS&at_campaign=rss",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-16T22:12:35.600Z"
+}
