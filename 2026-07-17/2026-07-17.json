@@ -1,0 +1,101 @@
+{
+  "market": {
+    "marketDate": "2026-07-17",
+    "indices": [
+      {
+        "id": "nasdaq100",
+        "name": "纳斯达克100",
+        "symbol": "^NDX",
+        "marketDate": "2026-07-17",
+        "metrics": {
+          "close": 28592.658203125,
+          "pct1Day": -1.4921613969913858,
+          "pct5Day": -4.132260359481079,
+          "pct20Day": -3.6341642044387115,
+          "drawdown20": -5.964348978341363,
+          "drawdown60": -6.744621542292642,
+          "drawdownAll": -6.744621542292642,
+          "sma20": 29535.7837890625,
+          "sma50": 29548.72984375,
+          "sma200": 26336.073388671874,
+          "realizedVol20": 25.40372037972353
+        }
+      },
+      {
+        "id": "sp500",
+        "name": "标普500",
+        "symbol": "^GSPC",
+        "marketDate": "2026-07-17",
+        "metrics": {
+          "close": 7457.68994140625,
+          "pct1Day": -1.0098540030789749,
+          "pct5Day": -1.5537179364795246,
+          "pct20Day": 0.5065948336987168,
+          "drawdown20": -1.5537179364795246,
+          "drawdown60": -1.998610315198197,
+          "drawdownAll": -1.998610315198197,
+          "sma20": 7479.03154296875,
+          "sma50": 7464.878232421875,
+          "sma200": 6987.229504394531,
+          "realizedVol20": 11.08941539054087
+        }
+      }
+    ],
+    "vix": 18.770000457763672,
+    "treasury10y": 4.540999889373779,
+    "dxy": 100.75499725341797
+  },
+  "advice": {
+    "level": "slightly-more",
+    "label": "正常定投，可按习惯略微增加",
+    "reasons": [
+      "两大指数中较弱单日表现为 -1.49%",
+      "较深的60日高点回撤为 -6.74%"
+    ],
+    "highVolatility": false
+  },
+  "commentary": {
+    "headline": "纳斯达克100大幅下跌，芯片股领跌，市场波动加剧",
+    "summary": "2026年7月17日，美股主要指数收跌，纳斯达克100下跌1.49%，标普500下跌1.01%。芯片和AI相关板块表现疲弱，纳斯达克100近60日最大回撤达6.74%，波动率上升。标普50020日表现略有回升，但整体市场情绪偏谨慎。美债收益率维持高位，VIX指数升至18.77。定投建议：正常定投，可按习惯略微增加。",
+    "adviceLabel": "正常定投，可按习惯略微增加",
+    "drivers": [
+      {
+        "title": "中国初创Moonshot突破引发全球AI与半导体板块大跌",
+        "explanation": "中国初创公司Moonshot的意外技术突破导致全球市场震荡，AI与半导体股票大幅下跌，重现去年DeepSeek事件的市场记忆。这直接影响了纳斯达克100和芯片股的表现。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-17/ai-upheaval-crushes-retail-traders-crowding-into-leveraged-funds",
+        "relationship": "direct"
+      },
+      {
+        "title": "美国芯片股创一年多来最差周表现",
+        "explanation": "高涨的半导体板块本周遭遇大幅回调，动量交易失效，投资者撤离芯片和存储类股票，导致纳斯达克100指数承压。",
+        "url": "https://www.ft.com/content/79a15abd-5892-4f1c-b038-b09a1ceecabb?syn-25a6b1a6=1",
+        "relationship": "direct"
+      },
+      {
+        "title": "苹果股价短暂超越Nvidia，避开AI板块抛售",
+        "explanation": "苹果公司股价短暂成为全球市值最高公司，因其未受AI板块抛售影响，显示市场对不同科技板块的分化。",
+        "url": "https://www.ft.com/content/9586223a-8339-4a57-9e2f-251899ebd211?syn-25a6b1a6=1",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "美债本周上涨，通胀乐观情绪主导",
+        "explanation": "美国国债本周小幅上涨，受通胀数据乐观影响，部分抵消油价反弹带来的压力，市场对7月加息预期减弱。",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-17/treasuries-post-weekly-advance-as-inflation-optimism-prevails",
+        "relationship": "possibly-related"
+      },
+      {
+        "title": "Meta与Anthropic洽谈高达百亿美元数据中心合作",
+        "explanation": "Meta考虑进军云业务，计划大规模投资基础设施，显示科技巨头对AI算力需求持续增长。",
+        "url": "https://www.ft.com/content/0ae58f76-3386-464a-9248-090cc68e9864?syn-25a6b1a6=1",
+        "relationship": "possibly-related"
+      }
+    ],
+    "translationAvailable": true
+  },
+  "valuation": {
+    "status": "unavailable",
+    "reason": "stale",
+    "message": "官方估值数据暂未更新"
+  },
+  "generatedAt": "2026-07-17T22:03:04.395Z"
+}
