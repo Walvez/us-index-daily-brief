@@ -8,6 +8,8 @@
   "scripts": {
     "test": "tsx --test tests/smoke.test.ts tests/**/*.test.ts",
     "typecheck": "tsc --noEmit",
+    "daily-brief": "tsx scripts/daily-brief.ts",
+    "send-daily-brief": "tsx scripts/send-daily-brief.ts",
     "index-brief": "tsx scripts/index-brief.ts",
     "send-index-brief": "tsx scripts/send-index-brief.ts",
     "dry-run": "tsx scripts/dry-run.ts",
