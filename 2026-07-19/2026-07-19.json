@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-19",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-18T22:01:49.769Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-17",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 28592.66015625,
+                  "pct1Day": -1.4921546680569542,
+                  "pct5Day": -4.1322538108881615,
+                  "pct20Day": -3.6341576218215343,
+                  "drawdown20": -5.9643425548958895,
+                  "drawdown60": -6.744615172146511,
+                  "drawdownAll": -6.744615172146511,
+                  "sma20": 29535.78388671875,
+                  "sma50": 29548.7298828125,
+                  "sma200": 26336.0733984375,
+                  "realizedVol20": 25.40371567815354
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 7457.68994140625,
+                  "pct1Day": -1.0098540030789749,
+                  "pct5Day": -1.5537179364795246,
+                  "pct20Day": 0.5065948336987168,
+                  "drawdown20": -1.5537179364795246,
+                  "drawdown60": -1.998610315198197,
+                  "drawdownAll": -1.998610315198197,
+                  "sma20": 7479.03154296875,
+                  "sma50": 7464.878232421875,
+                  "sma200": 6987.229504394531,
+                  "realizedVol20": 11.08941539054087
+                }
+              }
+            ],
+            "vix": 18.770000457763672,
+            "treasury10y": 4.540999889373779,
+            "dxy": 100.75
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.49%",
+              "较深的60日高点回撤为 -6.74%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "美股指数下跌，芯片股领跌，市场波动加剧",
+            "summary": "2026年7月17日，美股主要指数收跌，纳斯达克100下跌1.49%，标普500下跌1.01%。纳斯达克100近五日跌幅达4.13%，60日高点回撤为6.74%，芯片股表现尤为疲弱。市场波动有所上升，人工智能相关消息持续影响市场情绪。定投建议为：正常定投，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "芯片股遭遇一年以来最大周跌幅",
+                "explanation": "美国芯片股本周表现为一年以来最差，主要由于动量交易回撤，投资者对高估值科技股风险加大，拖累纳斯达克100指数表现。",
+                "url": "https://www.ft.com/content/79a15abd-5892-4f1c-b038-b09a1ceecabb?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "苹果股价逆势上涨，短暂超越Nvidia成为全球市值最高公司",
+                "explanation": "苹果股价未受AI相关科技股抛售影响，短暂超越Nvidia成为全球市值最高公司，显示部分大型科技股具备防御属性。",
+                "url": "https://www.ft.com/content/9586223a-8339-4a57-9e2f-251899ebd211?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "人工智能相关消息持续主导市场情绪",
+                "explanation": "市场持续关注人工智能发展及相关企业动态，AI主题对科技板块影响显著，部分公司因AI投资加大而股价波动。",
+                "url": "https://www.bloomberg.com/news/newsletters/2026-07-18/not-done-yet-refunding-tariffs-or-realizing-ai-s-promise",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta与Anthropic洽谈高额数据中心合作，推动云业务布局",
+                "explanation": "Meta与Anthropic洽谈高达100亿美元的数据中心合作，显示科技巨头持续加大基础设施投入，可能影响市场对科技板块的预期。",
+                "url": "https://www.ft.com/content/0ae58f76-3386-464a-9248-090cc68e9864?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "SpaceX上市后股价跌破发行价，市场看空情绪上升",
+                "explanation": "SpaceX上市后股价首次跌破发行价，部分投资者看空，反映市场对新经济公司估值的谨慎态度。",
+                "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-18T22:01:49.769Z"
+        },
+        "marketDate": "2026-07-17",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-17（非 2026-07-19 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-17（非 2026-07-19 当日收盘）",
+      "generatedAt": "2026-07-18T22:01:49.769Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "[AINews] not much happened today",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-830",
+            "publishedAt": "2026-07-18T04:30:21.000Z",
+            "factualExcerpt": "a quiet day",
+            "aiSummary": "今日科技新闻较为平静，没有重大事件发生。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "[Rewrite Bun in MC++] 7 天 20+万行代码 C++26 模块化, 重写 Bun 行为艺术复刻, 已能真实运行顶级开源 Web 框架项目",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1228291",
+            "publishedAt": "2026-07-18T18:43:39.000Z",
+            "factualExcerpt": "7 回复 · 程序员 节点",
+            "aiSummary": "开发者用 C++26 模块化技术重写 Bun，复刻行为艺术，代码量超20万行，已能运行顶级开源 Web 框架。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "From Loop Engineering to Graph Engineering?",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/IntuitMachine/status/2078419526354378975",
+            "publishedAt": "2026-07-18T10:00:04.000Z",
+            "factualExcerpt": "What the shift in AI agent architecture is really about Peter Steinberger just posted nine words that gathered thousands of likes: https://x.com/steipete/status/2078277297791189132 \"Are we still talking loops or did we",
+            "aiSummary": "AI代理架构正从循环工程转向图工程，相关讨论引发大量关注，反映行业对新架构趋势的兴趣。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 232
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-18T22:01:49.769Z"
+    }
+  ],
+  "subject": "2026-07-19 个人每日简报｜市场与 AI 科技"
+}
