@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-18",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-18T12:36:31.859Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-17",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 28592.66015625,
+                  "pct1Day": -1.4921546680569542,
+                  "pct5Day": -4.1322538108881615,
+                  "pct20Day": -3.6341576218215343,
+                  "drawdown20": -5.9643425548958895,
+                  "drawdown60": -6.744615172146511,
+                  "drawdownAll": -6.744615172146511,
+                  "sma20": 29535.78388671875,
+                  "sma50": 29548.7298828125,
+                  "sma200": 26336.0733984375,
+                  "realizedVol20": 25.40371567815354
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 7457.68994140625,
+                  "pct1Day": -1.0098540030789749,
+                  "pct5Day": -1.5537179364795246,
+                  "pct20Day": 0.5065948336987168,
+                  "drawdown20": -1.5537179364795246,
+                  "drawdown60": -1.998610315198197,
+                  "drawdownAll": -1.998610315198197,
+                  "sma20": 7479.03154296875,
+                  "sma50": 7464.878232421875,
+                  "sma200": 6987.229504394531,
+                  "realizedVol20": 11.08941539054087
+                }
+              }
+            ],
+            "vix": 18.770000457763672,
+            "treasury10y": 4.540999889373779,
+            "dxy": 100.75
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.49%",
+              "较深的60日高点回撤为 -6.74%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100与标普500指数下跌，芯片股领跌，AI相关消息影响市场",
+            "summary": "2026年7月17日，美股主要指数普遍下跌，纳斯达克100跌幅达1.49%，标普500下跌1.01%。芯片股本周表现为一年以来最差，受AI领域突发事件影响，相关板块波动加剧。苹果公司短暂超越Nvidia成为全球市值最高公司，部分科技股表现相对坚挺。整体市场波动性适中，定投建议维持正常，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "芯片股创一年以来最差周表现",
+                "explanation": "美国芯片股本周跌幅显著，主要由于‘动量交易’回撤，成为拖累纳斯达克100指数的主要因素。",
+                "url": "https://www.ft.com/content/79a15abd-5892-4f1c-b038-b09a1ceecabb?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "中国AI初创公司Moonshot突破引发全球市场震荡",
+                "explanation": "中国AI初创公司Moonshot取得突破，导致全球AI与半导体板块大幅下跌，重现去年DeepSeek事件的市场波动。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-17/ai-upheaval-crushes-retail-traders-crowding-into-leveraged-funds",
+                "relationship": "direct"
+              },
+              {
+                "title": "苹果公司短暂超越Nvidia成为全球市值最高公司",
+                "explanation": "苹果公司股价表现坚挺，短暂超越Nvidia，显示部分科技股在AI板块回调中具备防御属性。",
+                "url": "https://www.ft.com/content/9586223a-8339-4a57-9e2f-251899ebd211?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "亚洲AI投资推动美银股创纪录收入",
+                "explanation": "亚洲地区对AI与半导体的投资推动美国银行股收入增长，显示AI产业链影响广泛。",
+                "url": "https://www.ft.com/content/2dc8d54c-89b7-4e57-bd43-084d9edf01a4?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "SpaceX上市后股价跌破发行价，市场看空情绪上升",
+                "explanation": "SpaceX上市后股价首次跌破发行价，市场看空情绪增强，反映科技成长股短期压力。",
+                "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-18T12:36:31.859Z"
+        },
+        "marketDate": "2026-07-17",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-17（非 2026-07-18 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-17（非 2026-07-18 当日收盘）",
+      "generatedAt": "2026-07-18T12:36:31.859Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+            "publishedAt": "2026-07-17T15:57:54.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "NVIDIA NeMo Automodel与Hugging Face Diffusers支持大规模微调视频和图像模型，提升模型定制能力。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "A scorecard for the AI age",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
+            "publishedAt": "2026-07-17T10:00:00.000Z",
+            "factualExcerpt": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
+            "aiSummary": "OpenAI CFO Sarah Friar提出一套AI时代实用评分卡，用于衡量投资回报，包括有效工作量、任务成功成本、可靠性和算力回报。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "[AINews] not much happened today",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-830",
+            "publishedAt": "2026-07-18T04:30:21.000Z",
+            "factualExcerpt": "a quiet day",
+            "aiSummary": "今日AI领域较为平静，没有重大新闻发生。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "The risk of weather data sabotage is rising",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/17/1140622/weather-data-sabotage",
+            "publishedAt": "2026-07-17T08:57:32.000Z",
+            "factualExcerpt": "Every morning, airline dispatchers, grid operators, and farmers around the world make decisions based on the same thing: a weather forecast. While these forecasts are something that most people glance at for two seconds, weather predictions influence major strategic decisions in many industries, wit",
+            "aiSummary": "天气数据影响航空、电网和农业等行业决策，天气数据遭破坏的风险正在上升，可能影响重要战略决策。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "ai 用得越多，越发现产品人才 > 技术人才 了",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1228233",
+            "publishedAt": "2026-07-18T10:32:04.000Z",
+            "factualExcerpt": "10 回复 · 程序员 节点",
+            "aiSummary": "讨论指出，随着AI应用增多，产品人才比技术人才更为重要，相关话题在程序员社区引发讨论。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 234
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-18T12:36:31.859Z"
+    }
+  ],
+  "subject": "2026-07-18 个人每日简报｜市场与 AI 科技"
+}
