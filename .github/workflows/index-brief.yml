@@ -1,10 +1,10 @@
-name: US Index Daily Brief
+name: Personal Daily Brief
 
 on:
   schedule:
-    - cron: "5 21 * * *" # 05:05 Asia/Shanghai, first early attempt
-    - cron: "35 21 * * *" # 05:35 Asia/Shanghai, retry if market data lags
-    - cron: "10 22 * * *" # 06:10 Asia/Shanghai, retry if Actions queue delays
+    - cron: "5 21 * * *" # 05:05 Asia/Taipei, first early attempt
+    - cron: "35 21 * * *" # 05:35 Asia/Taipei, retry if market data lags
+    - cron: "10 22 * * *" # 06:10 Asia/Taipei, final scheduled attempt
   workflow_dispatch:
     inputs:
       validation_only:
@@ -17,7 +17,7 @@ permissions:
   models: read
 
 concurrency:
-  group: us-index-daily-brief
+  group: personal-daily-brief
   cancel-in-progress: false
 
 jobs:
@@ -42,28 +42,60 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils
 
+      - name: Resolve schedule attempt
+        id: attempt
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "attempt=manual" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "10 22 * * *" ]; then
+            echo "attempt=final" >> "$GITHUB_OUTPUT"
+          else
+            # 05:05 and 05:35 (and any other schedule) defer market-failed sends.
+            echo "attempt=early" >> "$GITHUB_OUTPUT"
+          fi
+          echo "Resolved schedule attempt: $(cat "$GITHUB_OUTPUT" | tr '\n' ' ')"
+
       - name: Restore reports and delivery state
         if: ${{ !inputs.validation_only }}
         run: |
           mkdir -p daily_reports
+          # Full private archive (reports + valuation history). May lag if a
+          # prior publish failed; delivery ledger below is the send authority.
           if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
             git fetch origin gh-pages --depth=1
             git --work-tree=daily_reports checkout origin/gh-pages -- . || true
             rm -f daily_reports/index.html daily_reports/archive.html
           fi
+          # Durable delivery ledger: restored before any send decision so a
+          # prior SMTP success still blocks duplicates even if gh-pages publish failed.
+          # Uses explicit refspec (not plain `git fetch origin brief-delivery`) so a
+          # fresh single-branch Actions checkout creates refs/remotes/origin/brief-delivery.
+          # Fail-closed: if the remote ledger exists but fetch/restore fails, this step
+          # exits nonzero and SMTP must not proceed (duplicate status unknown).
+          DELIVERY_LEDGER_DIR=.delivery-ledger REPORT_OUTPUT_DIR=daily_reports \
+            npx tsx scripts/restore-delivery-ledger.ts
 
-      - name: Generate or resume brief
+      - name: Generate or resume daily brief
         id: brief
         env:
-          REPORT_TZ: Asia/Shanghai
+          REPORT_TZ: Asia/Taipei
           REPORT_LOCALE: zh
           REPORT_OUTPUT_DIR: ${{ inputs.validation_only && 'validation_reports' || 'daily_reports' }}
+          VALIDATION_ONLY: ${{ inputs.validation_only && '1' || '0' }}
           VALUATION_DEBUG: ${{ inputs.validation_only && '1' || '0' }}
+          # Opt-in modules for private production. Market always on; tech-news explicit.
+          BRIEF_MODULES: market,tech-news
+          TECH_NEWS_ENABLED: "true"
+          TECH_NEWS_LIMIT: "5"
+          TECH_NEWS_WINDOW_HOURS: "30"
+          BRIEF_SCHEDULE_ATTEMPT: ${{ steps.attempt.outputs.attempt }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4.1' }}
-        run: npm run index-brief
+        run: npm run daily-brief
 
-      - name: Verify generated translation and valuation
+      - name: Verify generated report structure
         if: ${{ inputs.validation_only && steps.brief.outputs.status == 'generated' }}
         env:
           REPORT_DIR: ${{ steps.brief.outputs.report_dir }}
@@ -75,25 +107,58 @@ jobs:
             const date = path.basename(dir);
             const report = JSON.parse(fs.readFileSync(path.join(dir, `${date}.json`), "utf8"));
             const email = fs.readFileSync(path.join(dir, `${date}-email.html`), "utf8");
-            if (!report.commentary.translationAvailable) throw new Error("Chinese translation unavailable");
-            if (report.valuation.status !== "available") {
-              if (report.valuation.reason === "stale") {
-                console.warn(`[validation] ${date}: valuation stale; email should show unavailable valuation`);
-              } else {
-                throw new Error(`Valuation unavailable: ${report.valuation.reason}`);
+            if (report.version !== 1) throw new Error("expected DailyBriefReport version 1");
+            if (report.editionDate !== date) throw new Error("editionDate mismatch");
+            if (!Array.isArray(report.modules) || report.modules.length === 0) {
+              throw new Error("modules missing");
+            }
+            const market = report.modules.find((m) => m.moduleId === "market");
+            // Enabled market must not silently pass when failed/missing.
+            // Degraded (valuation/AI translation) is tolerated; failed is not.
+            if (!market) throw new Error("enabled market module missing from report");
+            if (market.status === "failed" || market.status === "skipped") {
+              throw new Error(`enabled market module status=${market.status}; validation_only must fail`);
+            }
+            if (market.status === "success" || market.status === "degraded") {
+              const data = market.data;
+              if (!data?.report?.commentary) throw new Error("market commentary missing");
+              if (!data.report.commentary.translationAvailable) {
+                console.warn(`[validation] ${date}: Chinese market translation unavailable (fallback ok)`);
+              }
+              if (data.report.valuation?.status !== "available") {
+                if (data.report.valuation?.reason === "stale") {
+                  console.warn(`[validation] ${date}: valuation stale; email should show unavailable valuation`);
+                } else if (market.status === "success") {
+                  throw new Error(`Valuation unavailable: ${data.report.valuation?.reason}`);
+                } else {
+                  console.warn(`[validation] ${date}: valuation unavailable under degraded market (ok)`);
+                }
               }
             }
             if (/查看完整报告|github\.io/.test(email)) throw new Error("Stale public report link found");
-            console.log(`[validation] ${date}: Chinese translation verified; email is self-contained`);
+            if (!/个人每日简报/.test(email)) throw new Error("Expected personal daily brief branding");
+            if (!/max-width:\s*680px/.test(email)) throw new Error("Expected mobile max-width");
+            console.log(`[validation] ${date}: daily brief structure verified; email is self-contained`);
           '
 
       - name: Send email
-        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
+        id: send
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' && steps.brief.outputs.sendable != 'false' }}
         env:
           GMAIL_USER: ${{ vars.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           REPORT_RECIPIENT: ${{ vars.REPORT_RECIPIENT }}
-        run: npm run send-index-brief -- "${{ steps.brief.outputs.market_date }}"
+        run: npm run send-daily-brief -- "${{ steps.brief.outputs.edition_date }}"
+
+      # Persist delivery markers immediately after SMTP success, before archive
+      # publish. brief-delivery is independent of gh-pages so a later archive
+      # failure cannot erase send idempotency. Irreducible window: process crash
+      # after SMTP returns success but before this step completes.
+      - name: Checkpoint delivery ledger after SMTP
+        if: ${{ !inputs.validation_only && steps.send.outcome == 'success' }}
+        env:
+          REPORT_OUTPUT_DIR: daily_reports
+        run: npx tsx scripts/checkpoint-delivery.ts "${{ steps.brief.outputs.edition_date }}"
 
       - name: Prepare private report archive
         if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}

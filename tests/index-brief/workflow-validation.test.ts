@@ -8,7 +8,7 @@ const workflow = fs.readFileSync(
 );
 
 test("validation mode allows stale valuation while keeping parser failures strict", () => {
-  assert.match(workflow, /report\.valuation\.reason === "stale"/);
+  assert.match(workflow, /valuation stale/);
   assert.match(workflow, /Valuation unavailable/);
   assert.doesNotMatch(
     workflow,

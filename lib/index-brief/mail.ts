@@ -15,6 +15,8 @@ export interface MailEnvironment {
   GMAIL_USER?: string;
   GMAIL_APP_PASSWORD?: string;
   REPORT_RECIPIENT?: string;
+  /** Optional From display name; defaults to 个人每日简报. */
+  MAIL_FROM_NAME?: string;
 }
 
 export interface BriefEmail {
@@ -45,8 +47,9 @@ export async function sendBrief(
       auth: { user, pass: password },
     }) as MailTransport);
 
+  const fromName = env.MAIL_FROM_NAME?.trim() || "个人每日简报";
   const result = await transport.sendMail({
-    from: `美股指数日报 <${user}>`,
+    from: `${fromName} <${user}>`,
     to: recipient,
     subject: email.subject,
     html: email.html,

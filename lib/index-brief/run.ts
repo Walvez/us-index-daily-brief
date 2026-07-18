@@ -1,36 +1,21 @@
-import { classifyAdvice } from "./advice";
-import {
-  writeCommentary,
-  type BriefCommentary,
-  type CommentaryInput,
-} from "./commentary";
+import { buildIndexBriefReport, type BuildDependencies } from "./build";
 import { loadMarketContext } from "./market";
-import {
-  fetchMarketNews,
-  selectRelevantNews,
-  type MarketNews,
-} from "./news";
 import type { IndexBriefReport } from "./render";
 import { inspectState, reportPaths, writeReportFiles } from "./state";
-import type { MarketContext, ValuationContext } from "./types";
-import { appendValuationSnapshot } from "./valuation-history";
-import { loadValuationContext } from "./valuation";
 
-export interface RunDependencies {
-  outputRoot?: string;
-  now?: () => Date;
-  loadMarket?: () => Promise<MarketContext>;
-  loadNews?: () => Promise<MarketNews[]>;
-  loadValuation?: () => Promise<ValuationContext>;
-  explain?: (input: CommentaryInput) => Promise<BriefCommentary>;
-}
+export interface RunDependencies extends BuildDependencies {}
 
 export interface RunResult {
   status: "generated" | "email-only" | "skip";
   marketDate: string;
   reportDir: string;
+  report?: IndexBriefReport;
 }
 
+/**
+ * Legacy single-module runner kept for tests and market-only compatibility.
+ * Production orchestration prefers lib/daily-brief.
+ */
 export async function runIndexBrief(
   dependencies: RunDependencies = {},
 ): Promise<RunResult> {
@@ -54,42 +39,17 @@ export async function runIndexBrief(
     };
   }
 
-  const loadedNews = await (dependencies.loadNews ?? fetchMarketNews)();
-  const news = selectRelevantNews(loadedNews, now);
-  const valuation = await (
-    dependencies.loadValuation ??
-    (() =>
-      loadValuationContext({
-        now,
-        debug: process.env.VALUATION_DEBUG === "1",
-      }))
-  )().catch(
-    (): ValuationContext => ({
-      status: "unavailable",
-      reason: "fetch-failed",
-      message: "官方估值数据暂不可用",
-    }),
-  );
-  if (valuation.status === "available") {
-    appendValuationSnapshot(outputRoot, valuation.snapshot);
-  }
-  const advice = classifyAdvice(market.indices.map((index) => index.metrics));
-  const commentary = await (dependencies.explain ?? writeCommentary)({
-    market,
-    advice,
-    news,
+  const report = await buildIndexBriefReport({
+    ...dependencies,
+    outputRoot,
+    now: () => now,
+    loadMarket: async () => market,
   });
-  const report: IndexBriefReport = {
-    market,
-    advice,
-    commentary,
-    valuation,
-    generatedAt: now.toISOString(),
-  };
   writeReportFiles(outputRoot, report);
   return {
     status: "generated",
     marketDate: market.marketDate,
     reportDir: paths.directory,
+    report,
   };
 }
