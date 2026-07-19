@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-20",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-19T22:04:29.427Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-17",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 28592.66015625,
+                  "pct1Day": -1.4921546680569542,
+                  "pct5Day": -4.1322538108881615,
+                  "pct20Day": -3.6341576218215343,
+                  "drawdown20": -5.9643425548958895,
+                  "drawdown60": -6.744615172146511,
+                  "drawdownAll": -6.744615172146511,
+                  "sma20": 29535.78388671875,
+                  "sma50": 29548.7298828125,
+                  "sma200": 26336.0733984375,
+                  "realizedVol20": 25.40371567815354
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-17",
+                "metrics": {
+                  "close": 7457.68994140625,
+                  "pct1Day": -1.0098540030789749,
+                  "pct5Day": -1.5537179364795246,
+                  "pct20Day": 0.5065948336987168,
+                  "drawdown20": -1.5537179364795246,
+                  "drawdown60": -1.998610315198197,
+                  "drawdownAll": -1.998610315198197,
+                  "sma20": 7479.03154296875,
+                  "sma50": 7464.878232421875,
+                  "sma200": 6987.229504394531,
+                  "realizedVol20": 11.08941539054087
+                }
+              }
+            ],
+            "vix": 18.770000457763672,
+            "treasury10y": 4.540999889373779,
+            "dxy": 100.75
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.49%",
+              "较深的60日高点回撤为 -6.74%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "美股主要指数下跌，纳斯达克100回撤加深",
+            "summary": "2026年7月17日，美股主要指数表现疲弱，纳斯达克100下跌1.49%，标普500下跌1.01%。纳斯达克100近60日高点回撤达6.74%，波动率上升。标普500近20日表现略有回升，但整体仍处于回撤状态。市场波动性（VIX）处于中等水平，10年期美债收益率为4.54%。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "极端个股波动引发逆向分散交易策略流行",
+                "explanation": "据Bloomberg报道，近期个股波动加剧，部分基金开始采用逆向分散交易策略，押注个股波动大而指数相对平稳。这可能加剧市场短期波动。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-19/extreme-stock-swings-tempt-funds-into-reverse-dispersion-trade",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "美联储主席强调抗通胀仍未结束，债券市场反应谨慎",
+                "explanation": "Bloomberg报道，美联储主席Warsh表示抗通胀任务仍未完成，债券市场对此保持谨慎，10年期美债收益率维持高位，可能影响股市风险偏好。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-19/bond-traders-take-warsh-at-word-see-inflation-fight-continuing",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "美元指数上升至100.75，全球汇市波动加剧",
+                "explanation": "美元指数升至100.75，反映全球汇市波动加剧，部分新兴市场货币波动性下降，拉美货币成为热门套利对象，可能影响资金流向美股。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-19/safest-carry-in-emerging-markets-is-in-latin-american-currencies",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-19T22:04:29.427Z"
+        },
+        "marketDate": "2026-07-17",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-17（非 2026-07-20 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-17（非 2026-07-20 当日收盘）",
+      "generatedAt": "2026-07-19T22:04:29.427Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "为什么“节省 90% Token”不等于 Coding Agent 总成本降低 90%",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1228396",
+            "publishedAt": "2026-07-19T13:12:46.000Z",
+            "factualExcerpt": "6 回复 · 程序员 节点",
+            "aiSummary": "该帖讨论了节省 90% Token 并不意味着 Coding Agent 总成本会降低 90%，指出实际成本受多种因素影响，Token 只是其中之一。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Maybe Intelligence Ain't All That",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/CliffordSosin/status/2078594661359194500",
+            "publishedAt": "2026-07-18T21:36:00.000Z",
+            "factualExcerpt": "Superintelligence arrived. You probably didn't notice, because it turned out to be kind of incremental. Don't believe me? Run the test. Talk to Fable 5 for an hour, then talk to your ten smartest",
+            "aiSummary": "该推文认为超级智能已经出现，但表现是渐进式的，未引起明显关注。作者建议与 Fable 5 聊天后再与最聪明的人交流以验证观点。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 229
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-19T22:04:29.427Z"
+    }
+  ],
+  "subject": "2026-07-20 个人每日简报｜市场与 AI 科技"
+}
