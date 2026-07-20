@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-21",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-20T22:10:36.151Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-20",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-20",
+                "metrics": {
+                  "close": 28604.234375,
+                  "pct1Day": 0.04047968494974057,
+                  "pct5Day": -2.254862589941454,
+                  "pct20Day": -5.926277217021694,
+                  "drawdown20": -5.743042489222186,
+                  "drawdown60": -6.706865686169527,
+                  "drawdownAll": -6.706865686169527,
+                  "sma20": 29445.6861328125,
+                  "sma50": 29548.831171875,
+                  "sma200": 26355.694619140624,
+                  "realizedVol20": 23.457203000626905
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-20",
+                "metrics": {
+                  "close": 7443.27978515625,
+                  "pct1Day": -0.19322546744659602,
+                  "pct5Day": -0.9588396545191163,
+                  "pct20Day": -0.7639448198928365,
+                  "drawdown20": -1.7439412251805564,
+                  "drawdown60": -2.1879739585208156,
+                  "drawdownAll": -2.1879739585208156,
+                  "sma20": 7476.166528320313,
+                  "sma50": 7466.44142578125,
+                  "sma200": 6991.003603515625,
+                  "realizedVol20": 10.38341754473894
+                }
+              }
+            ],
+            "vix": 18.649999618530273,
+            "treasury10y": 4.5980000495910645,
+            "dxy": 100.99500274658203
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.19%",
+              "较深的60日高点回撤为 -6.71%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100微涨，标普500小幅回落，市场波动有限",
+            "summary": "2026年7月20日，美股主要指数表现分化。纳斯达克100上涨0.04%，但近20日跌幅达5.93%，60日高点回撤为6.71%。标普500下跌0.19%，近20日跌幅为0.76%，回撤相对较小。VIX波动率指数为18.65，显示市场波动有限。美债收益率高企，美元指数维持在100.99。整体来看，市场短期表现偏弱，但波动未显著加剧，定投策略建议保持正常，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "美联储政策路径不明，资金短期避险",
+                "explanation": "据Bloomberg报道，货币市场基金转向超短期资产，反映投资者对美联储利率政策的不确定性和短期风险偏好变化。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-20/money-funds-keep-cash-closer-as-fed-leaves-markets-guessing",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "贸易摩擦升级，特朗普对加拿大进口征收50%关税",
+                "explanation": "特朗普宣布对加拿大进口商品征收50%关税，30天内生效，北美贸易紧张局势升级，可能影响市场风险情绪。",
+                "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "科技板块债务融资活跃，数据中心投资加速",
+                "explanation": "BlackRock计划发行超120亿美元债券用于Meta数据中心建设，Morgan Stanley参与AI相关融资，显示科技行业资本需求旺盛。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-20/blackrock-eyes-more-than-12-billion-debt-for-data-center",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "芯片板块反弹，苹果与特斯拉拖累标普500",
+                "explanation": "芯片制造商反弹，但苹果和特斯拉下跌抵消了部分涨幅，标普500最终收跌，反映板块轮动和市场对科技巨头业绩的高期待。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-20/us-stocks-rebound-from-selloff-as-nvidia-other-chipmakers-rise",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-20T22:10:36.151Z"
+        },
+        "marketDate": "2026-07-20",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-20（非 2026-07-21 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-20（非 2026-07-21 当日收盘）",
+      "generatedAt": "2026-07-20T22:10:36.151Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Introducing Cosmos 3 Edge",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos3edge",
+            "publishedAt": "2026-07-20T15:58:51.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "Cosmos 3 Edge正式发布，相关内容介绍了该产品的主要功能和应用场景。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Safety and alignment in an era of long-horizon models",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/safety-alignment-long-horizon-models",
+            "publishedAt": "2026-07-20T10:00:00.000Z",
+            "factualExcerpt": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+            "aiSummary": "OpenAI分享了部署长期运行AI模型的经验，强调新出现的安全风险、失败案例以及通过迭代部署改进的安全措施。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "China’s AI models have Trump’s AI world at war with itself",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself",
+            "publishedAt": "2026-07-20T18:00:00.000Z",
+            "factualExcerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed insults at the country’s leading AI companies. David Sacks, ",
+            "aiSummary": "文章报道特朗普相关顾问与美国主要AI公司之间因中国AI模型引发的公开争论，反映美国AI领域内部的分歧。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "AI is more likely than humans to form biases when hiring",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans",
+            "publishedAt": "2026-07-20T08:39:01.000Z",
+            "factualExcerpt": "The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data. New research suggests that LLMs can also develop their own bi",
+            "aiSummary": "新研究显示，AI在招聘过程中比人类更容易形成偏见，且大模型不仅会继承训练数据中的偏见，还可能产生自身偏见。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Qwen 3.8 ✨, Kimi Code CLI 👨‍💻, Netflix’s LLM stack 🤖",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-07-20",
+            "publishedAt": "2026-07-20T00:00:00.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "Qwen 3.8、Kimi Code CLI和Netflix的LLM技术栈成为本期关注焦点，介绍了相关产品和技术进展。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 233
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-20T22:10:36.151Z"
+    }
+  ],
+  "subject": "2026-07-21 个人每日简报｜市场与 AI 科技"
+}
