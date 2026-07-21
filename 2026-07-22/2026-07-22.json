@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-22",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-21T22:09:46.662Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-21",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-21",
+                "metrics": {
+                  "close": 29155.1796875,
+                  "pct1Day": 1.926110962334434,
+                  "pct5Day": -1.4571255424744094,
+                  "pct20Day": -3.927562017685366,
+                  "drawdown20": -3.703121202986216,
+                  "drawdown60": -4.909949384729881,
+                  "drawdownAll": -4.909949384729881,
+                  "sma20": 29386.09091796875,
+                  "sma50": 29560.655703125,
+                  "sma200": 26377.466201171876,
+                  "realizedVol20": 24.74096880523801
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-21",
+                "metrics": {
+                  "close": 7509.2001953125,
+                  "pct1Day": 0.8856366018608045,
+                  "pct5Day": -0.45587908608250277,
+                  "pct20Day": 0.48723644127124227,
+                  "drawdown20": -0.8737496051248907,
+                  "drawdown60": -1.321714854875854,
+                  "drawdownAll": -1.321714854875854,
+                  "sma20": 7477.987036132812,
+                  "sma50": 7469.883232421875,
+                  "sma200": 6994.993603515625,
+                  "realizedVol20": 10.795037470816789
+                }
+              }
+            ],
+            "vix": 17.049999237060547,
+            "treasury10y": 4.627999782562256,
+            "dxy": 101.18399810791016
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.89%",
+              "较深的60日高点回撤为 -4.91%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100强劲反弹，标普500温和上涨，市场关注贸易与通胀风险",
+            "summary": "2026年7月21日，美股主要指数表现分化。纳斯达克100 (^NDX)上涨1.93%，创近三周最佳单日表现，主要受芯片股反弹推动。标普500 (^GSPC)上涨0.89%，但近五日及近一个月表现略显疲弱。市场整体波动率适中，VIX为17.05。美国10年期国债收益率升至两个月高位，反映油价上涨带来的通胀担忧。特朗普宣布对加拿大出口征收50%关税，贸易紧张局势加剧。整体来看，指数回撤有限，定投策略建议保持正常，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "纳斯达克100指数创三周最佳单日表现，芯片股反弹",
+                "explanation": "纳斯达克100指数上涨1.93%，为近三周最大单日涨幅。芯片股在人工智能相关交易中强劲反弹，推动指数上行。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-21/us-stock-futures-rise-as-chipmaker-rebound-overshadows-iran-war",
+                "relationship": "direct"
+              },
+              {
+                "title": "美国10年期国债收益率升至两个月高位，油价上涨引发通胀担忧",
+                "explanation": "美国国债收益率上升，反映市场对油价上涨带来的通胀风险和美联储可能加息的担忧。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-21/treasury-yields-hit-two-month-high-as-oil-sparks-inflation-risk",
+                "relationship": "direct"
+              },
+              {
+                "title": "特朗普宣布对加拿大出口征收50%关税，贸易紧张局势加剧",
+                "explanation": "美国总统特朗普宣布对加拿大出口征收高额关税，北美贸易关系紧张，可能影响市场情绪。",
+                "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "油价上涨与中东局势影响市场风险偏好",
+                "explanation": "中东战争导致油价上涨，增加全球通胀压力，影响投资者风险偏好。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-21/alaska-airlines-narrowly-beats-estimates-as-fuel-costs-stay-high",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-21T22:09:46.662Z"
+        },
+        "marketDate": "2026-07-21",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-21（非 2026-07-22 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-21（非 2026-07-22 当日收盘）",
+      "generatedAt": "2026-07-21T22:09:46.662Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "The State of Simulation for Physical AI: An Overview",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+            "publishedAt": "2026-07-21T20:00:27.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "该文章概述了物理人工智能领域的仿真现状，介绍相关技术进展和应用趋势。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Introducing the ChatGPT for small business program",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/introducing-chatgpt-small-business-program",
+            "publishedAt": "2026-07-21T17:00:00.000Z",
+            "factualExcerpt": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+            "aiSummary": "OpenAI推出ChatGPT小企业项目，旨在帮助创业者提升AI技能，实现工作自动化，并利用ChatGPT Work促进业务增长。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
+            "publishedAt": "2026-07-21T15:16:30.000Z",
+            "factualExcerpt": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
+            "aiSummary": "DeepMind发布新Gemini模型，包括Gemini 3.6 Flash、3.5 Flash-Lite和3.5 Flash Cyber，扩展其AI产品线。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+            "publishedAt": "2026-07-21T07:00:00.000Z",
+            "factualExcerpt": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+            "aiSummary": "OpenAI与Hugging Face公布AI模型评估期间的安全事件初步调查结果，强调网络安全能力及防御经验。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+            "publishedAt": "2026-07-21T00:00:00.000Z",
+            "factualExcerpt": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance.",
+            "aiSummary": "David Vélez和Robin Vince加入OpenAI基金会及集团董事会，带来金融、科技和治理领域的全球领导力。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 234
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-21T22:09:46.662Z"
+    }
+  ],
+  "subject": "2026-07-22 个人每日简报｜市场与 AI 科技"
+}
