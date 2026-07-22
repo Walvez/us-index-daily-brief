@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-23",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-22T22:14:43.948Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-22",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-22",
+                "metrics": {
+                  "close": 28998.099609375,
+                  "pct1Day": -0.5387724576170132,
+                  "pct5Day": -1.7100188006472683,
+                  "pct20Day": -1.1897867414997216,
+                  "drawdown20": -4.221942263489364,
+                  "drawdown60": -5.422268387379034,
+                  "drawdownAll": -5.422268387379034,
+                  "sma20": 29368.632421875,
+                  "sma50": 29555.917890625,
+                  "sma200": 26397.992900390625,
+                  "realizedVol20": 21.83643606451995
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-22",
+                "metrics": {
+                  "close": 7498.9599609375,
+                  "pct1Day": -0.13636917526039996,
+                  "pct5Day": -0.9698370708541084,
+                  "pct20Day": 1.8125140956303247,
+                  "drawdown20": -1.0089272552549409,
+                  "drawdown60": -1.4562816184893654,
+                  "drawdownAll": -1.4562816184893654,
+                  "sma20": 7484.662036132812,
+                  "sma50": 7471.883828125,
+                  "sma200": 6998.911652832031,
+                  "realizedVol20": 9.329415292852344
+                }
+              }
+            ],
+            "vix": 16.639999389648438,
+            "treasury10y": 4.6570000648498535,
+            "dxy": 101.14099884033203
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.54%",
+              "较深的60日高点回撤为 -5.42%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100与标普500小幅回调，科技股财报与宏观因素影响市场情绪",
+            "summary": "2026年7月22日，美股主要指数表现偏弱，纳斯达克100下跌0.54%，标普500微跌0.14%。科技巨头财报压力、油价上涨、长期美债收益率高企等多重因素影响市场。波动率指数（VIX）处于16.64，整体波动不高。定投建议维持正常，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Tesla利润大幅下滑，折扣与转型投入拖累业绩",
+                "explanation": "Tesla财报显示利润大幅下滑，主要受电动车降价及加大半导体、自动驾驶出租车和机器人投入影响。该消息直接影响纳斯达克100指数表现。",
+                "url": "https://www.ft.com/content/dc5e629b-562c-41e3-8b89-350af6960adc?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "Google加大AI投资，季度现金流大幅消耗",
+                "explanation": "Google报告显示，因加大AI领域投资，季度现金流消耗达60亿美元，全年计划投入2050亿美元。科技巨头高投入引发市场对盈利能力和未来增长的担忧，直接影响指数。",
+                "url": "https://www.ft.com/content/b02f972c-c764-4006-9377-42563d9d5530?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "标普500连续下跌，油价上涨与科技股回调",
+                "explanation": "标普500指数五日内第四次下跌，部分科技股回调，能源板块因油价上涨表现较好。油价受美伊战争升级影响，直接推动能源板块上涨，间接影响整体指数。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-22/s-p-futures-fall-as-traders-brace-for-alphabet-tesla-earnings",
+                "relationship": "direct"
+              },
+              {
+                "title": "美30年国债收益率持续高位，反映债务与通胀担忧",
+                "explanation": "美国30年国债收益率连续高于5%，为2007年以来最长，反映投资者对美国债务和通胀的担忧。长期利率高企可能影响股市估值，属于可能相关因素。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-22/us-30-year-yield-raises-alarm-in-longest-run-above-5-since-2007",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "欧洲天然气价格接近伊朗战争高点，冬季供应担忧加剧",
+                "explanation": "欧洲天然气价格因热浪和亚洲买家竞价，接近伊朗战争期间高点。能源价格波动可能影响全球市场情绪，属于可能相关因素。",
+                "url": "https://www.ft.com/content/8f076be9-bf29-4df5-878b-835537ba2585?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "fetch-failed",
+            "message": "官方估值数据暂不可用"
+          },
+          "generatedAt": "2026-07-22T22:14:43.948Z"
+        },
+        "marketDate": "2026-07-22",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-22（非 2026-07-23 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-22（非 2026-07-23 当日收盘）",
+      "generatedAt": "2026-07-22T22:14:43.948Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission",
+            "publishedAt": "2026-07-22T13:38:54.000Z",
+            "factualExcerpt": "Google commits $40M in AI tokens and credits for the Genesis Mission",
+            "aiSummary": "谷歌宣布向Genesis Mission提供4000万美元的AI代币和积分支持，以加速科学发现的前沿进展。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Building AI infrastructure with the Effingham County community",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+            "publishedAt": "2026-07-22T13:00:00.000Z",
+            "factualExcerpt": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+            "aiSummary": "OpenAI在佐治亚州埃芬汉县启动Project Camellia，承诺推动负责任能源、社区投资、就业机会和Codex访问。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "How news organizations are using AI to advance their vital missions",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/how-news-organizations-are-using-ai",
+            "publishedAt": "2026-07-22T13:00:00.000Z",
+            "factualExcerpt": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
+            "aiSummary": "新闻机构利用AI提升报道质量、扩大受众和优化运营，OpenAI工具为全球记者和出版商提供支持。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Advancing the next era of national science",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/advancing-the-next-era-of-national-science",
+            "publishedAt": "2026-07-22T12:00:00.000Z",
+            "factualExcerpt": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
+            "aiSummary": "OpenAI与美国能源部及国家实验室合作，致力于利用前沿AI加速美国科学发现进程。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "The State of Simulation for Physical AI: An Overview",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+            "publishedAt": "2026-07-21T20:00:27.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "该文章概述了物理AI模拟的现状，介绍相关技术和发展趋势。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 236
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-22T22:14:43.948Z"
+    }
+  ],
+  "subject": "2026-07-23 个人每日简报｜市场与 AI 科技"
+}
