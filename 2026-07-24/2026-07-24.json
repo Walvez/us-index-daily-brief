@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-24",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-23T22:11:34.103Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-23",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-23",
+                "metrics": {
+                  "close": 28454.80859375,
+                  "pct1Day": -1.873540069671861,
+                  "pct5Day": -1.9670828602331683,
+                  "pct20Day": -2.6189266510840326,
+                  "drawdown20": -6.01638255313634,
+                  "drawdown60": -7.1942200861281975,
+                  "drawdownAll": -7.1942200861281975,
+                  "sma20": 29330.36982421875,
+                  "sma50": 29538.600859375,
+                  "sma200": 26416.339345703123,
+                  "realizedVol20": 22.76070817953679
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-23",
+                "metrics": {
+                  "close": 7408.2998046875,
+                  "pct1Day": -1.2089697334330867,
+                  "pct5Day": -1.665437284632651,
+                  "pct20Day": 0.6805937900951151,
+                  "drawdown20": -2.205699363539638,
+                  "drawdown60": -2.647645347921366,
+                  "drawdownAll": -2.647645347921366,
+                  "sma20": 7487.166015625,
+                  "sma50": 7471.79302734375,
+                  "sma200": 7002.374201660156,
+                  "realizedVol20": 10.40994304945207
+                }
+              }
+            ],
+            "vix": 18.700000762939453,
+            "treasury10y": 4.703000068664551,
+            "dxy": 101.43800354003906
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.87%",
+              "较深的60日高点回撤为 -7.19%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "美股指数大幅回调，科技股领跌，受AI投资与地缘风险影响",
+            "summary": "2026年7月23日，美股主要指数显著下跌，纳斯达克100单日跌幅达1.87%，标普500跌1.21%。科技板块受AI投资压力及相关公司业绩影响领跌，特斯拉与Google股价大幅下挫。宏观层面，美元走强、美债收益率创年内新高，受中东局势与加息预期推动。整体市场波动加剧，短期回撤较深，建议正常定投，可按习惯略微增加。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "科技巨头股价大幅下跌，AI投资引发市场担忧",
+                "explanation": "Google和Tesla等科技公司股价大幅下跌，主要因AI相关投资支出激增，市场对其短期盈利能力产生疑虑。Magnificent 7整体市值蒸发797亿美元，投资者对AI带来的债务和盈利周期表现出担忧。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-23/magnificent-7-loses-767-billion-as-ai-skeptics-dump-tech-stocks",
+                "relationship": "direct"
+              },
+              {
+                "title": "特斯拉股价暴跌，折扣促销与资本支出影响利润",
+                "explanation": "特斯拉股价单日下跌11%，折扣促销导致利润受损，同时资本支出翻倍，反映公司加速向AI与机器人领域转型。空头投资者获利显著。",
+                "url": "https://www.ft.com/content/dc5e629b-562c-41e3-8b89-350af6960adc?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "Google现金流压力加大，AI投资承诺高达2050亿美元",
+                "explanation": "Google宣布将投入高达2050亿美元用于AI相关投资，导致现金流压力加大。欧盟对Google处以890万欧元罚款，进一步加剧市场对其盈利能力的担忧。",
+                "url": "https://www.ft.com/content/b02f972c-c764-4006-9377-42563d9d5530?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "美债收益率创年内新高，美元走强",
+                "explanation": "美国10年期国债收益率升至4.70%，创2026年新高。美元指数升至101.44，主要受中东局势升级和油价上涨影响，市场预期美联储可能加息。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-23/us-treasury-yields-rise-to-2026-highs-as-oil-gains-spark-fed-bet",
+                "relationship": "direct"
+              },
+              {
+                "title": "中东局势升级，推动避险情绪与加息预期",
+                "explanation": "伊朗战争加剧，导致全球能源供应担忧，推动美元走强和美债收益率上升。避险情绪升温，市场对美联储加息预期增强。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-23/dollar-jumps-on-haven-flows-as-middle-east-war-intensifies",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-23T22:11:34.103Z"
+        },
+        "marketDate": "2026-07-23",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-23（非 2026-07-24 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-23（非 2026-07-24 当日收盘）",
+      "generatedAt": "2026-07-23T22:11:34.103Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Launching Health in ChatGPT",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/health-in-chatgpt",
+            "publishedAt": "2026-07-23T00:00:00.000Z",
+            "factualExcerpt": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.",
+            "aiSummary": "ChatGPT健康功能现已允许符合条件的美国用户安全连接医疗记录和Apple Health，以获得更个性化的健康洞察和理解。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/nunchaku-diffusers",
+            "publishedAt": "2026-07-23T00:00:00.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "Hugging Face宣布将Nunchaku 4位扩散推理引入Diffusers库，提升模型推理效率和性能。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "How AI helps scientists design the next generation of medicines",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines",
+            "publishedAt": "2026-07-23T12:00:00.000Z",
+            "factualExcerpt": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the patient. For biologic medicines, therapies made from engineered pro",
+            "aiSummary": "AI技术正在帮助科学家设计和开发新一代药物，降低研发成本和失败率，尤其在生物药领域表现突出。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+            "publishedAt": "2026-07-23T05:18:47.000Z",
+            "factualExcerpt": "a quiet day lets us highlight a new neolab win.",
+            "aiSummary": "Laguna S 2.1发布，价格低于Deepseek v4 Flash，性能优于V4 Pro，成为新一代AI模型的亮点。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Inside the Model Factory — Eiso Kant, Poolside AI",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/poolside",
+            "publishedAt": "2026-07-23T05:09:14.000Z",
+            "factualExcerpt": "Poolside's co-CEO on how his small team of top researchers built a model factory capable of training Laguna S - a 118B MOE beating Thinky's ~1T open weights model... and this is just the beginning.",
+            "aiSummary": "Poolside AI联合首席执行官介绍其小团队如何打造模型工厂，成功训练Laguna S模型并挑战更大规模的开源权重模型。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 238
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-23T22:11:34.103Z"
+    }
+  ],
+  "subject": "2026-07-24 个人每日简报｜市场与 AI 科技"
+}
