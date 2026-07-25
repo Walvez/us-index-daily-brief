@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-26",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-25T22:04:55.401Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-24",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-24",
+                "metrics": {
+                  "close": 28128.33984375,
+                  "pct1Day": -1.1473304402683997,
+                  "pct5Day": -1.6239143541126773,
+                  "pct20Day": -4.456406910059838,
+                  "drawdown20": -7.094678827991449,
+                  "drawdown60": -8.259002752349039,
+                  "drawdownAll": -8.259002752349039,
+                  "sma20": 29264.7708984375,
+                  "sma50": 29519.8716796875,
+                  "sma200": 26432.088251953126,
+                  "realizedVol20": 22.784202240805925
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-24",
+                "metrics": {
+                  "close": 7411.97998046875,
+                  "pct1Day": 0.04967638835190524,
+                  "pct5Day": -0.6129238584150732,
+                  "pct20Day": 0.7406023570261492,
+                  "drawdown20": -2.1571186869694405,
+                  "drawdown60": -2.5992842141546757,
+                  "drawdownAll": -2.5992842141546757,
+                  "sma20": 7489.8905029296875,
+                  "sma50": 7472.013427734375,
+                  "sma200": 7005.732702636718,
+                  "realizedVol20": 10.40876380337274
+                }
+              }
+            ],
+            "vix": 18.579999923706055,
+            "treasury10y": 4.678999900817871,
+            "dxy": 101.47000122070312
+          },
+          "advice": {
+            "level": "notably-more",
+            "label": "出现较明显回撤，可按原计划增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.15%",
+              "较深的60日高点回撤为 -8.26%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100指数出现较明显回撤，标普500表现相对稳定",
+            "summary": "2026年7月24日，美股主要指数表现分化。纳斯达克100指数单日下跌1.15%，近60日高点回撤达8.26%，20日波动率较高。标普500指数则基本持平，近20日累计上涨0.74%，回撤幅度较小。市场波动率（VIX）处于中等水平，10年期美债收益率和美元指数均维持高位。近期新闻聚焦于美国科技公司受欧盟罚款、贸易摩擦加剧、芯片短缺及科技行业裁员等事件，可能对科技板块形成压力。",
+            "adviceLabel": "出现较明显回撤，可按原计划增加",
+            "drivers": [
+              {
+                "title": "美国科技公司遭欧盟罚款，贸易摩擦加剧",
+                "explanation": "美国总统特朗普表示将调查欧盟对美国科技公司（Google、Apple、Meta、Amazon）罚款，并威胁对欧盟征收新关税，可能加剧贸易紧张局势，对科技板块形成压力。",
+                "url": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "美国科技行业裁员加剧，尽管AI投资热潮持续",
+                "explanation": "美国科技公司在AI投资热潮下仍裁员14万人，显示行业结构调整，可能影响科技板块短期表现。",
+                "url": "https://www.ft.com/content/96a33881-27fd-42cf-8cff-4cbc87fc835f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "芯片短缺问题持续，贸易政策影响加大",
+                "explanation": "美国政府加剧芯片短缺，Apple寻求从被列入黑名单的中国公司采购半导体，反映科技行业供应链压力。",
+                "url": "https://www.ft.com/content/5bd259ca-d278-498a-a03d-7b4556d9fa8f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "“特朗普交易”表现转弱，市场情绪变化",
+                "explanation": "特朗普连任后，市场对其经济政策预期出现变化，“特朗普交易”表现转弱，影响部分板块走势。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-25/the-trump-trade-is-turning-into-a-loser-in-the-stock-market",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-25T22:04:55.401Z"
+        },
+        "marketDate": "2026-07-24",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-24（非 2026-07-26 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-24（非 2026-07-26 当日收盘）",
+      "generatedAt": "2026-07-25T22:04:55.401Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+            "publishedAt": "2026-07-25T07:25:38.000Z",
+            "factualExcerpt": "ain't nobody beats Anthropic at distilling Fable!",
+            "aiSummary": "Anthropic 的 Claude Opus 5 在性能上达到 Fable 水准，但价格仅为 Fable 的一半，展现出高性价比。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "正常上班，但是独立开发了 app，这种能注册啥个体户之类的吗",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1229794",
+            "publishedAt": "2026-07-25T14:31:25.000Z",
+            "factualExcerpt": "7 回复 · 程序员 节点",
+            "aiSummary": "用户询问在正常上班同时独立开发 app 是否可以注册个体户，相关讨论集中于程序员群体。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "The new rules of context engineering for Claude 5 models",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/trq212/status/2080710971228918066",
+            "publishedAt": "2026-07-24T17:45:27.000Z",
+            "factualExcerpt": "I’ve written previously about how to best prompt the newest generation of Claude 5 models and work with them iteratively to discover what you want to build. But when you send a message to Claude, the",
+            "aiSummary": "作者分享针对 Claude 5 模型的上下文工程新规则，强调如何通过迭代提示优化模型输出。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 236
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-25T22:04:55.401Z"
+    }
+  ],
+  "subject": "2026-07-26 个人每日简报｜市场与 AI 科技"
+}
