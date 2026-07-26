@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-27",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-26T22:08:41.931Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-24",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-24",
+                "metrics": {
+                  "close": 28128.33984375,
+                  "pct1Day": -1.1473304402683997,
+                  "pct5Day": -1.6239143541126773,
+                  "pct20Day": -4.456406910059838,
+                  "drawdown20": -7.094678827991449,
+                  "drawdown60": -8.259002752349039,
+                  "drawdownAll": -8.259002752349039,
+                  "sma20": 29264.7708984375,
+                  "sma50": 29519.8716796875,
+                  "sma200": 26432.088251953126,
+                  "realizedVol20": 22.784202240805925
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-24",
+                "metrics": {
+                  "close": 7411.97998046875,
+                  "pct1Day": 0.04967638835190524,
+                  "pct5Day": -0.6129238584150732,
+                  "pct20Day": 0.7406023570261492,
+                  "drawdown20": -2.1571186869694405,
+                  "drawdown60": -2.5992842141546757,
+                  "drawdownAll": -2.5992842141546757,
+                  "sma20": 7489.8905029296875,
+                  "sma50": 7472.013427734375,
+                  "sma200": 7005.732702636718,
+                  "realizedVol20": 10.40876380337274
+                }
+              }
+            ],
+            "vix": 18.579999923706055,
+            "treasury10y": 4.678999900817871,
+            "dxy": 101.47000122070312
+          },
+          "advice": {
+            "level": "notably-more",
+            "label": "出现较明显回撤，可按原计划增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.15%",
+              "较深的60日高点回撤为 -8.26%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100出现较明显回撤，标普500表现平稳",
+            "summary": "2026年7月24日，美股主要指数表现分化。纳斯达克100指数单日下跌1.15%，近20日和60日高点回撤分别达到-7.09%和-8.26%，波动率较高。标普500指数则基本持平，近20日上涨0.74%，回撤幅度较小。整体市场波动性不高，建议定投者可按原计划增加投入。",
+            "adviceLabel": "出现较明显回撤，可按原计划增加",
+            "drivers": [
+              {
+                "title": "美联储加息预期升温，债券市场波动",
+                "explanation": "市场认为美联储本周加息概率上升，受中东局势影响油价上涨，通胀和收益率上行，可能加剧股市波动。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-26/bond-traders-on-edge-as-risks-of-fed-rate-hike-this-week-mount",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "全球央行政策成为关注焦点",
+                "explanation": "美联储、英国央行、日本央行本周将决定利率，全球货币政策的不确定性可能影响美股走势。",
+                "url": "https://www.ft.com/content/865fd421-2953-4429-9297-c4dcf3a26d33?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "芯片供应链风险与贸易政策影响",
+                "explanation": "美国新关税及芯片短缺问题持续发酵，苹果等公司寻求突破供应限制，可能影响科技板块表现。",
+                "url": "https://www.ft.com/content/5bd259ca-d278-498a-a03d-7b4556d9fa8f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-26T22:08:41.931Z"
+        },
+        "marketDate": "2026-07-24",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-24（非 2026-07-27 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-24（非 2026-07-27 当日收盘）",
+      "generatedAt": "2026-07-26T22:08:41.931Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "5 年 PHPer，现在学 Java 还来得及吗？",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1229977",
+            "publishedAt": "2026-07-26T17:07:25.000Z",
+            "factualExcerpt": "6 回复 · 程序员 节点",
+            "aiSummary": "一位有 5 年 PHP 开发经验的程序员在讨论现在转学 Java 是否还来得及，相关话题引发了多位网友回复。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Graph Engineering Clearly Explained",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/akshay_pachaar/status/2081089131808243999",
+            "publishedAt": "2026-07-25T18:48:08.000Z",
+            "factualExcerpt": "Loop engineering got about six weeks in the spotlight before the timeline moved on. On July 18, Peter Steinberger, the person behind OpenClaw, posted a nine-word question. \"Are we still talking loops",
+            "aiSummary": "推文讨论了图工程（Graph Engineering）的话题，提到循环工程（Loop engineering）曾短暂流行，随后关注点转移，并引用了 Peter Steinberger 关于相关讨论是否仍在继续的问题。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 232
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-26T22:08:41.931Z"
+    }
+  ],
+  "subject": "2026-07-27 个人每日简报｜市场与 AI 科技"
+}
