@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-29",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-28T22:14:21.323Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-28",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-28",
+                "metrics": {
+                  "close": 27763.134765625,
+                  "pct1Day": -0.9846074930224666,
+                  "pct5Day": -2.940459118604479,
+                  "pct20Day": -4.653802763637671,
+                  "drawdown20": -8.300917634310146,
+                  "drawdown60": -9.450124526801657,
+                  "drawdownAll": -9.450124526801657,
+                  "sma20": 29192.5591796875,
+                  "sma50": 29486.0130078125,
+                  "sma200": 26446.25712890625,
+                  "realizedVol20": 22.930937417889787
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-28",
+                "metrics": {
+                  "close": 7428.77978515625,
+                  "pct1Day": 0.2104307328987321,
+                  "pct5Day": -0.19480659626575644,
+                  "pct20Day": 1.0165836566455966,
+                  "drawdown20": -1.9353505089046634,
+                  "drawdown60": -2.378518237190796,
+                  "drawdownAll": -2.378518237190796,
+                  "sma20": 7493.688500976563,
+                  "sma50": 7471.72802734375,
+                  "sma200": 7009.3096533203125,
+                  "realizedVol20": 10.421437240800032
+                }
+              }
+            ],
+            "vix": 18.209999084472656,
+            "treasury10y": 4.604000091552734,
+            "dxy": 101.39299774169922
+          },
+          "advice": {
+            "level": "notably-more",
+            "label": "出现较明显回撤，可按原计划增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.98%",
+              "较深的60日高点回撤为 -9.45%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "纳斯达克100回撤加深，标普500表现稳健",
+            "summary": "2026年7月28日，美股主要指数走势分化。纳斯达克100指数收跌0.98%，近20日和60日高点回撤分别达-8.30%和-9.45%，波动率显著上升。标普500指数微涨0.21%，近20日涨幅为1.02%，回撤幅度较小。芯片板块大幅下跌，AI相关担忧加剧，资金流向防御板块。市场对美联储利率决议存在分歧，部分机构预期加息。美元指数小幅波动，能源价格同比上涨。整体来看，科技板块承压，市场避险情绪上升。",
+            "adviceLabel": "出现较明显回撤，可按原计划增加",
+            "drivers": [
+              {
+                "title": "芯片板块大幅下跌，纳斯达克100接近修正区间",
+                "explanation": "芯片股因AI相关抛售加剧，拖累纳斯达克100指数，盘中一度接近技术性修正。投资者对大科技公司在AI领域的高投入产生疑虑，导致资金流出。",
+                "url": "https://www.ft.com/content/f8c03b5b-e194-4236-82c3-389b6f5dd7ae?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "标普500表现稳健，防御板块资金流入",
+                "explanation": "标普500指数微涨，受能源价格下跌和保险板块上涨推动。芯片板块下跌未影响整体指数，等权重标普500创历史新高，显示市场内部轮动。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-28/s-p-500-futures-muted-as-semiconductors-drop-earnings-roll-in",
+                "relationship": "direct"
+              },
+              {
+                "title": "美联储利率决议前市场紧张，部分机构预期加息",
+                "explanation": "美联储即将公布政策决议，市场普遍预期维持利率不变，但部分华尔街机构认为可能加息。利率不确定性加剧市场波动，影响投资者风险偏好。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-28/citadel-securities-fed-rate-hike-call-adds-to-market-angst",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "美元指数小幅波动，能源价格同比上涨",
+                "explanation": "美元指数略有波动，TD证券认为若美联储按兵不动，美元可能走弱。能源价格同比上涨19%，对部分板块构成压力。",
+                "url": "https://www.bbc.co.uk/news/articles/c74gqxz27q0o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "资金流向防御板块，保险股创历史新高",
+                "explanation": "受AI相关担忧影响，资金流向保险等防御板块，保险股创历史新高。市场避险情绪上升，部分板块表现优于科技股。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-28/us-insurers-rally-as-stocks-shift-from-ai-loser-to-safe-haven",
+                "relationship": "direct"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-28T22:14:21.323Z"
+        },
+        "marketDate": "2026-07-28",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-28（非 2026-07-29 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-28（非 2026-07-29 当日收盘）",
+      "generatedAt": "2026-07-28T22:14:21.323Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Scientific computing in the age of agentic AI",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scientific-computing-agentic-ai",
+            "publishedAt": "2026-07-28T17:00:00.000Z",
+            "factualExcerpt": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+            "aiSummary": "科学家正在利用AI编码代理来推动科学计算现代化，加快软件开发和基因组等领域的发现进程。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "The OlmoEarth Platform: Geospatial inference at planetary scale",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+            "publishedAt": "2026-07-28T16:27:42.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "OlmoEarth平台实现了全球范围的地理空间推理，支持大规模地理数据分析与应用。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+            "publishedAt": "2026-07-28T15:01:45.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "LFM2.5-Encoders提升了CPU上的长上下文推理速度，为相关任务提供更高效的处理能力。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/chatgpt-work",
+            "publishedAt": "2026-07-28T15:26:30.000Z",
+            "factualExcerpt": "OpenAI's core product engineering lead on how they are building ChatGPT Work to make AGI accessible to all of humanity: Sites, OpenClaw, Memory, Subagents, Finance, No-Code and advice.",
+            "aiSummary": "OpenAI工程负责人介绍了ChatGPT Work的构建过程，包括网站、OpenClaw、记忆、子代理、金融、无代码工具及相关建议，旨在让AGI普及。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Samsung’s chip workers are jumping ship to rival SK Hynix",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix",
+            "publishedAt": "2026-07-28T09:18:57.000Z",
+            "factualExcerpt": "Lee, an engineer at Samsung’s semiconductor division, clocks out when his shift ends. He used to work longer hours, going the extra mile to excel at his projects. But lately, he’s been coming straight home to work on his job application for the chipmaker’s South Korean rival SK Hynix, sharing tips w",
+            "aiSummary": "三星半导体工程师因工作环境变化，纷纷跳槽至韩国竞争对手SK海力士，部分员工已开始准备相关求职材料。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 232
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-28T22:14:21.323Z"
+    }
+  ],
+  "subject": "2026-07-29 个人每日简报｜市场与 AI 科技"
+}
