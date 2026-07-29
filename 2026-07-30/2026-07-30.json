@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-30",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-29T22:09:20.894Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-29",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-29",
+                "metrics": {
+                  "close": 27192.306640625,
+                  "pct1Day": -2.056051320873435,
+                  "pct5Day": -6.227280384146941,
+                  "pct20Day": -10.186310465232022,
+                  "drawdown20": -8.827470509066657,
+                  "drawdown60": -11.31188891586292,
+                  "drawdownAll": -11.31188891586292,
+                  "sma20": 28956.036328125,
+                  "sma50": 29418.315859375,
+                  "sma200": 26471.68634765625,
+                  "realizedVol20": 20.221959861399085
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-29",
+                "metrics": {
+                  "close": 7316.14990234375,
+                  "pct1Day": -1.516128975010814,
+                  "pct5Day": -2.4378055029766497,
+                  "pct20Day": -2.4430079937161304,
+                  "drawdown20": -3.4221370740819546,
+                  "drawdown60": -3.858585808031644,
+                  "drawdownAll": -3.858585808031644,
+                  "sma20": 7483.105493164063,
+                  "sma50": 7468.0958203125,
+                  "sma200": 7015.50615234375,
+                  "realizedVol20": 10.478999803068483
+                }
+              }
+            ],
+            "vix": 20.65999984741211,
+            "treasury10y": 4.622000217437744,
+            "dxy": 100.8489990234375
+          },
+          "advice": {
+            "level": "notably-more",
+            "label": "出现较明显回撤，可按原计划增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -2.06%",
+              "较深的60日高点回撤为 -11.31%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "美股主要指数大幅回撤，科技板块领跌，联储政策引发市场波动",
+            "summary": "2026年7月29日，美股主要指数出现显著回撤。纳斯达克100单日跌幅达2.06%，近20日累计跌幅超10%，60日高点回撤达11.31%。标普500亦下跌1.52%，近5日和20日跌幅均超2%。科技板块受Meta、Nvidia等公司消息影响领跌，联储维持利率不变并放弃前瞻指引，导致债市和汇市波动加剧。美元指数下跌，美债收益率上升。整体市场波动性提升，投资者情绪趋于谨慎。",
+            "adviceLabel": "出现较明显回撤，可按原计划增加",
+            "drivers": [
+              {
+                "title": "Meta股价大跌，AI战略与成本引发市场担忧",
+                "explanation": "Meta股价下跌10%，主要因其AI‘代理人’战略未能获得市场认可，成本上升且收入预期令人失望。投资者对公司未来AI投入及盈利能力产生疑虑，拖累科技板块整体表现。",
+                "url": "https://www.ft.com/content/06d941ed-8136-46a4-a2ec-44bea1b35c3b?syn-25a6b1a6=1",
+                "relationship": "direct"
+              },
+              {
+                "title": "微软云业务收入增长，资本开支大幅提升",
+                "explanation": "微软智能云业务收入同比增长32%，但资本开支攀升至410亿美元，显示科技巨头持续加大AI和云基础设施投入。尽管业绩亮眼，但高投入引发市场对行业估值和未来盈利的担忧。",
+                "url": "https://www.ft.com/content/da7c4472-cb30-4b82-b321-d82c1859419e?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia加速AI投资，‘循环融资’模式引发质疑",
+                "explanation": "Nvidia推动新一轮AI交易，投资规模超750亿美元。部分分析认为其‘循环融资’模式可能人为推高需求和估值，市场对行业泡沫风险有所警惕。",
+                "url": "https://www.ft.com/content/33714af0-a646-4271-8078-49a87182917f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "美联储维持利率不变，放弃前瞻指引加剧市场波动",
+                "explanation": "联储宣布利率维持在3.5%-3.75%，并放弃前瞻性指引。主席Warsh强调不会受市场价格约束，导致美债收益率波动加剧，美元指数下跌，市场风险偏好下降。",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+                "relationship": "direct"
+              },
+              {
+                "title": "美元指数下跌，美债收益率上升",
+                "explanation": "联储决议后，美元指数创两周最大跌幅，10年期美债收益率升至4.62%。货币和债券市场波动加剧，反映投资者对政策前景和经济环境的不确定性。",
+                "url": "https://www.bloomberg.com/news/articles/2026-07-29/dollar-drops-to-lowest-in-nearly-a-week-as-fed-holds-steady",
+                "relationship": "direct"
+              }
+            ],
+            "translationAvailable": true
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-29T22:09:20.894Z"
+        },
+        "marketDate": "2026-07-29",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-29（非 2026-07-30 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-29（非 2026-07-30 当日收盘）",
+      "generatedAt": "2026-07-29T22:09:20.894Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control",
+            "publishedAt": "2026-07-29T16:02:10.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "谷歌在Flow Music平台推出Lyria 3.5，提升了音乐性、歌词、声乐表现和创作控制能力。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/chatgpt-for-academic-researchers",
+            "publishedAt": "2026-07-29T10:00:00.000Z",
+            "factualExcerpt": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
+            "aiSummary": "OpenAI为10万名学术研究者免费开放ChatGPT最先进AI模型，以加速科学研究、协作和发现。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+            "publishedAt": "2026-07-29T00:00:00.000Z",
+            "factualExcerpt": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
+            "aiSummary": "GPT-5.6提升了AI模型、推理和智能工作流程的效率，实现更高性价比的智能输出。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "Scientific computing in the age of agentic AI",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scientific-computing-agentic-ai",
+            "publishedAt": "2026-07-28T17:00:00.000Z",
+            "factualExcerpt": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+            "aiSummary": "最新报告显示科学家利用AI编码代理加速科学计算，推动基因组学等领域的软件开发和发现。",
+            "summaryStatus": "generated"
+          },
+          {
+            "sourceTitle": "The OlmoEarth Platform: Geospatial inference at planetary scale",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+            "publishedAt": "2026-07-28T16:27:42.000Z",
+            "factualExcerpt": "",
+            "aiSummary": "OlmoEarth平台实现了全球范围的地理空间推理，支持大规模地理数据分析。",
+            "summaryStatus": "generated"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 232
+      },
+      "userMessage": "部分科技新闻源暂不可用",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-29T22:09:20.894Z"
+    }
+  ],
+  "subject": "2026-07-30 个人每日简报｜市场与 AI 科技"
+}
