@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-07-31",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-30T22:16:34.710Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-30",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-30",
+                "metrics": {
+                  "close": 28106.345703125,
+                  "pct1Day": 3.361373630513509,
+                  "pct5Day": -1.2246254220387685,
+                  "pct20Day": -5.712293874930179,
+                  "drawdown20": -5.7628076070550875,
+                  "drawdown60": -8.330736967939119,
+                  "drawdownAll": -8.330736967939119,
+                  "sma20": 28870.897265625,
+                  "sma50": 29400.55546875,
+                  "sma200": 26491.10939453125,
+                  "realizedVol20": 23.987829905194655
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-30",
+                "metrics": {
+                  "close": 7437.6298828125,
+                  "pct1Day": 1.6604359135647773,
+                  "pct5Day": 0.3959083581693305,
+                  "pct20Day": -0.6093638412191844,
+                  "drawdown20": -1.8185235535066488,
+                  "drawdown60": -2.262219238979138,
+                  "drawdownAll": -2.262219238979138,
+                  "sma20": 7480.82548828125,
+                  "sma50": 7468.787421875,
+                  "sma200": 7019.931752929688,
+                  "realizedVol20": 12.20543742904186
+                }
+              }
+            ],
+            "vix": 17.09000015258789,
+            "treasury10y": 4.663000106811523,
+            "dxy": 99.96900177001953
+          },
+          "advice": {
+            "level": "notably-more",
+            "label": "出现较明显回撤，可按原计划增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 1.66%",
+              "较深的60日高点回撤为 -8.33%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 3.36%，标普500 1.66%。规则观察为「出现较明显回撤，可按原计划增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "出现较明显回撤，可按原计划增加",
+            "drivers": [
+              {
+                "title": "Apple forecasts slower growth as AI build-out strains tech supply chains",
+                "explanation": "中文翻译暂不可用：Smartphone revenue rose more than a fifth as rivals struggle",
+                "url": "https://www.ft.com/content/762a504e-fca8-49d0-9f2e-b2f142fd749a?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Amazon increases AI infrastructure spending to $220bn this year",
+                "explanation": "中文翻译暂不可用：Seattle-based group had in April expected to spend $200bn in 2026",
+                "url": "https://www.ft.com/content/fddc42a9-4c57-4689-abde-75bbe79622e9?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Amazon Tops Estimates | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Emily Graffeo, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-07-30/amazon-tops-estimates-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta shares tumble as Zuckerberg tries to sell his vision for AI ‘agents’",
+                "explanation": "中文翻译暂不可用：Social media chief defends strategy based on personalised bots as costs rise and revenue projections disappoint",
+                "url": "https://www.ft.com/content/06d941ed-8136-46a4-a2ec-44bea1b35c3b?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Microsoft adds record $450bn in market cap as results cheer investors",
+                "explanation": "中文翻译暂不可用：Revenue in tech group’s intelligent cloud segment surges 32% to $39.3bn",
+                "url": "https://www.ft.com/content/da7c4472-cb30-4b82-b321-d82c1859419e?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-30T22:16:34.710Z"
+        },
+        "marketDate": "2026-07-30",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-30（非 2026-07-31 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-30（非 2026-07-31 当日收盘）",
+      "generatedAt": "2026-07-30T22:16:34.710Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+            "publishedAt": "2026-07-30T15:09:09.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+            "publishedAt": "2026-07-30T15:00:59.000Z",
+            "factualExcerpt": "Gemini Robotics ER 2 helps robots reason, collaborate, and solve real-world tasks. It represents a step change in video understanding, tool orchestration, and multi-robot collaboration for robotic applications.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Advancing the price-performance frontier with GPT-5.6",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+            "publishedAt": "2026-07-30T10:00:00.000Z",
+            "factualExcerpt": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ontologies-agentic-systems",
+            "publishedAt": "2026-07-30T11:17:55.000Z",
+            "factualExcerpt": "AI engineers are rediscovering ontologies as a way to keep probabilistic agents inside deterministic boundaries.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+            "publishedAt": "2026-07-30T10:15:19.000Z",
+            "factualExcerpt": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conference on Machine Learning, a top AI conference, this month. The claim has huge implications for the saf",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 230
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-30T22:16:34.710Z"
+    }
+  ],
+  "subject": "2026-07-31 个人每日简报｜市场与 AI 科技"
+}
