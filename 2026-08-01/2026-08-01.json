@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-01",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-07-31T22:13:19.200Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-31",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 28274.1953125,
+                  "pct1Day": 0.5971807276922731,
+                  "pct5Day": 0.5185356461142462,
+                  "pct20Day": -3.597149705964537,
+                  "drawdown20": -5.200028080366428,
+                  "drawdown60": -7.783292979519279,
+                  "drawdownAll": -7.783292979519279,
+                  "sma20": 28818.1466796875,
+                  "sma50": 29389.66265625,
+                  "sma200": 26508.729140625,
+                  "realizedVol20": 23.647878890063325
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 7489.72021484375,
+                  "pct1Day": 0.7003619815987983,
+                  "pct5Day": 1.0488457143685315,
+                  "pct20Day": 0.08659324391302543,
+                  "drawdown20": -1.1308978195030306,
+                  "drawdown60": -1.577700980870563,
+                  "drawdownAll": -1.577700980870563,
+                  "sma20": 7481.149487304688,
+                  "sma50": 7471.50962890625,
+                  "sma200": 7024.106752929688,
+                  "realizedVol20": 12.477014379550509
+                }
+              }
+            ],
+            "vix": 15.989999771118164,
+            "treasury10y": 4.744999885559082,
+            "dxy": 99.8030014038086
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.60%",
+              "较深的60日高点回撤为 -7.78%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.60%，标普500 0.70%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Warsh Reportedly Considering Reducing Number of Fed Meetings",
+                "explanation": "中文翻译暂不可用：Federal Reserve Chairman Kevin Warsh is considering reducing the frequency of the central bank’s scheduled policy meetings, the New York Times reported Friday. Warsh raised the proposal to change the frequency of meetings at this week’s gathering of the Federal Open Market Committee, the paper added",
+                "url": "https://www.bloomberg.com/news/videos/2026-07-31/warsh-reported-to-weigh-reducing-number-of-fed-meetings-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple shares tumble as AI build-out hits supply chains and growth",
+                "explanation": "中文翻译暂不可用：Chief executive Tim Cook says impact of memory prices is set to worsen as he steps down",
+                "url": "https://www.ft.com/content/762a504e-fca8-49d0-9f2e-b2f142fd749a?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260731b.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Rich Clarida's Money Splurge: Music, New Album",
+                "explanation": "中文翻译暂不可用：Former Federal Reserve Vice Chairman Richard Clarida talks to Tom Keene and Scarlet Fu on \"Bloomberg Money\" about his music and upcoming album. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-07-31/rich-clarida-s-money-splurge-music-new-album-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Zitron: \"Everyone Has Been Sold a Lie\" on AI",
+                "explanation": "中文翻译暂不可用：Following earnings this week that saw tech giants like Microsoft and Amazon report aggressive AI spending plans, EZ Primary Research CEO Ed Zitron gives his more skeptical take on the industry. In speaking about OpenAI and Anthropic Zitron argues \"everyone is buying into these stocks because they be",
+                "url": "https://www.bloomberg.com/news/videos/2026-07-31/zitron-everyone-has-been-sold-a-lie-on-ai-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-07-31T22:13:19.200Z"
+        },
+        "marketDate": "2026-07-31",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-31（非 2026-08-01 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-31（非 2026-08-01 当日收盘）",
+      "generatedAt": "2026-07-31T22:13:19.200Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Advancing responsible AI across Europe",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/advancing-responsible-ai-across-europe",
+            "publishedAt": "2026-07-31T15:00:00.000Z",
+            "factualExcerpt": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Building abundant intelligence",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/building-abundant-intelligence",
+            "publishedAt": "2026-07-31T15:00:00.000Z",
+            "factualExcerpt": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Univé builds an AI-ready workforce",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/unive",
+            "publishedAt": "2026-07-31T07:00:00.000Z",
+            "factualExcerpt": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+            "publishedAt": "2026-07-31T04:40:54.000Z",
+            "factualExcerpt": "Distillation is all you need!",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Inkling-Small 🧠, GPT-5.6 price cuts 💸, Gemini Robotics 2 🤖",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-07-31",
+            "publishedAt": "2026-07-31T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 228
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-07-31T22:13:19.200Z"
+    }
+  ],
+  "subject": "2026-08-01 个人每日简报｜市场与 AI 科技"
+}
