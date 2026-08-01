@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-02",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-01T22:06:42.601Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-31",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 28274.19921875,
+                  "pct1Day": 0.597194625797343,
+                  "pct5Day": 0.5185495333540253,
+                  "pct20Day": -3.5971363873314224,
+                  "drawdown20": -5.200014983180594,
+                  "drawdown60": -7.7832802392270155,
+                  "drawdownAll": -7.7832802392270155,
+                  "sma20": 28818.146875,
+                  "sma50": 29389.662734375,
+                  "sma200": 26508.72916015625,
+                  "realizedVol20": 23.64788492301072
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 7489.72021484375,
+                  "pct1Day": 0.7003619815987983,
+                  "pct5Day": 1.0488457143685315,
+                  "pct20Day": 0.08659324391302543,
+                  "drawdown20": -1.1308978195030306,
+                  "drawdown60": -1.577700980870563,
+                  "drawdownAll": -1.577700980870563,
+                  "sma20": 7481.149487304688,
+                  "sma50": 7471.50962890625,
+                  "sma200": 7024.106752929688,
+                  "realizedVol20": 12.477014379550509
+                }
+              }
+            ],
+            "vix": 15.989999771118164,
+            "treasury10y": 4.744999885559082,
+            "dxy": 99.80000305175781
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.60%",
+              "较深的60日高点回撤为 -7.78%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.60%，标普500 0.70%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Warsh’s Silent Treatment Has S&P Traders Bracing for Wild Swings",
+                "explanation": "中文翻译暂不可用：A relentless run of uncertainty, from war to tariff fights to inflation that refuses to die, has challenged investors this year. Now they have to balance another risk: A Federal Reserve that won’t tell them what it’s thinking.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-01/warsh-s-silent-treatment-has-s-p-traders-bracing-for-wild-swings",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Fewer Fed Meetings Could Fuel Market Volatility",
+                "explanation": "中文翻译暂不可用：Federal Reserve Chairman Kevin Warsh is considering reducing the number of Federal Reserve policy meetings, which drew concern from economists and market strategists, who say fewer scheduled decisions could increase uncertainty and make policy moves more disruptive. Bloomberg News International Econ",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-01/fewer-fed-meetings-could-fuel-market-volatility-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Special edition: Wall Street’s wild week",
+                "explanation": "中文翻译暂不可用：Inside the tumult at Situational Awareness and Fifa abandons its World Cup deal",
+                "url": "https://www.ft.com/content/65f46ae0-8a3a-4f43-bc85-5eb9938d2d09?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Amazon completes $50bn investment in OpenAI",
+                "explanation": "中文翻译暂不可用：Ecommerce giant has roughly 5% stake in AI lab after equity deal",
+                "url": "https://www.ft.com/content/8ae9e6e4-a53c-44da-8e7d-c9d81f0df4b9?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Furman: Warsh Should Talk Less, Act More",
+                "explanation": "中文翻译暂不可用：Harvard professor and former Obama economic adviser Jason Furman explains why tariffs, geopolitics, and Federal Reserve credibility are shaping the next chapter of the inflation fight, and why the toughest decisions may still lie ahead. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-01/furman-warsh-should-talk-less-act-more-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-01T22:06:42.601Z"
+        },
+        "marketDate": "2026-07-31",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-31（非 2026-08-02 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-31（非 2026-08-02 当日收盘）",
+      "generatedAt": "2026-08-01T22:06:42.601Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Ten advances in mathematics and theoretical computer science",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/ten-advances-in-mathematics",
+            "publishedAt": "2026-08-01T00:00:00.000Z",
+            "factualExcerpt": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] not much happened today",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+            "publishedAt": "2026-08-01T01:38:09.000Z",
+            "factualExcerpt": "apart from DeepSeek V4-Flash 0731, a quiet day.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[脑洞] 既然编程生产力如此高了，为什么不众程序员协作重建 BAT/TMD 让中心化的平台暴利回归用户实现普惠互联？",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1231482",
+            "publishedAt": "2026-08-01T15:14:26.000Z",
+            "factualExcerpt": "11 回复 · 程序员 节点",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 229
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-01T22:06:42.601Z"
+    }
+  ],
+  "subject": "2026-08-02 个人每日简报｜市场与 AI 科技"
+}
