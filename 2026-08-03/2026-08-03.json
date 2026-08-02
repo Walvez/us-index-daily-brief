@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-03",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-02T22:05:50.924Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-07-31",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 28274.19921875,
+                  "pct1Day": 0.597194625797343,
+                  "pct5Day": 0.5185495333540253,
+                  "pct20Day": -3.5971363873314224,
+                  "drawdown20": -5.200014983180594,
+                  "drawdown60": -7.7832802392270155,
+                  "drawdownAll": -7.7832802392270155,
+                  "sma20": 28818.146875,
+                  "sma50": 29389.662734375,
+                  "sma200": 26508.72916015625,
+                  "realizedVol20": 23.64788492301072
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-07-31",
+                "metrics": {
+                  "close": 7489.72021484375,
+                  "pct1Day": 0.7003619815987983,
+                  "pct5Day": 1.0488457143685315,
+                  "pct20Day": 0.08659324391302543,
+                  "drawdown20": -1.1308978195030306,
+                  "drawdown60": -1.577700980870563,
+                  "drawdownAll": -1.577700980870563,
+                  "sma20": 7481.149487304688,
+                  "sma50": 7471.50962890625,
+                  "sma200": 7024.106752929688,
+                  "realizedVol20": 12.477014379550509
+                }
+              }
+            ],
+            "vix": 15.989999771118164,
+            "treasury10y": 4.744999885559082,
+            "dxy": 99.80000305175781
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.60%",
+              "较深的60日高点回撤为 -7.78%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.60%，标普500 0.70%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Wall Street’s Favorite Bet Comes Undone as Chips Whipsaw Market",
+                "explanation": "中文翻译暂不可用：The one-way trade in semiconductor stocks that has defined equity markets this year is coming unglued, triggering stomach-churning volatility as investors grow increasingly concerned that the fire-hose of artificial intelligence spending won’t continue.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-02/wall-street-s-favorite-bet-comes-undone-as-chips-whipsaw-market",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Traders Flying Blind on Fed See Risk Yields Spiral Higher",
+                "explanation": "中文翻译暂不可用：Bond investors including Brandywine Global Investment Management and Wellington Management say the risk of a deeper Treasury rout is rising as Federal Reserve Chairman Kevin Warsh keeps investors in the dark about how officials will respond to the evolving economy.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-02/bond-traders-flying-blind-on-fed-see-risk-yields-spiral-higher",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple struggles to keep pace with AI ‘bug’ hunters",
+                "explanation": "中文翻译暂不可用：iPhone maker has limited the number of vulnerabilities researchers can submit to manage wave of reports",
+                "url": "https://www.ft.com/content/4532122d-90f2-4433-9df6-ca99d8a141d2?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "German carmakers flood jobs market with managers after wielding axe",
+                "explanation": "中文翻译暂不可用：Volkswagen approaches headhunter to find positions for hundreds of departing managers",
+                "url": "https://www.ft.com/content/e345d51f-11f7-4d4d-8f09-86dd3a225597?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Australian farmers in trade dispute over pineapple import plan",
+                "explanation": "中文翻译暂不可用：Growers say allowing Indian and Indonesian fruit in poses a wider biosecurity threat",
+                "url": "https://www.ft.com/content/89450629-32d9-495e-b287-42156e1aa68a?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-02T22:05:50.924Z"
+        },
+        "marketDate": "2026-07-31",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-07-31（非 2026-08-03 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-07-31（非 2026-08-03 当日收盘）",
+      "generatedAt": "2026-08-02T22:05:50.924Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "冒险岛 083 网页版",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1231558",
+            "publishedAt": "2026-08-02T11:40:17.000Z",
+            "factualExcerpt": "14 回复 · 程序员 节点",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "PayBox 101",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/moonpay/status/2083905263992549505",
+            "publishedAt": "2026-08-02T13:18:26.000Z",
+            "factualExcerpt": "MoonPay, the global financial technology company powering the movement of value across fiat and digital assets, has launched PayBox, the first payment vault built for AI that lets a person's AI agent",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 228
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-02T22:05:50.924Z"
+    }
+  ],
+  "subject": "2026-08-03 个人每日简报｜市场与 AI 科技"
+}
