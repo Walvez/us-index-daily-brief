@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-04",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-03T22:15:25.519Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-03",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-03",
+                "metrics": {
+                  "close": 28776.802734375,
+                  "pct1Day": 1.7776047757762814,
+                  "pct5Day": 2.6305725882197892,
+                  "pct20Day": -3.101456208486128,
+                  "drawdown20": -3.514845922086413,
+                  "drawdown60": -6.144031424695286,
+                  "drawdownAll": -6.144031424695286,
+                  "sma20": 28772.0935546875,
+                  "sma50": 29379.2448046875,
+                  "sma200": 26529.716572265625,
+                  "realizedVol20": 24.125131342573507
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-03",
+                "metrics": {
+                  "close": 7600.5,
+                  "pct1Day": 1.4790911005820675,
+                  "pct5Day": 2.5268483940363557,
+                  "pct20Day": 0.836755004661955,
+                  "drawdown20": 0,
+                  "drawdown60": -0.12194551509034843,
+                  "drawdownAll": -0.12194551509034843,
+                  "sma20": 7484.302978515625,
+                  "sma50": 7474.860224609375,
+                  "sma200": 7028.887702636719,
+                  "realizedVol20": 13.300670034920397
+                }
+              }
+            ],
+            "vix": 15.859999656677246,
+            "treasury10y": 4.685999870300293,
+            "dxy": 99.99099731445312
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 1.48%",
+              "较深的60日高点回撤为 -6.14%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.78%，标普500 1.48%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Amazon Crosses $1T Valuation, Boeing Has Biggest Gain Since December | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-03/boeing-has-biggest-gain-since-december-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Japan’s Use of Fed Tool Could Test Yen Resolve, Evercore Says",
+                "explanation": "中文翻译暂不可用：A rarely used Federal Reserve liquidity facility could prevent the Japanese from selling Treasuries to prop up the yen, but prolonged use of the tool could encourage markets to test the US and Japan’s resolve, according to Evercore ISI.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-03/japan-s-use-of-fed-tool-could-test-yen-resolve-evercore-says",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple launches legal challenge to UK attempt to access encrypted user data",
+                "explanation": "中文翻译暂不可用：iPhone maker files complaint over latest government demand to connect to cloud backups of British users",
+                "url": "https://www.ft.com/content/2cc9c96a-0e5b-4c33-a95a-3d11072a145c?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Stocks Close Near Record as Amazon Tops $3 Trillion Market Cap",
+                "explanation": "中文翻译暂不可用：US stocks rose on the first trading day of the month as attention turned to this week’s heavy slate of earnings reports.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-03/us-futures-climb-as-focus-shifts-back-to-earnings-oil-slides",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "James Dacombe, 25, triples AI chip start-up’s valuation to $3.3bn",
+                "explanation": "中文翻译暂不可用：British entrepreneur behind Olix raises $312mn from investors including Arm in effort to take on Nvidia",
+                "url": "https://www.ft.com/content/7a8c03c7-1c33-4ba7-a768-a75fa1db9f36?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-03T22:15:25.519Z"
+        },
+        "marketDate": "2026-08-03",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-03（非 2026-08-04 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-03（非 2026-08-04 当日收盘）",
+      "generatedAt": "2026-08-03T22:15:25.519Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "How we built a realtime system for responsive voice AI in six months",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+            "publishedAt": "2026-08-03T07:00:00.000Z",
+            "factualExcerpt": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/inference-eng",
+            "publishedAt": "2026-08-03T21:44:03.000Z",
+            "factualExcerpt": "Baseten just raised a $13B Series F and is now one of the leading kings of inference engineering. We go into everything you need to know for autoregressive and diffusion engineering.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Trump’s AI protectionism has come for robotics",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics",
+            "publishedAt": "2026-08-03T18:43:30.000Z",
+            "factualExcerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Humanoid robots usually elicit more cringe than awe: They stumble, kick children, and despite advances are still worse at using their hands than my toddler. It’s ",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Here’s why AI agents lie and cheat to reach their goals",
+            "sourceName": "MIT Tech Review AI",
+            "sourceUrl": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals",
+            "publishedAt": "2026-08-03T08:30:05.000Z",
+            "factualExcerpt": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "DeepSeek V4 Flash ⚡, OpenAI’s math breakthrough 🔢, Qwen 3.8-Max 🤖",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-08-03",
+            "publishedAt": "2026-08-03T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 227
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-03T22:15:25.519Z"
+    }
+  ],
+  "subject": "2026-08-04 个人每日简报｜市场与 AI 科技"
+}
