@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-05",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-04T22:19:44.518Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-04",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-04",
+                "metrics": {
+                  "close": 29733.16015625,
+                  "pct1Day": 3.323369342790641,
+                  "pct5Day": 7.095847031278766,
+                  "pct20Day": 1.9200639289326222,
+                  "drawdown20": -0.3082946573435659,
+                  "drawdown60": -3.024857520534007,
+                  "drawdownAll": -3.024857520534007,
+                  "sma20": 28800.10048828125,
+                  "sma50": 29386.762578125,
+                  "sma200": 26554.65556640625,
+                  "realizedVol20": 26.187789463065652
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-04",
+                "metrics": {
+                  "close": 7736.52001953125,
+                  "pct1Day": 1.789619360979541,
+                  "pct5Day": 4.1425408112097815,
+                  "pct20Day": 3.1006739053552264,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": 0,
+                  "sma20": 7495.936474609375,
+                  "sma50": 7480.676220703125,
+                  "sma200": 7034.215002441406,
+                  "realizedVol20": 14.500724971293943
+                }
+              }
+            ],
+            "vix": 16.5,
+            "treasury10y": 4.626999855041504,
+            "dxy": 99.88200378417969
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 1.79%",
+              "较深的60日高点回撤为 -3.02%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 3.32%，标普500 1.79%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Federal Reserve Board announces approval of the application by Coastal Bend Bancshares, Inc.",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of the application by Coastal Bend Bancshares, Inc.",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804c.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces approval of the application by FS Bancorp, Inc.",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of the application by FS Bancorp, Inc.",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804b.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc.",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc.",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Wall Street’s insurance takeover presents circular risks and rewards",
+                "explanation": "中文翻译暂不可用：Aggressive tactics are prompting increased regulatory scrutiny",
+                "url": "https://www.ft.com/content/ac4b294d-36db-4e6d-aafe-663ce20cb658?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "OpenAI hits back at Apple over ‘oddly personal’ trade secrets fight",
+                "explanation": "中文翻译暂不可用：Legal clash deepens after an AI partnership over devices gives way to acrimony",
+                "url": "https://www.ft.com/content/7da4af42-178d-431a-91db-7e82eecc98dd?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-04T22:19:44.518Z"
+        },
+        "marketDate": "2026-08-04",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-04（非 2026-08-05 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-04（非 2026-08-05 当日收盘）",
+      "generatedAt": "2026-08-04T22:19:44.518Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Third-party cyber evaluations involving OpenAI models",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+            "publishedAt": "2026-08-04T19:00:00.000Z",
+            "factualExcerpt": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Deploy local agents everywhere with LFM2.5-2.6B",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+            "publishedAt": "2026-08-04T13:58:29.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "New ways to learn and teach with ChatGPT Work and Codex",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+            "publishedAt": "2026-08-04T00:00:00.000Z",
+            "factualExcerpt": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Apple is getting this wrong",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/apple-is-getting-this-wrong",
+            "publishedAt": "2026-08-03T22:00:00.000Z",
+            "factualExcerpt": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/unpacking-chatgpt-work",
+            "publishedAt": "2026-08-04T18:20:14.000Z",
+            "factualExcerpt": "An external reconstruction of how Memory, Proactivity, Scheduling, Browser Use, Plugins, Skills and Tools work in the new ChatGPT Work.",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 231
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-04T22:19:44.518Z"
+    }
+  ],
+  "subject": "2026-08-05 个人每日简报｜市场与 AI 科技"
+}
