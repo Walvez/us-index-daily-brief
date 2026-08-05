@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-06",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-05T22:17:29.529Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-05",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-05",
+                "metrics": {
+                  "close": 29487.791015625,
+                  "pct1Day": -0.8252373421982953,
+                  "pct5Day": 8.441652888572948,
+                  "pct20Day": 0.8041363366227756,
+                  "drawdown20": -1.1309878369054598,
+                  "drawdown60": -3.825132608924562,
+                  "drawdownAll": -3.825132608924562,
+                  "sma20": 28811.86201171875,
+                  "sma50": 29386.8855859375,
+                  "sma200": 26578.8083203125,
+                  "realizedVol20": 26.37987605616881
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-05",
+                "metrics": {
+                  "close": 7723.5498046875,
+                  "pct1Day": -0.1676492119325745,
+                  "pct5Day": 5.568501298930989,
+                  "pct20Day": 3.218617920609948,
+                  "drawdown20": -0.1676492119325745,
+                  "drawdown60": -0.1676492119325745,
+                  "drawdownAll": -0.1676492119325745,
+                  "sma20": 7507.978466796875,
+                  "sma50": 7485.6778125,
+                  "sma200": 7039.68740234375,
+                  "realizedVol20": 14.460880624301655
+                }
+              }
+            ],
+            "vix": 15.8100004196167,
+            "treasury10y": 4.616999626159668,
+            "dxy": 99.69000244140625
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.83%",
+              "较深的60日高点回撤为 -3.83%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.83%，标普500 -0.17%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "MetLife’s Earnings Beat Wall Street Expectations",
+                "explanation": "中文翻译暂不可用：MetLife Inc.’s second-quarter earnings surpassed Wall Street’s expectations, boosted by strong underwriting, volume growth and the success of a five-year plan outlined in late 2024.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-05/metlife-s-earnings-beat-wall-street-expectations",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Stocks Edge Lower as Rate Hike Rumbles Offset Nvidia’s Rally",
+                "explanation": "中文翻译暂不可用：US stocks closed little changed on Wednesday, erasing an earlier climb, after Minneapolis Fed President Neel Kashkari’s comment that it’s time for the central bank to start slowly raising rates. Megacap Nvidia Corp. extended its rally to a fifth day, boosted by confidence in artificial-intelligence ",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-05/s-p-500-poised-for-another-record-as-ai-spending-narrative-holds",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Prioritise new jobs over green targets to win public contracts, firms told",
+                "explanation": "中文翻译暂不可用：The changes are part of government efforts to tackle the youth unemployment crisis.",
+                "url": "https://www.bbc.co.uk/news/articles/ckgdmv7elg8o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "S&P 500 Edges Lower After $3.7 Trillion Advance: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Wall Street’s blistering run took a breather, with traders digesting the recent stock gains and monitoring any hints of progress toward a deal to revive the Strait of Hormuz.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-04/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces approval of the application by Coastal Bend Bancshares, Inc.",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of the application by Coastal Bend Bancshares, Inc.",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804c.htm",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-05T22:17:29.529Z"
+        },
+        "marketDate": "2026-08-05",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-05（非 2026-08-06 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-05（非 2026-08-06 当日收盘）",
+      "generatedAt": "2026-08-05T22:17:29.529Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Third-party cyber evaluations involving OpenAI models",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+            "publishedAt": "2026-08-04T19:00:00.000Z",
+            "factualExcerpt": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] Megakernels are so dead and so back",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+            "publishedAt": "2026-08-05T01:21:47.000Z",
+            "factualExcerpt": "A quiet day lets us highlight a Cursor launch and an engineering debate",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Google LLM router ➡️, Cloudflare Wallets 💳, Anthropic and Volta 🤝",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-08-05",
+            "publishedAt": "2026-08-05T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/unpacking-chatgpt-work",
+            "publishedAt": "2026-08-04T18:20:14.000Z",
+            "factualExcerpt": "An external reconstruction of how Memory, Proactivity, Scheduling, Browser Use, Plugins, Skills and Tools work in the new ChatGPT Work.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "AI Coding 推荐把这条提示词加入到约束中",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1232318",
+            "publishedAt": "2026-08-05T14:14:34.000Z",
+            "factualExcerpt": "7 回复 · 程序员 节点",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 233
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-05T22:17:29.529Z"
+    }
+  ],
+  "subject": "2026-08-06 个人每日简报｜市场与 AI 科技"
+}
