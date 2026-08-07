@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-07",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-07T01:02:11.564Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-06",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-06",
+                "metrics": {
+                  "close": 29373.333984375,
+                  "pct1Day": -0.38814398014856255,
+                  "pct5Day": 4.507822583183807,
+                  "pct20Day": -1.190044200909642,
+                  "drawdown20": -1.514748479023809,
+                  "drawdown60": -4.1984359125396775,
+                  "drawdownAll": -4.1984359125396775,
+                  "sma20": 28794.1736328125,
+                  "sma50": 29374.3258203125,
+                  "sma200": 26601.585234375,
+                  "realizedVol20": 25.74944209806318
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-06",
+                "metrics": {
+                  "close": 7709.9599609375,
+                  "pct1Day": -0.17595333873230398,
+                  "pct5Day": 3.6615169404210772,
+                  "pct20Day": 2.2047688013269147,
+                  "drawdown20": -0.34330756627912473,
+                  "drawdown60": -0.34330756627912473,
+                  "drawdownAll": -0.34330756627912473,
+                  "sma20": 7516.294458007813,
+                  "sma50": 7489.494609375,
+                  "sma200": 7044.9171533203125,
+                  "realizedVol20": 14.293585830731544
+                }
+              }
+            ],
+            "vix": 15.149999618530273,
+            "treasury10y": 4.670000076293945,
+            "dxy": 99.97200012207031
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.39%",
+              "较深的60日高点回撤为 -4.20%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.39%，标普500 -0.18%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Meta fined $567m in largest child safety ruling against social media giant",
+                "explanation": "中文翻译暂不可用：A New Mexico judge ordered the Instagram, Facebook and Whatsapp parent company to pay another $567m for the way it has harmed children.",
+                "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Trump imposes 15% tariff on key chip material to counter China",
+                "explanation": "中文翻译暂不可用：The move aims to counter Chinese producers, which hold a monopoly in the global polysilicon production.",
+                "url": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Oil Gains, Treasuries Hold Losses Before Jobs Data: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Oil rose as prospects for a lasting agreement to reopen the Strait of Hormuz remained elusive. Treasuries held their losses ahead of the key US jobs data report.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-06/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Yen Surrenders Nearly Half Its Gains from US-Japan Intervention",
+                "explanation": "中文翻译暂不可用：The yen is heading into the end of the week having surrendered nearly half of its intervention-driven gains, fueling speculation among traders that authorities may step into the market again.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-07/yen-surrenders-nearly-half-its-gains-from-us-japan-intervention",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Gold Steady as Traders Assess Impact of Hormuz Flare-Up on Rates",
+                "explanation": "中文翻译暂不可用：Gold moved in a narrow range as traders assessed the impact of a reported Iranian attack in the Strait of Hormuz on the Federal Reserve’s path for interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-06/gold-steady-as-traders-assess-impact-of-hormuz-flare-up-on-rates",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-07T01:02:11.564Z"
+        },
+        "marketDate": "2026-08-06",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-06（非 2026-08-07 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-06（非 2026-08-07 当日收盘）",
+      "generatedAt": "2026-08-07T01:02:11.564Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
+            "publishedAt": "2026-08-06T15:06:15.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+            "publishedAt": "2026-08-06T10:00:00.000Z",
+            "factualExcerpt": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Working with the American Psychological Association on youth mental health and AI",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+            "publishedAt": "2026-08-06T06:00:00.000Z",
+            "factualExcerpt": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "From asking to doing: How the world is putting ChatGPT to work",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+            "publishedAt": "2026-08-06T00:00:00.000Z",
+            "factualExcerpt": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Baseten on Hugging Face Inference Providers 🔥",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/baseten",
+            "publishedAt": "2026-08-06T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 232
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-07T01:02:11.564Z"
+    }
+  ],
+  "subject": "2026-08-07 个人每日简报｜市场与 AI 科技"
+}
