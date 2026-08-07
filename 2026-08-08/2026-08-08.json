@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-08",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-07T21:52:18.294Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-07",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-07",
+                "metrics": {
+                  "close": 29722.302734375,
+                  "pct1Day": 1.1880595605667743,
+                  "pct5Day": 5.121642895777193,
+                  "pct20Day": -0.34469828536881936,
+                  "drawdown20": -0.03651620553598551,
+                  "drawdown60": -3.0602691628806236,
+                  "drawdownAll": -3.0602691628806236,
+                  "sma20": 28789.03310546875,
+                  "sma50": 29369.300390625,
+                  "sma200": 26624.491630859375,
+                  "realizedVol20": 26.09538396439573
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-07",
+                "metrics": {
+                  "close": 7757.64013671875,
+                  "pct1Day": 0.6184231308959001,
+                  "pct5Day": 3.5771686283289204,
+                  "pct20Day": 2.405816686808171,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": 0,
+                  "sma20": 7525.406958007812,
+                  "sma50": 7494.24021484375,
+                  "sma200": 7050.029704589844,
+                  "realizedVol20": 14.367122167202579
+                }
+              }
+            ],
+            "vix": 14.899999618530273,
+            "treasury10y": 4.659999847412109,
+            "dxy": 99.60399627685547
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.62%",
+              "较深的60日高点回撤为 -3.06%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.19%，标普500 0.62%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Markets Rally on Weak Jobs Report | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-07/markets-rally-on-weak-jobs-report-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Wall Street Risk Complex Surges Anew Amid Deluge of Fresh Cash",
+                "explanation": "中文翻译暂不可用：The financial world’s catalog of complaints keeps getting longer. In markets, however, the response is increasingly one of indifference.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-07/wall-street-risk-complex-surges-anew-amid-deluge-of-fresh-cash",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Surprise fall in US jobs last month as slow summer continues",
+                "explanation": "中文翻译暂不可用：Analysts had expected an uptick in the number of jobs created, but the number of roles fell by 23,000 in July.",
+                "url": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US Stocks Rise After Jobs Data to Second-Best Week of the Year",
+                "explanation": "中文翻译暂不可用：US stocks closed higher Friday after jobs data showed the US economy unexpectedly shed jobs in July, which could prompt the Federal Reserve to delay interest-rate increases.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-07/us-futures-rise-as-trump-touts-iran-progress-awaiting-jobs-data",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "FirstFT: All eyes on the US jobs market",
+                "explanation": "中文翻译暂不可用：Also in today’s newsletter: Jane Street debt discussions and the latest cutting-edge Chinese AI model",
+                "url": "https://www.ft.com/content/9c99a309-e133-4882-8cea-f21aa1eea0e1?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-07T21:52:18.294Z"
+        },
+        "marketDate": "2026-08-07",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-07（非 2026-08-08 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-07（非 2026-08-08 当日收盘）",
+      "generatedAt": "2026-08-07T21:52:18.294Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/tutormoments",
+            "publishedAt": "2026-08-07T17:53:32.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Responding to the next frontier of critical cyber capabilities",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+            "publishedAt": "2026-08-07T15:20:00.000Z",
+            "factualExcerpt": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "How HSP GRUPPE builds AI capabilities for tax advisory",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/hsp-gruppe",
+            "publishedAt": "2026-08-07T09:00:00.000Z",
+            "factualExcerpt": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] AMD buys Taalas",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-amd-buys-taalas",
+            "publishedAt": "2026-08-07T05:13:46.000Z",
+            "factualExcerpt": "The Inference Inflection is HEATING up.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "GPT-5.6 Luna default 🌙, Agent Plugins 🔌, AMD Taalas acquisition 🧩",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-08-07",
+            "publishedAt": "2026-08-07T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 229
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-07T21:52:18.294Z"
+    }
+  ],
+  "subject": "2026-08-08 个人每日简报｜市场与 AI 科技"
+}
