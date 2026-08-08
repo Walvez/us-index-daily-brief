@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-09",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-08T21:40:59.327Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-07",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-07",
+                "metrics": {
+                  "close": 29722.30078125,
+                  "pct1Day": 1.1880529112526013,
+                  "pct5Day": 5.121635987977665,
+                  "pct20Day": -0.34470483396173635,
+                  "drawdown20": -0.03652277438029851,
+                  "drawdown60": -3.060275533026755,
+                  "drawdownAll": -3.060275533026755,
+                  "sma20": 28789.0330078125,
+                  "sma50": 29369.3003515625,
+                  "sma200": 26624.49162109375,
+                  "realizedVol20": 26.095379962153547
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-07",
+                "metrics": {
+                  "close": 7757.64013671875,
+                  "pct1Day": 0.6184231308959001,
+                  "pct5Day": 3.5771686283289204,
+                  "pct20Day": 2.405816686808171,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": 0,
+                  "sma20": 7525.406958007812,
+                  "sma50": 7494.24021484375,
+                  "sma200": 7050.029704589844,
+                  "realizedVol20": 14.367122167202579
+                }
+              }
+            ],
+            "vix": 14.899999618530273,
+            "treasury10y": 4.659999847412109,
+            "dxy": 99.5999984741211
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.62%",
+              "较深的60日高点回撤为 -3.06%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.19%，标普500 0.62%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Weak Jobs Data Masked by Falling Unemployment",
+                "explanation": "中文翻译暂不可用：The US unexpectedly lost 23,000 jobs in July while unemployment fell to 4.1%, a decline driven by fewer people participating in the labor force rather than stronger employment. Bloomberg News Economics Chief US Economist Anna Wong joins Bloomberg This Weekend and explains to hosts David Gura and Chr",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-08/weak-jobs-data-masked-by-falling-unemployment-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Pfizer grapples with ‘a world of hurt’ after Covid triumph",
+                "explanation": "中文翻译暂不可用：Sliding vaccine revenues and fears it overpaid for new drugs pile pressure on boss Albert Bourla",
+                "url": "https://www.ft.com/content/a371dc43-0584-4fcc-b064-80596727d5b5?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "China’s biggest travel site grapples with watchdog’s reservations",
+                "explanation": "中文翻译暂不可用：Probe concludes that Trip.com abused its power as platform handling more than half of country’s hotel bookings",
+                "url": "https://www.ft.com/content/2b3726f6-8149-4a74-a58e-eaaa20c9f2b9?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Private Credit Squeezed By Bank Refinancings: Credit Weekly",
+                "explanation": "中文翻译暂不可用：Highly-indebted companies are increasingly ditching private credit loans for cheaper capital in the bank loan market, a shift underscoring the stark realities of higher-for-longer interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-08/private-credit-squeezed-by-bank-refinancings-credit-weekly",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "University of California Faculty Push to Bring Back SAT and ACT Score Consideration",
+                "explanation": "中文翻译暂不可用：Thousands of University of California faculty members are pushing the system to reconsider its test free admissions policy, arguing that SAT and ACT scores could help identify students prepared for college-level work as concerns grow about grade inflation and AI use. Bloomberg News Education Policy ",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-08/uc-faculty-push-to-bring-back-sat-and-act-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-08T21:40:59.327Z"
+        },
+        "marketDate": "2026-08-07",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-07（非 2026-08-09 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-07（非 2026-08-09 当日收盘）",
+      "generatedAt": "2026-08-08T21:40:59.327Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/tutormoments",
+            "publishedAt": "2026-08-07T17:53:32.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] Zawinski's Law of MultiAgents",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+            "publishedAt": "2026-08-08T01:12:07.000Z",
+            "factualExcerpt": "a quiet day lets us find some connections among recent themes",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "如何看待 DeepSeek 在 X 上要求大家把自己的项目放上去以换取内测资格？以及后续的签约需要身份征等其他个人信息？",
+            "sourceName": "V2EX",
+            "sourceUrl": "https://www.v2ex.com/t/1232938",
+            "publishedAt": "2026-08-08T10:57:15.000Z",
+            "factualExcerpt": "18 回复 · 程序员 节点",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Profiling LLM Inference with SGLang and Torch Profiler",
+            "sourceName": "X 推文 (AttentionVC)",
+            "sourceUrl": "https://x.com/jino_rohit/status/2085947942339563598",
+            "publishedAt": "2026-08-08T04:35:19.000Z",
+            "factualExcerpt": "This blog is my attempt to learn how to profile an llm served using sglang and its in built torch profiler integration that comes out of box. The idea here would be try and understand when I hit",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 230
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-08T21:40:59.327Z"
+    }
+  ],
+  "subject": "2026-08-09 个人每日简报｜市场与 AI 科技"
+}
