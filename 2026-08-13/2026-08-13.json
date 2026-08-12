@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-13",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-12T21:57:32.802Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-12",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-12",
+                "metrics": {
+                  "close": 29742.603515625,
+                  "pct1Day": 0.7353751519972884,
+                  "pct5Day": 0.8641354988836746,
+                  "pct20Day": 0.8135008759490275,
+                  "drawdown20": 0,
+                  "drawdown60": -2.994057863986806,
+                  "drawdownAll": -2.994057863986806,
+                  "sma20": 28815.87783203125,
+                  "sma50": 29325.679453125,
+                  "sma200": 26693.423291015624,
+                  "realizedVol20": 25.01739449411229
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-12",
+                "metrics": {
+                  "close": 7748.5,
+                  "pct1Day": 0.2626718275208857,
+                  "pct5Day": 0.3230405182000312,
+                  "pct20Day": 2.3255520036883537,
+                  "drawdown20": -0.1178210971077089,
+                  "drawdown60": -0.1178210971077089,
+                  "drawdownAll": -0.1178210971077089,
+                  "sma20": 7555.330981445312,
+                  "sma50": 7503.96341796875,
+                  "sma200": 7065.312805175781,
+                  "realizedVol20": 14.028320493850574
+                }
+              }
+            ],
+            "vix": 14.550000190734863,
+            "treasury10y": 4.682000160217285,
+            "dxy": 99.98500061035156
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.26%",
+              "较深的60日高点回撤为 -2.99%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.74%，标普500 0.26%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Wall Street giants bet Nvidia’s AI chips will defy the laws of finance",
+                "explanation": "中文翻译暂不可用：Private capital firms are wagering that the crucial hardware will hold its value for years to come",
+                "url": "https://www.ft.com/content/3b522281-0119-47c9-a95a-f2c8d04e6212?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "AI Cloud Provider Lambda Prices Loan for Nvidia-Tied Chip Deal",
+                "explanation": "中文翻译暂不可用：Lambda Inc., an AI cloud-computing provider backed by Nvidia Corp., wrapped up a $926 million leveraged-loan deal as that market becomes a new front in the borrowing binge to finance the artificial intelligence buildout.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-12/ai-cloud-provider-lambda-prices-loan-for-nvidia-tied-chip-deal",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "The Amazon of used cars gets a balance sheet tune-up",
+                "explanation": "中文翻译暂不可用：Carvana has long been a target of short sellers but bets against the company have fallen sharply",
+                "url": "https://www.ft.com/content/21c7d2e9-29ff-47f7-ae06-173a1f1d3684?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Indonesian Tech Firm GoTo Cut From MSCI Indexes in Review",
+                "explanation": "中文翻译暂不可用：MSCI Inc. removed GoTo Group from its indexes after a plunge in the Indonesian tech company’s share price left the stock difficult to trade.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-12/indonesian-tech-firm-goto-cut-from-msci-indexes-in-review",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Rio Tinto Aluminum Smelter Gets $1.8 Billion Australian Bailout",
+                "explanation": "中文翻译暂不可用：The owners of Australia’s biggest aluminum smelter, including Rio Tinto Group, have secured a government bailout of A$2.5 billion ($1.8 billion) to keep the plant operating as it grapples with high energy costs.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-12/rio-tinto-aluminum-smelter-gets-1-8-billion-australian-bailout",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-12T21:57:32.802Z"
+        },
+        "marketDate": "2026-08-12",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-12（非 2026-08-13 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-12（非 2026-08-13 当日收盘）",
+      "generatedAt": "2026-08-12T21:57:32.802Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+            "publishedAt": "2026-08-12T16:14:36.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Putting sign language AI into users’ hands",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands",
+            "publishedAt": "2026-08-12T14:01:59.000Z",
+            "factualExcerpt": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+            "publishedAt": "2026-08-12T14:00:51.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "From assistance to execution: How enterprises put AI to work",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/how-enterprises-put-ai-to-work",
+            "publishedAt": "2026-08-12T06:00:00.000Z",
+            "factualExcerpt": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "How RingCentral builds AI-native work from engineering to ops",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/ringcentral",
+            "publishedAt": "2026-08-12T00:00:00.000Z",
+            "factualExcerpt": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 233
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-12T21:57:32.802Z"
+    }
+  ],
+  "subject": "2026-08-13 个人每日简报｜市场与 AI 科技"
+}
