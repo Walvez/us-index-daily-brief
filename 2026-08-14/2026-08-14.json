@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-14",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-13T21:57:25.771Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-13",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-13",
+                "metrics": {
+                  "close": 30084.501953125,
+                  "pct1Day": 1.1495375261086151,
+                  "pct5Day": 2.421148276713869,
+                  "pct20Day": 2.8034429717672817,
+                  "drawdown20": 0,
+                  "drawdown60": -1.878951043324829,
+                  "drawdownAll": -1.878951043324829,
+                  "sma20": 28953.1732421875,
+                  "sma50": 29415.760625,
+                  "sma200": 26661.59048828125,
+                  "realizedVol20": 24.236509222172366
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-13",
+                "metrics": {
+                  "close": 7798.990234375,
+                  "pct1Day": 0.6516130138091244,
+                  "pct5Day": 1.154743654812369,
+                  "pct20Day": 3.7742856147868395,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": 0,
+                  "sma20": 7576.185961914062,
+                  "sma50": 7513.586015625,
+                  "sma200": 7059.007553710938,
+                  "realizedVol20": 14.16085882482951
+                }
+              }
+            ],
+            "vix": 14.630000114440918,
+            "treasury10y": 4.640999794006348,
+            "dxy": 99.96099853515625
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.65%",
+              "较深的60日高点回撤为 -1.88%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.15%，标普500 0.65%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "S&P 500 Hits Record as Inflation Cools | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Isabelle Lee, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-13/s-p-500-hits-record-as-inflation-cools-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement action with former employee of Regions Bank",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260813a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Twitch users outraged as Amazon uses their content to train AI in opt-out feature",
+                "explanation": "中文翻译暂不可用：Users of the popular streaming platform criticised allowing Amazon to use their data by dafault.",
+                "url": "https://www.bbc.co.uk/news/articles/cp30pz8d09jo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Wall Street’s basketball billionaire mess",
+                "explanation": "中文翻译暂不可用：Two NBA owners are facing trouble in their Wall Street businesses",
+                "url": "https://www.ft.com/content/c0805c3c-0c3b-4a72-8fd7-999a3c0a992e?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Gold Declines as Sliding Inflation Reinforces Fed Hold Bets",
+                "explanation": "中文翻译暂不可用：Gold fell below $4,400 an ounce as signs of easing inflation bolstered expectations that the US Federal Reserve will hold interest rates steady next month.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-12/gold-steadies-after-tame-us-inflation-data-eases-rate-hike-bets",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-13T21:57:25.771Z"
+        },
+        "marketDate": "2026-08-13",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-13（非 2026-08-14 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-13（非 2026-08-14 当日收盘）",
+      "generatedAt": "2026-08-13T21:57:25.771Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+            "publishedAt": "2026-08-13T17:16:04.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Introducing Gemini 3.7 Flash",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
+            "publishedAt": "2026-08-13T17:04:18.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "The builder’s guide to GPT‑5.6",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/builders-guide-to-gpt-5-6",
+            "publishedAt": "2026-08-13T11:00:00.000Z",
+            "factualExcerpt": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/previewing-ultrafast",
+            "publishedAt": "2026-08-13T10:00:00.000Z",
+            "factualExcerpt": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+            "sourceName": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+            "publishedAt": "2026-08-13T09:00:00.000Z",
+            "factualExcerpt": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 233
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-13T21:57:25.771Z"
+    }
+  ],
+  "subject": "2026-08-14 个人每日简报｜市场与 AI 科技"
+}
