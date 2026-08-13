@@ -5,8 +5,9 @@ import {
   renderFullHtml,
   shouldSendReport,
 } from "../../lib/daily-brief/render";
-import { dailyBriefFixture } from "./fixtures";
+import { dailyBriefFixture, marketModuleDataFixture } from "./fixtures";
 import type { ModuleResult } from "../../lib/daily-brief/types";
+import type { MarketModuleData } from "../../lib/daily-brief/market-module";
 import type { TechNewsModuleData } from "../../lib/daily-brief/tech-news/types";
 
 test("renders mobile personal brief with market then tech sections", () => {
@@ -105,4 +106,27 @@ test("renders full archival document", () => {
   assert.match(html, /^<!doctype html>/i);
   assert.match(html, /个人每日简报/);
   assert.match(html, /2026-06-06/);
+});
+
+test("weekend edition renders weekly market recap instead of overnight review", () => {
+  const report = dailyBriefFixture({
+    editionDate: "2026-06-06",
+    modules: [
+      {
+        moduleId: "market",
+        status: "success",
+        data: {
+          ...marketModuleDataFixture,
+          editionKind: "weekend",
+        },
+        generatedAt: "2026-06-06T00:05:00.000Z",
+      } satisfies ModuleResult<MarketModuleData>,
+      dailyBriefFixture().modules[1],
+    ],
+  });
+  const html = renderEmailHtml(report);
+  assert.match(html, /本周市场回顾/);
+  assert.match(html, /本周大事/);
+  assert.match(html, />本周</);
+  assert.doesNotMatch(html, /昨夜发生了什么/);
 });

@@ -22,6 +22,8 @@ export interface BuildDependencies {
   loadNews?: () => Promise<MarketNews[]>;
   loadValuation?: () => Promise<ValuationContext>;
   explain?: (input: CommentaryInput) => Promise<BriefCommentary>;
+  /** "weekly" widens the news window and uses the weekly commentary prompt (weekend editions). */
+  mode?: "daily" | "weekly";
   /** When false, skip writing valuation history (orchestrator controls persistence). */
   persistValuationHistory?: boolean;
 }
@@ -40,8 +42,11 @@ export async function buildIndexBriefReport(
     throw new Error("core market context must contain exactly two indices");
   }
 
+  const mode = dependencies.mode ?? "daily";
   const loadedNews = await (dependencies.loadNews ?? fetchMarketNews)();
-  const news = selectRelevantNews(loadedNews, now);
+  const news = selectRelevantNews(loadedNews, now, {
+    windowHours: mode === "weekly" ? 24 * 7 : 30,
+  });
   const valuation = await (
     dependencies.loadValuation ??
     (() =>
@@ -67,6 +72,7 @@ export async function buildIndexBriefReport(
     market,
     advice,
     news,
+    mode,
   });
   return {
     market,

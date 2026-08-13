@@ -59,6 +59,17 @@ export function editionWeekdayLabel(
   return WEEKDAY_ZH[index];
 }
 
+export type EditionKind = "weekday" | "weekend";
+
+/** Whether an edition date is a weekend (Saturday/Sunday) in the report timezone. */
+export function editionKindFor(
+  editionDate: string,
+  timeZone: string,
+): EditionKind {
+  const label = editionWeekdayLabel(editionDate, timeZone);
+  return label === "星期六" || label === "星期日" ? "weekend" : "weekday";
+}
+
 export function buildEmailSubject(editionDate: string, modules: string[]): string {
   const hasMarket = modules.includes("market");
   const hasTech = modules.includes("tech-news");

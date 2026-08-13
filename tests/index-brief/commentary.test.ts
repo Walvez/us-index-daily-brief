@@ -144,3 +144,16 @@ test("rejects model output that does not actually translate display text", async
   assert.equal(result.translationAvailable, false);
   assert.match(result.drivers[0].explanation, /中文翻译暂不可用/);
 });
+
+test("weekly mode falls back to a weekly recap headline and weekly moves", async () => {
+  const result = await writeCommentary(
+    { ...input, mode: "weekly" },
+    async () => {
+      throw new Error("offline");
+    },
+  );
+  assert.equal(result.headline, "本周美股市场回顾");
+  assert.match(result.summary, /纳斯达克100 本周 -0\.80%/);
+  assert.match(result.summary, /标普500 本周 0\.20%/);
+  assert.equal(result.translationAvailable, false);
+});

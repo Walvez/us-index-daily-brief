@@ -30,7 +30,7 @@ function baseDeps(root: string): OrchestratorDependencies {
       marketEnabled: true,
       techNewsEnabled: false,
       techNewsLimit: 5,
-      techNewsWindowHours: 30,
+      techNewsWindow: "24h",
       validationOnly: false,
     },
     market: {
@@ -104,28 +104,16 @@ test("modules fail independently: market failure does not throw", async (t) => {
     },
   };
   deps.techNews = {
-    sourceDefs: [
+    articlesFetcher: async () => [
       {
-        id: "openai-news",
-        name: "OpenAI News",
-        type: "rss",
-        url: "https://example.com/rss",
-        category: "tech",
-        enabled: true,
-      },
-    ],
-    fetcher: async () => [
-      {
-        sourceId: "openai-news",
+        id: "1",
         title: "OpenAI ships model update",
+        sourceName: "OpenAI News",
         url: "https://example.com/openai",
-        excerpt: "A new model release.",
-        // Must be <= fixedNow (2026-06-06T02:00:00Z) for the time window filter.
-        publishedAt: new Date("2026-06-05T20:00:00Z"),
-        category: "tech",
+        summary: "OpenAI 发布模型更新。",
+        publishedAt: "2026-06-05T20:00:00.000Z",
       },
     ],
-    llm: null,
   };
 
   const result = await runDailyBrief(deps);
@@ -145,17 +133,7 @@ test("tech source failure does not block market module", async (t) => {
   const deps = baseDeps(root);
   deps.config = { ...deps.config, techNewsEnabled: true };
   deps.techNews = {
-    sourceDefs: [
-      {
-        id: "openai-news",
-        name: "OpenAI News",
-        type: "rss",
-        url: "https://example.com/rss",
-        category: "tech",
-        enabled: true,
-      },
-    ],
-    fetcher: async () => {
+    articlesFetcher: async () => {
       throw new Error("source down");
     },
   };

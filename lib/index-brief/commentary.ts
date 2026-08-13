@@ -23,6 +23,8 @@ export interface CommentaryInput {
   market: MarketContext;
   advice: AdviceResult;
   news: MarketNews[];
+  /** "weekly" switches to a weekend weekly-recap prompt. */
+  mode?: "daily" | "weekly";
 }
 
 export type CommentaryLlm = (options: {
@@ -32,8 +34,9 @@ export type CommentaryLlm = (options: {
 }) => Promise<LlmRunResult>;
 
 function fallbackCommentary(input: CommentaryInput): BriefCommentary {
+  const weekly = (input.mode ?? "daily") === "weekly";
   const moves = input.market.indices
-    .map((index) => `${index.name} ${index.metrics.pct1Day.toFixed(2)}%`)
+    .map((index) => weekly ? `${index.name} 本周 ${index.metrics.pct5Day.toFixed(2)}%` : `${index.name} ${index.metrics.pct1Day.toFixed(2)}%`)
     .join("，");
   const priorityTerms = [
     "nasdaq",
@@ -67,7 +70,7 @@ function fallbackCommentary(input: CommentaryInput): BriefCommentary {
     .sort((a, b) => b.score - a.score || a.position - b.position)
     .map(({ article }) => article);
   return {
-    headline: "昨夜美股指数复盘",
+    headline: weekly ? "本周美股市场回顾" : "昨夜美股指数复盘",
     summary: `${moves}。规则观察为「${input.advice.label}」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。`,
     adviceLabel: input.advice.label,
     drivers: rankedNews.slice(0, 5).map((article) => ({
@@ -94,6 +97,7 @@ export async function writeCommentary(
   input: CommentaryInput,
   llm: CommentaryLlm = runGithubModels,
 ): Promise<BriefCommentary> {
+  const mode = input.mode ?? "daily";
   const allowedUrls = new Set(input.news.map((article) => article.url));
   const payload = {
     market: input.market,
@@ -110,7 +114,9 @@ export async function writeCommentary(
   try {
     const { text } = await llm({
       systemPrompt:
-        "你是克制的中文美股指数复盘编辑。headline、summary、每条 driver.title 和 driver.explanation 必须使用简体中文；公司名和指数缩写可以保留英文。只解释输入数据，不预测下一交易日。必须区分直接事实与可能相关因素。不得修改 advice.label，不得生成输入之外的链接。输出单一 JSON 对象。",
+        mode === "weekly"
+          ? "你是克制的中文美股周度复盘编辑。这是周末发布的周报，围绕本周（最近 5 个交易日）的市场表现与主要驱动事件总结。headline、summary、每条 driver.title 和 driver.explanation 必须使用简体中文；公司名和指数缩写可以保留英文。只解释输入数据，不预测下一交易日。必须区分直接事实与可能相关因素。不得修改 advice.label，不得生成输入之外的链接。输出单一 JSON 对象。"
+          : "你是克制的中文美股指数复盘编辑。headline、summary、每条 driver.title 和 driver.explanation 必须使用简体中文；公司名和指数缩写可以保留英文。只解释输入数据，不预测下一交易日。必须区分直接事实与可能相关因素。不得修改 advice.label，不得生成输入之外的链接。输出单一 JSON 对象。",
       userPrompt: [
         "请输出：headline、summary、drivers。",
         'drivers 每项包含 title、explanation、url、relationship；relationship 只能是 "direct" 或 "possibly-related"。',

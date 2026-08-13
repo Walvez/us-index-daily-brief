@@ -37,7 +37,7 @@ export interface DailyBriefConfig {
   marketEnabled: boolean;
   techNewsEnabled: boolean;
   techNewsLimit: number;
-  techNewsWindowHours: number;
+  techNewsWindow: "24h" | "7d";
   validationOnly: boolean;
 }
 

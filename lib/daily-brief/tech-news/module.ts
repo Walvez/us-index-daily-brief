@@ -1,24 +1,17 @@
+import type { AihotArticle } from "../../sources/aihot";
 import type { BriefContext, ModuleResult } from "../types";
 import { collectTechNewsCandidates } from "./collect";
 import { selectTechNews } from "./select";
-import { summarizeTechNews, type TechNewsLlm } from "./summarize";
-import type { TechNewsModuleData } from "./types";
-import type { SourceDef } from "../../sources/types";
-import type { RawArticle } from "../../sources/types";
+import type { TechNewsItem, TechNewsModuleData } from "./types";
 
 export interface TechNewsModuleOptions {
   enabled: boolean;
   limit: number;
-  windowHours: number;
-  sourceDefs?: SourceDef[];
-  fetcher?: (source: SourceDef) => Promise<RawArticle[]>;
-  /**
-   * null = forced factual fallback; undefined = production default (GitHub Models
-   * when token present); function = injectable runner.
-   */
-  llm?: TechNewsLlm | null;
-  /** Test injection for the production-default GitHub Models path. */
-  defaultRunner?: TechNewsLlm;
+  window: "24h" | "7d";
+  /** Injectable fetcher for tests. Defaults to AI HOT selected items. */
+  articlesFetcher?: (
+    options: { window: "24h" | "7d"; limit: number },
+  ) => Promise<AihotArticle[]>;
 }
 
 export async function runTechNewsModule(
@@ -37,15 +30,12 @@ export async function runTechNewsModule(
   }
 
   try {
-    const { candidates, sourceFailures } = await collectTechNewsCandidates(
-      options.sourceDefs,
-      options.fetcher,
-    );
-    const selected = selectTechNews(candidates, {
-      now: context.now,
-      windowHours: options.windowHours,
+    const { candidates, sourceFailures } = await collectTechNewsCandidates({
+      window: options.window,
       limit: options.limit,
+      articlesFetcher: options.articlesFetcher,
     });
+    const selected = selectTechNews(candidates, { limit: options.limit });
 
     if (selected.length === 0) {
       return {
@@ -57,7 +47,7 @@ export async function runTechNewsModule(
             code: "tech-news-empty",
             message:
               sourceFailures.length > 0
-                ? `no items after filter; source failures: ${sourceFailures.length}`
+                ? "AI HOT unavailable: " + sourceFailures.join(", ")
                 : "no items after filter",
           },
         ],
@@ -65,38 +55,24 @@ export async function runTechNewsModule(
       };
     }
 
-    const items = await summarizeTechNews(selected, {
-      llm: options.llm,
-      defaultRunner: options.defaultRunner,
-    });
-    const anyFallback = items.some((item) => item.summaryStatus === "fallback");
-    const partialSources = sourceFailures.length > 0;
-    const status =
-      anyFallback || partialSources ? "degraded" : "success";
+    const items: TechNewsItem[] = selected.map((item) => ({
+      sourceTitle: item.sourceTitle,
+      sourceName: item.sourceName,
+      sourceUrl: item.sourceUrl,
+      originalUrl: item.originalUrl,
+      publishedAt: item.publishedAt,
+      summary: item.summary,
+      summaryStatus: item.summary ? "curated" : "fallback",
+    }));
 
     return {
       moduleId: "tech-news",
-      status,
+      status: "success",
       data: {
         items,
-        windowHours: options.windowHours,
+        window: options.window,
         candidateCount: candidates.length,
       },
-      userMessage:
-        status === "degraded"
-          ? anyFallback
-            ? "部分科技摘要使用原文标题摘录"
-            : "部分科技新闻源暂不可用"
-          : undefined,
-      diagnostics:
-        sourceFailures.length > 0
-          ? [
-              {
-                code: "source-failures",
-                message: `${sourceFailures.length} source(s) failed`,
-              },
-            ]
-          : undefined,
       generatedAt,
     };
   } catch (error) {

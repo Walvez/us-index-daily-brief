@@ -133,7 +133,7 @@ export async function runDailyBrief(
     await runTechNewsModule(context, {
       enabled: config.techNewsEnabled,
       limit: config.techNewsLimit,
-      windowHours: config.techNewsWindowHours,
+      window: config.techNewsWindow,
       ...dependencies.techNews,
     }),
   );
