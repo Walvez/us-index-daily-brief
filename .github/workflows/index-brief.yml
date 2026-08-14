@@ -11,6 +11,10 @@ on:
         description: Generate and verify without sending or persisting
         type: boolean
         default: false
+      force_resend:
+        description: Ignore today's sent marker and regenerate plus send again (manual only)
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -82,12 +86,13 @@ jobs:
           REPORT_LOCALE: zh
           REPORT_OUTPUT_DIR: ${{ inputs.validation_only && 'validation_reports' || 'daily_reports' }}
           VALIDATION_ONLY: ${{ inputs.validation_only && '1' || '0' }}
+          BRIEF_FORCE_RESEND: ${{ inputs.force_resend && '1' || '0' }}
           VALUATION_DEBUG: ${{ inputs.validation_only && '1' || '0' }}
           # Opt-in modules for private production. Market always on; tech-news explicit.
           BRIEF_MODULES: market,tech-news
           TECH_NEWS_ENABLED: "true"
-          TECH_NEWS_LIMIT: "5"
-          TECH_NEWS_WINDOW_HOURS: "30"
+          TECH_NEWS_LIMIT: "10"
+          TECH_NEWS_WINDOW: "24h"
           BRIEF_SCHEDULE_ATTEMPT: ${{ steps.attempt.outputs.attempt }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}

@@ -100,21 +100,21 @@ export const marketModuleDataFixture: MarketModuleData = {
   marketDate: "2026-06-05",
   isLastTradingDay: true,
   staleLabel: "最近交易日 2026-06-05（非 2026-06-06 当日收盘）",
+  editionKind: "weekday",
 };
 
 export const techModuleDataFixture: TechNewsModuleData = {
   items: [
     {
       sourceTitle: "OpenAI <launch>",
-      sourceName: "OpenAI News",
+      sourceName: "AI HOT",
       sourceUrl: "https://example.com/openai?x=1&y=2",
       publishedAt: "2026-06-05T18:00:00.000Z",
-      factualExcerpt: "A product update.",
-      aiSummary: "OpenAI 发布产品更新。",
-      summaryStatus: "generated",
+      summary: "OpenAI 发布产品更新。",
+      summaryStatus: "curated",
     },
   ],
-  windowHours: 30,
+  window: "24h",
   candidateCount: 3,
 };
 

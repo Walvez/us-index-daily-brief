@@ -36,6 +36,8 @@ export interface OrchestratorDependencies {
   techNews?: Partial<TechNewsModuleOptions>;
   /** Override schedule attempt (tests). Defaults to env resolution. */
   scheduleAttempt?: ScheduleAttempt;
+  /** Manual-only: ignore existing .emailed and regenerate the edition. */
+  forceResend?: boolean;
 }
 
 function mergeConfig(
@@ -58,16 +60,21 @@ export async function runDailyBrief(
   const paths = editionPaths(config.outputRoot, editionDate);
   const attempt =
     dependencies.scheduleAttempt ?? resolveScheduleAttempt(process.env);
+  const forceResend =
+    dependencies.forceResend === true ||
+    ["1", "true", "yes", "on"].includes(
+      (process.env.BRIEF_FORCE_RESEND ?? "").trim().toLowerCase(),
+    );
 
   const state = inspectEditionState(config.outputRoot, editionDate);
-  if (state === "sent") {
+  if (state === "sent" && !forceResend) {
     return {
       status: "skip",
       editionDate,
       reportDir: paths.directory,
     };
   }
-  if (state === "report-only") {
+  if (state === "report-only" && !forceResend) {
     try {
       const existing = readEditionReport(config.outputRoot, editionDate);
       if (
@@ -133,7 +140,7 @@ export async function runDailyBrief(
     await runTechNewsModule(context, {
       enabled: config.techNewsEnabled,
       limit: config.techNewsLimit,
-      windowHours: config.techNewsWindowHours,
+      window: config.techNewsWindow,
       ...dependencies.techNews,
     }),
   );

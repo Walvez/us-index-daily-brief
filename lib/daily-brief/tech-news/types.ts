@@ -3,25 +3,29 @@ export interface TechNewsCandidate {
   sourceName: string;
   sourceTitle: string;
   sourceUrl: string;
+  originalUrl?: string;
   publishedAt: string;
-  factualExcerpt?: string;
+  /** AI HOT Chinese summary (already curated; no local LLM needed). */
+  summary?: string;
+  rank?: number;
 }
 
-export type TechNewsSummaryStatus = "generated" | "fallback";
+/** "curated" = source-provided Chinese summary; "fallback" = no summary available. */
+export type TechNewsSummaryStatus = "curated" | "fallback";
 
 export interface TechNewsItem {
-  /** Canonical source title — never replaced by AI rewrite as fact. */
   sourceTitle: string;
   sourceName: string;
   sourceUrl: string;
+  originalUrl?: string;
   publishedAt?: string;
-  factualExcerpt?: string;
-  aiSummary?: string;
+  summary?: string;
   summaryStatus: TechNewsSummaryStatus;
+  rank?: number;
 }
 
 export interface TechNewsModuleData {
   items: TechNewsItem[];
-  windowHours: number;
+  window: "24h" | "7d";
   candidateCount: number;
 }

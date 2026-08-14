@@ -20,6 +20,10 @@ function parseIntInRange(
   return Math.min(max, Math.max(min, n));
 }
 
+function parseTechNewsWindow(raw: string | undefined): "24h" | "7d" {
+  return raw?.trim().toLowerCase() === "7d" ? "7d" : "24h";
+}
+
 /**
  * Read orchestration config from the environment.
  *
@@ -55,8 +59,8 @@ export function loadDailyBriefConfig(
     outputRoot: env.REPORT_OUTPUT_DIR?.trim() || "daily_reports",
     marketEnabled,
     techNewsEnabled,
-    techNewsLimit: parseIntInRange(env.TECH_NEWS_LIMIT, 5, 3, 5),
-    techNewsWindowHours: parseIntInRange(env.TECH_NEWS_WINDOW_HOURS, 30, 24, 36),
+    techNewsLimit: parseIntInRange(env.TECH_NEWS_LIMIT, 10, 1, 10),
+    techNewsWindow: parseTechNewsWindow(env.TECH_NEWS_WINDOW),
     validationOnly: parseBool(env.VALIDATION_ONLY, false),
   };
 }

@@ -5,8 +5,9 @@ import {
   renderFullHtml,
   shouldSendReport,
 } from "../../lib/daily-brief/render";
-import { dailyBriefFixture } from "./fixtures";
+import { dailyBriefFixture, marketModuleDataFixture } from "./fixtures";
 import type { ModuleResult } from "../../lib/daily-brief/types";
+import type { MarketModuleData } from "../../lib/daily-brief/market-module";
 import type { TechNewsModuleData } from "../../lib/daily-brief/tech-news/types";
 
 test("renders mobile personal brief with market then tech sections", () => {
@@ -15,7 +16,7 @@ test("renders mobile personal brief with market then tech sections", () => {
   assert.match(html, /max-width:\s*680px/);
   assert.match(html, /个人每日简报/);
   assert.match(html, /一、市场与定投观察/);
-  assert.match(html, /二、AI／科技动态/);
+  assert.match(html, /二、AI 热点榜/);
   assert.match(html, /正常定投，可按习惯略微增加/);
   assert.match(html, /T\+2/);
   assert.match(html, /汇率/);
@@ -71,7 +72,7 @@ test("market-only report omits tech section when skipped", () => {
   });
   const html = renderEmailHtml(report);
   assert.match(html, /一、市场与定投观察/);
-  assert.doesNotMatch(html, /二、AI／科技动态/);
+  assert.doesNotMatch(html, /二、AI 热点榜/);
   assert.doesNotMatch(html, /科技新闻模块未启用/);
 });
 
@@ -105,4 +106,27 @@ test("renders full archival document", () => {
   assert.match(html, /^<!doctype html>/i);
   assert.match(html, /个人每日简报/);
   assert.match(html, /2026-06-06/);
+});
+
+test("weekend edition renders weekly market recap instead of overnight review", () => {
+  const report = dailyBriefFixture({
+    editionDate: "2026-06-06",
+    modules: [
+      {
+        moduleId: "market",
+        status: "success",
+        data: {
+          ...marketModuleDataFixture,
+          editionKind: "weekend",
+        },
+        generatedAt: "2026-06-06T00:05:00.000Z",
+      } satisfies ModuleResult<MarketModuleData>,
+      dailyBriefFixture().modules[1],
+    ],
+  });
+  const html = renderEmailHtml(report);
+  assert.match(html, /本周市场回顾/);
+  assert.match(html, /本周大事/);
+  assert.match(html, />本周</);
+  assert.doesNotMatch(html, /昨夜发生了什么/);
 });

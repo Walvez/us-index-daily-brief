@@ -3,6 +3,7 @@ import {
   type BuildDependencies,
 } from "../index-brief/build";
 import type { IndexBriefReport } from "../index-brief/render";
+import { editionKindFor, type EditionKind } from "./edition";
 import type { BriefContext, ModuleResult } from "./types";
 
 export interface MarketModuleData {
@@ -11,6 +12,8 @@ export interface MarketModuleData {
   /** True when marketDate differs from editionDate (last session / holiday). */
   isLastTradingDay: boolean;
   staleLabel?: string;
+  /** "weekend" editions switch the market module to a weekly recap. */
+  editionKind: EditionKind;
 }
 
 export interface MarketModuleDependencies extends BuildDependencies {}
@@ -25,12 +28,14 @@ export async function runMarketModule(
 ): Promise<ModuleResult<MarketModuleData>> {
   const generatedAt = context.now.toISOString();
   try {
+    const editionKind = editionKindFor(context.editionDate, context.timeZone);
     const report = await buildIndexBriefReport({
       ...dependencies,
       outputRoot: context.outputRoot,
       now: () => context.now,
       // Valuation history is appended under outputRoot (shared archive root).
       persistValuationHistory: true,
+      mode: editionKind === "weekend" ? "weekly" : "daily",
     });
     const marketDate = report.market.marketDate;
     const isLastTradingDay = marketDate !== context.editionDate;
@@ -46,6 +51,7 @@ export async function runMarketModule(
         marketDate,
         isLastTradingDay,
         staleLabel,
+        editionKind,
       },
       userMessage: staleLabel,
       generatedAt,

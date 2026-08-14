@@ -3,6 +3,7 @@ import type { IndexBriefReport } from "../index-brief/render";
 import type {
   AdviceResult,
   MarketContext,
+  MarketMetrics,
   ValuationContext,
 } from "../index-brief/types";
 import { editionWeekdayLabel } from "./edition";
@@ -107,14 +108,17 @@ function marketSection(
   commentary: BriefCommentary,
   valuation: ValuationContext,
   staleLabel?: string,
+  weekly = false,
 ): string {
+  const movePct = (metrics: MarketMetrics) =>
+    weekly ? metrics.pct5Day : metrics.pct1Day;
   const rows = market.indices
     .map(({ name, symbol, metrics }) => {
-      const move = `${metrics.pct1Day >= 0 ? "+" : ""}${formatNumber(metrics.pct1Day)}%`;
+      const move = `${movePct(metrics) >= 0 ? "+" : ""}${formatNumber(movePct(metrics))}%`;
       return `<tr>
         <td style="padding:12px 8px;border-bottom:1px solid #e4e7ec;"><strong>${escapeHtml(name)}</strong><br><span style="color:#667085;font-size:12px;">${escapeHtml(symbol)}</span></td>
         <td style="padding:12px 8px;border-bottom:1px solid #e4e7ec;text-align:right;">${formatNumber(metrics.close)}</td>
-        <td style="padding:12px 8px;border-bottom:1px solid #e4e7ec;text-align:right;color:${colorForMove(metrics.pct1Day)};font-weight:700;">${move}</td>
+        <td style="padding:12px 8px;border-bottom:1px solid #e4e7ec;text-align:right;color:${colorForMove(movePct(metrics))};font-weight:700;">${move}</td>
         <td style="padding:12px 8px;border-bottom:1px solid #e4e7ec;text-align:right;">${formatNumber(metrics.drawdown60)}%</td>
       </tr>`;
     })
@@ -142,9 +146,11 @@ function marketSection(
     .filter(Boolean)
     .join(" · ");
 
-  const dateLine = staleLabel
-    ? `${escapeHtml(staleLabel)}`
-    : `${escapeHtml(market.marketDate)} 美股收盘`;
+  const dateLine = weekly
+    ? `本周市场回顾 · 截至 ${escapeHtml(market.marketDate)} 收盘`
+    : staleLabel
+      ? `${escapeHtml(staleLabel)}`
+      : `${escapeHtml(market.marketDate)} 美股收盘`;
 
   return `
         <tr><td style="padding:8px 24px 4px;">
@@ -167,7 +173,7 @@ function marketSection(
             <thead><tr style="color:#667085;background:#f9fafb;">
               <th style="padding:9px 8px;text-align:left;">指数</th>
               <th style="padding:9px 8px;text-align:right;">收盘</th>
-              <th style="padding:9px 8px;text-align:right;">昨夜</th>
+              <th style="padding:9px 8px;text-align:right;">${weekly ? "本周" : "昨夜"}</th>
               <th style="padding:9px 8px;text-align:right;">60日回撤</th>
             </tr></thead>
             <tbody>${rows}</tbody>
@@ -176,7 +182,7 @@ function marketSection(
         </td></tr>
         ${valuationSection(valuation)}
         <tr><td style="padding:20px 24px;border-top:1px solid #e4e7ec;">
-          <h2 style="margin:0 0 14px;font-size:18px;color:#101828;">昨夜发生了什么</h2>
+          <h2 style="margin:0 0 14px;font-size:18px;color:#101828;">${weekly ? "本周大事" : "昨夜发生了什么"}</h2>
           <ul style="margin:0;padding-left:20px;line-height:1.55;">${drivers}</ul>
         </td></tr>`;
 }
@@ -192,18 +198,17 @@ function marketFailedSection(message: string): string {
 }
 
 function techItemHtml(item: TechNewsItem): string {
-  const summary =
-    item.summaryStatus === "generated" && item.aiSummary
-      ? item.aiSummary
-      : item.factualExcerpt || "详见原文。";
+  const summary = item.summary || "详见原文。";
   const time = formatPublishedAt(item.publishedAt);
+  const rank =
+    typeof item.rank === "number" && item.rank > 0
+      ? String(item.rank).padStart(2, "0") + " "
+      : "";
   return `<li style="margin:0 0 16px;">
-    <a href="${escapeHtml(item.sourceUrl)}" style="color:#175cd3;font-weight:700;text-decoration:none;">${escapeHtml(item.sourceTitle)}</a>
+    <a href="${escapeHtml(item.sourceUrl)}" style="color:#175cd3;font-weight:700;text-decoration:none;">${rank}${escapeHtml(item.sourceTitle)}</a>
     <div style="margin-top:4px;color:#475467;line-height:1.65;">${escapeHtml(summary)}</div>
     <div style="margin-top:3px;color:#98a2b3;font-size:12px;">
-      ${escapeHtml(item.sourceName)}${time ? ` · ${escapeHtml(time)}` : ""}${
-        item.summaryStatus === "fallback" ? " · 原文摘录" : ""
-      }
+      ${escapeHtml(item.sourceName)}${time ? ` · ${escapeHtml(time)}` : ""}
     </div>
   </li>`;
 }
@@ -215,7 +220,7 @@ function techNewsSection(module: ModuleResult<TechNewsModuleData>): string {
   if (module.status === "failed" || !module.data?.items?.length) {
     return `
         <tr><td style="padding:8px 24px 4px;border-top:1px solid #e4e7ec;">
-          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI／科技动态</h2>
+          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI 热点榜</h2>
         </td></tr>
         <tr><td style="padding:16px 24px 20px;">
           <p style="margin:0;color:#667085;line-height:1.7;">${escapeHtml(module.userMessage || "科技新闻暂不可用")}</p>
@@ -225,7 +230,7 @@ function techNewsSection(module: ModuleResult<TechNewsModuleData>): string {
   const items = module.data.items.map(techItemHtml).join("");
   return `
         <tr><td style="padding:8px 24px 4px;border-top:1px solid #e4e7ec;">
-          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI／科技动态</h2>
+          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI 热点榜</h2>
         </td></tr>
         <tr><td style="padding:12px 24px 20px;">
           <ul style="margin:0;padding-left:20px;line-height:1.55;">${items}</ul>
@@ -238,11 +243,12 @@ function overviewLine(report: DailyBriefReport): string {
   const parts: string[] = [];
 
   if (market?.status === "success" && market.data) {
+    const weekly = market.data.editionKind === "weekend";
     const moves = market.data.report.market.indices
-      .map(
-        (index) =>
-          `${index.name} ${index.metrics.pct1Day >= 0 ? "+" : ""}${formatNumber(index.metrics.pct1Day)}%`,
-      )
+      .map((index) => {
+        const pct = weekly ? index.metrics.pct5Day : index.metrics.pct1Day;
+        return `${index.name} ${pct >= 0 ? "+" : ""}${formatNumber(pct)}%`;
+      })
       .join("，");
     parts.push(moves);
   } else if (market?.status === "failed") {
@@ -251,7 +257,7 @@ function overviewLine(report: DailyBriefReport): string {
 
   if (tech?.status === "success" || tech?.status === "degraded") {
     const n = tech.data?.items.length ?? 0;
-    if (n > 0) parts.push(`科技动态 ${n} 条`);
+    if (n > 0) parts.push(`AI 热点榜 ${n} 条`);
   } else if (tech?.status === "failed") {
     parts.push("科技新闻暂不可用");
   }
@@ -270,13 +276,14 @@ function reportBody(report: DailyBriefReport): string {
   } else if (market.status === "failed" || !market.data) {
     marketHtml = marketFailedSection(market.userMessage || "市场数据暂不可用");
   } else {
-    const { report: marketReport, staleLabel } = market.data;
+    const { report: marketReport, staleLabel, editionKind } = market.data;
     marketHtml = marketSection(
       marketReport.market,
       marketReport.advice,
       marketReport.commentary,
       marketReport.valuation,
       staleLabel,
+      editionKind === "weekend",
     );
   }
 

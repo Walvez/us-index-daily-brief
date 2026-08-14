@@ -53,8 +53,10 @@ function normalizedTitle(title: string): string {
 export function selectRelevantNews(
   articles: MarketNews[],
   now = new Date(),
+  options: { windowHours?: number } = {},
 ): MarketNews[] {
-  const oldest = now.getTime() - 30 * 60 * 60 * 1000;
+  const windowHours = options.windowHours ?? 30;
+  const oldest = now.getTime() - windowHours * 60 * 60 * 1000;
   const seenUrls = new Set<string>();
   const seenTitles = new Set<string>();
 
