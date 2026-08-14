@@ -7,7 +7,7 @@ test("defaults keep tech-news disabled and market enabled", () => {
   assert.equal(config.marketEnabled, true);
   assert.equal(config.techNewsEnabled, false);
   assert.equal(config.timeZone, "Asia/Taipei");
-  assert.equal(config.techNewsLimit, 5);
+  assert.equal(config.techNewsLimit, 10);
   assert.equal(config.techNewsWindow, "24h");
 });
 
@@ -22,11 +22,11 @@ test("BRIEF_MODULES opt-in enables tech-news safely", () => {
 test("TECH_NEWS_ENABLED flag works without BRIEF_MODULES", () => {
   const config = loadDailyBriefConfig({
     TECH_NEWS_ENABLED: "true",
-    TECH_NEWS_LIMIT: "3",
+    TECH_NEWS_LIMIT: "8",
     TECH_NEWS_WINDOW: "7d",
   });
   assert.equal(config.techNewsEnabled, true);
-  assert.equal(config.techNewsLimit, 3);
+  assert.equal(config.techNewsLimit, 8);
   assert.equal(config.techNewsWindow, "7d");
 });
 
@@ -35,6 +35,6 @@ test("clamps tech news limit and defaults window to 24h", () => {
     TECH_NEWS_LIMIT: "99",
     TECH_NEWS_WINDOW: "invalid",
   });
-  assert.equal(config.techNewsLimit, 5);
+  assert.equal(config.techNewsLimit, 10);
   assert.equal(config.techNewsWindow, "24h");
 });

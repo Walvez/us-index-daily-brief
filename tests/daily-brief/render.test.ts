@@ -16,7 +16,7 @@ test("renders mobile personal brief with market then tech sections", () => {
   assert.match(html, /max-width:\s*680px/);
   assert.match(html, /个人每日简报/);
   assert.match(html, /一、市场与定投观察/);
-  assert.match(html, /二、AI／科技动态/);
+  assert.match(html, /二、AI 热点榜/);
   assert.match(html, /正常定投，可按习惯略微增加/);
   assert.match(html, /T\+2/);
   assert.match(html, /汇率/);
@@ -72,7 +72,7 @@ test("market-only report omits tech section when skipped", () => {
   });
   const html = renderEmailHtml(report);
   assert.match(html, /一、市场与定投观察/);
-  assert.doesNotMatch(html, /二、AI／科技动态/);
+  assert.doesNotMatch(html, /二、AI 热点榜/);
   assert.doesNotMatch(html, /科技新闻模块未启用/);
 });
 

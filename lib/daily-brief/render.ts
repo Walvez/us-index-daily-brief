@@ -200,8 +200,12 @@ function marketFailedSection(message: string): string {
 function techItemHtml(item: TechNewsItem): string {
   const summary = item.summary || "详见原文。";
   const time = formatPublishedAt(item.publishedAt);
+  const rank =
+    typeof item.rank === "number" && item.rank > 0
+      ? String(item.rank).padStart(2, "0") + " "
+      : "";
   return `<li style="margin:0 0 16px;">
-    <a href="${escapeHtml(item.sourceUrl)}" style="color:#175cd3;font-weight:700;text-decoration:none;">${escapeHtml(item.sourceTitle)}</a>
+    <a href="${escapeHtml(item.sourceUrl)}" style="color:#175cd3;font-weight:700;text-decoration:none;">${rank}${escapeHtml(item.sourceTitle)}</a>
     <div style="margin-top:4px;color:#475467;line-height:1.65;">${escapeHtml(summary)}</div>
     <div style="margin-top:3px;color:#98a2b3;font-size:12px;">
       ${escapeHtml(item.sourceName)}${time ? ` · ${escapeHtml(time)}` : ""}
@@ -216,7 +220,7 @@ function techNewsSection(module: ModuleResult<TechNewsModuleData>): string {
   if (module.status === "failed" || !module.data?.items?.length) {
     return `
         <tr><td style="padding:8px 24px 4px;border-top:1px solid #e4e7ec;">
-          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI／科技动态</h2>
+          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI 热点榜</h2>
         </td></tr>
         <tr><td style="padding:16px 24px 20px;">
           <p style="margin:0;color:#667085;line-height:1.7;">${escapeHtml(module.userMessage || "科技新闻暂不可用")}</p>
@@ -226,7 +230,7 @@ function techNewsSection(module: ModuleResult<TechNewsModuleData>): string {
   const items = module.data.items.map(techItemHtml).join("");
   return `
         <tr><td style="padding:8px 24px 4px;border-top:1px solid #e4e7ec;">
-          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI／科技动态</h2>
+          <h2 style="margin:0;font-size:18px;color:#101828;">二、AI 热点榜</h2>
         </td></tr>
         <tr><td style="padding:12px 24px 20px;">
           <ul style="margin:0;padding-left:20px;line-height:1.55;">${items}</ul>
@@ -253,7 +257,7 @@ function overviewLine(report: DailyBriefReport): string {
 
   if (tech?.status === "success" || tech?.status === "degraded") {
     const n = tech.data?.items.length ?? 0;
-    if (n > 0) parts.push(`科技动态 ${n} 条`);
+    if (n > 0) parts.push(`AI 热点榜 ${n} 条`);
   } else if (tech?.status === "failed") {
     parts.push("科技新闻暂不可用");
   }

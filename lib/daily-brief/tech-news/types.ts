@@ -7,6 +7,7 @@ export interface TechNewsCandidate {
   publishedAt: string;
   /** AI HOT Chinese summary (already curated; no local LLM needed). */
   summary?: string;
+  rank?: number;
 }
 
 /** "curated" = source-provided Chinese summary; "fallback" = no summary available. */
@@ -20,6 +21,7 @@ export interface TechNewsItem {
   publishedAt?: string;
   summary?: string;
   summaryStatus: TechNewsSummaryStatus;
+  rank?: number;
 }
 
 export interface TechNewsModuleData {

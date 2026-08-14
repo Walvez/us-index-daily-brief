@@ -63,6 +63,7 @@ export async function runTechNewsModule(
       publishedAt: item.publishedAt,
       summary: item.summary,
       summaryStatus: item.summary ? "curated" : "fallback",
+      rank: item.rank,
     }));
 
     return {

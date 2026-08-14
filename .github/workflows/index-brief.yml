@@ -91,7 +91,7 @@ jobs:
           # Opt-in modules for private production. Market always on; tech-news explicit.
           BRIEF_MODULES: market,tech-news
           TECH_NEWS_ENABLED: "true"
-          TECH_NEWS_LIMIT: "5"
+          TECH_NEWS_LIMIT: "10"
           TECH_NEWS_WINDOW: "24h"
           BRIEF_SCHEDULE_ATTEMPT: ${{ steps.attempt.outputs.attempt }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}

@@ -47,7 +47,7 @@ test("selectTechNews keeps valid items, dedupes URLs, and caps limit", () => {
         sourceUrl: "javascript:alert(1)",
       }),
     ],
-    { limit: 5 },
+    { limit: 10 },
   );
 
   assert.deepEqual(
@@ -67,7 +67,7 @@ test("normalizedUrl strips utm params and trailing slash, rejects bad protocols"
 test("tech module skipped when disabled", async () => {
   const result = await runTechNewsModule(context, {
     enabled: false,
-    limit: 5,
+    limit: 10,
     window: "24h",
   });
   assert.equal(result.status, "skipped");
@@ -76,7 +76,7 @@ test("tech module skipped when disabled", async () => {
 test("tech module fails when AI HOT is unavailable", async () => {
   const result = await runTechNewsModule(context, {
     enabled: true,
-    limit: 5,
+    limit: 10,
     window: "24h",
     articlesFetcher: async () => {
       throw new Error("network");
@@ -100,7 +100,7 @@ test("tech module maps AI HOT articles to curated Chinese items", async () => {
   ];
   const result = await runTechNewsModule(context, {
     enabled: true,
-    limit: 5,
+    limit: 10,
     window: "24h",
     articlesFetcher: async () => articles,
   });
@@ -116,7 +116,7 @@ test("tech module maps AI HOT articles to curated Chinese items", async () => {
 test("tech item without summary falls back to link-only", async () => {
   const result = await runTechNewsModule(context, {
     enabled: true,
-    limit: 5,
+    limit: 10,
     window: "24h",
     articlesFetcher: async () => [
       {
@@ -131,4 +131,36 @@ test("tech item without summary falls back to link-only", async () => {
   assert.equal(result.status, "success");
   assert.equal(result.data?.items[0].summaryStatus, "fallback");
   assert.equal(result.data?.items[0].summary, undefined);
+});
+
+test("tech module keeps AI HOT hot-topic rank and story summary", async () => {
+  const result = await runTechNewsModule(context, {
+    enabled: true,
+    limit: 10,
+    window: "24h",
+    articlesFetcher: async () => [
+      {
+        id: "1",
+        title: "Google DeepMind 推出 Gemini 3.7 Flash",
+        sourceName: "Google DeepMind",
+        url: "https://aihot.virxact.com/items/1",
+        summary: "Gemini 3.7 Flash 发布，入门价减半。",
+        publishedAt: "2026-08-14T00:19:55.879Z",
+        rank: 1,
+      },
+      {
+        id: "2",
+        title: "DeepSeek-V4-Pro 正式版上线",
+        sourceName: "DeepSeek",
+        url: "https://aihot.virxact.com/items/2",
+        publishedAt: "2026-08-13T16:52:19.501Z",
+        rank: 2,
+      },
+    ],
+  });
+  assert.equal(result.status, "success");
+  assert.equal(result.data?.items.length, 2);
+  assert.equal(result.data?.items[0].rank, 1);
+  assert.equal(result.data?.items[0].summary, "Gemini 3.7 Flash 发布，入门价减半。");
+  assert.equal(result.data?.items[1].rank, 2);
 });

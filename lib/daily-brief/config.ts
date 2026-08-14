@@ -59,7 +59,7 @@ export function loadDailyBriefConfig(
     outputRoot: env.REPORT_OUTPUT_DIR?.trim() || "daily_reports",
     marketEnabled,
     techNewsEnabled,
-    techNewsLimit: parseIntInRange(env.TECH_NEWS_LIMIT, 5, 3, 5),
+    techNewsLimit: parseIntInRange(env.TECH_NEWS_LIMIT, 10, 1, 10),
     techNewsWindow: parseTechNewsWindow(env.TECH_NEWS_WINDOW),
     validationOnly: parseBool(env.VALIDATION_ONLY, false),
   };

@@ -28,7 +28,7 @@ export function selectTechNews(
   candidates: TechNewsCandidate[],
   options: { limit?: number } = {},
 ): TechNewsCandidate[] {
-  const limit = Math.min(5, Math.max(1, options.limit ?? 5));
+  const limit = Math.min(10, Math.max(1, options.limit ?? 10));
   const seenUrls = new Set<string>();
   const seenTitles = new Set<string>();
   const selected: TechNewsCandidate[] = [];

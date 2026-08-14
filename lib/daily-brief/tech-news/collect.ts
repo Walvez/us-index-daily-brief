@@ -1,5 +1,5 @@
 import {
-  fetchAihotSelected,
+  fetchAihotHotTopics,
   type AihotArticle,
 } from "../../sources/aihot";
 import type { TechNewsCandidate } from "./types";
@@ -16,7 +16,7 @@ export interface CollectTechNewsOptions {
 export async function collectTechNewsCandidates(
   options: CollectTechNewsOptions,
 ): Promise<{ candidates: TechNewsCandidate[]; sourceFailures: string[] }> {
-  const fetcher = options.articlesFetcher ?? fetchAihotSelected;
+  const fetcher = options.articlesFetcher ?? fetchAihotHotTopics;
   try {
     const articles = await fetcher({
       window: options.window,
@@ -30,6 +30,7 @@ export async function collectTechNewsCandidates(
       originalUrl: article.originalUrl,
       publishedAt: article.publishedAt,
       summary: article.summary,
+      rank: article.rank,
     }));
     return { candidates, sourceFailures: [] };
   } catch {
