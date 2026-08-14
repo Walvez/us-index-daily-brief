@@ -189,3 +189,25 @@ test("regenerates when prior report had failed market (retry after data lag)", a
   const market = result.report?.modules.find((m) => m.moduleId === "market");
   assert.equal(market?.status, "success");
 });
+
+test("forceResend regenerates a previously sent edition", async (t) => {
+  const root = tempRoot();
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const report = dailyBriefFixture({ editionDate: "2026-06-06" });
+  writeEditionReportFiles(root, report);
+  markEditionEmailed(root, "2026-06-06");
+
+  const skipped = await runDailyBrief(baseDeps(root));
+  assert.equal(skipped.status, "skip");
+
+  const forced = await runDailyBrief({
+    ...baseDeps(root),
+    forceResend: true,
+  });
+  assert.equal(forced.status, "generated");
+  assert.equal(
+    forced.report?.modules.find((module) => module.moduleId === "market")
+      ?.status,
+    "success",
+  );
+});
