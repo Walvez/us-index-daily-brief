@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-15",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-14T21:36:13.252Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-14",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 30046.140625,
+                  "pct1Day": -0.12750544300221045,
+                  "pct5Day": 1.0895517346836452,
+                  "pct20Day": 1.5542725264685262,
+                  "drawdown20": -0.12750544300221045,
+                  "drawdown60": -2.004067083499302,
+                  "drawdownAll": -2.004067083499302,
+                  "sma20": 28976.16572265625,
+                  "sma50": 29410.0198046875,
+                  "sma200": 26687.4261328125,
+                  "realizedVol20": 23.983630836044302
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 7785.759765625,
+                  "pct1Day": -0.1696433557729704,
+                  "pct5Day": 0.3624765832221725,
+                  "pct20Day": 3.2102742446375467,
+                  "drawdown20": -0.1696433557729704,
+                  "drawdown60": -0.1696433557729704,
+                  "drawdownAll": -0.1696433557729704,
+                  "sma20": 7588.294458007813,
+                  "sma50": 7517.700009765625,
+                  "sma200": 7064.439353027344,
+                  "realizedVol20": 14.195990558261427
+                }
+              }
+            ],
+            "vix": 14.25,
+            "treasury10y": 4.696000099182129,
+            "dxy": 99.63600158691406
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.17%",
+              "较深的60日高点回撤为 -2.00%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.13%，标普500 -0.17%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Berkshire Pads Delta, Alphabet Stakes as Abel Taps Cash Pile",
+                "explanation": "中文翻译暂不可用：Berkshire Hathaway Inc. increased its holdings in Delta Air Lines Inc. and Google parent Alphabet Inc. as Greg Abel began tapping into the company’s massive cash hoard.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-14/berkshire-boosts-delta-alphabet-stakes-as-abel-taps-cash-pile",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Investors pile back into US stocks as bullishness returns to Wall Street",
+                "explanation": "中文翻译暂不可用：Stellar earnings season and falling inflation fuel rebound from July’s chip rout",
+                "url": "https://www.ft.com/content/d4897d94-0d69-445a-9466-5150840c801e?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Dollar Touches Lowest Since May as Retail Data Dims Fed Bets",
+                "explanation": "中文翻译暂不可用：The dollar fell to the lowest since May after an unexpectedly weak report on US retail sales dimmed expectations for an interest-rate hike from the Federal Reserve.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-14/dollar-slides-to-may-low-as-weak-retail-sales-dim-rate-bets",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Gold Nears $4,400 as Traders Weigh Fed Interest-Rate Path",
+                "explanation": "中文翻译暂不可用：Gold edged toward $4,400 an ounce as traders weighed the Federal Reserve’s interest-rate path after the economy’s main engine showed signs of cooling.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-13/gold-steadies-as-traders-weigh-fed-rate-path-and-mideast-tension",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Leveraged ETFs Snap Back as Casino Crowd Mints $50 Billion",
+                "explanation": "中文翻译暂不可用：Three weeks ago, Wall Street’s casino crowd took a beating. AI stocks buckled, semiconductor shares tumbled and leveraged trades unraveled.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-14/leveraged-etfs-snap-back-as-casino-crowd-mints-50-billion",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-14T21:36:13.252Z"
+        },
+        "marketDate": "2026-08-14",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-14（非 2026-08-15 当日收盘）"
+      },
+      "userMessage": "最近交易日 2026-08-14（非 2026-08-15 当日收盘）",
+      "generatedAt": "2026-08-14T21:36:13.252Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "degraded",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "State of Open Models: Summer 2026 Observations",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+            "publishedAt": "2026-08-14T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+            "sourceName": "Hugging Face Blog",
+            "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+            "publishedAt": "2026-08-13T17:16:04.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Introducing Gemini 3.7 Flash",
+            "sourceName": "DeepMind Blog",
+            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
+            "publishedAt": "2026-08-13T17:04:18.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "[AINews] Gemini 3.7 Flash brings GDM back to the forefront",
+            "sourceName": "Latent Space",
+            "sourceUrl": "https://www.latent.space/p/ainews-gemini-37-flash-brings-gdm",
+            "publishedAt": "2026-08-14T05:30:39.000Z",
+            "factualExcerpt": "Down, but not out!",
+            "summaryStatus": "fallback"
+          },
+          {
+            "sourceTitle": "Gemini 3.7 🤖, GPT-5.6 Sol Ultrafast ⚡, Anthropic $2T IPO 💰",
+            "sourceName": "TLDR AI",
+            "sourceUrl": "https://tldr.tech/ai/2026-08-14",
+            "publishedAt": "2026-08-14T00:00:00.000Z",
+            "factualExcerpt": "",
+            "summaryStatus": "fallback"
+          }
+        ],
+        "windowHours": 30,
+        "candidateCount": 234
+      },
+      "userMessage": "部分科技摘要使用原文标题摘录",
+      "diagnostics": [
+        {
+          "code": "source-failures",
+          "message": "1 source(s) failed"
+        }
+      ],
+      "generatedAt": "2026-08-14T21:36:13.252Z"
+    }
+  ],
+  "subject": "2026-08-15 个人每日简报｜市场与 AI 科技"
+}
