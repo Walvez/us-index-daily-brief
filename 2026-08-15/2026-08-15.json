@@ -2,7 +2,7 @@
   "version": 1,
   "editionDate": "2026-08-15",
   "timeZone": "Asia/Taipei",
-  "generatedAt": "2026-08-14T21:36:13.252Z",
+  "generatedAt": "2026-08-14T23:38:29.969Z",
   "modules": [
     {
       "moduleId": "market",
@@ -21,14 +21,14 @@
                   "close": 30046.140625,
                   "pct1Day": -0.12750544300221045,
                   "pct5Day": 1.0895517346836452,
-                  "pct20Day": 1.5542725264685262,
+                  "pct20Day": 5.083404135212257,
                   "drawdown20": -0.12750544300221045,
                   "drawdown60": -2.004067083499302,
                   "drawdownAll": -2.004067083499302,
-                  "sma20": 28976.16572265625,
-                  "sma50": 29410.0198046875,
-                  "sma200": 26687.4261328125,
-                  "realizedVol20": 23.983630836044302
+                  "sma20": 28941.48818359375,
+                  "sma50": 29303.655390625,
+                  "sma200": 26738.177919921876,
+                  "realizedVol20": 23.713953204863213
                 }
               },
               {
@@ -40,14 +40,14 @@
                   "close": 7785.759765625,
                   "pct1Day": -0.1696433557729704,
                   "pct5Day": 0.3624765832221725,
-                  "pct20Day": 3.2102742446375467,
+                  "pct20Day": 4.399081039790291,
                   "drawdown20": -0.1696433557729704,
                   "drawdown60": -0.1696433557729704,
                   "drawdownAll": -0.1696433557729704,
-                  "sma20": 7588.294458007813,
-                  "sma50": 7517.700009765625,
-                  "sma200": 7064.439353027344,
-                  "realizedVol20": 14.195990558261427
+                  "sma20": 7584.9954833984375,
+                  "sma50": 7512.38921875,
+                  "sma200": 7074.9023046875,
+                  "realizedVol20": 13.29858033093309
                 }
               }
             ],
@@ -65,10 +65,28 @@
             "highVolatility": false
           },
           "commentary": {
-            "headline": "昨夜美股指数复盘",
-            "summary": "纳斯达克100 -0.13%，标普500 -0.17%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 1.09%，标普500 本周 0.36%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
             "adviceLabel": "正常定投",
             "drivers": [
+              {
+                "title": "Wall Street Week | Rerouting Global Trade, Private Equity Tested, Realizing Cuba’s Potential",
+                "explanation": "中文翻译暂不可用：This week, inflation may be edging lower, but as markets push rates higher, the Fed’s 2% inflation target might be a long way off. And, Mexico is building a land-based trade corridor that could give shipping companies more options when traditional channels are disrupted. Plus, as exits slow and borr",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-14/wall-street-week-rerouting-trade-private-equity-test-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia discloses $21bn stake in SpaceX",
+                "explanation": "中文翻译暂不可用：Filing comes after Elon Musk announced exclusive arrangement to kit out its data centres",
+                "url": "https://www.ft.com/content/6f66a76d-0b2d-4301-886c-87ecc046731b?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Former Boston Fed Pres.: Investment spend a catalyst",
+                "explanation": "中文翻译暂不可用：Former Boston Federal Reserve President Eric Rosengren isn't surprised by a weaker retail sales number with the American consumer dealing with higher oil prices while AI and tech investment drive a large portion of investment spending. He speaks to Romaine Bostick and Isabelle Lee on Bloomberg's 'Th",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-14/former-boston-fed-pres-investment-spend-a-catalyst-video",
+                "relationship": "possibly-related"
+              },
               {
                 "title": "Berkshire Pads Delta, Alphabet Stakes as Abel Taps Cash Pile",
                 "explanation": "中文翻译暂不可用：Berkshire Hathaway Inc. increased its holdings in Delta Air Lines Inc. and Google parent Alphabet Inc. as Greg Abel began tapping into the company’s massive cash hoard.",
@@ -80,24 +98,6 @@
                 "explanation": "中文翻译暂不可用：Stellar earnings season and falling inflation fuel rebound from July’s chip rout",
                 "url": "https://www.ft.com/content/d4897d94-0d69-445a-9466-5150840c801e?syn-25a6b1a6=1",
                 "relationship": "possibly-related"
-              },
-              {
-                "title": "Dollar Touches Lowest Since May as Retail Data Dims Fed Bets",
-                "explanation": "中文翻译暂不可用：The dollar fell to the lowest since May after an unexpectedly weak report on US retail sales dimmed expectations for an interest-rate hike from the Federal Reserve.",
-                "url": "https://www.bloomberg.com/news/articles/2026-08-14/dollar-slides-to-may-low-as-weak-retail-sales-dim-rate-bets",
-                "relationship": "possibly-related"
-              },
-              {
-                "title": "Gold Nears $4,400 as Traders Weigh Fed Interest-Rate Path",
-                "explanation": "中文翻译暂不可用：Gold edged toward $4,400 an ounce as traders weighed the Federal Reserve’s interest-rate path after the economy’s main engine showed signs of cooling.",
-                "url": "https://www.bloomberg.com/news/articles/2026-08-13/gold-steadies-as-traders-weigh-fed-rate-path-and-mideast-tension",
-                "relationship": "possibly-related"
-              },
-              {
-                "title": "Leveraged ETFs Snap Back as Casino Crowd Mints $50 Billion",
-                "explanation": "中文翻译暂不可用：Three weeks ago, Wall Street’s casino crowd took a beating. AI stocks buckled, semiconductor shares tumbled and leveraged trades unraveled.",
-                "url": "https://www.bloomberg.com/news/articles/2026-08-14/leveraged-etfs-snap-back-as-casino-crowd-mints-50-billion",
-                "relationship": "possibly-related"
               }
             ],
             "translationAvailable": false
@@ -107,72 +107,126 @@
             "reason": "stale",
             "message": "官方估值数据暂未更新"
           },
-          "generatedAt": "2026-08-14T21:36:13.252Z"
+          "generatedAt": "2026-08-14T23:38:29.969Z"
         },
         "marketDate": "2026-08-14",
         "isLastTradingDay": true,
-        "staleLabel": "最近交易日 2026-08-14（非 2026-08-15 当日收盘）"
+        "staleLabel": "最近交易日 2026-08-14（非 2026-08-15 当日收盘）",
+        "editionKind": "weekend"
       },
       "userMessage": "最近交易日 2026-08-14（非 2026-08-15 当日收盘）",
-      "generatedAt": "2026-08-14T21:36:13.252Z"
+      "generatedAt": "2026-08-14T23:38:29.969Z"
     },
     {
       "moduleId": "tech-news",
-      "status": "degraded",
+      "status": "success",
       "data": {
         "items": [
           {
-            "sourceTitle": "State of Open Models: Summer 2026 Observations",
-            "sourceName": "Hugging Face Blog",
-            "sourceUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-            "publishedAt": "2026-08-14T00:00:00.000Z",
-            "factualExcerpt": "",
-            "summaryStatus": "fallback"
+            "sourceTitle": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
+            "sourceName": "公众号：智谱（GLM）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmssir12d047oroffnpn5pcx1",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492",
+            "publishedAt": "2026-08-14T22:03:28.360Z",
+            "summary": "GLM-5.3在多项基准上超越Kimi K3，部分指标超过Claude Fable 5或GPT-5.6-Sol。",
+            "summaryStatus": "curated",
+            "rank": 1
           },
           {
-            "sourceTitle": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
-            "sourceName": "Hugging Face Blog",
-            "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-            "publishedAt": "2026-08-13T17:16:04.000Z",
-            "factualExcerpt": "",
-            "summaryStatus": "fallback"
+            "sourceTitle": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsrscwfn03f7ro0n7qijclds",
+            "originalUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
+            "publishedAt": "2026-08-14T18:22:41.004Z",
+            "summary": "Gemini 3.7 Flash 已向 Pro 和 Ultra 用户开放，并提升多步骤任务推理与准确性。",
+            "summaryStatus": "curated",
+            "rank": 2
           },
           {
-            "sourceTitle": "Introducing Gemini 3.7 Flash",
-            "sourceName": "DeepMind Blog",
-            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
-            "publishedAt": "2026-08-13T17:04:18.000Z",
-            "factualExcerpt": "",
-            "summaryStatus": "fallback"
+            "sourceTitle": "Cursor 正式被 SpaceX 收购",
+            "sourceName": "Cursor Blog",
+            "sourceUrl": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3",
+            "originalUrl": "https://cursor.com/blog/joining-spacex",
+            "publishedAt": "2026-08-14T15:33:34.281Z",
+            "summary": "Cursor 官方确认收购完成，将借助 SpaceX GPU 集群开发更强模型。",
+            "summaryStatus": "curated",
+            "rank": 3
           },
           {
-            "sourceTitle": "[AINews] Gemini 3.7 Flash brings GDM back to the forefront",
-            "sourceName": "Latent Space",
-            "sourceUrl": "https://www.latent.space/p/ainews-gemini-37-flash-brings-gdm",
-            "publishedAt": "2026-08-14T05:30:39.000Z",
-            "factualExcerpt": "Down, but not out!",
-            "summaryStatus": "fallback"
+            "sourceTitle": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
+            "sourceName": "DeepSeek：API 更新日志",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsrfaw5c0xo2roz2s8b4p2sv",
+            "originalUrl": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-13",
+            "publishedAt": "2026-08-14T13:51:46.541Z",
+            "summary": "官方宣布 V4-Pro 与 V4-Flash 支持三档推理强度，API 引入峰谷定价，新价格 8 月 17 日生效。",
+            "summaryStatus": "curated",
+            "rank": 4
           },
           {
-            "sourceTitle": "Gemini 3.7 🤖, GPT-5.6 Sol Ultrafast ⚡, Anthropic $2T IPO 💰",
-            "sourceName": "TLDR AI",
-            "sourceUrl": "https://tldr.tech/ai/2026-08-14",
-            "publishedAt": "2026-08-14T00:00:00.000Z",
-            "factualExcerpt": "",
-            "summaryStatus": "fallback"
+            "sourceTitle": "通义千问开源 Qwen3.8 系列模型",
+            "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn",
+            "originalUrl": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+            "publishedAt": "2026-08-14T17:22:52.053Z",
+            "summary": "阿里开源Qwen3.8-27B多模态模型",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "DeepSeek Harness v0.1 开发者预览版发布",
+            "sourceName": "X：DeepSeek (@deepseek_ai)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
+            "originalUrl": "https://x.com/deepseek_ai/status/2087887408440164663",
+            "publishedAt": "2026-08-13T13:21:00.781Z",
+            "summary": "DeepSeek 发布 Harness v0.1 开发者预览版，MIT 协议开源。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Claude 文本水印机制如何运作",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
+            "originalUrl": "https://www.anthropic.com/news/claude-text-watermark",
+            "publishedAt": "2026-08-14T19:22:48.546Z",
+            "summary": "Anthropic 发布 FAQ，说明 Claude 文本水印机制及合规情况。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "从0到1带你速通DeepSeek Harness。",
+            "sourceName": "公众号：数字生命卡兹克",
+            "sourceUrl": "https://aihot.virxact.com/items/cmss6lsb701tsroib0kxz9q8q",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685238&idx=1&sn=c3159dba0dd5a141f8dd726fd474e6e2",
+            "publishedAt": "2026-08-14T00:01:01.197Z",
+            "summary": "从0到1带你速通DeepSeek Harness。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
+            "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
+            "originalUrl": "https://x.com/SiliconFlowAI/status/2087903227224412222",
+            "publishedAt": "2026-08-14T16:52:48.574Z",
+            "summary": "通义千问官方确认 Qwen3.8-2.4T-A95B 已在 SiliconFlow 上线，支持 Day-0 使用。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+            "sourceName": "公众号：小红书技术（dots.llm）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
+            "publishedAt": "2026-08-14T11:31:00.943Z",
+            "summary": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+            "summaryStatus": "curated",
+            "rank": 10
           }
         ],
-        "windowHours": 30,
-        "candidateCount": 234
+        "window": "24h",
+        "candidateCount": 10
       },
-      "userMessage": "部分科技摘要使用原文标题摘录",
-      "diagnostics": [
-        {
-          "code": "source-failures",
-          "message": "1 source(s) failed"
-        }
-      ],
-      "generatedAt": "2026-08-14T21:36:13.252Z"
+      "generatedAt": "2026-08-14T23:38:29.969Z"
     }
   ],
   "subject": "2026-08-15 个人每日简报｜市场与 AI 科技"
