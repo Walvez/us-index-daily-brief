@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-16",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-15T21:31:28.697Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-14",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 30046.140625,
+                  "pct1Day": -0.12750544300221045,
+                  "pct5Day": 1.0895517346836452,
+                  "pct20Day": 5.083404135212257,
+                  "drawdown20": -0.12750544300221045,
+                  "drawdown60": -2.004067083499302,
+                  "drawdownAll": -2.004067083499302,
+                  "sma20": 28941.48818359375,
+                  "sma50": 29303.655390625,
+                  "sma200": 26738.177919921876,
+                  "realizedVol20": 23.713953204863213
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 7785.759765625,
+                  "pct1Day": -0.1696433557729704,
+                  "pct5Day": 0.3624765832221725,
+                  "pct20Day": 4.399081039790291,
+                  "drawdown20": -0.1696433557729704,
+                  "drawdown60": -0.1696433557729704,
+                  "drawdownAll": -0.1696433557729704,
+                  "sma20": 7584.9954833984375,
+                  "sma50": 7512.38921875,
+                  "sma200": 7074.9023046875,
+                  "realizedVol20": 13.29858033093309
+                }
+              }
+            ],
+            "vix": 14.25,
+            "treasury10y": 4.696000099182129,
+            "dxy": 99.66999816894531
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.17%",
+              "较深的60日高点回撤为 -2.00%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 1.09%，标普500 本周 0.36%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "‘Outlier’ S&P 500 Earnings Strength Cheers Wall Street’s Bulls",
+                "explanation": "中文翻译暂不可用：Corporate America is blowing past Wall Street’s expectations for a stellar earnings season, adding to the rosy backdrop for a stock market trading near a record high.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-15/-outlier-s-p-500-earnings-strength-cheers-wall-street-s-bulls",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia discloses $21bn stake in SpaceX",
+                "explanation": "中文翻译暂不可用：Filing comes after Elon Musk announced exclusive arrangement to kit out its data centres",
+                "url": "https://www.ft.com/content/6f66a76d-0b2d-4301-886c-87ecc046731b?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Investors pile back into US stocks as bullishness returns to Wall Street",
+                "explanation": "中文翻译暂不可用：Stellar earnings season and falling inflation fuel rebound from July’s chip rout",
+                "url": "https://www.ft.com/content/d4897d94-0d69-445a-9466-5150840c801e?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Traders Agonize Over AI Companies’ $70 Billion of Shadow Credit Backstops",
+                "explanation": "中文翻译暂不可用：Even before Nvidia Corp.’s splashy $500 billion financing partnership this week, investors were starting to fret over the roughly $70 billion in phantom liabilities that don’t appear on major AI companies’ balance sheets, but could materialize at the worst possible time.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Strong Earnings Keep PNC’s Agati Bullish on Stocks",
+                "explanation": "中文翻译暂不可用：PNC's Chief Investment Officer Amanda Agati is on Bloomberg This Weekend with hosts Joe Mathieu and Carol Massar and says that strong earnings and economic fundamentals continue to support US stocks, even as elevated Treasury yields and midterm uncertainty threaten to bring more volatility. (Source:",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-15/strong-earnings-keep-pnc-s-agati-bullish-on-stocks-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-15T21:31:28.697Z"
+        },
+        "marketDate": "2026-08-14",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-14（非 2026-08-16 当日收盘）",
+        "editionKind": "weekend"
+      },
+      "userMessage": "最近交易日 2026-08-14（非 2026-08-16 当日收盘）",
+      "generatedAt": "2026-08-15T21:31:28.697Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
+            "sourceName": "公众号：智谱（GLM）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmssir12d047oroffnpn5pcx1",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492",
+            "publishedAt": "2026-08-14T22:03:28.360Z",
+            "summary": "GLM-5.3在多项基准上超越Kimi K3，部分指标超过Claude Fable 5或GPT-5.6-Sol。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Cursor 正式被 SpaceX 收购",
+            "sourceName": "Cursor Blog",
+            "sourceUrl": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3",
+            "originalUrl": "https://cursor.com/blog/joining-spacex",
+            "publishedAt": "2026-08-15T20:22:17.762Z",
+            "summary": "TechCrunch 确认收购源于 4 月合作协议，SpaceX 行使 600 亿美元选择权完成交易。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "通义千问开源 Qwen3.8 系列模型",
+            "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn",
+            "originalUrl": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+            "publishedAt": "2026-08-15T03:21:47.056Z",
+            "summary": "Qwen3.8-27B可在单张24GB显卡运行，编码与Agent基准超越Opus 4.6。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Claude 文本水印机制如何运作",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
+            "originalUrl": "https://www.anthropic.com/news/claude-text-watermark",
+            "publishedAt": "2026-08-14T19:22:48.546Z",
+            "summary": "Anthropic 发布 FAQ，说明为遵守欧盟《AI 法案》实施文本水印。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "从0到1带你速通DeepSeek Harness。",
+            "sourceName": "公众号：数字生命卡兹克",
+            "sourceUrl": "https://aihot.virxact.com/items/cmss6lsb701tsroib0kxz9q8q",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685238&idx=1&sn=c3159dba0dd5a141f8dd726fd474e6e2",
+            "publishedAt": "2026-08-14T00:01:01.197Z",
+            "summary": "从0到1带你速通DeepSeek Harness。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
+            "sourceName": "X：Gemini (@GeminiApp)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv",
+            "originalUrl": "https://x.com/GeminiApp/status/2088326407730692538",
+            "publishedAt": "2026-08-14T18:22:41.004Z",
+            "summary": "Gemini 3.7 Flash 已向 Pro 和 Ultra 用户开放，并提升多步骤任务推理与准确性。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
+            "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb",
+            "originalUrl": "https://x.com/SiliconFlowAI/status/2088127458558271885",
+            "publishedAt": "2026-08-14T13:51:46.541Z",
+            "summary": "硅基流动上线 DeepSeek-V4-Pro-0813，提供 1M 上下文并保持 MIT 开源协议。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+            "sourceName": "公众号：小红书技术（dots.llm）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
+            "publishedAt": "2026-08-14T11:31:00.943Z",
+            "summary": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+            "summaryStatus": "curated",
+            "rank": 8
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 8
+      },
+      "generatedAt": "2026-08-15T21:31:28.697Z"
+    }
+  ],
+  "subject": "2026-08-16 个人每日简报｜市场与 AI 科技"
+}
