@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-17",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-16T21:30:56.790Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-14",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 30046.140625,
+                  "pct1Day": -0.12750544300221045,
+                  "pct5Day": 1.0895517346836452,
+                  "pct20Day": 5.083404135212257,
+                  "drawdown20": -0.12750544300221045,
+                  "drawdown60": -2.004067083499302,
+                  "drawdownAll": -2.004067083499302,
+                  "sma20": 28941.48818359375,
+                  "sma50": 29303.655390625,
+                  "sma200": 26738.177919921876,
+                  "realizedVol20": 23.713953204863213
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-14",
+                "metrics": {
+                  "close": 7785.759765625,
+                  "pct1Day": -0.1696433557729704,
+                  "pct5Day": 0.3624765832221725,
+                  "pct20Day": 4.399081039790291,
+                  "drawdown20": -0.1696433557729704,
+                  "drawdown60": -0.1696433557729704,
+                  "drawdownAll": -0.1696433557729704,
+                  "sma20": 7584.9954833984375,
+                  "sma50": 7512.38921875,
+                  "sma200": 7074.9023046875,
+                  "realizedVol20": 13.29858033093309
+                }
+              }
+            ],
+            "vix": 14.25,
+            "treasury10y": 4.696000099182129,
+            "dxy": 99.66999816894531
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.17%",
+              "较深的60日高点回撤为 -2.00%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.13%，标普500 -0.17%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Bloomberg This Weekend | Meta on Trial, the Race To Replace Gov. DeSantis, and Pet Longevity",
+                "explanation": "中文翻译暂不可用：The news doesn’t stop when markets close. Hosts Joe Mathieu, Carol Massar and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York. Joined by Rep. Byron Donalds (R- FL), Rob Bonta, California Attorney General, Vice Admiral Robert Hayward, Fmr. C",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-16/bloomberg-this-weekend-8-16-2026-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "At AI-Fueled Market Party, Wall Street Eyes the Rates Punch Bowl",
+                "explanation": "中文翻译暂不可用：Enthusiasm for Big Tech and its huge investments in artificial intelligence is powering the stock market to record highs again. With a resilient economy and scorching demand, there’s seemingly only one obstacle that can derail this ride: higher interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-16/at-ai-fueled-market-party-wall-street-eyes-the-rates-punch-bowl",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bonds Face a Bigger Threat Than the Fed as Global Rates Climb",
+                "explanation": "中文翻译暂不可用：As investors debate whether and when the Federal Reserve will raise interest rates, market expectations for further tightening are building around the world — and spelling trouble for bonds.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-16/bonds-face-a-bigger-threat-than-the-fed-as-global-rates-climb",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "The billionaire threatening to upend Wall Street",
+                "explanation": "中文翻译暂不可用：Mark Walter’s much-copied strategy of leveraging insurers to build an empire has drawn regulatory scrutiny",
+                "url": "https://www.ft.com/content/cf87b6cd-f940-4b09-b072-7da36faa183f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Fed’s Internal Rate Debate Faces New Scrutiny",
+                "explanation": "中文翻译暂不可用：Minutes from the Federal Reserve’s July meeting will offer a closer look at the debate that produced three dissents in favor of a quarter-point rate increase, an unusually visible split as policymakers contend with elevated inflation and mixed economic data. Joining Joe Mathieu and Carol Massar on B",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-16/fed-s-internal-rate-debate-faces-new-scrutiny-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-16T21:30:56.790Z"
+        },
+        "marketDate": "2026-08-14",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-14（非 2026-08-17 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-14（非 2026-08-17 当日收盘）",
+      "generatedAt": "2026-08-16T21:30:56.790Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Cursor 正式被 SpaceX 收购",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsuto7hk0912rouhodiiywlk",
+            "originalUrl": "https://cursor.com/blog/joining-spacex",
+            "publishedAt": "2026-08-15T20:22:17.762Z",
+            "summary": "TechCrunch 确认收购源于 4 月合作协议，SpaceX 行使 600 亿美元选择权完成交易。",
+            "summaryStatus": "curated",
+            "rank": 1
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 1
+      },
+      "generatedAt": "2026-08-16T21:30:56.790Z"
+    }
+  ],
+  "subject": "2026-08-17 个人每日简报｜市场与 AI 科技"
+}
