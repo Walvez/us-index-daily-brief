@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-18",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-17T21:35:15.359Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-17",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-17",
+                "metrics": {
+                  "close": 29995.380859375,
+                  "pct1Day": -0.1689393864540631,
+                  "pct5Day": 1.2611659935322657,
+                  "pct20Day": 4.8634428118764665,
+                  "drawdown20": -0.29622942254317003,
+                  "drawdown60": -2.169620811318374,
+                  "drawdownAll": -2.169620811318374,
+                  "sma20": 29011.045703125,
+                  "sma50": 29295.406796875,
+                  "sma200": 26758.094072265623,
+                  "realizedVol20": 23.749904266947894
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-17",
+                "metrics": {
+                  "close": 7745.06005859375,
+                  "pct1Day": -0.5227454770816814,
+                  "pct5Day": -0.10382678472833072,
+                  "pct20Day": 4.054399164724734,
+                  "drawdown20": -0.691502029885179,
+                  "drawdown60": -0.691502029885179,
+                  "drawdownAll": -0.691502029885179,
+                  "sma20": 7600.084497070313,
+                  "sma50": 7515.60421875,
+                  "sma200": 7079.173154296875,
+                  "realizedVol20": 13.483886911708964
+                }
+              }
+            ],
+            "vix": 15.1899995803833,
+            "treasury10y": 4.723999977111816,
+            "dxy": 99.5790023803711
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.52%",
+              "较深的60日高点回撤为 -2.17%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.17%，标普500 -0.52%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Nvidia pledges $100bn backing for OpenAI data centre in Ohio",
+                "explanation": "中文翻译暂不可用：Chipmaker also invests $1.5bn into SB Energy, an energy company founded as part of SoftBank Group",
+                "url": "https://www.ft.com/content/82a4b183-7201-4789-95b7-e39e81c827bc?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US Stocks Fall as Rising Oil Prices, Yields Offset Chip Gains",
+                "explanation": "中文翻译暂不可用：US stocks dropped on Monday as long-term Treasury yields extended their recent climb and oil ticked higher. Chipmakers notched gains as details of Anthropic’s surging sales growth stoked bullish sentiment around AI.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-17/us-futures-flat-tech-shares-gain-on-anthropic-revenue-jump",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta and BlackRock’s $14bn data centre exposes lenders to insurance gap",
+                "explanation": "中文翻译暂不可用：Investors in gigawatt-scale campuses face billions in underinsured risks as insurers balk at cost of full coverage",
+                "url": "https://www.ft.com/content/adeca274-67a3-4ee8-94f1-f43e4f28be97?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Dollar Extends Slide as Traders Scale Back Fed Tightening Bets",
+                "explanation": "中文翻译暂不可用：The dollar fell to its weakest level in three months as investors scaled back expectations for further Federal Reserve interest-rate increases following a run of softer US economic data.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-17/dollar-extends-slide-as-traders-scale-back-fed-tightening-bets",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Instagram and Facebook could change forever if Meta loses child privacy trial",
+                "explanation": "中文翻译暂不可用：US states are suing the social media giant to force an overhaul of its platforms for young users.",
+                "url": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-17T21:35:15.359Z"
+        },
+        "marketDate": "2026-08-17",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-17（非 2026-08-18 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-17（非 2026-08-18 当日收盘）",
+      "generatedAt": "2026-08-17T21:35:15.359Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
+            "sourceName": "NVIDIA Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsx9jvre05y6romms3bo1umb",
+            "originalUrl": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence",
+            "publishedAt": "2026-08-17T15:23:52.125Z",
+            "summary": "NVIDIA 为项目提供最高 1050 亿美元担保并成为独家芯片供应商。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsxld6es03o8roz0jblf3ii9",
+            "originalUrl": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
+            "publishedAt": "2026-08-17T20:53:05.960Z",
+            "summary": "亚马逊拒绝就销毁书籍置评，仅称通过商业渠道购书以改进产品。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "A 股迎来“人形机器人第一股”，宇树科技官宣 8 月 19 日科创板上市",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsx9jy2a05yerommy1e0jc6t",
+            "originalUrl": "https://www.ithome.com/0/990/812.htm",
+            "publishedAt": "2026-08-17T13:22:19.094Z",
+            "summary": "A 股迎来“人形机器人第一股”，宇树科技官宣 8 月 19 日科创板上市",
+            "summaryStatus": "curated",
+            "rank": 3
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 3
+      },
+      "generatedAt": "2026-08-17T21:35:15.359Z"
+    }
+  ],
+  "subject": "2026-08-18 个人每日简报｜市场与 AI 科技"
+}
