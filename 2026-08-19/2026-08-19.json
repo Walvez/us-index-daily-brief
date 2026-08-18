@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-19",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-18T21:34:39.078Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-18",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-18",
+                "metrics": {
+                  "close": 29490.95703125,
+                  "pct1Day": -1.681671689683991,
+                  "pct5Day": -0.1169276060944711,
+                  "pct20Day": 1.1516901879838568,
+                  "drawdown20": -1.9729195058917384,
+                  "drawdown60": -3.8148066020449316,
+                  "drawdownAll": -3.8148066020449316,
+                  "sma20": 29027.8345703125,
+                  "sma50": 29306.0739453125,
+                  "sma200": 26774.949609375,
+                  "realizedVol20": 23.833152900683057
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-18",
+                "metrics": {
+                  "close": 7691.759765625,
+                  "pct1Day": -0.688184372561568,
+                  "pct5Day": -0.4715254362794944,
+                  "pct20Day": 2.431145335910207,
+                  "drawdown20": -1.374927593541131,
+                  "drawdown60": -1.374927593541131,
+                  "drawdownAll": -1.374927593541131,
+                  "sma20": 7609.212475585938,
+                  "sma50": 7521.764609375,
+                  "sma200": 7083.17900390625,
+                  "realizedVol20": 13.582235171552467
+                }
+              }
+            ],
+            "vix": 15.84000015258789,
+            "treasury10y": 4.706000328063965,
+            "dxy": 99.63500213623047
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.68%",
+              "较深的60日高点回撤为 -3.81%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -1.68%，标普500 -0.69%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Uruguay Holds Interest Rates Steady With Inflation Below Target",
+                "explanation": "中文翻译暂不可用：Uruguay’s central bank held interest rates steady for a fourth consecutive policy meeting with inflation below its target.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-18/uruguay-holds-interest-rates-steady-with-inflation-below-target",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US chip stocks slide as government borrowing costs hit multiyear highs",
+                "explanation": "中文翻译暂不可用：Fears over inflation and mounting public debt ignite bond sell-off",
+                "url": "https://www.ft.com/content/61354e68-c4ba-4716-b849-b332608c8c65?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Traders Are Hedging Risk Fed Pivots to Rate Cuts in 2027",
+                "explanation": "中文翻译暂不可用：Bond traders are changing gears again. After a raft of data helped all but price out interest rate hikes for the rest of the year, wagers in the options market are looking to hedge the risk that the Federal Reserve pivots to cutting rates in 2027.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-18/bond-traders-are-hedging-risk-fed-pivots-to-rate-cuts-in-2027",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Traders Bite at Microsoft-Tied Data Center Junk-Like Yields",
+                "explanation": "中文翻译暂不可用：Blackstone Inc.-backed QTS Realty Trust Inc. offered junk-like yields on a $3.9 billion high-grade bond to fund the construction of a Microsoft Corp.-linked data center in Georgia. It looks to have worked as the deal racked up demand of about six times that amount.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-18/blackstone-backed-qts-kicks-off-data-center-bond-at-hefty-cost",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Long-Term Debt Costs Soar to Highest in Decades as Bonds Slump",
+                "explanation": "中文翻译暂不可用：Bloomberg Intelligence chief US interest rate strategist Ira Jersey said that part of the reason for the rise in yields for long-term treasuries is that US bonds have to compete with bonds from other countries like Japan. Jersey, who was joined by Bloomberg's Davide Barbuscia, said that buyers are c",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-18/long-term-debt-costs-soar-to-highest-in-decades-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-18T21:34:39.078Z"
+        },
+        "marketDate": "2026-08-18",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-18（非 2026-08-19 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-18（非 2026-08-19 当日收盘）",
+      "generatedAt": "2026-08-18T21:34:39.078Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 在“关键网络能力”时代放缓模型开发节奏",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv",
+            "originalUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+            "publishedAt": "2026-08-18T19:59:44.558Z",
+            "summary": "OpenAI 公布新安全措施，包括 30 分钟内警报机制。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
+            "sourceName": "NVIDIA Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsx9jvre05y6romms3bo1umb",
+            "originalUrl": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence",
+            "publishedAt": "2026-08-18T00:22:25.999Z",
+            "summary": "NVIDIA 为项目提供最高 1050 亿美元担保并成为独家芯片供应商。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
+            "sourceName": "Hugging Face：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv",
+            "originalUrl": "https://huggingface.co/blog/multi-vector-encoder",
+            "publishedAt": "2026-08-18T14:05:05.620Z",
+            "summary": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsxld6es03o8roz0jblf3ii9",
+            "originalUrl": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
+            "publishedAt": "2026-08-17T20:53:05.960Z",
+            "summary": "亚马逊拒绝就销毁书籍置评，仅称通过商业渠道购书以改进产品。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h",
+            "originalUrl": "https://cursor.com/changelog/origin-code-hosting",
+            "publishedAt": "2026-08-17T22:23:07.832Z",
+            "summary": "Cursor 上线 Origin 代码托管服务，向付费用户开放早期测试版。",
+            "summaryStatus": "curated",
+            "rank": 5
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 5
+      },
+      "generatedAt": "2026-08-18T21:34:39.078Z"
+    }
+  ],
+  "subject": "2026-08-19 个人每日简报｜市场与 AI 科技"
+}
