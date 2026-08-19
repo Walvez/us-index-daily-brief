@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-20",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-19T21:35:40.913Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-19",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-19",
+                "metrics": {
+                  "close": 29426.0234375,
+                  "pct1Day": -0.22019458822525864,
+                  "pct5Day": -1.0643863550354011,
+                  "pct20Day": 1.4756961107432485,
+                  "drawdown20": -2.1887568764646246,
+                  "drawdown60": -4.026588480342398,
+                  "drawdownAll": -4.026588480342398,
+                  "sma20": 29049.23095703125,
+                  "sma50": 29306.309296875,
+                  "sma200": 26793.405693359375,
+                  "realizedVol20": 23.75370955643526
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-19",
+                "metrics": {
+                  "close": 7707.97998046875,
+                  "pct1Day": 0.21087781389428267,
+                  "pct5Day": -0.522940175921146,
+                  "pct20Day": 2.787320116656802,
+                  "drawdown20": -1.166949196898737,
+                  "drawdown60": -1.166949196898737,
+                  "drawdownAll": -1.166949196898737,
+                  "sma20": 7619.6634765625,
+                  "sma50": 7527.809609375,
+                  "sma200": 7087.607204589844,
+                  "realizedVol20": 13.551121892061433
+                }
+              }
+            ],
+            "vix": 14.890000343322754,
+            "treasury10y": 4.6529998779296875,
+            "dxy": 98.7979965209961
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.22%",
+              "较深的60日高点回撤为 -4.03%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.22%，标普500 0.21%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Trump Says Interest Rate System Doesn't Make Sense",
+                "explanation": "中文翻译暂不可用：President Donald Trump says when the country does well economically, interest rates should come down, but he says they go up. He says the system is unfair. He speaks at the White House. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-19/trump-says-interest-rate-system-doesn-t-make-sense-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Google strikes $12bn AI chip deal with Marvell",
+                "explanation": "中文翻译暂不可用：Tech giant agrees expanded partnership with US chipmaker that includes option to buy shares",
+                "url": "https://www.ft.com/content/0fdb094c-fc03-4d3c-8da6-bd11af88ff63?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Trump Opens Door to Hyperliquid as US Pulls Crypto Trade Onshore",
+                "explanation": "中文翻译暂不可用：President Donald Trump said US regulators are working to bring Hyperliquid, a fast-growing crypto platform, into the country, offering one of the clearest signals yet that the White House wants to pull a major piece of the industry’s offshore market infrastructure onshore.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-19/trump-opens-door-to-hyperliquid-as-us-pulls-crypto-trade-onshore",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Canada and US say they are finalising a trade deal, but details remain murky",
+                "explanation": "中文翻译暂不可用：Prime Minister Carney hailed \"significant progress\" in trade talks as the two countries seek to hammer out final details ahead of a new weekend tariff deadline.",
+                "url": "https://www.bbc.co.uk/news/articles/c3ekl74jnk5o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US long-term borrowing costs ease after government steps in",
+                "explanation": "中文翻译暂不可用：It comes after the interest rate on 30-year bonds reached the highest level in almost 20 years.",
+                "url": "https://www.bbc.co.uk/news/articles/c70gp8252ejo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-19T21:35:40.913Z"
+        },
+        "marketDate": "2026-08-19",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-19（非 2026-08-20 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-19（非 2026-08-20 当日收盘）",
+      "generatedAt": "2026-08-19T21:35:40.913Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 在“关键网络能力”时代放缓模型开发节奏",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv",
+            "originalUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+            "publishedAt": "2026-08-19T12:48:18.430Z",
+            "summary": "OpenAI 暂停 Astra 强化学习训练两周，最大规模前沿 RL 运行仍搁置。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "OpenRouter 宣布加入 Stripe",
+            "sourceName": "OpenRouter：Announcements（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc",
+            "originalUrl": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+            "publishedAt": "2026-08-19T19:18:18.583Z",
+            "summary": "OpenRouter 官方宣布加入 Stripe，交易金额约 75 亿美元。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
+            "sourceName": "公众号：智谱（GLM）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmszeb2mx0b3srodpef1ub0j0",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494105&idx=1&sn=8d7409e0fb846a3c7803c142b5d1a8e7",
+            "publishedAt": "2026-08-19T13:55:06.096Z",
+            "summary": "GLM-5.3 登顶开源模型榜，权重开源时间推迟至下周五。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Claude 如何加速蛋白质设计与分析化学研究",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
+            "originalUrl": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+            "publishedAt": "2026-08-19T04:48:18.687Z",
+            "summary": "Anthropic 承认该实验仅为药物研发极早期步骤。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
+            "sourceName": "Hugging Face：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv",
+            "originalUrl": "https://huggingface.co/blog/multi-vector-encoder",
+            "publishedAt": "2026-08-18T14:05:05.620Z",
+            "summary": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Claude 从头设计蛋白结合剂命中 14/15 靶点",
+            "sourceName": "X：Anthropic (@AnthropicAI)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz9kmg307csrodpg1yl1xdu",
+            "originalUrl": "https://x.com/AnthropicAI/status/2089842387845804246",
+            "publishedAt": "2026-08-18T22:58:28.008Z",
+            "summary": "Claude 从头设计蛋白结合剂命中 14/15 靶点",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h",
+            "originalUrl": "https://cursor.com/changelog/origin-code-hosting",
+            "publishedAt": "2026-08-18T22:23:58.177Z",
+            "summary": "TechCrunch 报道 Cursor 借 GitHub 服务不稳之机推出 Origin。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Mojo 语言正式开源，编译器与工具链全面开放",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz79zol04j8rodpvun6zobl",
+            "originalUrl": "https://www.modular.com/blog/mojo-open-source",
+            "publishedAt": "2026-08-19T12:54:28.522Z",
+            "summary": "ModCon 2026 宣布 Mojo 1.0 完全开源，并将原生支持 Windows。",
+            "summaryStatus": "curated",
+            "rank": 8
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 8
+      },
+      "generatedAt": "2026-08-19T21:35:40.913Z"
+    }
+  ],
+  "subject": "2026-08-20 个人每日简报｜市场与 AI 科技"
+}
