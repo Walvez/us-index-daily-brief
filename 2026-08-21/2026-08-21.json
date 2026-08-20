@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-21",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-20T21:38:20.840Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-20",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-20",
+                "metrics": {
+                  "close": 29213.1640625,
+                  "pct1Day": -0.7233580081191431,
+                  "pct5Day": -2.8962952267779087,
+                  "pct20Day": 2.66511532162805,
+                  "drawdown20": -2.8962952267779087,
+                  "drawdown60": -4.7208324863693205,
+                  "drawdownAll": -4.7208324863693205,
+                  "sma20": 29087.1484375,
+                  "sma50": 29308.8825,
+                  "sma200": 26810.18083984375,
+                  "realizedVol20": 22.817137204655367
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-20",
+                "metrics": {
+                  "close": 7641.16015625,
+                  "pct1Day": -0.866891512277727,
+                  "pct5Day": -2.0237245256359557,
+                  "pct20Day": 3.1432360690257273,
+                  "drawdown20": -2.0237245256359557,
+                  "drawdown60": -2.0237245256359557,
+                  "drawdownAll": -2.0237245256359557,
+                  "sma20": 7631.306494140625,
+                  "sma50": 7532.899814453125,
+                  "sma200": 7091.612004394531,
+                  "realizedVol20": 13.142492749268234
+                }
+              }
+            ],
+            "vix": 16.010000228881836,
+            "treasury10y": 4.696000099182129,
+            "dxy": 98.86599731445312
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.87%",
+              "较深的60日高点回撤为 -4.72%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.72%，标普500 -0.87%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Aluminum Premium Slips as US Set to Cut Tariffs on Canada Metal",
+                "explanation": "中文翻译暂不可用：A key regional price benchmark for aluminum delivered to the US market tumbled after the Trump administration indicated it would lower tariffs on certain Canadian exports of aluminum.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-20/aluminum-premium-slips-as-us-set-to-cut-tariffs-on-canada-metal",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of application by National Westminster Bank Plc",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia looks well placed to benefit from the next stage of the AI boom",
+                "explanation": "中文翻译暂不可用：The world’s biggest chip company is using its balance sheet to seed new markets and a new business model",
+                "url": "https://www.ft.com/content/b388be2e-67bd-4056-abd2-234e17819a98?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-20T21:38:20.840Z"
+        },
+        "marketDate": "2026-08-20",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-20（非 2026-08-21 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-20（非 2026-08-21 当日收盘）",
+      "generatedAt": "2026-08-20T21:38:20.840Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenRouter 宣布加入 Stripe",
+            "sourceName": "OpenRouter：Announcements（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc",
+            "originalUrl": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+            "publishedAt": "2026-08-20T10:11:40.364Z",
+            "summary": "Stripe 确认以约 75 亿美元收购 OpenRouter，OpenRouter 将独立运营。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Anthropic 如何开展 AI 教学",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65",
+            "originalUrl": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+            "publishedAt": "2026-08-20T19:30:00.807Z",
+            "summary": "Claude Academy 正式上线，免费课程开放学习。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Grok Build 全面上线网页与移动端，所有套餐可用",
+            "sourceName": "xAI：News（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt1xbu7q0b7troovffggr2jh",
+            "originalUrl": "https://x.ai/news/grok-build-for-everyone",
+            "publishedAt": "2026-08-20T19:38:45.834Z",
+            "summary": "Grok Build 全面上线网页与移动端，所有套餐可用。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
+            "sourceName": "公众号：智谱（GLM）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmszeb2mx0b3srodpef1ub0j0",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494105&idx=1&sn=8d7409e0fb846a3c7803c142b5d1a8e7",
+            "publishedAt": "2026-08-19T13:55:06.096Z",
+            "summary": "GLM-5.3 登顶开源模型榜，权重开源时间推迟至下周五。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Claude 如何加速蛋白质设计与分析化学研究",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
+            "originalUrl": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+            "publishedAt": "2026-08-19T04:48:18.687Z",
+            "summary": "Anthropic 承认该实验仅为药物研发极早期步骤。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Mojo 语言正式开源，编译器与工具链全面开放",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmsz79zol04j8rodpvun6zobl",
+            "originalUrl": "https://www.modular.com/blog/mojo-open-source",
+            "publishedAt": "2026-08-20T02:23:58.033Z",
+            "summary": "Mojo 开源后，Modular 宣布与微软合作原生支持 Windows。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "阿里发布 Qwen-UI-Agent，主打让模型真正“会用”每一块屏幕",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
+            "originalUrl": "https://www.ithome.com/0/992/239.htm",
+            "publishedAt": "2026-08-20T10:24:01.577Z",
+            "summary": "阿里发布 Qwen-UI-Agent，主打让模型真正“会用”每一块屏幕",
+            "summaryStatus": "curated",
+            "rank": 7
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 7
+      },
+      "generatedAt": "2026-08-20T21:38:20.840Z"
+    }
+  ],
+  "subject": "2026-08-21 个人每日简报｜市场与 AI 科技"
+}
