@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-22",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-21T21:34:53.956Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-21",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 29308.859375,
+                  "pct1Day": 0.32758940915033347,
+                  "pct5Day": -2.453830124813243,
+                  "pct20Day": 4.196904395380827,
+                  "drawdown20": -2.578206800844289,
+                  "drawdown60": -4.408720806496174,
+                  "drawdownAll": -4.408720806496174,
+                  "sma20": 29146.17421875,
+                  "sma50": 29324.8990234375,
+                  "sma200": 26826.860419921875,
+                  "realizedVol20": 22.31049142080031
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 7674.3701171875,
+                  "pct1Day": 0.4346193543703738,
+                  "pct5Day": -1.4306843749443408,
+                  "pct20Day": 3.540081562688677,
+                  "drawdown20": -1.597900669733136,
+                  "drawdown60": -1.597900669733136,
+                  "drawdownAll": -1.597900669733136,
+                  "sma20": 7644.426000976562,
+                  "sma50": 7541.047412109375,
+                  "sma200": 7095.72400390625,
+                  "realizedVol20": 13.172426340693649
+                }
+              }
+            ],
+            "vix": 15.130000114440918,
+            "treasury10y": 4.73799991607666,
+            "dxy": 98.83899688720703
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.33%",
+              "较深的60日高点回撤为 -4.41%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 -2.45%，标普500 本周 -1.43%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Apollo says hackers accessed personal data in latest Wall Street breach",
+                "explanation": "中文翻译暂不可用：Alternative asset manager’s probe determined names, home addresses and social security numbers were stolen in cyber attack last month",
+                "url": "https://www.ft.com/content/ac3f252d-bd49-4340-8565-f27a29652759?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple paid $17bn in taxes to Ireland after court ruling on back levies",
+                "explanation": "中文翻译暂不可用：New filings highlight iPhone maker’s global tax liabilities",
+                "url": "https://www.ft.com/content/65fb0ad1-e4d5-43be-9dcf-f7aba1bea3a6?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US Stocks End Week on Up Note, Nasdaq 100 Snaps Five-Day Slump",
+                "explanation": "中文翻译暂不可用：US stocks rose on Friday, finishing the week on an upbeat note that saw the Nasdaq 100 end a five-day losing streak as data revealed bustling business activity and Bitcoin soared.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-21/us-stock-futures-gain-as-nasdaq-100-looks-to-snap-five-day-slump",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Canada 'should fight' as US trade deadline looms, Manitoba premier says",
+                "explanation": "中文翻译暂不可用：Premier Wab Kinew's comments signal a tough battle for Prime Minister Mark Carney to get buy-in from Canadians on a possible trade deal with the US.",
+                "url": "https://www.bbc.co.uk/news/articles/czjlr0evy0do?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Market Swings Affect Your Savings, Investments",
+                "explanation": "中文翻译暂不可用：Bloomberg's Nikki Waller and David Gura join Scarlet Fu and Tom Keene on \"Bloomberg Money.\" The Treasury surprised traders this week with its plan to buy back more debt. Long-dated yields plunged on Wednesday in response to the news, only to rebound the next day. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-21/bond-market-swings-affect-your-savings-investments-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-21T21:34:53.956Z"
+        },
+        "marketDate": "2026-08-21",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-21（非 2026-08-22 当日收盘）",
+        "editionKind": "weekend"
+      },
+      "userMessage": "最近交易日 2026-08-21（非 2026-08-22 当日收盘）",
+      "generatedAt": "2026-08-21T21:34:53.956Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "DeepSeek-V4-Flash-Vision-Exp 发布",
+            "sourceName": "DeepSeek：API 更新日志",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
+            "originalUrl": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
+            "publishedAt": "2026-08-21T19:28:29.571Z",
+            "summary": "补充兼容 OpenAI/Anthropic API，单次请求最多 600 张图片。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Stripe 确认 75 亿美元收购 AI 路由平台 OpenRouter",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt0wcrmz0h64ro2oqisjtcmy",
+            "originalUrl": "https://www.ithome.com/0/991/918.htm",
+            "publishedAt": "2026-08-21T10:48:18.388Z",
+            "summary": "Stripe 确认以约 75 亿美元收购 OpenRouter，OpenRouter 将独立运营。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Anthropic 如何开展 AI 教学",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65",
+            "originalUrl": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+            "publishedAt": "2026-08-20T19:30:00.807Z",
+            "summary": "Claude Academy 正式上线，免费课程开放学习。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Grok Build 全面上线网页与移动端，所有套餐可用",
+            "sourceName": "xAI：News（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt1xbu7q0b7troovffggr2jh",
+            "originalUrl": "https://x.ai/news/grok-build-for-everyone",
+            "publishedAt": "2026-08-20T19:38:45.834Z",
+            "summary": "Grok Build 全面上线网页与移动端，所有套餐可用。",
+            "summaryStatus": "curated",
+            "rank": 4
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 4
+      },
+      "generatedAt": "2026-08-21T21:34:53.956Z"
+    }
+  ],
+  "subject": "2026-08-22 个人每日简报｜市场与 AI 科技"
+}
