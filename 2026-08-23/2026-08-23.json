@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-23",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-22T21:31:41.119Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-21",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 29308.859375,
+                  "pct1Day": 0.32758940915033347,
+                  "pct5Day": -2.453830124813243,
+                  "pct20Day": 4.196904395380827,
+                  "drawdown20": -2.578206800844289,
+                  "drawdown60": -4.408720806496174,
+                  "drawdownAll": -4.408720806496174,
+                  "sma20": 29146.17421875,
+                  "sma50": 29324.8990234375,
+                  "sma200": 26826.860419921875,
+                  "realizedVol20": 22.31049142080031
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 7674.3701171875,
+                  "pct1Day": 0.4346193543703738,
+                  "pct5Day": -1.4306843749443408,
+                  "pct20Day": 3.540081562688677,
+                  "drawdown20": -1.597900669733136,
+                  "drawdown60": -1.597900669733136,
+                  "drawdownAll": -1.597900669733136,
+                  "sma20": 7644.426000976562,
+                  "sma50": 7541.047412109375,
+                  "sma200": 7095.72400390625,
+                  "realizedVol20": 13.172426340693649
+                }
+              }
+            ],
+            "vix": 15.130000114440918,
+            "treasury10y": 4.73799991607666,
+            "dxy": 98.80000305175781
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.33%",
+              "较深的60日高点回撤为 -4.41%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 -2.45%，标普500 本周 -1.43%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Study Shows AI Hitting Paychecks, Not Payrolls",
+                "explanation": "中文翻译暂不可用：Apollo Chief Economist Torsten Slok says early labor-market data suggest AI’s first impact is appearing more in wages than employment. In a study of hundreds of occupations, Slok found that jobs with higher exposure to AI have seen weaker wage growth, while the employment effect remains relatively s",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-22/study-shows-ai-hitting-paychecks-not-payrolls",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Investing in AI for More Jobs, Less Pay",
+                "explanation": "中文翻译暂不可用：The good news and bad news about AI",
+                "url": "https://www.bloomberg.com/news/newsletters/2026-08-22/investing-in-ai-for-more-jobs-less-pay",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "UK recruiters rebound despite European jobs weakness",
+                "explanation": "中文翻译暂不可用：Investors return to Hays, Michael Page and Robert Walters after cost-cutting measures",
+                "url": "https://www.ft.com/content/fcb0d335-1025-4245-ac86-580969622d60",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bloomberg Previews Jackson Hole Symposium",
+                "explanation": "中文翻译暂不可用：Bloomberg's Joe Weisenthal, Lisa Abramowicz, Tracy Alloway and Tom Keene preview the Jackson Hole Symposium as all eyes will be on Fed Chairman Kevin Marsh and his first annual symposium address. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-22/bloomberg-previews-jackson-hole-symposium-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Sanctions Target Iran’s Weakened Regional Network",
+                "explanation": "中文翻译暂不可用：The US is preparing a new campaign of economic pressure on Iran after diplomacy and months of fighting failed to produce a durable settlement, with President Donald Trump warning countries against maintaining trade ties with Tehran. Atlantic writer and Columbia University Institute of Global Politic",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-22/sanctions-target-iran-s-weakened-regional-network-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-22T21:31:41.119Z"
+        },
+        "marketDate": "2026-08-21",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-21（非 2026-08-23 当日收盘）",
+        "editionKind": "weekend"
+      },
+      "userMessage": "最近交易日 2026-08-21（非 2026-08-23 当日收盘）",
+      "generatedAt": "2026-08-22T21:31:41.119Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "DeepSeek-V4-Flash-Vision-Exp 发布",
+            "sourceName": "DeepSeek：API 更新日志",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
+            "originalUrl": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
+            "publishedAt": "2026-08-21T19:28:29.571Z",
+            "summary": "补充兼容 OpenAI/Anthropic API，单次请求最多 600 张图片。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "蚂蚁百灵为SGLang推出权重缓存守护进程",
+            "sourceName": "X：蚂蚁百灵 (@AntLingAGI)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt3wt4qm13utro6t0hb6ga3y",
+            "originalUrl": "https://x.com/AntLingAGI/status/2091021795373855124",
+            "publishedAt": "2026-08-22T05:00:00.912Z",
+            "summary": "蚂蚁百灵宣布为 SGLang 推出权重缓存守护进程，启动时间缩短至 0.53 分钟。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "第二届世界人形机器人运动会开幕：2056 台机器人齐聚“冰丝带”，666 支队伍竞技 51 赛项",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt4gz31f1l1qro6tprhfg5ys",
+            "originalUrl": "https://www.ithome.com/0/993/105.htm",
+            "publishedAt": "2026-08-22T14:24:29.219Z",
+            "summary": "第二届世界人形机器人运动会开幕：2056 台机器人齐聚“冰丝带”，666 支队伍竞技 51 赛项",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+            "sourceName": "X：面壁智能 OpenBMB (@OpenBMB)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt2yscvm0ca8ro6t0u6vtfnt",
+            "originalUrl": "https://x.com/OpenBMB/status/2090786300194590816",
+            "publishedAt": "2026-08-21T13:07:37.079Z",
+            "summary": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+            "summaryStatus": "curated",
+            "rank": 4
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 4
+      },
+      "generatedAt": "2026-08-22T21:31:41.119Z"
+    }
+  ],
+  "subject": "2026-08-23 个人每日简报｜市场与 AI 科技"
+}
