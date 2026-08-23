@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-24",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-23T21:31:41.914Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-21",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 29308.859375,
+                  "pct1Day": 0.32758940915033347,
+                  "pct5Day": -2.453830124813243,
+                  "pct20Day": 4.196904395380827,
+                  "drawdown20": -2.578206800844289,
+                  "drawdown60": -4.408720806496174,
+                  "drawdownAll": -4.408720806496174,
+                  "sma20": 29146.17421875,
+                  "sma50": 29324.8990234375,
+                  "sma200": 26826.860419921875,
+                  "realizedVol20": 22.31049142080031
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-21",
+                "metrics": {
+                  "close": 7674.3701171875,
+                  "pct1Day": 0.4346193543703738,
+                  "pct5Day": -1.4306843749443408,
+                  "pct20Day": 3.540081562688677,
+                  "drawdown20": -1.597900669733136,
+                  "drawdown60": -1.597900669733136,
+                  "drawdownAll": -1.597900669733136,
+                  "sma20": 7644.426000976562,
+                  "sma50": 7541.047412109375,
+                  "sma200": 7095.72400390625,
+                  "realizedVol20": 13.172426340693649
+                }
+              }
+            ],
+            "vix": 15.130000114440918,
+            "treasury10y": 4.73799991607666,
+            "dxy": 98.80000305175781
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.33%",
+              "较深的60日高点回撤为 -4.41%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.33%，标普500 0.43%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Fed Faces High Stakes Test at Jackson Hole",
+                "explanation": "中文翻译暂不可用：Fed Chair Kevin Warsh heads into Jackson Hole under heightened scrutiny after the Treasury’s intervention in the bond market raised questions about the traditional boundaries between fiscal and monetary policy. Host of Bloomberg Money Tom Keene and Veda Partners Co-Founder Henrietta Treyz are on Blo",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-23/fed-faces-high-stakes-test-at-jackson-hole-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Is Scott Bessent the Fed chair Donald Trump always wanted?",
+                "explanation": "中文翻译暂不可用：Perhaps. But his effort to talk bond yields lower is likely to fail",
+                "url": "https://www.economist.com/finance-and-economics/2026/08/23/is-scott-bessent-the-fed-chair-donald-trump-always-wanted",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US Long Bonds Risk Deeper Selloff Without Clear Warsh Guidance",
+                "explanation": "中文翻译暂不可用：Bond investors will zero in on Kevin Warsh’s Jackson Hole speech this week, with a further selloff in long-dated Treasuries at stake as markets look for clues on the Federal Reserve chairman’s response to persistent inflation and fiscal concerns.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-23/us-long-bonds-risk-deeper-selloff-without-clear-warsh-guidance",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+                "explanation": "中文翻译暂不可用：Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war.",
+                "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Trump accused of risking more pain for Americans with Canada trade war",
+                "explanation": "中文翻译暂不可用：Collapse of talks threatens to raise prices even higher months before midterm election",
+                "url": "https://www.ft.com/content/39baf33e-3238-4923-9fe9-f1db48bb54e4?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-23T21:31:41.914Z"
+        },
+        "marketDate": "2026-08-21",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-21（非 2026-08-24 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-21（非 2026-08-24 当日收盘）",
+      "generatedAt": "2026-08-23T21:31:41.914Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt5wf8hm0shgro737h9vww1k",
+            "originalUrl": "https://www.ithome.com/0/993/305.htm",
+            "publishedAt": "2026-08-23T14:24:41.763Z",
+            "summary": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+            "summaryStatus": "curated",
+            "rank": 1
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 1
+      },
+      "generatedAt": "2026-08-23T21:31:41.914Z"
+    }
+  ],
+  "subject": "2026-08-24 个人每日简报｜市场与 AI 科技"
+}
