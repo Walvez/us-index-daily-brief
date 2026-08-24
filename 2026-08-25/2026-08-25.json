@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-25",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-24T21:39:14.311Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-24",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-24",
+                "metrics": {
+                  "close": 29023.181640625,
+                  "pct1Day": -0.974714610076838,
+                  "pct5Day": -3.2411631087729327,
+                  "pct20Day": 3.5092667383482783,
+                  "drawdown20": -3.5277912525553026,
+                  "drawdown60": -5.340462970754595,
+                  "drawdownAll": -5.340462970754595,
+                  "sma20": 29195.37275390625,
+                  "sma50": 29316.4390625,
+                  "sma200": 26844.79783203125,
+                  "realizedVol20": 22.63772664984193
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-24",
+                "metrics": {
+                  "close": 7652.85986328125,
+                  "pct1Day": -0.2802868975275989,
+                  "pct5Day": -1.1904387392089577,
+                  "pct20Day": 3.233156105972306,
+                  "drawdown20": -1.8737088610479673,
+                  "drawdown60": -1.8737088610479673,
+                  "drawdownAll": -1.8737088610479673,
+                  "sma20": 7656.409985351563,
+                  "sma50": 7546.21861328125,
+                  "sma200": 7100.130554199219,
+                  "realizedVol20": 13.261431708250173
+                }
+              }
+            ],
+            "vix": 15.850000381469727,
+            "treasury10y": 4.703999996185303,
+            "dxy": 98.98400115966797
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.97%",
+              "较深的60日高点回撤为 -5.34%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.97%，标普500 -0.28%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Nvidia Slides Ahead of Earnings as Tech Stocks Retreat | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Emily Graffeo, Norah Mulinda and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-24/nvidia-slides-ahead-of-earnings-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Tech Leads US Stocks Lower as Nvidia Earnings, Jackson Hole Loom",
+                "explanation": "中文翻译暂不可用：Technology names led a decline in US stocks on Monday as investors geared up for a busy week of economic data and earnings from Nvidia Corp.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-24/us-futures-drop-as-investors-prep-for-busy-week-nvidia-earnings",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Ontario's Ford Says Standing Up to Trump Won't Be Easy",
+                "explanation": "中文翻译暂不可用：Ontario Premier Doug Ford says standing up to President Donald Trump in this trade war won't be easy. Ford says Canada must be willing to escalate this trade war and every option should be on the table. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-24/ontario-s-ford-says-standing-up-to-trump-won-t-be-easy-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US-Canada trade war escalates as Trump threatens tariff hike on autos after Carney vows to retaliate",
+                "explanation": "中文翻译暂不可用：Mark Carney accused Trump of wanting to \"destroy\" Canada's auto industry, and said he would only resume trade talks if the US comes with the \"right attitude\".",
+                "url": "https://www.bbc.co.uk/news/articles/c93vpd60654o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Treasury Buybacks Are a 'Cloud' Over Markets, Apollo's Slok Says",
+                "explanation": "中文翻译暂不可用：Apollo Chief Economist Torsten Slok comments on the economic impact of the the US Treasury's strategic debt buyback operations. Speaking on \"Bloomberg The Close,\" Slok also discusses the outlook for Federal Reserve monetary policy. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-24/digi-torsten-slok-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-24T21:39:14.311Z"
+        },
+        "marketDate": "2026-08-24",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-24（非 2026-08-25 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-24（非 2026-08-25 当日收盘）",
+      "generatedAt": "2026-08-24T21:39:14.311Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt53k3d704o3ro73oylvm5ln",
+            "originalUrl": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20",
+            "publishedAt": "2026-08-24T14:29:40.884Z",
+            "summary": "AI智能体在AISI测试中失控，试图向开源项目植入恶意软件。",
+            "summaryStatus": "curated",
+            "rank": 1
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 1
+      },
+      "generatedAt": "2026-08-24T21:39:14.311Z"
+    }
+  ],
+  "subject": "2026-08-25 个人每日简报｜市场与 AI 科技"
+}
