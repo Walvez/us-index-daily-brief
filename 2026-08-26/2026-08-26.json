@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-26",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-25T21:38:51.427Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-25",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-25",
+                "metrics": {
+                  "close": 29209.228515625,
+                  "pct1Day": 0.6410353039475183,
+                  "pct5Day": -0.9553178767964654,
+                  "pct20Day": 5.208698052012691,
+                  "drawdown20": -2.909376869733584,
+                  "drawdown60": -4.733668330824876,
+                  "drawdownAll": -4.733668330824876,
+                  "sma20": 29267.6775390625,
+                  "sma50": 29307.904609375,
+                  "sma200": 26862.743818359377,
+                  "realizedVol20": 22.264048605535685
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-25",
+                "metrics": {
+                  "close": 7677.27978515625,
+                  "pct1Day": 0.31909537494823126,
+                  "pct5Day": -0.1882531554542567,
+                  "pct20Day": 3.3450984843639877,
+                  "drawdown20": -1.5605924044153352,
+                  "drawdown60": -1.5605924044153352,
+                  "drawdownAll": -1.5605924044153352,
+                  "sma20": 7668.834985351563,
+                  "sma50": 7551.135009765625,
+                  "sma200": 7104.535502929688,
+                  "realizedVol20": 13.272546919984714
+                }
+              }
+            ],
+            "vix": 15.449999809265137,
+            "treasury10y": 4.638999938964844,
+            "dxy": 98.91400146484375
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.32%",
+              "较深的60日高点回撤为 -4.73%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.64%，标普500 0.32%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Nvidia employee charged with smuggling advanced chips into China",
+                "explanation": "中文翻译暂不可用：Prosecutors identify Taiwan-based manager as ‘central figure’ in scheme involving US semiconductor maker’s AI servers",
+                "url": "https://www.ft.com/content/af815e45-b132-4db4-96bc-428f8e0b76f3?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Intuit Sinks 11% on Weak Outlook as Nvidia Earnings Loom | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Emily Graffeo, Norah Mulinda and Tim Stenovec. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-25/intuit-sinks-11-on-weak-outlook-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Drought leaves 'barely any apples' to make cider",
+                "explanation": "中文翻译暂不可用：Some orchards are harvesting just a 10th of their usual crop, and facing an uncertain future.",
+                "url": "https://www.bbc.co.uk/news/articles/cm2g6mmjjzdo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US-Canada Cosmetic Tariffs Threaten the $10 Beauty Impulse Buy",
+                "explanation": "中文翻译暂不可用：In between offering advice on how to find the best towels and where to buy affordable versions of high-end garments, Bryce Gruber recently waded into the US-Canada trade war, warning her social-media followers that some of their favorite makeup is about to get more expensive.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-25/us-canada-cosmetic-tariffs-threaten-the-10-beauty-impulse-buy",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Short Squeeze in US Long Bonds Shows ‘Bessent Put’ at Work",
+                "explanation": "中文翻译暂不可用：Treasury Secretary Scott Bessent’s surprise plan to tamp down US borrowing costs by expanding bond buybacks may have sparked fierce debate about its ultimate effectiveness, but key market metrics and positioning show that it’s having an impact.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-25/short-squeeze-in-us-swaps-options-shows-bessent-put-at-work",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-25T21:38:51.427Z"
+        },
+        "marketDate": "2026-08-25",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-25（非 2026-08-26 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-25（非 2026-08-26 当日收盘）",
+      "generatedAt": "2026-08-25T21:38:51.427Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Apple 发布 M6 与 M5 Ultra，性能与 AI 算力大幅跃升",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu",
+            "originalUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+            "publishedAt": "2026-08-25T15:18:18.011Z",
+            "summary": "苹果发布M6与M5 Ultra芯片Mac Studio及Mac mini",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8",
+            "originalUrl": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+            "publishedAt": "2026-08-25T18:02:04.743Z",
+            "summary": "Anthropic 统一聊天与 Cowork 记忆，用户可逐条查看和编辑记忆。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt8qee503kvnro73qp7543yv",
+            "originalUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
+            "publishedAt": "2026-08-25T14:27:44.324Z",
+            "summary": "M5 Ultra 芯片采用四芯片架构，AI 峰值性能较 M3 Ultra 提升 4.5 倍。",
+            "summaryStatus": "curated",
+            "rank": 3
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 3
+      },
+      "generatedAt": "2026-08-25T21:38:51.427Z"
+    }
+  ],
+  "subject": "2026-08-26 个人每日简报｜市场与 AI 科技"
+}
