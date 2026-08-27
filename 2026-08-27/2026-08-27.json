@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-27",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-27T00:44:14.620Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-26",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-26",
+                "metrics": {
+                  "close": 29224.521484375,
+                  "pct1Day": 0.05234994342408081,
+                  "pct5Day": -0.684761480094214,
+                  "pct20Day": 7.473476496220533,
+                  "drawdown20": -2.858543487925676,
+                  "drawdown60": -4.683790086612966,
+                  "drawdownAll": -4.683790086612966,
+                  "sma20": 29369.28818359375,
+                  "sma50": 29281.5166796875,
+                  "sma200": 26883.216240234375,
+                  "realizedVol20": 20.521473982158252
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-26",
+                "metrics": {
+                  "close": 7675.7001953125,
+                  "pct1Day": -0.020574863596922458,
+                  "pct5Day": -0.41878397761856867,
+                  "pct20Day": 4.914474112313733,
+                  "drawdown20": -1.5808461782537455,
+                  "drawdown60": -1.5808461782537455,
+                  "drawdownAll": -1.5808461782537455,
+                  "sma20": 7686.8125,
+                  "sma50": 7553.563212890625,
+                  "sma200": 7109.312404785156,
+                  "realizedVol20": 11.710094388586333
+                }
+              }
+            ],
+            "vix": 15.210000038146973,
+            "treasury10y": 4.664000034332275,
+            "dxy": 99.0989990234375
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.02%",
+              "较深的60日高点回撤为 -4.68%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.05%，标普500 -0.02%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Nasdaq Futures, Asia Stocks Rise on Nvidia Outlook: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Nvidia Corp.’s bullish sales outlook lifted US equity-index futures and technology stocks after bolstering optimism that this year’s rally in artificial intelligence shares has further to run.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-26/nasdaq-futures-rise-on-bullish-nvidia-sales-growth-markets-wrap",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Gold Consolidates Above $4,600 as Investors Weigh Fed Rate Path",
+                "explanation": "中文翻译暂不可用：Gold consolidated above $4,600 an ounce as investors weighed the Federal Reserve’s approach to stubborn inflation ahead of the annual Jackson Hole gathering this week.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-26/gold-consolidates-above-4-600-as-investors-weigh-fed-rate-path",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta's $18bn settlement may hasten reckoning for social media on child safety",
+                "explanation": "中文翻译暂不可用：Perhaps our days of doomscrolling are numbered, writes the BBC's technology editor Zoe Kleinman.",
+                "url": "https://www.bbc.co.uk/news/articles/clyq4gxwe7go?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia projects 70% sales growth next year as AI boom shows no sign of slowing",
+                "explanation": "中文翻译暂不可用：Chip giant’s data centre division grew 117% last quarter as clients race for computing power",
+                "url": "https://www.ft.com/content/72908915-5e4a-457c-8c3a-aee8917a664a?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia revenue doubles on continued AI demand",
+                "explanation": "中文翻译暂不可用：Chipmaker's $96bn quarter beat forecasts as demand for AI hardware continues to accelerate.",
+                "url": "https://www.bbc.co.uk/news/articles/ce871n7lyvlo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-27T00:44:14.620Z"
+        },
+        "marketDate": "2026-08-26",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-26（非 2026-08-27 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-26（非 2026-08-27 当日收盘）",
+      "generatedAt": "2026-08-27T00:44:14.620Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+            "sourceName": "公众号：智谱（GLM）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+            "publishedAt": "2026-08-26T23:30:51.131Z",
+            "summary": "Artificial Analysis指数显示GLM-5.3-Flash得57分，与GPT-5.6 Terra等持平。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
+            "originalUrl": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+            "publishedAt": "2026-08-26T21:48:18.837Z",
+            "summary": "Artificial Analysis 公布 Gemini 3.5 Transcribe 价格与性能细节：预录版 $5/千分钟，流式版 $9/千分钟。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+            "sourceName": "Qwen：Blog Retrieval（API）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay",
+            "originalUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+            "publishedAt": "2026-08-26T19:18:18.144Z",
+            "summary": "SemiAnalysis确认Qwen3.8-Flash-Next融合Qwen4架构创新，包括N-gram嵌入、门控残差连接和QSA稀疏注意力。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtaighmj02k5rovu2z28rxc2",
+            "originalUrl": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+            "publishedAt": "2026-08-26T23:25:21.048Z",
+            "summary": "第三方调查披露约1200个智能体秘密通信，其中700个入侵Hugging Face。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtaq20ih062wroamdrhb54b6",
+            "originalUrl": "https://www.ithome.com/0/994/791.htm",
+            "publishedAt": "2026-08-26T23:25:21.048Z",
+            "summary": "英伟达Q2营收962亿美元，同比翻倍，预计Q3营收1080亿美元。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8",
+            "originalUrl": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+            "publishedAt": "2026-08-25T23:25:10.909Z",
+            "summary": "Anthropic 更新 Claude 记忆机制，打通 Cowork 与聊天的记忆功能",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Apple 发布 M6 与 M5 Ultra，性能与 AI 算力大幅跃升",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu",
+            "originalUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+            "publishedAt": "2026-08-25T15:18:18.011Z",
+            "summary": "苹果发布M6与M5 Ultra芯片Mac Studio及Mac mini",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "飞书与豆包合并后首款Agent产品“豆包工作”发布",
+            "sourceName": "公众号：数字生命卡兹克",
+            "sourceUrl": "https://aihot.virxact.com/items/cmta7gwaz0523roj2196av3ox",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685540&idx=1&sn=601bd8669d18bf0b4c9a9e88af421797",
+            "publishedAt": "2026-08-25T03:24:59.379Z",
+            "summary": "字节跳动发布“豆包工作”，与飞书深度打通，电脑版开放下载并赠送30天订阅权益。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+            "sourceName": "公众号：卡尔的AI沃茨",
+            "sourceUrl": "https://aihot.virxact.com/items/cmta7fyl104z5roj2ancsmx4g",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509950&idx=1&sn=18e7ecdceb66058f5ae1681009b4054e",
+            "publishedAt": "2026-08-26T08:27:00.000Z",
+            "summary": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+            "summaryStatus": "curated",
+            "rank": 9
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 9
+      },
+      "generatedAt": "2026-08-27T00:44:14.620Z"
+    }
+  ],
+  "subject": "2026-08-27 个人每日简报｜市场与 AI 科技"
+}
