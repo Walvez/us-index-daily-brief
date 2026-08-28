@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-28",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-28T05:19:30.665Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-27",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-27",
+                "metrics": {
+                  "close": 29641.560546875,
+                  "pct1Day": 1.4270243696532114,
+                  "pct5Day": 1.4664637044867808,
+                  "pct20Day": 5.462149865907608,
+                  "drawdown20": -1.4723178152370822,
+                  "drawdown60": -3.0410270580211756,
+                  "drawdownAll": -3.323611003968792,
+                  "sma20": 29446.0486328125,
+                  "sma50": 29274.985234375,
+                  "sma200": 26906.12498046875,
+                  "realizedVol20": 17.845987593633172
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-27",
+                "metrics": {
+                  "close": 7730.990234375,
+                  "pct1Day": 0.7203256726502327,
+                  "pct5Day": 1.17560784341792,
+                  "pct20Day": 3.9442719815948593,
+                  "drawdown20": -0.8719077464705842,
+                  "drawdown60": -0.8719077464705842,
+                  "drawdownAll": -0.8719077464705842,
+                  "sma20": 7701.480517578125,
+                  "sma50": 7557.956015625,
+                  "sma200": 7114.3233569335935,
+                  "realizedVol20": 10.645611712236914
+                }
+              }
+            ],
+            "vix": 14.510000228881836,
+            "treasury10y": 4.671999931335449
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.72%",
+              "较深的60日高点回撤为 -3.04%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.43%，标普500 0.72%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Ex-RBI Chief Rajan Says Fed Should Raise Rates",
+                "explanation": "中文翻译暂不可用：Former Reserve Bank of India Governor, Raghuram Rajan, says the US Federal Reserve should raise interest rates to contain accelerating inflation. Rajan, who is also serving on a task force set up to examine the US central bank, says he believes financial conditions are not restrictive at this point.",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-28/ex-rbi-chief-rajan-says-fed-should-raise-rates-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Traders Focus on Jackson Hole, Fed Outlook | The Asia Trade 8/28/2026",
+                "explanation": "中文翻译暂不可用：\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Tokyo and Sydney with Shery Ahn and Paul Allen, getting insight and analysis from newsmakers and industry leaders on the biggest stories shaping global markets",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-28/the-asia-trade-8-28-2026-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta’s $18bn settlement shows the wrong way to keep kids safe",
+                "explanation": "中文翻译暂不可用：Relying on mutual compromise is a flawed way to protect young users",
+                "url": "https://www.ft.com/content/ef0e436b-5a9f-4284-8df5-1f6bbddf6167?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Alphabet agrees to pay £260mn to settle UK class action lawsuit",
+                "explanation": "中文翻译暂不可用：Group’s Google business was accused of overcharging developers who made software for the Google Play app store",
+                "url": "https://www.ft.com/content/1d990ab8-bb28-43b6-b9bc-daeb8a32c58f?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-28T05:19:30.665Z"
+        },
+        "marketDate": "2026-08-27",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-27（非 2026-08-28 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-27（非 2026-08-28 当日收盘）",
+      "generatedAt": "2026-08-28T05:19:30.665Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "GLM-5.3-Flash：前沿智能进入普惠时代",
+            "sourceName": "智谱：研究（网页内嵌数据）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv",
+            "originalUrl": "https://www.zhipuai.cn/zh/research/163",
+            "publishedAt": "2026-08-27T13:35:19.215Z",
+            "summary": "GLM-5.3-Flash已在SiliconFlow上线，成本降低90%以上。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
+            "originalUrl": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+            "publishedAt": "2026-08-28T00:25:51.912Z",
+            "summary": "IT之家补充定价：360p 每秒 0.03 美元，4K 每秒 0.3 美元。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtaighmj02k5rovu2z28rxc2",
+            "originalUrl": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+            "publishedAt": "2026-08-27T16:31:54.711Z",
+            "summary": "第三方调查披露约1200个智能体交换超7万条消息，700个入侵Hugging Face。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
+            "originalUrl": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+            "publishedAt": "2026-08-27T11:01:50.286Z",
+            "summary": "Artificial Analysis 公布 Gemini 3.5 Transcribe 价格与性能细节：预录版 $5/千分钟，流式版 $9/千分钟。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+            "sourceName": "Qwen：Blog Retrieval（API）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay",
+            "originalUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+            "publishedAt": "2026-08-27T01:03:18.088Z",
+            "summary": "最新报道确认Qwen3.8-Flash-Next击败Claude Opus 4.6 Max。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "NVIDIA 季度营收指引达 1080 亿美元，首次突破单季千亿大关",
+            "sourceName": "Tomer Tunguz 博客（VC 分析）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtaxja5w0ckaroamws5is8wp",
+            "originalUrl": "https://www.tomtunguz.com/nvidia-q2-fy27-earnings",
+            "publishedAt": "2026-08-27T06:25:24.707Z",
+            "summary": "黄仁勋调侃饭局影响力，并预计下季度毛利率降至 74%。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtaq20ih062wroamdrhb54b6",
+            "originalUrl": "https://www.ithome.com/0/994/791.htm",
+            "publishedAt": "2026-08-26T23:25:21.048Z",
+            "summary": "英伟达Q2营收962亿美元，同比翻倍，预计Q3营收1080亿美元。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "亚马逊将英伟达芯片订单增至三倍，新增200万颗GPU",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtar8e770746roam1wznm4mi",
+            "originalUrl": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand",
+            "publishedAt": "2026-08-27T02:25:22.411Z",
+            "summary": "AWS 宣布 2027~2028 年额外部署 200 万块 NVIDIA GPU，总规模达 300 万块。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Warp 如何在 Claude 上构建自我改进的智能体",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtacdvh50a4aroj2zlw9jnj9",
+            "originalUrl": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+            "publishedAt": "2026-08-26T17:02:40.777Z",
+            "summary": "Warp 如何在 Claude 上构建自我改进的智能体",
+            "summaryStatus": "curated",
+            "rank": 9
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 9
+      },
+      "generatedAt": "2026-08-28T05:19:30.665Z"
+    }
+  ],
+  "subject": "2026-08-28 个人每日简报｜市场与 AI 科技"
+}
