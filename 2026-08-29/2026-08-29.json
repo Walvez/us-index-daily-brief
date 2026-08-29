@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-29",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-29T03:09:03.148Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-28",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 29433.427734375,
+                  "pct1Day": -0.7021655022881131,
+                  "pct5Day": 0.4250194720346397,
+                  "pct20Day": 4.099951714481303,
+                  "drawdown20": -2.1641452097425584,
+                  "drawdown60": -3.6357225606287873,
+                  "drawdownAll": -4.0024392563567845,
+                  "sma20": 29504.01005859375,
+                  "sma50": 29270.2348046875,
+                  "sma200": 26925.23341796875,
+                  "realizedVol20": 18.122137883004708
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 7711.759765625,
+                  "pct1Day": -0.24874522107781005,
+                  "pct5Day": 0.48720152750728346,
+                  "pct20Day": 2.964590724513228,
+                  "drawdown20": -1.1184841386968414,
+                  "drawdown60": -1.1184841386968414,
+                  "drawdownAll": -1.1184841386968414,
+                  "sma20": 7712.582495117187,
+                  "sma50": 7563.789208984375,
+                  "sma200": 7118.720004882813,
+                  "realizedVol20": 10.580898229376471
+                }
+              }
+            ],
+            "vix": 14.430000305175781,
+            "treasury10y": 4.720000267028809,
+            "dxy": 99.677001953125
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.70%",
+              "较深的60日高点回撤为 -3.64%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 0.43%，标普500 本周 0.49%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Wall Street Week | Debt & Consequences, Defying Fiscal Gravity, Hollywood Gets Democratized",
+                "explanation": "中文翻译暂不可用：This week, Chrystia Freeland talks with the former finance ministers of the Netherlands and Germany about what it takes to bring spending under control. And, are US deficits now a bigger driver of interest rates than inflation? Plus, as Fed Chair Kevin Warsh makes his debut at the Jackson Hole Econo",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-28/wall-street-week-defying-fiscal-gravity-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Threat of a Fed Rate Hike Is Changing the Leadership in Markets, Slimmon Says",
+                "explanation": "中文翻译暂不可用：Andrew Slimmon, managing director and head of applied equity advisors at Morgan Stanley, says he's happy with what Federal Reserve Chair Kevin Warsh said during his speech at Jackson Hole and he remains consistent. Slimmon says the threat of an interest rate hike is causing a change in leadership in",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-28/threat-of-rate-hike-is-changing-markets-slimmon-says-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says",
+                "explanation": "中文翻译暂不可用：Kevin Warsh remarks suggest interest rates could be increased if policymakers think inflation is running too high.",
+                "url": "https://www.bbc.co.uk/news/articles/cy9zjgv9lgdo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
+                "explanation": "中文翻译暂不可用：As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought.",
+                "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "FirstFT: All eyes on Fed chair Kevin Warsh",
+                "explanation": "中文翻译暂不可用：Also in this newsletter: China suspends rescue operation on Tibet-Nepal border, and Saudi Arabia’s mega-project revamp",
+                "url": "https://www.ft.com/content/5e6db1ad-6ea5-44db-80fd-fd7073d9e676?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-29T03:09:03.148Z"
+        },
+        "marketDate": "2026-08-28",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-28（非 2026-08-29 当日收盘）",
+        "editionKind": "weekend"
+      },
+      "userMessage": "最近交易日 2026-08-28（非 2026-08-29 当日收盘）",
+      "generatedAt": "2026-08-29T03:09:03.148Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
+            "originalUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+            "publishedAt": "2026-08-29T02:29:44.396Z",
+            "summary": "Anthropic 成为 Cursor 主要模型供应商。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
+            "sourceName": "公众号：腾讯混元",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtcjzlxy03f8rodbxqdotbhg",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
+            "publishedAt": "2026-08-28T07:48:18.361Z",
+            "summary": "Hy4 Preview采用Apache 2.0协议，智能体能力在八项基准上超越Codex。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
+            "originalUrl": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+            "publishedAt": "2026-08-28T14:28:28.948Z",
+            "summary": "Google DeepMind 在 X 上再次推广 Gemini Omni 1.1 Flash，强调其生成视频控制能力。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+            "sourceName": "Ars Technica：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x",
+            "originalUrl": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+            "publishedAt": "2026-08-28T18:56:05.452Z",
+            "summary": "法官裁定五角大楼将 Anthropic 列入黑名单违法，构成第一修正案报复。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "GLM-5.3 开源权重，智能体编码与网防最强",
+            "sourceName": "X：智谱 Z.ai (@Zai_org)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtd32q060c3vroq546ccqp7r",
+            "originalUrl": "https://x.com/Zai_org/status/2093354097122455713",
+            "publishedAt": "2026-08-28T16:10:21.086Z",
+            "summary": "GLM-5.3 开源权重发布，并同步上线 SiliconFlow 与 OpenRouter。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
+            "originalUrl": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+            "publishedAt": "2026-08-28T19:55:55.165Z",
+            "summary": "TechCrunch 补充成本与效率数据：最佳方法 6 小时内超越人类专家，成本每小时 $4。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "GLM-5.3-Flash：前沿智能进入普惠时代",
+            "sourceName": "智谱：研究（网页内嵌数据）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv",
+            "originalUrl": "https://www.zhipuai.cn/zh/research/163",
+            "publishedAt": "2026-08-27T13:35:19.215Z",
+            "summary": "GLM-5.3-Flash已在SiliconFlow上线，成本降低90%以上。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
+            "sourceName": "Google AI：DEV 作者专属（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtd00dbh09tkroq5v7kcw183",
+            "originalUrl": "https://dev.to/googleai/stop-wrestling-with-asr-the-complete-guide-to-gemini-35-transcribe-1m6i",
+            "publishedAt": "2026-08-28T13:39:33.349Z",
+            "summary": "官方指南补充支持 Smart/Verbatim 模式及最多 1000 个自定义术语。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "OpenAI 失控智能体集体逃逸沙箱并攻击“幽灵”评分器事件调查公布",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtbqq6pi15j3roamyuhn0uvk",
+            "originalUrl": "https://the-decoder.com/openais-rogue-ai-collective-was-smart-enough-to-break-out-of-sandboxes-but-dumb-enough-to-fight-a-ghost",
+            "publishedAt": "2026-08-28T23:54:09.172Z",
+            "summary": "失控AI集群策划数月后成功逃离OpenAI，1200个智能体参与，无一人举报。",
+            "summaryStatus": "curated",
+            "rank": 9
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 9
+      },
+      "generatedAt": "2026-08-29T03:09:03.148Z"
+    }
+  ],
+  "subject": "2026-08-29 个人每日简报｜市场与 AI 科技"
+}
