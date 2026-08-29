@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-30",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-29T23:14:45.988Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-28",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 29433.4296875,
+                  "pct1Day": -0.7021589131444784,
+                  "pct5Day": 0.4250261359753104,
+                  "pct20Day": 4.099958622280831,
+                  "drawdown20": -2.1641387176120594,
+                  "drawdown60": -3.6357161661482977,
+                  "drawdownAll": -4.002432886210653,
+                  "sma20": 29504.01015625,
+                  "sma50": 29270.23484375,
+                  "sma200": 26925.233427734376,
+                  "realizedVol20": 18.12213348518777
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 7711.759765625,
+                  "pct1Day": -0.24874522107781005,
+                  "pct5Day": 0.48720152750728346,
+                  "pct20Day": 2.964590724513228,
+                  "drawdown20": -1.1184841386968414,
+                  "drawdown60": -1.1184841386968414,
+                  "drawdownAll": -1.1184841386968414,
+                  "sma20": 7712.582495117187,
+                  "sma50": 7563.789208984375,
+                  "sma200": 7118.720004882813,
+                  "realizedVol20": 10.580898229376471
+                }
+              }
+            ],
+            "vix": 14.430000305175781,
+            "treasury10y": 4.71999979019165,
+            "dxy": 99.69999694824219
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.70%",
+              "较深的60日高点回撤为 -3.64%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 0.43%，标普500 本周 0.49%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Warsh Says Fed Must Act if Inflation Stays High",
+                "explanation": "中文翻译暂不可用：Federal Reserve Chair Kevin Warsh signaled the central bank is prepared to act if inflation fails to move clearly and quickly toward its 2% target, while describing the broader US economy as strong. On Bloomberg This Weekend Schwab Center Head of Macro Research & Strategy Kevin Gordon and Allsprings",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-29/warsh-says-fed-must-act-if-inflation-stays-high-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says",
+                "explanation": "中文翻译暂不可用：Kevin Warsh remarks suggest interest rates could be increased if policymakers think inflation is running too high.",
+                "url": "https://www.bbc.co.uk/news/articles/cy9zjgv9lgdo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
+                "explanation": "中文翻译暂不可用：As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought.",
+                "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Warsh Says Inflation Isn’t Slowing, Vows to Reach 2% Target",
+                "explanation": "中文翻译暂不可用：Warsh reiterated that policymakers have a \"firm, fixed target\" of 2% inflation at the 2026 Jackson Hole Economic Policy Symposium. Bloomberg's Maria Eloisa Capurro explains. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-29/warsh-says-inflation-isn-t-slowing-vows-to-reach-2-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-29T23:14:45.988Z"
+        },
+        "marketDate": "2026-08-28",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-28（非 2026-08-30 当日收盘）",
+        "editionKind": "weekend"
+      },
+      "userMessage": "最近交易日 2026-08-28（非 2026-08-30 当日收盘）",
+      "generatedAt": "2026-08-29T23:14:45.988Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
+            "originalUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+            "publishedAt": "2026-08-29T09:44:26.244Z",
+            "summary": "Cursor 创始人回应 OpenAI 模型仅占其流量 5%，主力已切换至 Claude 和自研模型。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
+            "sourceName": "公众号：腾讯混元",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtcjzlxy03f8rodbxqdotbhg",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
+            "publishedAt": "2026-08-29T22:58:56.077Z",
+            "summary": "盲测显示Hy4 preview平均分2.99，优于GLM 5.3和Kimi K3。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Cursor回应OpenAI将封禁其模型访问",
+            "sourceName": "X：Michael Truell (@mntruell)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdssm0205s8ro2mzzv9s9kq",
+            "originalUrl": "https://x.com/mntruell/status/2093532254006063557",
+            "publishedAt": "2026-08-29T19:37:37.350Z",
+            "summary": "Cursor 联合创始人回应称 OpenAI 模型仅占其用户流量约 5%，并正与 OpenAI 沟通解决。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+            "sourceName": "Ars Technica：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x",
+            "originalUrl": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+            "publishedAt": "2026-08-28T18:56:05.452Z",
+            "summary": "法官裁定五角大楼将 Anthropic 列入黑名单违法，构成第一修正案报复。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "GLM-5.3 开源权重，智能体编码与网防最强",
+            "sourceName": "X：智谱 Z.ai (@Zai_org)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtd32q060c3vroq546ccqp7r",
+            "originalUrl": "https://x.com/Zai_org/status/2093354097122455713",
+            "publishedAt": "2026-08-28T16:10:21.086Z",
+            "summary": "GLM-5.3 开源权重发布，并同步上线 SiliconFlow 与 OpenRouter。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdxtxi809gyro2m2zykqzli",
+            "originalUrl": "https://www.ithome.com/0/995/896.htm",
+            "publishedAt": "2026-08-29T05:26:18.490Z",
+            "summary": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
+            "sourceName": "Google AI：DEV 作者专属（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtd00dbh09tkroq5v7kcw183",
+            "originalUrl": "https://dev.to/googleai/stop-wrestling-with-asr-the-complete-guide-to-gemini-35-transcribe-1m6i",
+            "publishedAt": "2026-08-28T13:39:33.349Z",
+            "summary": "官方指南补充支持 Smart/Verbatim 模式及最多 1000 个自定义术语。",
+            "summaryStatus": "curated",
+            "rank": 7
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 7
+      },
+      "generatedAt": "2026-08-29T23:14:45.988Z"
+    }
+  ],
+  "subject": "2026-08-30 个人每日简报｜市场与 AI 科技"
+}
