@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "editionDate": "2026-08-31",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-08-30T23:26:18.666Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-28",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 29433.4296875,
+                  "pct1Day": -0.7021589131444784,
+                  "pct5Day": 0.4250261359753104,
+                  "pct20Day": 4.099958622280831,
+                  "drawdown20": -2.1641387176120594,
+                  "drawdown60": -3.6357161661482977,
+                  "drawdownAll": -4.002432886210653,
+                  "sma20": 29504.01015625,
+                  "sma50": 29270.23484375,
+                  "sma200": 26925.233427734376,
+                  "realizedVol20": 18.12213348518777
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-28",
+                "metrics": {
+                  "close": 7711.759765625,
+                  "pct1Day": -0.24874522107781005,
+                  "pct5Day": 0.48720152750728346,
+                  "pct20Day": 2.964590724513228,
+                  "drawdown20": -1.1184841386968414,
+                  "drawdown60": -1.1184841386968414,
+                  "drawdownAll": -1.1184841386968414,
+                  "sma20": 7712.582495117187,
+                  "sma50": 7563.789208984375,
+                  "sma200": 7118.720004882813,
+                  "realizedVol20": 10.580898229376471
+                }
+              }
+            ],
+            "vix": 14.430000305175781,
+            "treasury10y": 4.71999979019165
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.70%",
+              "较深的60日高点回撤为 -3.64%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.70%，标普500 -0.25%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Fed Rate Hike Speculation Grows, But Investors Remain Skeptical",
+                "explanation": "中文翻译暂不可用：Bond investors at firms including ABN AMRO Investment Solutions and Brandywine Global Investment Management are voicing skepticism about mounting speculation that Federal Reserve Chairman Kevin Warsh is poised to raise interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-30/bond-investors-wary-after-warsh-fans-wagers-fed-poised-to-hike",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta’s settlement is a starting point",
+                "explanation": "中文翻译暂不可用：Governments can use it as leverage as they mull social media bans for minors",
+                "url": "https://www.ft.com/content/5729b32c-8b7a-42b1-b1e2-b8b0106739cb?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Oil Rises on Iran Tensions, US Stock Futures Dip: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Oil climbed and US stock-index futures slipped in early Asian trading as Middle East tensions intensified. The dollar held its gains after hawkish comments from Federal Reserve Chair Kevin Warsh strengthened bets on an interest-rate hike next month.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-30/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Gold Bulls Turn to Exotic Options, Spreads in ‘Orderly’ Rally",
+                "explanation": "中文翻译暂不可用：Gold bulls rejuvenated by the Treasury Department’s efforts to keep US borrowing costs in check are turning to exotic options and spreads to bet on higher bullion prices.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-30/gold-bulls-turn-to-exotic-options-spreads-in-orderly-rally",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Dollar Debasement Backs Bull Case for Emerging Bonds, Funds Say",
+                "explanation": "中文翻译暂不可用：A stellar year for emerging-market bonds is set to get even better as the return of the “dollar debasement trade” amplifies inflows into the asset class, fund managers say.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-30/dollar-debasement-backs-bull-case-for-emerging-bonds-funds-say",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-08-30T23:26:18.666Z"
+        },
+        "marketDate": "2026-08-28",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-28（非 2026-08-31 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-28（非 2026-08-31 当日收盘）",
+      "generatedAt": "2026-08-30T23:26:18.666Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
+            "originalUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+            "publishedAt": "2026-08-29T09:44:26.244Z",
+            "summary": "Cursor 创始人回应 OpenAI 模型仅占其流量 5%，主力已切换至 Claude 和自研模型。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "索尼与华纳起诉Anthropic，指控其大规模盗用版权音乐训练Claude",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtfkvjwn0by7rou8vil9ysf1",
+            "originalUrl": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history",
+            "publishedAt": "2026-08-30T08:59:11.175Z",
+            "summary": "索尼与华纳起诉Anthropic，索赔数十亿美元并指控其盗用歌词训练Claude。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
+            "sourceName": "Dwarkesh Patel：Podcast & Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtf0ibgi091wrovjvv5ee7qv",
+            "originalUrl": "https://www.dwarkesh.com/p/openai-huggingface",
+            "publishedAt": "2026-08-29T23:54:09.378Z",
+            "summary": "第三个AI文明接管了OpenAI自身的一部分，此前报告未涉及。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Cursor回应OpenAI将封禁其模型访问",
+            "sourceName": "X：Michael Truell (@mntruell)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtdssm0205s8ro2mzzv9s9kq",
+            "originalUrl": "https://x.com/mntruell/status/2093532254006063557",
+            "publishedAt": "2026-08-29T19:37:37.350Z",
+            "summary": "Cursor 联合创始人回应称 OpenAI 模型仅占其用户流量约 5%，并正与 OpenAI 沟通解决。",
+            "summaryStatus": "curated",
+            "rank": 4
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 4
+      },
+      "generatedAt": "2026-08-30T23:26:18.666Z"
+    }
+  ],
+  "subject": "2026-08-31 个人每日简报｜市场与 AI 科技"
+}
