@@ -7,7 +7,11 @@ import {
   decideSendability,
   resolveScheduleAttempt,
 } from "../lib/daily-brief/send-policy";
-import { readEditionReport } from "../lib/daily-brief/state";
+import {
+  findLatestPublishedMarketDate,
+  readEditionReport,
+} from "../lib/daily-brief/state";
+import { editionDateFor } from "../lib/daily-brief/edition";
 
 function writeGithubOutputs(result: {
   status: string;
@@ -40,12 +44,19 @@ async function main() {
   const attempt = resolveScheduleAttempt(process.env);
   const config = loadDailyBriefConfig();
   const outputRoot = process.env.REPORT_OUTPUT_DIR || config.outputRoot;
+  const now = new Date();
+  const editionDate = editionDateFor(now, config.timeZone);
+  const latestPublishedMarketDate = findLatestPublishedMarketDate(
+    outputRoot,
+    editionDate,
+  );
   const result = await runDailyBrief({
     config: {
       outputRoot,
       validationOnly: process.env.VALIDATION_ONLY === "1",
     },
     scheduleAttempt: attempt,
+    latestPublishedMarketDate,
   });
 
   // Re-read config after generation so BRIEF_MODULES / env stay authoritative.
@@ -57,6 +68,7 @@ async function main() {
     const decision = decideSendability(result.report, {
       marketEnabled: effective.marketEnabled,
       attempt,
+      latestPublishedMarketDate,
     });
     sendable = decision.sendable;
     sendReason = decision.reason;
@@ -66,6 +78,7 @@ async function main() {
       const decision = decideSendability(existing, {
         marketEnabled: effective.marketEnabled,
         attempt,
+        latestPublishedMarketDate,
       });
       sendable = decision.sendable;
       sendReason = decision.reason;

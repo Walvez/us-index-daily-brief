@@ -4,8 +4,8 @@ import { shouldSendReport } from "./render";
 /**
  * Schedule attempt class for the single personal-daily-brief workflow.
  *
- * - early  — 05:05 / 05:35 Asia/Taipei: prefer waiting for market data
- * - final  — 06:10 Asia/Taipei: last scheduled slot; may fall back to tech-only
+ * - early  — 16:05 / 16:35 / 17:05 America/New_York: prefer waiting for market data
+ * - final  — 17:35 America/New_York: last scheduled slot; may fall back to tech-only
  * - manual — workflow_dispatch: operator-triggered; same fallback as final
  */
 export type ScheduleAttempt = "early" | "final" | "manual";
@@ -15,7 +15,7 @@ export type SendDecision = {
   reason: string;
 };
 
-const FINAL_CRON = "10 22 * * *";
+const FINAL_CRON = "35 17 * * 1-5";
 
 /**
  * Resolve attempt from env (preferred) or GitHub schedule metadata.
@@ -37,7 +37,7 @@ export function resolveScheduleAttempt(
   if (eventName === "schedule") {
     const cron = env.GITHUB_EVENT_SCHEDULE?.trim();
     if (cron === FINAL_CRON) return "final";
-    // 05:05 and 05:35 (and any other schedule) are early retries.
+    // 16:05, 16:35, and 17:05 America/New_York (and any other schedule) are early retries.
     return "early";
   }
 
@@ -66,12 +66,41 @@ function marketOk(report: DailyBriefReport): boolean {
   return market?.status === "success" || market?.status === "degraded";
 }
 
+export interface SendPolicyOptions {
+  marketEnabled: boolean;
+  attempt?: ScheduleAttempt;
+  latestPublishedMarketDate?: string;
+}
+
+export function extractMarketDate(
+  report: DailyBriefReport,
+): string | undefined {
+  const market = moduleById(report, "market");
+  if (!market) return undefined;
+  const data = market.data as
+    | {
+        marketDate?: string;
+        report?: { market?: { marketDate?: string } };
+      }
+    | undefined;
+  return data?.marketDate ?? data?.report?.market?.marketDate;
+}
+
+export function isMarketFresh(
+  marketDate: string | undefined,
+  latestPublishedMarketDate?: string,
+): boolean {
+  if (!marketDate) return false;
+  if (!latestPublishedMarketDate) return true;
+  return marketDate > latestPublishedMarketDate;
+}
+
 /**
  * Explicit attempt-aware send policy for the single pipeline / single email.
  *
  * When market is enabled:
- * - early attempts defer SMTP if market failed (even if tech succeeded),
- *   so later retries can still produce a market section and send once;
+ * - early attempts require market to be ready AND fresh (> latest published marketDate).
+ *   If market failed or is stale (Yahoo still returning previous session), SMTP is deferred.
  * - final / manual may send tech-only when tech has trustworthy content.
  *
  * Never marks sendable before content exists; SMTP + .emailed remain
@@ -79,10 +108,7 @@ function marketOk(report: DailyBriefReport): boolean {
  */
 export function decideSendability(
   report: DailyBriefReport,
-  options: {
-    marketEnabled: boolean;
-    attempt?: ScheduleAttempt;
-  },
+  options: SendPolicyOptions,
 ): SendDecision {
   const attempt = options.attempt ?? "manual";
 
@@ -97,15 +123,23 @@ export function decideSendability(
     return { sendable: true, reason: "market-disabled-any-module" };
   }
 
-  if (marketOk(report)) {
+  const marketIsOk = marketOk(report);
+  const marketDate = extractMarketDate(report);
+  const fresh = isMarketFresh(marketDate, options.latestPublishedMarketDate);
+
+  if (marketIsOk && fresh) {
     return { sendable: true, reason: "market-ready" };
   }
 
-  // Market enabled but failed / missing / skipped.
+  // Market enabled but unready: failed, missing, skipped, OR marketDate not fresh (stale).
+  const isMarketStale = marketIsOk && !fresh;
+
   if (attempt === "early") {
     return {
       sendable: false,
-      reason: "early-defer-market-failed",
+      reason: isMarketStale
+        ? "early-defer-market-stale"
+        : "early-defer-market-failed",
     };
   }
 
@@ -122,7 +156,9 @@ export function decideSendability(
 
   return {
     sendable: false,
-    reason: "market-failed-without-tech-fallback",
+    reason: isMarketStale
+      ? "market-stale-without-tech-fallback"
+      : "market-failed-without-tech-fallback",
   };
 }
 
@@ -132,10 +168,7 @@ export function decideSendability(
  */
 export function shouldResumeEmailOnlyWithPolicy(
   report: DailyBriefReport,
-  options: {
-    marketEnabled: boolean;
-    attempt?: ScheduleAttempt;
-  },
+  options: SendPolicyOptions,
 ): boolean {
   return decideSendability(report, options).sendable;
 }

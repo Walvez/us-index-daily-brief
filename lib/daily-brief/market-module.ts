@@ -14,6 +14,8 @@ export interface MarketModuleData {
   staleLabel?: string;
   /** "weekend" editions switch the market module to a weekly recap. */
   editionKind: EditionKind;
+  /** True when marketDate > latestPublishedMarketDate (or no prior market date known). */
+  isFresh?: boolean;
 }
 
 export interface MarketModuleDependencies extends BuildDependencies {}
@@ -38,10 +40,15 @@ export async function runMarketModule(
       mode: editionKind === "weekend" ? "weekly" : "daily",
     });
     const marketDate = report.market.marketDate;
-    const isLastTradingDay = marketDate !== context.editionDate;
-    const staleLabel = isLastTradingDay
-      ? `最近交易日 ${marketDate}（非 ${context.editionDate} 当日收盘）`
-      : undefined;
+    const isFresh =
+      !context.latestPublishedMarketDate ||
+      marketDate > context.latestPublishedMarketDate;
+    const isLastTradingDay = !isFresh || marketDate !== context.editionDate;
+    const staleLabel = !isFresh
+      ? `美股休市或无新交易日行情（显示最近交易日 ${marketDate}）`
+      : isLastTradingDay
+        ? `最近交易日 ${marketDate}（非 ${context.editionDate} 当日收盘）`
+        : undefined;
 
     return {
       moduleId: "market",
@@ -52,6 +59,7 @@ export async function runMarketModule(
         isLastTradingDay,
         staleLabel,
         editionKind,
+        isFresh,
       },
       userMessage: staleLabel,
       generatedAt,
