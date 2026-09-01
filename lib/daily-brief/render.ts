@@ -243,14 +243,18 @@ function overviewLine(report: DailyBriefReport): string {
   const parts: string[] = [];
 
   if (market?.status === "success" && market.data) {
-    const weekly = market.data.editionKind === "weekend";
-    const moves = market.data.report.market.indices
-      .map((index) => {
-        const pct = weekly ? index.metrics.pct5Day : index.metrics.pct1Day;
-        return `${index.name} ${pct >= 0 ? "+" : ""}${formatNumber(pct)}%`;
-      })
-      .join("，");
-    parts.push(moves);
+    if (market.data.isFresh === false) {
+      parts.push("美股休市（无新行情）");
+    } else {
+      const weekly = market.data.editionKind === "weekend";
+      const moves = market.data.report.market.indices
+        .map((index) => {
+          const pct = weekly ? index.metrics.pct5Day : index.metrics.pct1Day;
+          return `${index.name} ${pct >= 0 ? "+" : ""}${formatNumber(pct)}%`;
+        })
+        .join("，");
+      parts.push(moves);
+    }
   } else if (market?.status === "failed") {
     parts.push("市场模块暂不可用");
   }

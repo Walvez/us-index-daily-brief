@@ -12,6 +12,7 @@ import {
 } from "./send-policy";
 import {
   editionPaths,
+  findLatestPublishedMarketDate,
   inspectEditionState,
   inspectLegacyMarketSent,
   readEditionReport,
@@ -38,6 +39,8 @@ export interface OrchestratorDependencies {
   scheduleAttempt?: ScheduleAttempt;
   /** Manual-only: ignore existing .emailed and regenerate the edition. */
   forceResend?: boolean;
+  /** Most recent marketDate that was already published or sent (tests or override). */
+  latestPublishedMarketDate?: string;
 }
 
 function mergeConfig(
@@ -66,6 +69,10 @@ export async function runDailyBrief(
       (process.env.BRIEF_FORCE_RESEND ?? "").trim().toLowerCase(),
     );
 
+  const latestPublishedMarketDate =
+    dependencies.latestPublishedMarketDate ??
+    findLatestPublishedMarketDate(config.outputRoot, editionDate);
+
   const state = inspectEditionState(config.outputRoot, editionDate);
   if (state === "sent" && !forceResend) {
     return {
@@ -81,6 +88,7 @@ export async function runDailyBrief(
         shouldResumeEmailOnlyWithPolicy(existing, {
           marketEnabled: config.marketEnabled,
           attempt,
+          latestPublishedMarketDate,
         })
       ) {
         return {
@@ -100,6 +108,7 @@ export async function runDailyBrief(
     now,
     outputRoot: config.outputRoot,
     validationOnly: config.validationOnly,
+    latestPublishedMarketDate,
   };
 
   const modules: ModuleResult[] = [];
@@ -146,7 +155,14 @@ export async function runDailyBrief(
   );
 
   const activeIds = modules
-    .filter((module) => module.status !== "skipped")
+    .filter((module) => {
+      if (module.status === "skipped") return false;
+      if (module.moduleId === "market") {
+        const data = module.data as { isFresh?: boolean } | undefined;
+        if (data && data.isFresh === false) return false;
+      }
+      return true;
+    })
     .map((module) => module.moduleId);
 
   const report: DailyBriefReport = {
@@ -179,6 +195,7 @@ export function reportHasSendableContent(
   options: {
     marketEnabled: boolean;
     attempt?: ScheduleAttempt;
+    latestPublishedMarketDate?: string;
   },
 ): boolean {
   return decideSendability(report, options).sendable;

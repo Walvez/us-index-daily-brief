@@ -29,6 +29,8 @@ export interface BriefContext {
   now: Date;
   outputRoot: string;
   validationOnly: boolean;
+  /** Most recent marketDate that was already published or sent. */
+  latestPublishedMarketDate?: string;
 }
 
 export interface DailyBriefConfig {

@@ -171,11 +171,11 @@ jobs:
         run: npx tsx scripts/checkpoint-delivery.ts "${{ steps.brief.outputs.edition_date }}"
 
       - name: Prepare private report archive
-        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' && steps.brief.outputs.sendable != 'false' }}
         run: npm run build-site
 
       - name: Persist private report and delivery state
-        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' }}
+        if: ${{ !inputs.validation_only && steps.brief.outputs.status != 'skip' && steps.brief.outputs.sendable != 'false' }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -122,3 +122,125 @@ export function readEditionReport(
   }
   return JSON.parse(fs.readFileSync(filePath, "utf8")) as DailyBriefReport;
 }
+
+/**
+ * Extract marketDate from a parsed report object.
+ * Handles both DailyBriefReport (version 1) and legacy IndexBriefReport.
+ */
+export function extractReportMarketDate(content: unknown): string | undefined {
+  if (!content || typeof content !== "object") return undefined;
+  const report = content as Record<string, unknown>;
+
+  // DailyBriefReport (version 1)
+  if (Array.isArray(report.modules)) {
+    const marketModule = report.modules.find(
+      (m: unknown) =>
+        (m as { moduleId?: string })?.moduleId === "market",
+    ) as
+      | {
+          status?: string;
+          data?: {
+            marketDate?: string;
+            report?: { market?: { marketDate?: string } };
+          };
+        }
+      | undefined;
+
+    if (
+      marketModule &&
+      (marketModule.status === "success" || marketModule.status === "degraded")
+    ) {
+      const date =
+        marketModule.data?.marketDate ??
+        marketModule.data?.report?.market?.marketDate;
+      if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        return date;
+      }
+    }
+    return undefined;
+  }
+
+  // Legacy IndexBriefReport
+  if (report.market && typeof report.market === "object") {
+    const date = (report.market as { marketDate?: string }).marketDate;
+    if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      return date;
+    }
+  }
+
+  return undefined;
+}
+
+/**
+ * Find the most recent marketDate among already published/archived or sent editions.
+ *
+ * Scans outputRoot subdirectories (YYYY-MM-DD):
+ * - If currentEditionDate is provided:
+ *   - The current edition directory (dir === currentEditionDate) is only considered
+ *     if it was already sent (.emailed exists). An un-sent in-flight report for
+ *     today is NOT a prior published edition.
+ *   - Future dates (dir > currentEditionDate) are ignored.
+ * - Extracts marketDate from <dir>/<dir>.json.
+ * - Also supports legacy market directories where dir was marketDate and had .emailed.
+ *
+ * Returns the latest (lexicographically max) valid marketDate string, or undefined if none found.
+ */
+export function findLatestPublishedMarketDate(
+  root: string,
+  currentEditionDate?: string,
+): string | undefined {
+  if (!fs.existsSync(root)) return undefined;
+
+  let entries: fs.Dirent[];
+  try {
+    entries = fs.readdirSync(root, { withFileTypes: true });
+  } catch {
+    return undefined;
+  }
+
+  const marketDates: string[] = [];
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const dir = entry.name;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dir)) continue;
+
+    // Ignore future dirs if currentEditionDate is set
+    if (currentEditionDate && dir > currentEditionDate) {
+      continue;
+    }
+
+    // For current edition date, ignore unless it was already sent (.emailed exists)
+    if (currentEditionDate && dir === currentEditionDate) {
+      const emailedPath = path.join(root, dir, ".emailed");
+      if (!fs.existsSync(emailedPath)) {
+        continue;
+      }
+    }
+
+    // Try reading <dir>/<dir>.json
+    const jsonPath = path.join(root, dir, `${dir}.json`);
+    if (fs.existsSync(jsonPath)) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
+        const mDate = extractReportMarketDate(raw);
+        if (mDate) {
+          marketDates.push(mDate);
+          continue;
+        }
+      } catch {
+        // ignore malformed JSON
+      }
+    }
+
+    // Check legacy market layout where dir was marketDate and had .emailed
+    const legacyEmailed = path.join(root, dir, ".emailed");
+    if (fs.existsSync(legacyEmailed)) {
+      marketDates.push(dir);
+    }
+  }
+
+  if (marketDates.length === 0) return undefined;
+  marketDates.sort();
+  return marketDates[marketDates.length - 1];
+}
