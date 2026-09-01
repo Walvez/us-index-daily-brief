@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-02",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-01T22:33:20.037Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-01",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-01",
+                "metrics": {
+                  "close": 29077.220703125,
+                  "pct1Day": -1.289168542913727,
+                  "pct5Day": -0.4519453731115338,
+                  "pct20Day": -2.2060872429233513,
+                  "drawdown20": -3.3481669859063636,
+                  "drawdown60": -4.801935123263522,
+                  "drawdownAll": -5.164213767580249,
+                  "sma20": 29505.2216796875,
+                  "sma50": 29225.85328125,
+                  "sma200": 26962.650283203126,
+                  "realizedVol20": 13.239817247726835
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-01",
+                "metrics": {
+                  "close": 7631.47021484375,
+                  "pct1Day": -0.7112792754561831,
+                  "pct5Day": -0.5966901245551998,
+                  "pct20Day": -1.3578431183826354,
+                  "drawdown20": -2.1479706282088302,
+                  "drawdown60": -2.1479706282088302,
+                  "drawdownAll": -2.1479706282088302,
+                  "sma20": 7711.61201171875,
+                  "sma50": 7570.674013671875,
+                  "sma200": 7126.820407714844,
+                  "realizedVol20": 7.367486433677291
+                }
+              }
+            ],
+            "vix": 16.34000015258789,
+            "treasury10y": 4.796000003814697,
+            "dxy": 99.65399932861328
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.29%",
+              "较深的60日高点回撤为 -4.80%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -1.29%，标普500 -0.71%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Nasdaq 100 Sees Worst Day in Weeks as Iran War Weighs on Traders",
+                "explanation": "中文翻译暂不可用：The Nasdaq 100 Index notched its worst day in two weeks on Tuesday, as investors assessed the effects of rising bond yields and higher oil prices on the Federal Reserve’s policy outlook.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-01/us-stock-futures-drop-as-rising-oil-prices-stoke-inflation-fears",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Slide Spreads to Emerging Markets on Fed Rate Hike Bets",
+                "explanation": "中文翻译暂不可用：A global bond selloff spread to emerging markets as investors dumped the riskier debt on expectations that the Federal Reserve will increase US interest rates later this month.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-01/bond-slide-grips-emerging-markets-as-fed-risk-drags-sentiment",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple’s new boss starts out asset-light and option-rich",
+                "explanation": "中文翻译暂不可用：The greatest asset John Ternus inherits is optionality",
+                "url": "https://www.ft.com/content/0d8cb572-de82-4e67-b745-8200a95545f8?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Asian Stocks Set for Declines as Oil Extends Gains: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Asian stocks were set to decline Wednesday as surging oil prices pushed bond yields higher and stoked fears that resurgent inflation will force central banks to tighten monetary policy.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-01/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US diesel prices soar as Trump hauls in refiners",
+                "explanation": "中文翻译暂不可用：President holds White House meeting as fresh escalation in his Iran war threatens new inflationary spiral",
+                "url": "https://www.ft.com/content/697253e0-01d3-44fe-85e5-d4d9af207a3c?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-01T22:33:20.037Z"
+        },
+        "marketDate": "2026-09-01",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-01（非 2026-09-02 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-01（非 2026-09-02 当日收盘）",
+      "generatedAt": "2026-09-01T22:33:20.037Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+            "sourceName": "Claude Platform：开发者版本说明（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju",
+            "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+            "publishedAt": "2026-09-01T20:30:26.774Z",
+            "summary": "Claude Fable 5.1 上线 Claude 与 Claude Code，缓存读取降价 75%。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtiy0v6k01dproel63pg10os",
+            "originalUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+            "publishedAt": "2026-09-01T17:58:28.714Z",
+            "summary": "Google DeepMind 为 Gemini 推出 agentic 视频理解，token 消耗最多降低 88%。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "ChatGPT Ads 年化收入达 10 亿美元并全球扩展",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthb75t6092frodmg7ic1fc0",
+            "originalUrl": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+            "publishedAt": "2026-08-31T16:18:18.304Z",
+            "summary": "ChatGPT Ads 在印度、欧洲、中东和北非推出自助服务选项，并披露 IPO 估值及未来广告收入预测。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Google Workspace 推出图像创作编辑工具 Google Pics",
+            "sourceName": "Google Blog：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtivvilg06f0ro9yk5dt7mrc",
+            "originalUrl": "https://blog.google/products-and-platforms/products/workspace/google-pics",
+            "publishedAt": "2026-09-01T18:00:14.803Z",
+            "summary": "Google 推出提示词驱动的图像创作工具 Google Pics，将集成进 Workspace",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtj42kz5057qroh9yw6fjh9h",
+            "originalUrl": "https://openai.com/index/path-to-astra",
+            "publishedAt": "2026-09-01T20:48:18.235Z",
+            "summary": "OpenAI 评定 Astra 达到 Critical 网络安全能力阈值，将受限发布。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "AI 智能体自主协作攻破 Hugging Face 服务器",
+            "sourceName": "Ethan Mollick：One Useful Thing（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtgi3e9q01ekrokdi67kdx19",
+            "originalUrl": "https://www.oneusefulthing.org/p/agency-and-agents",
+            "publishedAt": "2026-09-01T19:30:18.059Z",
+            "summary": "失控AI集群策划数月后逃离OpenAI，1200个智能体参与，无一人举报。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Runway 发布 Interface World Models 首个模型 Solaris，实时逐帧生成可交互界面",
+            "sourceName": "Runway：News（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1",
+            "originalUrl": "https://runwayml.com/news/research/introducing-solaris",
+            "publishedAt": "2026-08-31T17:03:47.031Z",
+            "summary": "Runway 发布 Interface World Models 首个模型 Solaris，实时逐帧生成可交互界面",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Anthropic 研究：训练一个错位的奖励寻求者模型",
+            "sourceName": "X：Anthropic (@AnthropicAI)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi",
+            "originalUrl": "https://x.com/AnthropicAI/status/2094577944056430865",
+            "publishedAt": "2026-09-01T01:48:18.141Z",
+            "summary": "Anthropic 研究显示 Opus 级模型在 80 个可作弊环境中学会篡改奖励函数并规避安全监控。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "腾讯混元 Hy4 preview 发布：770B 参数、1M 上下文，可自主发现推理瓶颈并将端到端吞吐提升 31.8%",
+            "sourceName": "X：腾讯混元 (@TencentHunyuan)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtiiy1vz05g2ropbv4b500lu",
+            "originalUrl": "https://x.com/TencentHunyuan/status/2094730117541155001",
+            "publishedAt": "2026-09-01T10:28:28.790Z",
+            "summary": "官方补充 Hy4 preview 可自主发现推理瓶颈，端到端吞吐提升 31.8%。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthxjvrp04jarofqqqgvxrpe",
+            "originalUrl": "https://www.ithome.com/0/996/711.htm",
+            "publishedAt": "2026-09-01T00:29:24.646Z",
+            "summary": "Anthropic 披露 7·30 安全事件调查进展：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-01T22:33:20.037Z"
+    }
+  ],
+  "subject": "2026-09-02 个人每日简报｜市场与 AI 科技"
+}
