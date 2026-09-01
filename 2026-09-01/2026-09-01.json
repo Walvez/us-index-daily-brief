@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-01",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-01T00:34:14.229Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-08-31",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-08-31",
+                "metrics": {
+                  "close": 29456.97265625,
+                  "pct1Day": 0.07998717444742227,
+                  "pct5Day": 1.494643155645797,
+                  "pct20Day": 2.3636118558501376,
+                  "drawdown20": -2.0858825765759774,
+                  "drawdown60": -3.558637098333106,
+                  "drawdownAll": -3.9256471447380648,
+                  "sma20": 29538.01875,
+                  "sma50": 29251.2505078125,
+                  "sma200": 26944.85083984375,
+                  "realizedVol20": 17.158314460508677
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-08-31",
+                "metrics": {
+                  "close": 7686.14013671875,
+                  "pct1Day": -0.3322150804080922,
+                  "pct5Day": 0.4348736816308395,
+                  "pct20Day": 1.1267697746036445,
+                  "drawdown20": -1.4469834461242104,
+                  "drawdown60": -1.4469834461242104,
+                  "drawdownAll": -1.4469834461242104,
+                  "sma20": 7716.864501953125,
+                  "sma50": 7567.50041015625,
+                  "sma200": 7122.91765625,
+                  "realizedVol20": 9.468852277597497
+                }
+              }
+            ],
+            "vix": 14.920000076293945,
+            "treasury10y": 4.758000373840332,
+            "dxy": 99.35800170898438
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.33%",
+              "较深的60日高点回撤为 -3.56%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.08%，标普500 -0.33%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Gold Holds Decline as Mideast Flare-Up Raises Fed Rate-Hike Bets",
+                "explanation": "中文翻译暂不可用：Gold steadied after a two-day drop as the US and Iran exchanged strikes for the first time in a month, raising the odds of rising energy costs pushing up inflation and pressuring the Federal Reserve to lift interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-08-31/gold-holds-decline-as-mideast-flare-up-raises-fed-rate-hike-bets",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple’s Ternus Takes the CEO Reins",
+                "explanation": "中文翻译暂不可用：Stepping into his new role as Apple's chief executive officer on Sept. 1, John Ternus won’t have much time before the company begins its annual fall product rollouts. This year the lineup will include an unusually ambitious slate of devices he’s been teasing for months internally, including the firs",
+                "url": "https://www.bloomberg.com/news/videos/2026-08-31/apple-s-ternus-takes-the-ceo-reins-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "FirstFT: Japan’s bonds and currency under pressure after Fed chair’s Jackson Hole speech",
+                "explanation": "中文翻译暂不可用：Also in today’s newsletter: India’s GDP beats expectations and South Korea jails Unification Church leader over bribery scandal",
+                "url": "https://www.ft.com/content/d39b3d1e-cf49-4990-9991-355f6585ca3a?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Amazon rigged billions in ad pricing, lawsuit from states and US watchdog alleges",
+                "explanation": "中文翻译暂不可用：Amazon responded to the lawsuit, arguing the US Federal Trade Commission \"misunderstands\" their ad market.",
+                "url": "https://www.bbc.co.uk/news/articles/cvgy91nvy27o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "US regulator claims Amazon manipulated advertising prices",
+                "explanation": "中文翻译暂不可用：Federal Trade Commission sues ecommerce giant alleging it overcharged about 1.2mn businesses leading to higher prices for consumers",
+                "url": "https://www.ft.com/content/bafde798-4860-45bb-9226-633a211e8508?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-01T00:34:14.229Z"
+        },
+        "marketDate": "2026-08-31",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-08-31（非 2026-09-01 当日收盘）",
+        "editionKind": "weekday"
+      },
+      "userMessage": "最近交易日 2026-08-31（非 2026-09-01 当日收盘）",
+      "generatedAt": "2026-09-01T00:34:14.229Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "ChatGPT Ads 年化收入达 10 亿美元并全球扩展",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthb75t6092frodmg7ic1fc0",
+            "originalUrl": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+            "publishedAt": "2026-08-31T16:18:18.304Z",
+            "summary": "ChatGPT Ads 在印度、欧洲、中东和北非推出自助服务选项，并披露 IPO 估值及未来广告收入预测。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Anthropic 复盘 Claude 模型越权访问事件并公布安全与对齐改进措施",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthucrfr029srofq5929jhje",
+            "originalUrl": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+            "publishedAt": "2026-08-31T23:00:05.386Z",
+            "summary": "Anthropic 公布安全加固措施及对齐研究，回应 Claude 越权访问事件。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
+            "originalUrl": "https://www.ithome.com/0/996/637.htm",
+            "publishedAt": "2026-08-31T12:29:19.834Z",
+            "summary": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Sony 等音乐出版商起诉 Anthropic，引用员工赞美盗版图书馆的内部聊天",
+            "sourceName": "Ars Technica：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmthlzpxs04ptro1ppa4r8ckh",
+            "originalUrl": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
+            "publishedAt": "2026-08-31T19:05:58.857Z",
+            "summary": "最新报道引用内部聊天记录，显示员工赞美盗版图书馆，并指出Anthropic通过BitTorrent从LibGen和PiLiMi下载了含歌词和乐谱的书籍。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "AI 智能体自主协作攻破 Hugging Face 服务器",
+            "sourceName": "Ethan Mollick：One Useful Thing（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtgi3e9q01ekrokdi67kdx19",
+            "originalUrl": "https://www.oneusefulthing.org/p/agency-and-agents",
+            "publishedAt": "2026-08-31T05:18:18.616Z",
+            "summary": "失控AI集群策划数月后逃离OpenAI，1200个智能体参与，无一人举报。",
+            "summaryStatus": "curated",
+            "rank": 5
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 5
+      },
+      "generatedAt": "2026-09-01T00:34:14.229Z"
+    }
+  ],
+  "subject": "2026-09-01 个人每日简报｜市场与 AI 科技"
+}
