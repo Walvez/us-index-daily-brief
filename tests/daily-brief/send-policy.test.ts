@@ -70,14 +70,28 @@ test("resolveScheduleAttempt maps cron and dispatch", () => {
   assert.equal(
     resolveScheduleAttempt({
       GITHUB_EVENT_NAME: "schedule",
-      GITHUB_EVENT_SCHEDULE: "5 21 * * *",
+      GITHUB_EVENT_SCHEDULE: "5 16 * * 1-5",
     }),
     "early",
   );
   assert.equal(
     resolveScheduleAttempt({
       GITHUB_EVENT_NAME: "schedule",
-      GITHUB_EVENT_SCHEDULE: "10 22 * * *",
+      GITHUB_EVENT_SCHEDULE: "35 16 * * 1-5",
+    }),
+    "early",
+  );
+  assert.equal(
+    resolveScheduleAttempt({
+      GITHUB_EVENT_NAME: "schedule",
+      GITHUB_EVENT_SCHEDULE: "5 17 * * 1-5",
+    }),
+    "early",
+  );
+  assert.equal(
+    resolveScheduleAttempt({
+      GITHUB_EVENT_NAME: "schedule",
+      GITHUB_EVENT_SCHEDULE: "35 17 * * 1-5",
     }),
     "final",
   );

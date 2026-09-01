@@ -2,9 +2,14 @@ name: Personal Daily Brief
 
 on:
   schedule:
-    - cron: "5 21 * * *" # 05:05 Asia/Taipei, first early attempt
-    - cron: "35 21 * * *" # 05:35 Asia/Taipei, retry if market data lags
-    - cron: "10 22 * * *" # 06:10 Asia/Taipei, final scheduled attempt
+    - cron: "5 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "35 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "5 17 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "35 17 * * 1-5"
+      timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       validation_only:
@@ -51,10 +56,10 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "attempt=manual" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "10 22 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "35 17 * * 1-5" ]; then
             echo "attempt=final" >> "$GITHUB_OUTPUT"
           else
-            # 05:05 and 05:35 (and any other schedule) defer market-failed sends.
+            # 16:05, 16:35, 17:05 America/New_York (and any other schedule) defer market-failed sends.
             echo "attempt=early" >> "$GITHUB_OUTPUT"
           fi
           echo "Resolved schedule attempt: $(cat "$GITHUB_OUTPUT" | tr '\n' ' ')"

@@ -4,8 +4,8 @@ import { shouldSendReport } from "./render";
 /**
  * Schedule attempt class for the single personal-daily-brief workflow.
  *
- * - early  — 05:05 / 05:35 Asia/Taipei: prefer waiting for market data
- * - final  — 06:10 Asia/Taipei: last scheduled slot; may fall back to tech-only
+ * - early  — 16:05 / 16:35 / 17:05 America/New_York: prefer waiting for market data
+ * - final  — 17:35 America/New_York: last scheduled slot; may fall back to tech-only
  * - manual — workflow_dispatch: operator-triggered; same fallback as final
  */
 export type ScheduleAttempt = "early" | "final" | "manual";
@@ -15,7 +15,7 @@ export type SendDecision = {
   reason: string;
 };
 
-const FINAL_CRON = "10 22 * * *";
+const FINAL_CRON = "35 17 * * 1-5";
 
 /**
  * Resolve attempt from env (preferred) or GitHub schedule metadata.
@@ -37,7 +37,7 @@ export function resolveScheduleAttempt(
   if (eventName === "schedule") {
     const cron = env.GITHUB_EVENT_SCHEDULE?.trim();
     if (cron === FINAL_CRON) return "final";
-    // 05:05 and 05:35 (and any other schedule) are early retries.
+    // 16:05, 16:35, and 17:05 America/New_York (and any other schedule) are early retries.
     return "early";
   }
 

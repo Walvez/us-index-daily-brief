@@ -22,9 +22,11 @@ test("workflow runs unified daily-brief pipeline with safe retries", () => {
   assert.match(workflow, /BRIEF_MODULES:\s*market,tech-news/);
   assert.match(workflow, /TECH_NEWS_ENABLED:\s*"true"/);
   assert.match(workflow, /REPORT_TZ:\s*Asia\/Taipei/);
-  assert.match(workflow, /cron: "5 21 \* \* \*"/);
-  assert.match(workflow, /cron: "35 21 \* \* \*"/);
-  assert.match(workflow, /cron: "10 22 \* \* \*"/);
+  assert.match(workflow, /cron: "5 16 \* \* 1-5"/);
+  assert.match(workflow, /cron: "35 16 \* \* 1-5"/);
+  assert.match(workflow, /cron: "5 17 \* \* 1-5"/);
+  assert.match(workflow, /cron: "35 17 \* \* 1-5"/);
+  assert.match(workflow, /timezone: "America\/New_York"/);
   assert.match(workflow, /validation_only/);
   assert.match(workflow, /models:\s*read/);
   assert.match(workflow, /contents:\s*write/);
@@ -41,7 +43,7 @@ test("workflow wires attempt-aware market retry policy", () => {
   assert.match(workflow, /attempt=final/);
   assert.match(workflow, /attempt=manual/);
   assert.match(workflow, /BRIEF_SCHEDULE_ATTEMPT/);
-  assert.match(workflow, /10 22 \* \* \*/);
+  assert.match(workflow, /35 17 \* \* 1-5/);
 });
 
 test("workflow restores delivery ledger before generate and checkpoints after SMTP", () => {
