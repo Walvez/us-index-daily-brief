@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-03",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-02T22:33:41.484Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-02",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-02",
+                "metrics": {
+                  "close": 29143.330078125,
+                  "pct1Day": 0.227357957196009,
+                  "pct5Day": -0.27781279017498817,
+                  "pct20Day": -1.16814110289826,
+                  "drawdown20": -3.1284213527730227,
+                  "drawdown60": -4.585494747669643,
+                  "drawdownAll": -4.948597061311446,
+                  "sma20": 29487.99873046875,
+                  "sma50": 29221.7744921875,
+                  "sma200": 26983.39962890625,
+                  "realizedVol20": 13.00975236288577
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-02",
+                "metrics": {
+                  "close": 7666.60009765625,
+                  "pct1Day": 0.4603291610071398,
+                  "pct5Day": -0.11855723158399763,
+                  "pct20Day": -0.7373514571847086,
+                  "drawdown20": -1.697529202373204,
+                  "drawdown60": -1.697529202373204,
+                  "drawdownAll": -1.697529202373204,
+                  "sma20": 7708.7645263671875,
+                  "sma50": 7576.69681640625,
+                  "sma200": 7131.46595703125,
+                  "realizedVol20": 7.588171409644216
+                }
+              }
+            ],
+            "vix": 15.199999809265137,
+            "treasury10y": 4.796000003814697,
+            "dxy": 99.5770034790039
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.23%",
+              "较深的60日高点回撤为 -4.59%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.23%，标普500 0.46%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Broadcom Needs Nvidia-Like Earnings to Stop $520 Billion Skid",
+                "explanation": "中文翻译暂不可用：Broadcom Inc. has had a difficult summer in the stock market, as a disappointing outlook sent the shares on a roughly $520 billion tailspin since hitting a high in early June.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-02/broadcom-needs-nvidia-like-earnings-to-stop-520-billion-skid",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Uber to cut over 3,000 jobs in major global restructuring",
+                "explanation": "中文翻译暂不可用：The company says cutting roles would make its operations \"simpler and faster\".",
+                "url": "https://www.bbc.co.uk/news/articles/cp3ky2w4y9no?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "S&P 500 Rises to Snap Three-Day Skid as Oil Prices Halt Advance",
+                "explanation": "中文翻译暂不可用：The S&P 500 Index ended a three-session losing streak on Wednesday as oil prices halted a sharp advance, easing inflation concerns as traders weigh the Federal Reserve’s potential path for interest-rate hikes.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-02/s-p-500-steadies-after-three-day-skid-as-oil-prices-halt-advance",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple Maps renames Lake Ontario as Lake America after Trump order",
+                "explanation": "中文翻译暂不可用：The iPhone maker follows rival technology giant Google in relabelling the Great Lake.",
+                "url": "https://www.bbc.co.uk/news/articles/cddvyyz0e47o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Petco Services, Auto-Ship Sales Grow as Turnaround Continues",
+                "explanation": "中文翻译暂不可用：Petco Health & Wellness Co. shares rose as much as 14% in postmarket trading Wednesday after the pet supply retailer reported profit above Wall Street expectations and comparable sales grew for the second straight quarter after a year of declines.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-02/petco-services-auto-ship-sales-grow-as-turnaround-continues",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-02T22:33:41.484Z"
+        },
+        "marketDate": "2026-09-02",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-02（非 2026-09-03 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-02（非 2026-09-03 当日收盘）",
+      "generatedAt": "2026-09-02T22:33:41.484Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtkbdbti01n8roz5k5kt1g98",
+            "originalUrl": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+            "publishedAt": "2026-09-02T18:36:47.582Z",
+            "summary": "Google 发布 Gemini 3.8 Flash 及 Cyber 版，六周内第三款 Flash 模型。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+            "sourceName": "Claude Platform：开发者版本说明（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju",
+            "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+            "publishedAt": "2026-09-02T01:18:18.758Z",
+            "summary": "Anthropic 发布 Fable 5.1 与 Mythos 5.1，缓存读取降价 75%，智能体任务最高便宜 45%。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Meta 发布 Muse Spark 1.3，Intelligence Index 得 61-62 分逼近 Claude 与 GPT-5.6",
+            "sourceName": "X：Kim (@kimmonismus)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtkme19o02plro5q94jsf94x",
+            "originalUrl": "https://x.com/kimmonismus/status/2095265444999410146",
+            "publishedAt": "2026-09-02T21:40:23.788Z",
+            "summary": "Muse Spark 1.3 的 max 变体在 Intelligence Index 得 62 分，逼近 Claude 与 GPT-5.6。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtj42kz5057qroh9yw6fjh9h",
+            "originalUrl": "https://openai.com/index/path-to-astra",
+            "publishedAt": "2026-09-02T14:31:52.446Z",
+            "summary": "OpenAI 称 Astra 为最安全模型，但链式思考监督愈发脆弱。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+            "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtjimzgx083zrobvekm2zmje",
+            "originalUrl": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+            "publishedAt": "2026-09-02T08:08:23.512Z",
+            "summary": "Qwen3.8-Max-0902 以 1691 分登顶 Code Arena WebDev，定价细节曝光。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtkcffah018zrog0zokk6s30",
+            "originalUrl": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+            "publishedAt": "2026-09-02T19:37:37.276Z",
+            "summary": "Anthropic 开源 Claude Commerce Agents 购物与商户智能体蓝图",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "美国司法部在纽约时报版权案中支持 AI 训练属合理使用",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtkfnpup03n1robqoh5tnh4t",
+            "originalUrl": "https://the-decoder.com/us-department-of-justice-backs-fair-use-for-ai-training-in-landmark-copyright-case",
+            "publishedAt": "2026-09-02T18:32:00.086Z",
+            "summary": "美国司法部提交意见书，主张训练 LLM 属合理使用，并警告许可要求削弱竞争力。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Google Workspace 推出图像创作编辑工具 Google Pics",
+            "sourceName": "Google Blog：AI（RSS）",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtivvilg06f0ro9yk5dt7mrc",
+            "originalUrl": "https://blog.google/products-and-platforms/products/workspace/google-pics",
+            "publishedAt": "2026-09-01T18:00:14.803Z",
+            "summary": "Google 推出提示词驱动的图像创作工具 Google Pics，将集成进 Workspace",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+            "sourceName": "X：Claude (@claudeai)",
+            "sourceUrl": "https://aihot.virxact.com/items/cmtkh71ky017vrolly7trswyx",
+            "originalUrl": "https://x.com/claudeai/status/2095226833293685100",
+            "publishedAt": "2026-09-02T19:15:00.970Z",
+            "summary": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-02T22:33:41.484Z"
+    }
+  ],
+  "subject": "2026-09-03 个人每日简报｜市场与 AI 科技"
+}
