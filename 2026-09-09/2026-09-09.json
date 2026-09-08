@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-09",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-08T22:34:29.579Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-08",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-08",
+                "metrics": {
+                  "close": 29507.701171875,
+                  "pct1Day": -0.12337203225707288,
+                  "pct5Day": 0.17221889263928336,
+                  "pct20Day": -0.38518795740204537,
+                  "drawdown20": -1.9172624711230035,
+                  "drawdown60": -3.392553256590615,
+                  "drawdownAll": -3.760195339257102,
+                  "sma20": 29478.8357421875,
+                  "sma50": 29236.8855078125,
+                  "sma200": 27054.514189453126,
+                  "realizedVol20": 12.906006651547969
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-08",
+                "metrics": {
+                  "close": 7673.52001953125,
+                  "pct1Day": -0.5840447432778457,
+                  "pct5Day": -0.16419317060341276,
+                  "pct20Day": -1.0265537978113495,
+                  "drawdown20": -1.608800768729325,
+                  "drawdown60": -1.608800768729325,
+                  "drawdownAll": -1.608800768729325,
+                  "sma20": 7704.720532226563,
+                  "sma50": 7598.09880859375,
+                  "sma200": 7147.045908203125,
+                  "realizedVol20": 8.535776328313373
+                }
+              }
+            ],
+            "vix": 15.720000267028809,
+            "treasury10y": 4.806000232696533,
+            "dxy": 98.83599853515625
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.58%",
+              "较深的60日高点回撤为 -3.39%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.12%，标普500 -0.58%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Meta unveils AI personal assistant linked to WhatsApp and Instagram",
+                "explanation": "中文翻译暂不可用：New ‘agent’ called Muse designed to make customised suggestions based on chats and social media activity",
+                "url": "https://www.ft.com/content/5816292b-c36b-4c22-aa50-2680b9970382?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple looks to AI capabilities to drive its new foldable phone sales",
+                "explanation": "中文翻译暂不可用：Halo effect from new device may also allow Apple to raise prices of its other products",
+                "url": "https://www.ft.com/content/944fd36f-8f91-4178-b05a-2b961c44e310?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "CEO of BIVA Stock Exchange on Investor Appeal in Mexico",
+                "explanation": "中文翻译暂不可用：Maria Ariza, CEO of the BIVA Stock Exchange and an organizer of Mexico Investment Week in New York, says the event is meant to keep investors engaged with Mexico even as trade and geopolitical uncertainty rise. She notes that the annual conversations with investors help explain opportunities across ",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-08/ceo-of-biva-stock-exchange-on-investor-appeal-in-mexico-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Google, Blackstone Venture Faces Delays at Data-Center Sites",
+                "explanation": "中文翻译暂不可用：Alphabet Inc. and Blackstone Inc.’s new cloud venture has hit delays for major data-center locations that were supposed to run Google’s chips, underscoring the obstacles standing in the way of Big Tech’s AI ambitions.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-08/google-blackstone-venture-faces-delays-at-data-center-sites",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bessent’s ‘Fever’-Cooling Debt Buybacks Put Wall St. on Edge",
+                "explanation": "中文翻译暂不可用：Treasury Secretary Scott Bessent is set to reveal how far he’s initially willing to go restrain US bond yields via an expanded buyback program that has Wall Street dealers on edge.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-08/bessent-s-fever-quelling-debt-buybacks-put-wall-street-on-edge",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-08T22:34:29.579Z"
+        },
+        "marketDate": "2026-09-08",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-08（非 2026-09-09 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-08（非 2026-09-09 当日收盘）",
+      "generatedAt": "2026-09-08T22:34:29.579Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 宣布以内部 AI 系统给出 Navier–Stokes 千禧年问题解答",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtszna9e04isro5woti0ixg6",
+            "originalUrl": "https://openai.com/index/navier-stokes-solution",
+            "publishedAt": "2026-09-08T21:27:26.926Z",
+            "summary": "OpenAI 表示不领取千禧年难题奖金，并引发数据使用争议。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
+            "originalUrl": "https://openai.com/index/introducing-chatgpt-images-2-5",
+            "publishedAt": "2026-09-08T20:27:26.630Z",
+            "summary": "ChatGPT Images 2.5 已全平台上线，新增 Sketch 涂鸦生图功能。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "sourceName": "Mistral AI：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmts9dr2m029hrobq86wrny37",
+            "originalUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "publishedAt": "2026-09-08T16:09:39.300Z",
+            "summary": "Mistral AI 完成 30 亿欧元 D 轮融资，投后估值超 210 亿欧元，三星电子领投。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Runway 发布 Adobe 插件，可在 Premiere Pro 和 After Effects 内直接生成与编辑",
+            "sourceName": "Runway：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmtt7nvmn02h6romq0xpo0p2w",
+            "originalUrl": "https://runwayml.com/news/company-news/runway-for-adobe",
+            "publishedAt": "2026-09-08T21:58:07.884Z",
+            "summary": "Runway 发布 Adobe 插件，可在 Premiere Pro 和 After Effects 内直接生成与编辑。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Anthropic 发布 Claude Platform 降本指南：提示词缓存、清理反模式与校准 effort",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.news/items/cmtsz50zn02mtro5w6ywm1xml",
+            "originalUrl": "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform",
+            "publishedAt": "2026-09-08T17:59:30.653Z",
+            "summary": "Anthropic 发布 Claude Platform 降本指南：提示词缓存、清理反模式与校准 effort",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "NYU 数学家指控 OpenAI 在千禧年难题竞赛中不正当竞争，Bubeck 否认",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtsz2a0q02ciro5w7oz3a0ix",
+            "originalUrl": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician",
+            "publishedAt": "2026-09-08T17:57:22.807Z",
+            "summary": "NYU 数学家指控 OpenAI 不正当竞争，Bubeck 否认。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Emad Mostaque 称 OpenAI 智能体求解 Navier-Stokes 千禧年难题是迈向 ASI 的里程碑",
+            "sourceName": "X：Emad Mostaque (@EMostaque)",
+            "sourceUrl": "https://aihot.news/items/cmtsyfj5p01qgro5wfoz5h410",
+            "originalUrl": "https://x.com/EMostaque/status/2097378223138959719",
+            "publishedAt": "2026-09-08T17:57:09.214Z",
+            "summary": "Emad Mostaque 称 OpenAI 智能体求解 Navier-Stokes 难题是迈向 ASI 的里程碑。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "OpenAI 公布内部研究加速测量数据：研究组织智能体工作量已达人类工作日的 3.1 倍",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.news/items/cmtqj4vfq00btrokasmogiuyq",
+            "originalUrl": "https://openai.com/index/research-acceleration-view-inside-openai",
+            "publishedAt": "2026-09-07T13:25:46.865Z",
+            "summary": "OpenAI 报告称已达成自动化研究实习生目标，并披露内部 agent 运行时达人力 3.1 倍。",
+            "summaryStatus": "curated",
+            "rank": 8
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 8
+      },
+      "generatedAt": "2026-09-08T22:34:29.579Z"
+    }
+  ],
+  "subject": "2026-09-09 个人每日简报｜市场与 AI 科技"
+}
