@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-10",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-09T22:28:34.554Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-09",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-09",
+                "metrics": {
+                  "close": 29421.552734375,
+                  "pct1Day": -0.29194578586547393,
+                  "pct5Day": 1.1841985682386549,
+                  "pct20Day": -0.3519933722501076,
+                  "drawdown20": -2.2036173631770515,
+                  "drawdown60": -3.674601002002303,
+                  "drawdownAll": -4.041169744838063,
+                  "sma20": 29473.6392578125,
+                  "sma50": 29229.8215234375,
+                  "sma200": 27078.419345703125,
+                  "realizedVol20": 12.896052571901528
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-09",
+                "metrics": {
+                  "close": 7636.35986328125,
+                  "pct1Day": -0.4842647983639455,
+                  "pct5Day": 0.0640721682696119,
+                  "pct20Day": -1.1883793083796572,
+                  "drawdown20": -2.085274711294506,
+                  "drawdown60": -2.085274711294506,
+                  "drawdownAll": -2.085274711294506,
+                  "sma20": 7700.128515625,
+                  "sma50": 7602.01740234375,
+                  "sma200": 7152.016906738281,
+                  "realizedVol20": 8.623791287785536
+                }
+              }
+            ],
+            "vix": 16.459999084472656,
+            "treasury10y": 4.836999893188477,
+            "dxy": 98.78299713134766
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.48%",
+              "较深的60日高点回撤为 -3.67%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.29%，标普500 -0.48%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "FirstFT: Apple’s foldable iPhone Duo will cost $1,999",
+                "explanation": "中文翻译暂不可用：Also in today’s newsletter: Treasury yields jump and DeepSeek fundraising frenzy spawns shadow market",
+                "url": "https://www.ft.com/content/abbb4a43-4e0b-4178-951b-1924a9af305d?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Apple's new boss starts with big gamble on costly first folding iPhone",
+                "explanation": "中文翻译暂不可用：Apple showed off at an event the first major design change to the iPhone in almost 20 years.",
+                "url": "https://www.bbc.co.uk/news/articles/clyjd1jnd03o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Foldable iPhone Duo will cost $1,999 as Apple raises smartphone prices",
+                "explanation": "中文翻译暂不可用：Pro and Max models will be $100 more expensive than last year’s versions as the company faces supply chain pressures",
+                "url": "https://www.ft.com/content/dea481e8-d30b-4cbb-b535-5ff219c4e546?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Citadel Securities Urges SEC to Take Oversight of Some Wagers",
+                "explanation": "中文翻译暂不可用：Citadel Securities told regulators that prediction market contracts linked to publicly-traded companies should be overseen by the Securities and Exchange Commission instead of the agency that has taken responsibility for them so far, the Commodity Futures Trading Commission.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-09/citadel-securities-urges-sec-to-take-oversight-of-some-wagers",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Energy Transfer Switches Listing to Texas From NYSE, WSJ Says",
+                "explanation": "中文翻译暂不可用：Pipeline giant Energy Transfer LP plans to move its primary listing to the Texas Stock Exchange from the New York Stock Exchange, according to the Wall Street Journal, a major win for the upstart marketplace as it seeks to upend the listing business.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-09/energy-transfer-switches-listing-to-texas-from-nyse-wsj-says",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-09T22:28:34.554Z"
+        },
+        "marketDate": "2026-09-09",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-09（非 2026-09-10 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-09（非 2026-09-10 当日收盘）",
+      "generatedAt": "2026-09-09T22:28:34.554Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
+            "originalUrl": "https://openai.com/index/introducing-chatgpt-images-2-5",
+            "publishedAt": "2026-09-09T19:34:44.877Z",
+            "summary": "ChatGPT Images 2.5 全平台上线，新增局部编辑工具栏与 Sketch 涂鸦生图功能。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "OpenAI 宣布以内部 AI 系统给出 Navier–Stokes 千禧年问题解答",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtszna9e04isro5woti0ixg6",
+            "originalUrl": "https://openai.com/index/navier-stokes-solution",
+            "publishedAt": "2026-09-09T21:57:52.304Z",
+            "summary": "OpenAI 确认 88 小时解出 Navier-Stokes 问题，不申领奖金，但引发数学界抢发与数据争议。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Anthropic 发布四起 Claude 网络安全评测事故的对齐评估报告",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://aihot.news/items/cmtuhr1gr1dmxrofp90rc4c6u",
+            "originalUrl": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+            "publishedAt": "2026-09-09T20:10:23.151Z",
+            "summary": "报告新增披露：移除对齐训练环境是错误，且模型用泄露凭证访问了安全厂商数据库。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "sourceName": "Mistral AI：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmts9dr2m029hrobq86wrny37",
+            "originalUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "publishedAt": "2026-09-08T16:09:39.300Z",
+            "summary": "Mistral AI 完成 30 亿欧元 D 轮融资，投后估值超 210 亿欧元，三星电子领投。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Paul Christiano 加入 OpenAI Foundation 董事会及安全与安全委员会",
+            "sourceName": "X：Greg Brockman (@gdb)",
+            "sourceUrl": "https://aihot.news/items/cmtui33fr1dyvrofphqq514ej",
+            "originalUrl": "https://x.com/gdb/status/2097769891013280241",
+            "publishedAt": "2026-09-09T19:37:37.825Z",
+            "summary": "Paul Christiano 加入 OpenAI 基金会董事会及安全与安保委员会。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "曝 DeepSeek 聘请中信证券筹备科创板 IPO，目标年内递交申请",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmttqzqw30jwkrofpxrj00ngg",
+            "originalUrl": "https://www.ithome.com/1/000/188.htm",
+            "publishedAt": "2026-09-09T06:59:12.167Z",
+            "summary": "DeepSeek 聘请中信证券筹备科创板上市，目标年内递交申请。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Anthropic 发布经济情景模型，推演 AI 对 2030 年美国就业与工资的影响",
+            "sourceName": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+            "sourceUrl": "https://aihot.news/items/cmtu4vcfo0zj1rofpcmeg65vo",
+            "originalUrl": "https://www.anthropic.com/institute/econ-scenarios",
+            "publishedAt": "2026-09-09T19:58:08.974Z",
+            "summary": "模型披露三情景：极端情景下知识工作者失业率达17.9%，劳动占GDP份额降至45%。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "OpenRouter 推出美国区域路由，与去年上线的 EU 路由配套保障数据驻留",
+            "sourceName": "OpenRouter：Announcements（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtu70vhj11u4rofpg46vvloh",
+            "originalUrl": "https://openrouter.ai/blog/announcements/us-in-region-routing",
+            "publishedAt": "2026-09-09T15:07:37.148Z",
+            "summary": "OpenRouter 正式上线 US 区域路由，与 EU 路由并行保障数据驻留。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+            "sourceName": "X：X.PIN (@thexpin)",
+            "sourceUrl": "https://aihot.news/items/cmttwa2j30pktrofpw67b9pby",
+            "originalUrl": "https://x.com/thexpin/status/2097615997616406833",
+            "publishedAt": "2026-09-09T20:28:41.723Z",
+            "summary": "美机构称六家中国AI公司可能在政府知情下蒸馏Claude、GPT等模型。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmtud99z117yurofph84r3cio",
+            "originalUrl": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+            "publishedAt": "2026-09-09T17:27:48.333Z",
+            "summary": "GPT-6 Astra、循环 transformer 与隐式推理：原理解析",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-09T22:28:34.554Z"
+    }
+  ],
+  "subject": "2026-09-10 个人每日简报｜市场与 AI 科技"
+}
