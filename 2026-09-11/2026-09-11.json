@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-11",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-10T22:29:48.849Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-10",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-10",
+                "metrics": {
+                  "close": 29103.513671875,
+                  "pct1Day": -1.0809665056054123,
+                  "pct5Day": -0.13662270627022893,
+                  "pct20Day": -2.1487225255809763,
+                  "drawdown20": -3.2607699251275575,
+                  "drawdown60": -4.2842454272615775,
+                  "drawdownAll": -5.078458860354102,
+                  "sma20": 29441.68486328125,
+                  "sma50": 29206.364765625,
+                  "sma200": 27103.665,
+                  "realizedVol20": 13.107595263169024
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-10",
+                "metrics": {
+                  "close": 7591.7001953125,
+                  "pct1Day": -0.5848292742657664,
+                  "pct5Day": -0.9769637308544056,
+                  "pct20Day": -2.0236149537007164,
+                  "drawdown20": -2.657908688599761,
+                  "drawdown60": -2.657908688599761,
+                  "drawdownAll": -2.657908688599761,
+                  "sma20": 7692.288525390625,
+                  "sma50": 7603.864208984375,
+                  "sma200": 7157.2816088867185,
+                  "realizedVol20": 8.729045135983702
+                }
+              }
+            ],
+            "vix": 17.84000015258789,
+            "treasury10y": 4.943999767303467,
+            "dxy": 99.08999633789062
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -1.08%",
+              "较深的60日高点回撤为 -4.28%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -1.08%，标普500 -0.58%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Apple’s big goal after foldable iPhone",
+                "explanation": "中文翻译暂不可用：The first critical step for new CEO John Ternus will be to make AI an everyday reality on its devices",
+                "url": "https://www.ft.com/content/cc99c301-8c5d-4014-889e-8eb374d993f9?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Dollar Rises as Fed Hike Bets Grow Heading Into Inflation Report",
+                "explanation": "中文翻译暂不可用：The dollar rose as strong US producer prices and an oil rally boosted bets on Federal Reserve interest-rate hikes this year, putting more focus on Friday’s inflation report.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-10/dollar-has-best-day-in-two-weeks-as-ppi-oil-add-to-fed-bets",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "S&P 500 Slides Fourth Straight Day as Oil Prices, Yields Surge",
+                "explanation": "中文翻译暂不可用：US stocks fell for a fourth straight day, their longest slide since June, as the relentless climb in oil prices and fresh evidence of sticky inflation boosted Treasury yields and bets the Federal Reserve will lift interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-10/futures-muted-ahead-of-ppi-data-oracle-s-ai-signaling-results",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Latham & Watkins buys Nvidia servers to set up in-house AI systems",
+                "explanation": "中文翻译暂不可用：Law firm is customising open-weight models as alternative to OpenAI and Anthropic",
+                "url": "https://www.ft.com/content/a2aaa848-92c3-4f7a-b758-5858bfb29e70?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bessent Dismisses Concern on Buyback, Says Treasuries Are Strong",
+                "explanation": "中文翻译暂不可用：Treasury Secretary Scott Bessent dismissed any concerns with regard to Thursday’s smaller-than-expected debt buyback operation, and played down concerns about a jump in yields.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-10/bessent-dismisses-concern-on-buyback-says-treasuries-are-strong",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-10T22:29:48.849Z"
+        },
+        "marketDate": "2026-09-10",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-10（非 2026-09-11 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-10（非 2026-09-11 当日收盘）",
+      "generatedAt": "2026-09-10T22:29:48.849Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Apple 发布首款折叠屏 iPhone Duo，起售价 $1,999",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtugou9e1cddrofptz3jwh4j",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
+            "publishedAt": "2026-09-10T14:17:31.967Z",
+            "summary": "有开发者称，使用GPT-6 Astra在约1.5小时内复刻了苹果展示的空间3D景深效果，并使其适配iPhone Duo折叠屏的交互与动画。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+            "sourceName": "MarkTechPost（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtv7kmzk02vdrok9y0y8njiv",
+            "originalUrl": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+            "publishedAt": "2026-09-10T12:40:51.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
+            "originalUrl": "https://openai.com/index/introducing-chatgpt-images-2-5",
+            "publishedAt": "2026-09-10T07:20:58.000Z",
+            "summary": "有用户测试 GPT Images 2.5 生成海报后，称赞其设计与审美质感显著提升，认为“质感真的绝了”。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI 宣布用智能体集群求解 Navier-Stokes 千禧年难题",
+            "sourceName": "X：阿易 AI Notes (@AYi_AInotes)",
+            "sourceUrl": "https://aihot.news/items/cmttgndwe08p1rofp061i01x2",
+            "originalUrl": "https://x.com/AYi_AInotes/status/2097505511356649485",
+            "publishedAt": "2026-09-09T21:16:34.000Z",
+            "summary": "OpenAI 声称其内部模型解决了一个千禧年大奖难题，前沿实验室正朝着类似超级智能的方向竞速。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "DeepSeek 发布 V4.1-Flash：新 Causal Encoder–Decoder 架构，带原生视觉理解",
+            "sourceName": "X：Kim (@kimmonismus)",
+            "sourceUrl": "https://aihot.news/items/cmtva1qh206burok9zip2wdid",
+            "originalUrl": "https://x.com/kimmonismus/status/2097962333767102665",
+            "publishedAt": "2026-09-10T10:21:28.000Z",
+            "summary": "DeepSeek 开源了新的代码仓库，以简化 V4.1 Flash 及后续开源模型的部署。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmttzipvw0sqlrofp63a8px22",
+            "originalUrl": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+            "publishedAt": "2026-09-10T11:00:57.000Z",
+            "summary": "数学家Andreas Thom公开质疑OpenAI，称其关于非sofic群的数学结果可能借助了他与同事和ChatGPT的交互数据，并指责OpenAI及研究员的回应不诚实，要求OpenAI披露训练数据以自证清白。OpenAI暂未回应。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Apple 发布 Health Sensing System 与重构版 Health app，Apple Watch Series 12 和 Ultra 4 主打 readiness 与 Health Age",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtuejpah193urofpj0jmte9i",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence",
+            "publishedAt": "2026-09-10T07:45:13.000Z",
+            "summary": "苹果宣布与Quest Diagnostics合作，用户可通过Health应用在美国约2000个地点预约并购买包含50多项关键生物标志物的实验室检测，费用为119美元。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtvsgyqs05vkrofbgg06yzsa",
+            "originalUrl": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+            "publishedAt": "2026-09-10T21:13:24.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "曝 DeepSeek 聘请中信证券筹备科创板 IPO，目标年内递交申请",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmttqzqw30jwkrofpxrj00ngg",
+            "originalUrl": "https://www.ithome.com/1/000/188.htm",
+            "publishedAt": "2026-09-09T06:42:44.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+            "sourceName": "X：X.PIN (@thexpin)",
+            "sourceUrl": "https://aihot.news/items/cmttwa2j30pktrofpw67b9pby",
+            "originalUrl": "https://x.com/thexpin/status/2097615997616406833",
+            "publishedAt": "2026-09-09T20:06:28.000Z",
+            "summary": "美国敦促AI公司识别中国用户，并秘密切换至能力较弱的模型。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-10T22:29:48.849Z"
+    }
+  ],
+  "subject": "2026-09-11 个人每日简报｜市场与 AI 科技"
+}
