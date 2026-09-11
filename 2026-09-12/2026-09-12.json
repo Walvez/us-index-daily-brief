@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-12",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-11T22:29:56.068Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-11",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-11",
+                "metrics": {
+                  "close": 29368.439453125,
+                  "pct1Day": 0.9103015053288045,
+                  "pct5Day": -0.3862683064559083,
+                  "pct20Day": -2.3801643599694193,
+                  "drawdown20": -2.255534846665519,
+                  "drawdown60": -3.4129564363855045,
+                  "drawdownAll": -4.214399498745941,
+                  "sma20": 29405.881640625,
+                  "sma50": 29197.550859375,
+                  "sma200": 27129.309326171875,
+                  "realizedVol20": 12.831775450177457
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-11",
+                "metrics": {
+                  "close": 7656.97998046875,
+                  "pct1Day": 0.8598836028398098,
+                  "pct5Day": -1.1710554593059566,
+                  "pct20Day": -1.8208800067516753,
+                  "drawdown20": -1.65404262439264,
+                  "drawdown60": -1.8208800067516753,
+                  "drawdownAll": -1.8208800067516753,
+                  "sma20": 7685.188012695313,
+                  "sma50": 7607.339208984375,
+                  "sma200": 7162.551557617187,
+                  "realizedVol20": 8.992020679301438
+                }
+              }
+            ],
+            "vix": 15.84000015258789,
+            "treasury10y": 4.974999904632568,
+            "dxy": 99.09500122070312
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.86%",
+              "较深的60日高点回撤为 -3.41%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 -0.39%，标普500 本周 -1.17%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Bill Dudley Expects Fed to Raise Rate by 25 Bps",
+                "explanation": "中文翻译暂不可用：Bill Dudley, a Bloomberg Opinion columnist and former president of the Federal Reserve Bank of New York, says he would be shocked if the Federal Reserve did not raise interest rates by 25 basis points at their next meeting. He speaks on \"Bloomberg The Close.\" (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-11/dudley-expects-fed-to-raise-rate-by-25-bps-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "AI-Obsessed Wall Street Pours Billions Into Inflation-Era Bets",
+                "explanation": "中文翻译暂不可用：The list of challenges confronting Wall Street piled up this week. Oil firmly above $100. Inflation refusing to disappear. A defiant bond market that all but dared Scott Bessent to bring more policy firepower.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-11/ai-obsessed-wall-street-pours-billions-into-inflation-era-bets",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Interest rates could rise again across the world – here's why",
+                "explanation": "中文翻译暂不可用：As countries grapple with energy costs pushing up inflation, this month will see how central banks respond.",
+                "url": "https://www.bbc.co.uk/news/articles/cew9nkx7v9eo?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Dollar Wavers as CPI Adds to Fed Hike Bets While Oil Falls",
+                "explanation": "中文翻译暂不可用：The dollar oscillated Friday after a key gauge of US consumer prices rose by more than expected, pushing traders to add to bets that the Federal Reserve will raise interest rates next week.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-11/dollar-wavers-as-inflation-aids-fed-hike-bets-while-oil-falls",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Treasuries End Bruising Week With Fed Hike Bets Firmed After CPI",
+                "explanation": "中文翻译暂不可用：The $32 trillion US bond market ended a bruising week that pushed yields to multiyear highs, with investors more convinced the Federal Reserve will raise interest rates next week to address sticky inflation.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-11/treasuries-fall-as-higher-than-expected-cpi-boosts-fed-hike-odds",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-11T22:29:56.068Z"
+        },
+        "marketDate": "2026-09-11",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-11（非 2026-09-12 当日收盘）",
+        "editionKind": "weekend",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-11（非 2026-09-12 当日收盘）",
+      "generatedAt": "2026-09-11T22:29:56.068Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Apple 发布首款折叠屏 iPhone Duo，起售价 $1,999",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtugou9e1cddrofptz3jwh4j",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
+            "publishedAt": "2026-09-10T14:17:31.967Z",
+            "summary": "有开发者称，使用GPT-6 Astra在约1.5小时内复刻了苹果展示的空间3D景深效果，并使其适配iPhone Duo折叠屏的交互与动画。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+            "sourceName": "MarkTechPost（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtv7kmzk02vdrok9y0y8njiv",
+            "originalUrl": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+            "publishedAt": "2026-09-10T23:44:30.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "OpenAI 发布 Agents API 公测版",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtvywm6902omrojit3fo7bjv",
+            "originalUrl": "https://openai.com/index/introducing-the-agents-api",
+            "publishedAt": "2026-09-11T16:35:55.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "DeepSeek 发布 V4.1-Flash：新 Causal Encoder–Decoder 架构，带原生视觉理解",
+            "sourceName": "X：Kim (@kimmonismus)",
+            "sourceUrl": "https://aihot.news/items/cmtva1qh206burok9zip2wdid",
+            "originalUrl": "https://x.com/kimmonismus/status/2097962333767102665",
+            "publishedAt": "2026-09-10T10:21:28.000Z",
+            "summary": "DeepSeek 开源了新的代码仓库，以简化 V4.1 Flash 及后续开源模型的部署。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Apple 发布 Health Sensing System 与重构版 Health app，Apple Watch Series 12 和 Ultra 4 主打 readiness 与 Health Age",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtuejpah193urofpj0jmte9i",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence",
+            "publishedAt": "2026-09-10T07:45:13.000Z",
+            "summary": "苹果宣布与Quest Diagnostics合作，用户可通过Health应用在美国约2000个地点预约并购买包含50多项关键生物标志物的实验室检测，费用为119美元。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtvsgyqs05vkrofbgg06yzsa",
+            "originalUrl": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+            "publishedAt": "2026-09-11T08:52:31.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+            "sourceName": "Cursor Blog",
+            "sourceUrl": "https://aihot.news/items/cmtw4o8qc03iwrolkwc03elil",
+            "originalUrl": "https://cursor.com/blog/projects",
+            "publishedAt": "2026-09-11T11:10:41.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题并向独立证明者致贺",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmtsynojw01xqro5wb8n7ysor",
+            "originalUrl": "https://x.com/OpenAI/status/2097375276384567642",
+            "publishedAt": "2026-09-11T06:17:03.000Z",
+            "summary": "数学家Andreas Thom公开质疑OpenAI，称其与ChatGPT的交互可能被用于训练并影响了OpenAI在非sofic群问题上的结果，要求OpenAI披露训练数据以自证清白，并指OpenAI的回应不诚实。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
+            "originalUrl": "https://openai.com/index/introducing-chatgpt-images-2-5",
+            "publishedAt": "2026-09-10T07:20:58.000Z",
+            "summary": "有用户测试 GPT Images 2.5 生成海报后，称赞其设计与审美质感显著提升，认为“质感真的绝了”。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "OpenAI 发布纳维-斯托克斯方程证明并附 Lean 4 形式化验证",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.news/items/cmtw5rln304sjrolkepoca0qv",
+            "originalUrl": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution",
+            "publishedAt": "2026-09-11T06:17:03.000Z",
+            "summary": "OpenAI 声称其内部模型解决了一个千禧年大奖难题，前沿实验室正朝着类似超级智能的方向竞速。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-11T22:29:56.068Z"
+    }
+  ],
+  "subject": "2026-09-12 个人每日简报｜市场与 AI 科技"
+}
