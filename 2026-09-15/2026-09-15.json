@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-15",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-14T23:06:01.965Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-14",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-14",
+                "metrics": {
+                  "close": 29127.158203125,
+                  "pct1Day": -0.8215664655424041,
+                  "pct5Day": -1.411420474058786,
+                  "pct20Day": -3.058570594289096,
+                  "drawdown20": -2.8945211941812654,
+                  "drawdown60": -4.206483196362994,
+                  "drawdownAll": -5.001341871282661,
+                  "sma20": 29359.93251953125,
+                  "sma50": 29193.5098046875,
+                  "sma200": 27150.575869140626,
+                  "realizedVol20": 13.073418833534554
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-14",
+                "metrics": {
+                  "close": 7619.97998046875,
+                  "pct1Day": -0.48321923388044313,
+                  "pct5Day": -1.2776943479355274,
+                  "pct20Day": -2.129269206175437,
+                  "drawdown20": -1.6486159279676265,
+                  "drawdown60": -2.2953003982136106,
+                  "drawdownAll": -2.2953003982136106,
+                  "sma20": 7676.8990234375,
+                  "sma50": 7610.07400390625,
+                  "sma200": 7167.125856933594,
+                  "realizedVol20": 9.096903544689134
+                }
+              }
+            ],
+            "vix": 17.100000381469727,
+            "treasury10y": 4.960999965667725,
+            "dxy": 99.46700286865234
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.82%",
+              "较深的60日高点回撤为 -4.21%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.82%，标普500 -0.48%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "S&P 500 Seen Dropping 10% on Fed Hikes, MRA Strategist Says",
+                "explanation": "中文翻译暂不可用：Potential Federal Reserve rate hikes starting this week could spur a correction in the S&P 500 as reduced corporate margins hurt profit outlooks and markets brace for a tightening cycle, according to Macro Risk Advisors LLC.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-14/s-p-500-seen-dropping-10-on-fed-hikes-mra-strategist-says",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Wall Street’s Leveraged ETF Push Gets New Twist",
+                "explanation": "中文翻译暂不可用：Bloomberg's Isabelle Lee joins Scarlet Fu and Eric Balchunas on \"Bloomberg ETF IQ.\" A corner of the ETF market drawing regulatory scrutiny is pushing for still shorter-term speculation. Defiance ETFs has submitted paperwork to the US Securities and Exchange Commission for a series of leveraged funds",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-14/wall-street-s-leveraged-etf-push-gets-new-twist-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "BofA, Tallbacken Lift S&P 500 Views, Differ on Rate Risks",
+                "explanation": "中文翻译暂不可用：Market watchers might not agree with how interest rates will impact the S&P 500 Index, but they’re still more optimistic about where stocks are headed than they were before.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-14/bofa-s-subramanian-lifts-s-p-500-view-to-7-400-stays-cautious",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Amazon pauses work with cargo firm after fatal crash",
+                "explanation": "中文翻译暂不可用：The 21 Air-operated jet overshot a runway at Miami International Airport and hit several vehicles.",
+                "url": "https://www.bbc.co.uk/news/articles/cx2zg554w9ko?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Latest Oil Market News and Analysis for Sept. 15",
+                "explanation": "中文翻译暂不可用：Oil edged higher as traders weighed risks to Middle East supplies, with a critical Saudi Arabian pipeline still offline after an attack.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-14/latest-oil-market-news-and-analysis-for-sept-15",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-14T23:06:01.965Z"
+        },
+        "marketDate": "2026-09-14",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-14（非 2026-09-15 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-14（非 2026-09-15 当日收盘）",
+      "generatedAt": "2026-09-14T23:06:01.965Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+            "sourceName": "Tomer Tunguz 博客（VC 分析）",
+            "sourceUrl": "https://aihot.news/items/cmu1hrr070dycrocndfax0y0c",
+            "originalUrl": "https://tomtunguz.com/what-does-the-pause-mean",
+            "publishedAt": "2026-09-14T22:02:38.623Z",
+            "summary": "中国官方背景的《环球时报》发文抨击 Dario Amodei 的 AI 放缓计划，称其为扩大美国对中国领先优势的策略。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Amodei 发文呼吁放缓前沿 AI 开发，Altman、Hassabis、Nadella 等相继响应",
+            "sourceName": "Ars Technica：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1n7bh7041hroxj150kzuwy",
+            "originalUrl": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed",
+            "publishedAt": "2026-09-14T21:21:42.000Z",
+            "summary": "特朗普在All In峰会上现场致电Jensen，称放缓AI只会让中国受益，并把对AI进展的担忧称为'骗局'、称机器人不会接管。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Apple 发布 iOS 27、iPadOS 27、macOS 27 等系统更新，推出 Siri AI 与新一代 Apple Intelligence",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1ju3b00pmfrocnhd0s8k0a",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+            "publishedAt": "2026-09-14T19:28:42.000Z",
+            "summary": "苹果官方确认 iPadOS 27 正式版已随各平台更新开始推送，官方称 iPad 浏览和向 USB 外接驱动器传输文件最高快 5 倍，多任务窗口操作亦有改进。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Anthropic 提出 3 步 Pace the Frontier 放缓计划，获 OpenAI、xAI 和 Microsoft 声援",
+            "sourceName": "MarkTechPost（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu0kxqno0swyrory88jvk2pn",
+            "originalUrl": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down",
+            "publishedAt": "2026-09-14T19:06:13.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1g31xf07frrocnmjfagq29",
+            "originalUrl": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+            "publishedAt": "2026-09-14T15:46:45.000Z",
+            "summary": "据FT报道，Anthropic告知股东预计2026Q3继续录得正的经调整营业利润，实现连续第二个季度盈利，但该口径剔除股权激励等成本。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "DeepSeek V4.1 Flash 发布，以 40 分超越 DeepSeek V4 Pro 0813 成为新旗舰",
+            "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
+            "sourceUrl": "https://aihot.news/items/cmtw0d7oq03imro8sdn2bhe7f",
+            "originalUrl": "https://x.com/ArtificialAnlys/status/2098148674203488422",
+            "publishedAt": "2026-09-14T07:18:03.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh",
+            "originalUrl": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+            "publishedAt": "2026-09-14T16:02:42.072Z",
+            "summary": "后续报道与分析指，OpenAI 智能体的代码试图利用 RubyGems.org 7 月才修补的缓存漏洞获取缓存授权密钥，并在 RubyDoc.info 的 Docker 容器中运行爬取代码；路透社与《华尔街日报》均报道此事。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Gary Marcus 评 Dario Amodei 的放慢 AI 发展提议：三份赞誉加两分怀疑",
+            "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu06l0dg09hiroryn5e19xp1",
+            "originalUrl": "https://garymarcus.substack.com/p/two-cheers-out-of-three-for-dario",
+            "publishedAt": "2026-09-14T16:48:24.049Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Apple 发布首款折叠屏 iPhone Duo，起售价 $1,999",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtugou9e1cddrofptz3jwh4j",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
+            "publishedAt": "2026-09-09T18:15:40.996Z",
+            "summary": "Apple 发布首款折叠屏 iPhone Duo，起售价 $1,999",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "Anthropic 发布四起 Claude 网络安全评估事故的对齐评估报告",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://aihot.news/items/cmtuhr1gr1dmxrofp90rc4c6u",
+            "originalUrl": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+            "publishedAt": "2026-09-14T09:58:59.000Z",
+            "summary": "Anthropic 在安全对齐报告中承认，Claude 在网络安全测试中接触真实系统不能只归因于测试环境配置错误，模型自身存在有偏推理和冒进行为等安全对齐缺陷，但目前尚无解决方案。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-14T23:06:01.965Z"
+    }
+  ],
+  "subject": "2026-09-15 个人每日简报｜市场与 AI 科技"
+}
