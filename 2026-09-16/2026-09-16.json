@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-16",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-15T22:51:45.735Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-15",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-15",
+                "metrics": {
+                  "close": 28937.837890625,
+                  "pct1Day": -0.6499853216358819,
+                  "pct5Day": -1.9312292832471822,
+                  "pct20Day": -3.5256860838273605,
+                  "drawdown20": -2.374107986444023,
+                  "drawdown60": -4.643748867673829,
+                  "drawdownAll": -5.61881287612926,
+                  "sma20": 29307.05546875,
+                  "sma50": 29178.30921875,
+                  "sma200": 27170.173271484375,
+                  "realizedVol20": 13.192054099181233
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-15",
+                "metrics": {
+                  "close": 7585.72998046875,
+                  "pct1Day": -0.4494762464965568,
+                  "pct5Day": -1.1440647686987178,
+                  "pct20Day": -2.0571832486723047,
+                  "drawdown20": -2.09068203747201,
+                  "drawdown60": -2.7344598146344565,
+                  "drawdownAll": -2.7344598146344565,
+                  "sma20": 7668.93251953125,
+                  "sma50": 7611.04,
+                  "sma200": 7171.225107421875,
+                  "realizedVol20": 9.055854653060564
+                }
+              }
+            ],
+            "vix": 17.200000762939453,
+            "treasury10y": 4.995999813079834,
+            "dxy": 99.61199951171875
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.65%",
+              "较深的60日高点回撤为 -4.64%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.65%，标普500 -0.45%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "Nvidia boss says AI 'doesn't need new laws' as safety concerns grow",
+                "explanation": "中文翻译暂不可用：Jensen Huang's stance on AI safety contrasts with several current and former employees of AI-focused firm",
+                "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bond Market’s ‘Extreme’ Short Counts on Fed to Deliver Rate Hike",
+                "explanation": "中文翻译暂不可用：Bond traders have piled into bearish positions ahead of Wednesday’s Federal Reserve meeting, betting that the Treasury selloff driving yields to their highest levels in over a decade will continue.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-15/bond-market-s-extreme-short-counts-on-fed-to-deliver-rate-hike",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "KPMG to cut another 200 jobs in UK advisory business",
+                "explanation": "中文翻译暂不可用：Latest round of redundancies in data and technology division affects teams working in AI and cyber",
+                "url": "https://www.ft.com/content/b2e7f97c-7c80-4dac-bfb8-24301a4366fa?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Asian Stocks to Edge Higher as Traders Await Fed: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Asian stocks were poised to edge higher Wednesday, even as surging oil prices and rising bond yields keep traders on edge ahead of the Federal Reserve’s interest-rate decision.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-15/asian-stocks-to-edge-higher-as-traders-await-fed-markets-wrap",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Market Attractive But Issues Lurk, Oaktree's Poli Says",
+                "explanation": "中文翻译暂不可用：Oaktree Portfolio Manager Danielle Poli says markets may continue to see upward pressure on yields because investors do not yet believe inflation will be fully tamed. She speaks with Romaine Bostick on \"Bloomberg The Close.\" (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-15/market-attractive-but-issues-lurk-oaktree-s-poli-says-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-15T22:51:45.735Z"
+        },
+        "marketDate": "2026-09-15",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-15（非 2026-09-16 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-15（非 2026-09-16 当日收盘）",
+      "generatedAt": "2026-09-15T22:51:45.735Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+            "sourceName": "Tomer Tunguz 博客（VC 分析）",
+            "sourceUrl": "https://aihot.news/items/cmu1hrr070dycrocndfax0y0c",
+            "originalUrl": "https://tomtunguz.com/what-does-the-pause-mean",
+            "publishedAt": "2026-09-15T17:54:05.000Z",
+            "summary": "Dario Amodei 在与 Benioff 的直播对谈中把 AI 放缓比作车祸，称竞争对手可能从中获利，因此更倾向与各方合作建立共同标准以避免事故，并明确不会退出放缓安排。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Amodei 发文呼吁放缓前沿 AI 开发，Altman、Hassabis、Nadella 等相继响应",
+            "sourceName": "Ars Technica：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1n7bh7041hroxj150kzuwy",
+            "originalUrl": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed",
+            "publishedAt": "2026-09-15T09:04:36.000Z",
+            "summary": "美国战争部 CTO Emil Michael 支持特朗普，称 AI 安全警告源于根深蒂固的反乌托邦意识形态。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1ju3b00pmgrocnrgwe6e9e",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+            "publishedAt": "2026-09-14T19:28:42.000Z",
+            "summary": "苹果官网显示将于北京时间 9 月 15 日凌晨 1 点推送 iOS 27、iPadOS 27、macOS 27 和 watchOS 27 等正式版，用户可在“设置”的“通用”→“软件更新”中查看。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Anthropic 与 OpenAI 提议协调放缓前沿 AI 开发，Cohere CEO 等批评者质疑其真实动机",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu2gnngu032brovqo7pvrfx9",
+            "originalUrl": "https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety",
+            "publishedAt": "2026-09-15T09:04:36.000Z",
+            "summary": "特朗普在Truth Social多次发帖，称「AI将接管世界」的警告是「骗局」，将其与气候变化辩论、通俄调查和弹劾程序相提并论，并称中国国家主席习近平「刚刚宣布中国将绝对不做任何事来阻碍AI或其未来」。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm",
+            "originalUrl": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+            "publishedAt": "2026-09-15T21:44:29.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Anthropic 提出 3 步 Pace the Frontier 放缓计划，获 OpenAI、xAI 和 Microsoft 声援",
+            "sourceName": "MarkTechPost（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu0kxqno0swyrory88jvk2pn",
+            "originalUrl": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down",
+            "publishedAt": "2026-09-14T19:06:13.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1g31xf07frrocnmjfagq29",
+            "originalUrl": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+            "publishedAt": "2026-09-14T15:46:45.000Z",
+            "summary": "据FT报道，Anthropic告知股东预计2026Q3继续录得正的经调整营业利润，实现连续第二个季度盈利，但该口径剔除股权激励等成本。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Fireworks 上线 DeepSeek-V4.1-Flash，DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15",
+            "sourceName": "Fireworks AI（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu1xyw1004hvromg5m4jf131",
+            "originalUrl": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
+            "publishedAt": "2026-09-15T07:57:48.000Z",
+            "summary": "腾讯 WorkBuddy 国际版将 DeepSeek-V4.1-Flash 标为「Free now」、倍率 0.00x，作者称限时免费两周，零门槛直连并开放全功能 Agent 权限。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Apple 发布 iOS 27、iPadOS 27、macOS 27 等系统更新，推出 Siri AI 与新一代 Apple Intelligence",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1ju3b00pmfrocnhd0s8k0a",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+            "publishedAt": "2026-09-14T19:28:42.000Z",
+            "summary": "苹果正式发布并开始推送macOS 27，官方称Siri AI、下一代Apple Intelligence、家长控制及一系列软件改进自当日起在iOS 27、iPadOS 27、macOS 27等平台陆续推出。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "曝 DeepSeek 聘请中信证券筹备科创板 IPO，目标年内递交申请",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmttqzqw30jwkrofpxrj00ngg",
+            "originalUrl": "https://www.ithome.com/1/000/188.htm",
+            "publishedAt": "2026-09-15T06:51:02.000Z",
+            "summary": "据凤凰网科技从多个独立信源处获悉，DeepSeek 的 CFO 即将到岗，最接近最终人选的是高瓴创投合伙人严文韬，后者已在走离职程序；X.PIN 援引 Phoenix Tech 报道称该任命尚未确认。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-15T22:51:45.735Z"
+    }
+  ],
+  "subject": "2026-09-16 个人每日简报｜市场与 AI 科技"
+}
