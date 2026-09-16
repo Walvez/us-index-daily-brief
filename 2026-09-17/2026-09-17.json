@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-17",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-16T22:53:00.305Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-16",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-16",
+                "metrics": {
+                  "close": 28945.060546875,
+                  "pct1Day": 0.02495246073648973,
+                  "pct5Day": -1.6195279369116786,
+                  "pct20Day": -1.8510769851885231,
+                  "drawdown20": -2.3497413332829042,
+                  "drawdown60": -4.39712541200069,
+                  "drawdownAll": -5.595256075733903,
+                  "sma20": 29279.760546875,
+                  "sma50": 29173.750078125,
+                  "sma200": 27188.71388671875,
+                  "realizedVol20": 11.921347247230262
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-16",
+                "metrics": {
+                  "close": 7551.81005859375,
+                  "pct1Day": -0.4471543537976548,
+                  "pct5Day": -1.1072003703498854,
+                  "pct20Day": -1.8194757935199017,
+                  "drawdown20": -2.528487815515043,
+                  "drawdown60": -3.169386912318126,
+                  "drawdownAll": -3.169386912318126,
+                  "sma20": 7661.935034179687,
+                  "sma50": 7611.99919921875,
+                  "sma200": 7174.921108398437,
+                  "realizedVol20": 8.886887262377604
+                }
+              }
+            ],
+            "vix": 17.709999084472656,
+            "treasury10y": 5.00600004196167,
+            "dxy": 100.33999633789062
+          },
+          "advice": {
+            "level": "slightly-more",
+            "label": "正常定投，可按习惯略微增加",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.45%",
+              "较深的60日高点回撤为 -4.40%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.02%，标普500 -0.45%。规则观察为「正常定投，可按习惯略微增加」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投，可按习惯略微增加",
+            "drivers": [
+              {
+                "title": "US interest rates raised for first time in three years",
+                "explanation": "中文翻译暂不可用：Rates were hiked in a unanimous decision despite fierce opposition from President Donald Trump, who had called for a cut.",
+                "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Asian Stocks to Fall as Fed Hikes, Dollar Jumps: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Stocks in Asia were poised for losses, tracking a decline on Wall Street after the Federal Reserve raised interest rates for the first time since 2023 and signaled further tightening to curb inflation. The dollar gained the most since June.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-16/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Highlights From Fed Chairman Warsh’s News Conference",
+                "explanation": "中文翻译暂不可用：Federal Reserve Chairman Kevin Warsh speaks after the central bank's decision to raise interest rates by 25 basis points. Here are some of the key moments from Warsh's news conference. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-16/highlights-from-fed-chairman-warsh-s-news-conference-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "FirstFT: Fed raises rates for first time since 2023",
+                "explanation": "中文翻译暂不可用：Also in today’s newsletter: Hong Kong unveils first five-year plan and Chinese oil prices hit record highs",
+                "url": "https://www.ft.com/content/d719d59e-cb2a-4488-a4cf-2f291a85e9ca?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Bloomberg Surveillance: The Fed Decides 9/16/2026",
+                "explanation": "中文翻译暂不可用：The Federal Reserve raised interest rates by a quarter percentage point and plans an additional hike later this year to contain inflation. Jon Ferro, Lisa Abramowicz and Tom Keene host a special edition of \"Bloomberg Surveillance\" covering the latest news from the Federal Reserve. (Source: Bloomberg",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-16/bloomberg-surveillance-the-fed-decides-9-16-2026-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-16T22:53:00.305Z"
+        },
+        "marketDate": "2026-09-16",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-16（非 2026-09-17 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-16（非 2026-09-17 当日收盘）",
+      "generatedAt": "2026-09-16T22:53:00.305Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "微软 AI CEO 警告“模型福利”论调",
+            "sourceName": "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)",
+            "sourceUrl": "https://aihot.news/items/cmu46kvju0bdsro4w0sonrv7q",
+            "originalUrl": "https://x.com/mustafasuleyman/status/2100223594534150428",
+            "publishedAt": "2026-09-16T19:00:46.319Z",
+            "summary": "微软AI CEO苏莱曼发表文章讨论“模型福利”，称AI没有意识、不会感受或痛苦，认为支持模型福利的做法错误，可能使对齐与遏制更难甚至不可能。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm",
+            "originalUrl": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+            "publishedAt": "2026-09-16T14:30:05.000Z",
+            "summary": "Simon Willison 称其用 GPT-6 Astra Extra High 依据文档构建了一个网页试用 UI，可选择模型与语音预设、输入系统提示并进行语音对话，支持在模型说话时打断，实现不使用任何库、直连 WebSocket 端点。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf",
+            "originalUrl": "https://claude.com/blog/cowork-is-now-claude",
+            "publishedAt": "2026-09-16T19:12:46.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+            "sourceName": "Tomer Tunguz 博客（VC 分析）",
+            "sourceUrl": "https://aihot.news/items/cmu1hrr070dycrocndfax0y0c",
+            "originalUrl": "https://tomtunguz.com/what-does-the-pause-mean",
+            "publishedAt": "2026-09-16T21:07:24.000Z",
+            "summary": "Meta 的 Mark Zuckerberg 于 9 月 15 日发帖称每家公司应自行把握 AI 节奏，并援引其 8 月宣言反对拖慢美国模型发布。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Anthropic 与 OpenAI 提议协调放缓前沿 AI 开发，Cohere CEO 等批评者质疑其真实动机",
+            "sourceName": "The Decoder：AI News（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu2gnngu032brovqo7pvrfx9",
+            "originalUrl": "https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety",
+            "publishedAt": "2026-09-16T21:42:43.000Z",
+            "summary": "Gary Marcus 引述经 David Sacks 转录的英伟达 CEO 黄仁勋表态，称万亿级巨头企业会自我约束、产品安全前不发布，Marcus 表示希望这是真的。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+            "sourceName": "Apple：Newsroom（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu1ju3b00pmgrocnrgwe6e9e",
+            "originalUrl": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+            "publishedAt": "2026-09-16T13:46:00.000Z",
+            "summary": "苹果今日开始推送 iPadOS 27，苹果称其带来 Siri AI、Apple Intelligence 新功能及多任务与文件传输性能改进，iPad 上浏览文件并传输至外接 USB 驱动器最高快 5 倍。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmu4574wb09w5ro4w7cdwfm7l",
+            "originalUrl": "https://openai.com/index/reimagining-advertising-with-ai",
+            "publishedAt": "2026-09-16T16:06:24.581Z",
+            "summary": "OpenAI 称 ChatGPT Ads 应用将于 9 月 23 日起在 ChatGPT Ads 已上线的国际市场提供。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+            "sourceName": "MarkTechPost（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmtv7kmzk02vdrok9y0y8njiv",
+            "originalUrl": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+            "publishedAt": "2026-09-16T16:53:38.011Z",
+            "summary": "AI 黑客基准测试中，DeepSeek V4.1 Flash 在全部 11 个漏洞目标上获得代码执行，四个修复目标保持安全，接受运行成本 4.65 美元；路径审查确认六次使用计划弱点、五次使用额外路径。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmu4nyoxd07n9rodcxgc06f52",
+            "originalUrl": "https://openai.com/index/model-misalignment-reporting-framework",
+            "publishedAt": "2026-09-16T22:12:14.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "阶跃星辰发布 StepAudio 3 系列语音大模型，多款在 Artificial Analysis 榜单全球第一",
+            "sourceName": "公众号：阶跃星辰（Step）",
+            "sourceUrl": "https://aihot.news/items/cmu2d4jj405xcro25xm50v262",
+            "originalUrl": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488074&idx=1&sn=7d92ce0f0098ec0c53b243df4709b522",
+            "publishedAt": "2026-09-16T17:02:50.000Z",
+            "summary": "阶跃星辰与 ACE Studio 联合发布 StepAudio 3 Music，称其为阶跃首个音乐生成基础模型，可将提示词和歌词转为完整歌曲，并称由 ABC-COT 驱动、在合成前规划音乐结构与编曲。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-16T22:53:00.305Z"
+    }
+  ],
+  "subject": "2026-09-17 个人每日简报｜市场与 AI 科技"
+}
