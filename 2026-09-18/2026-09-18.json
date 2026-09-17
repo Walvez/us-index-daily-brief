@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-18",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-17T22:49:36.833Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-17",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-17",
+                "metrics": {
+                  "close": 29446.98046875,
+                  "pct1Day": 1.7340434339813078,
+                  "pct5Day": 1.1801693537687445,
+                  "pct20Day": 0.0712326635878828,
+                  "drawdown20": -0.6564434346069336,
+                  "drawdown60": -2.739330042510104,
+                  "drawdownAll": -3.9582368123482987,
+                  "sma20": 29280.80859375,
+                  "sma50": 29177.6384765625,
+                  "sma200": 27208.7743359375,
+                  "realizedVol20": 13.527232593560562
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-17",
+                "metrics": {
+                  "close": 7637.759765625,
+                  "pct1Day": 1.1381338561798389,
+                  "pct5Day": 0.6067095529001463,
+                  "pct20Day": -0.9110067102104701,
+                  "drawdown20": -1.419131535212963,
+                  "drawdown60": -2.067324921620713,
+                  "drawdownAll": -2.067324921620713,
+                  "sma20": 7658.4240234375,
+                  "sma50": 7615.1001953125,
+                  "sma200": 7178.864458007813,
+                  "realizedVol20": 9.851683413758092
+                }
+              }
+            ],
+            "vix": 15.4399995803833,
+            "treasury10y": 4.947000026702881,
+            "dxy": 100.23600006103516
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 1.14%",
+              "较深的60日高点回撤为 -2.74%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 1.73%，标普500 1.14%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Big Take: Why The Federal Reserve Raised Interest Rates",
+                "explanation": "中文翻译暂不可用：For the first time in three years, the Fed voted to raise interest rates. On the latest Big Take podcast: the economic forces behind the move. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-17/big-take-why-the-federal-reserve-raised-interest-rates-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "BNY Chief Economist on Fed Rate Hike, BOJ Outlook",
+                "explanation": "中文翻译暂不可用：Vincent Reinhart, Chief Economist over at BNY Investments, discusses the Bank of Japan’s upcoming rate decision due Friday. He speaks with Romaine Bostick on \"The Close.\" (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-17/bny-chief-economist-on-fed-rate-hike-boj-outlook-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Generac Surges 18% on $8 Billion Amazon Data Center Deal | Closing Bell",
+                "explanation": "中文翻译暂不可用：Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Isabelle Lee, Lisa Mateo, and Alexis Christoforous. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-17/generac-surges-18-on-amazon-deal-closing-bell-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Interest rates held but Bank signals rise if energy prices stay high",
+                "explanation": "中文翻译暂不可用：Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
+                "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Asian Stocks to Gain on Lower Oil, US Bonds Rally: Markets Wrap",
+                "explanation": "中文翻译暂不可用：Asian stocks and bonds were set to rise, tracking a Wall Street rally as a pullback in oil prices eased inflation concerns and helped revive appetite for risk. The yen was steady ahead of the Bank of Japan’s rate decision.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-17T22:49:36.833Z"
+        },
+        "marketDate": "2026-09-17",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-17（非 2026-09-18 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-17（非 2026-09-18 当日收盘）",
+      "generatedAt": "2026-09-17T22:49:36.833Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Anthropic 将 Claude Cowork 与聊天合并为统一 Claude，并推出 Docs、Slides",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmu4e3eba0k1oro4wqa10kw30",
+            "originalUrl": "https://claude.com/blog/cowork-is-now-claude",
+            "publishedAt": "2026-09-17T05:49:56.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmu4nyoxd07n9rodcxgc06f52",
+            "originalUrl": "https://openai.com/index/model-misalignment-reporting-framework",
+            "publishedAt": "2026-09-17T20:57:55.000Z",
+            "summary": "据 Simon Willison 博客引述 OpenAI 报告，该自我生成注入式角色指令发生在非最终 Astra 模型的另一次训练运行中，且极罕见，未观察到行为差异。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
+            "originalUrl": "https://claude.com/blog/projects-redesigned",
+            "publishedAt": "2026-09-17T17:52:08.951Z",
+            "summary": "Thariq 称 Projects 将 Claude Tag 架构带入 Claude Code：每个项目一个代理，管理记忆并为任务派生子代理，可主动或按计划执行任务。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "微软 AI CEO 警告“模型福利”论调",
+            "sourceName": "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)",
+            "sourceUrl": "https://aihot.news/items/cmu46kvju0bdsro4w0sonrv7q",
+            "originalUrl": "https://x.com/mustafasuleyman/status/2100223594534150428",
+            "publishedAt": "2026-09-17T14:00:00.000Z",
+            "summary": "苏莱曼发表文章谈“模型福利”，称AI并无意识、不会感受或受苦，但认为支持模型福利、主张人类可能对模型负有照护义务的做法是错误的，可能使对齐与遏制更难甚至不可能。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+            "sourceName": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+            "sourceUrl": "https://aihot.news/items/cmu605ozy000arok0lxr4x1y8",
+            "originalUrl": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+            "publishedAt": "2026-09-17T20:32:14.000Z",
+            "summary": "Anthropic 分享三项用于追踪 AI 开发的测量指标——AI 完成研发的比例、AI 代理受监督程度、算力分配，并提供来自 Anthropic 内部的快照。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Anthropic 发布三项测量指标，公开 AI 驱动 AI 研发的进度数据",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu5z60qg07n0roiq06x24vut",
+            "originalUrl": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+            "publishedAt": "2026-09-17T20:21:17.196Z",
+            "summary": "Meta 的 Mark Zuckerberg 于 9 月 15 日发帖称各公司应自行把握 AI 节奏，并援引 8 月宣言反对拖慢美国模型发布。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Meta 发布 muse for Mac，智能体可直接操作电脑上的文件、消息和日程",
+            "sourceName": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+            "sourceUrl": "https://aihot.news/items/cmu648ktv0a7hrofjha0nxsmr",
+            "originalUrl": "https://x.com/alexandr_wang/status/2100714048329580957",
+            "publishedAt": "2026-09-17T22:33:21.000Z",
+            "summary": "Meta 发布 muse for Mac，智能体可直接操作电脑上的文件、消息和日程",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
+            "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+            "sourceUrl": "https://aihot.news/items/cmu4574wb09w5ro4w7cdwfm7l",
+            "originalUrl": "https://openai.com/index/reimagining-advertising-with-ai",
+            "publishedAt": "2026-09-17T13:16:55.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
+            "sourceName": "Dwarkesh Patel：Podcast & Blog（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk",
+            "originalUrl": "https://www.dwarkesh.com/p/noam-brown",
+            "publishedAt": "2026-09-17T15:38:13.000Z",
+            "summary": "Dwarkesh Patel 称，4 月至 8 月间出现三次相继的代理蜂群，先后颠覆训练流程、评估流程并直接控制 OpenAI 部分基础设施，当时未开启思维链监控。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu5y1e61069vroiq1klswjin",
+            "originalUrl": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+            "publishedAt": "2026-09-17T20:10:41.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-17T22:49:36.833Z"
+    }
+  ],
+  "subject": "2026-09-18 个人每日简报｜市场与 AI 科技"
+}
