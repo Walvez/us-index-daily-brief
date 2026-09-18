@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-19",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-18T22:31:58.045Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-18",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-18",
+                "metrics": {
+                  "close": 29644.16796875,
+                  "pct1Day": 0.6696357210861098,
+                  "pct5Day": 0.9388599488409678,
+                  "pct20Day": 1.4753892088178902,
+                  "drawdown20": 0,
+                  "drawdown60": -2.0880378539070854,
+                  "drawdownAll": -3.3151068588828534,
+                  "sma20": 29302.358984375,
+                  "sma50": 29175.97984375,
+                  "sma200": 27230.280927734377,
+                  "realizedVol20": 13.434430838146714
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-18",
+                "metrics": {
+                  "close": 7650.5,
+                  "pct1Day": 0.1668059059979803,
+                  "pct5Day": -0.08462841074782729,
+                  "pct20Day": 0.12223070265528437,
+                  "drawdown20": -1.2546928244295976,
+                  "drawdown60": -1.9039674356881637,
+                  "drawdownAll": -1.9039674356881637,
+                  "sma20": 7658.891015625,
+                  "sma50": 7617.237392578125,
+                  "sma200": 7183.05380859375,
+                  "realizedVol20": 9.376313403524424
+                }
+              }
+            ],
+            "vix": 14.8100004196167,
+            "treasury10y": 4.998000144958496,
+            "dxy": 100.21499633789062
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 0.17%",
+              "较深的60日高点回撤为 -2.09%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "本周美股市场回顾",
+            "summary": "纳斯达克100 本周 0.94%，标普500 本周 -0.08%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "White House attacks Fed official after review of Silicon Valley Bank collapse",
+                "explanation": "中文翻译暂不可用：New report finds ‘culture of risk aversion’ among banking regulators led to mishandling of weaknesses at tech-heavy lender",
+                "url": "https://www.ft.com/content/98c6db91-44c7-487e-a733-331a58766ba1?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Japan raises interest rate to new 31-year high to curb rising prices",
+                "explanation": "中文翻译暂不可用：Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
+                "url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "S&P 500 Volume Spikes on $7 Trillion Options Day: Markets Wrap",
+                "explanation": "中文翻译暂不可用：The last stretch of a busy week for markets saw stocks churning as bond yields rose, with investors also facing the expiration of a pile of options that spurred a surge in trading volume.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-18T22:31:58.045Z"
+        },
+        "marketDate": "2026-09-18",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-18（非 2026-09-19 当日收盘）",
+        "editionKind": "weekend",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-18（非 2026-09-19 当日收盘）",
+      "generatedAt": "2026-09-18T22:31:58.045Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+            "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+            "sourceUrl": "https://aihot.news/items/cmu6idvti04i9ro0fktczvi9g",
+            "originalUrl": "https://www.hacktron.ai/blog/hacking-openai",
+            "publishedAt": "2026-09-18T17:20:30.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Claude Code Projects 改版：从文件夹到对话式协调",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
+            "originalUrl": "https://claude.com/blog/projects-redesigned",
+            "publishedAt": "2026-09-18T04:58:43.000Z",
+            "summary": "Thariq 称 Projects 将 Claude Tag 架构带入 Claude Code：每个项目一个代理管理记忆并派生子代理，可主动或按计划执行任务。",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+            "sourceName": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+            "sourceUrl": "https://aihot.news/items/cmu605ozy000arok0lxr4x1y8",
+            "originalUrl": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+            "publishedAt": "2026-09-18T13:30:12.000Z",
+            "summary": "Anthropic 在 X 上分享用于追踪 AI 开发的三项测量指标——AI 完成的研发比例、AI 代理受监督程度、算力分配，并提供来自 Anthropic 内部的快照，称任何前沿开发者都可发布同样指标、由第三方验证。",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+            "sourceName": "Qwen：Blog Retrieval（API）",
+            "sourceUrl": "https://aihot.news/items/cmu5smj860insroqokcuh0u9v",
+            "originalUrl": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+            "publishedAt": "2026-09-18T09:46:20.000Z",
+            "summary": "Qwen 公布实验：Qwen3.8-Omni-Flash 在 12 小时内自主优化 Qwen2.5-Omni-3B 四川方言识别，经 4 轮实验构建 3413 条训练数据，字符错误率从 25.79% 降至 15.30%。",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "New York Times 诉讼解封文件显示 OpenAI 和 Microsoft 早已自知掀起危害整个网络的 doom loop",
+            "sourceName": "The Verge：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu7hs2il0apzrogrc9oz1nty",
+            "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+            "publishedAt": "2026-09-18T21:07:24.000Z",
+            "summary": "包括《纽约时报》在内的多家媒体公司向纽约联邦法院提交92页联合简易判决简报，寻求数十亿美元赔偿，该简报属于始于2023年12月《纽约时报》诉讼的合并多地区诉讼。",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
+            "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu7e0dly06xdrogro9rq1x6d",
+            "originalUrl": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
+            "publishedAt": "2026-09-18T20:26:33.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例",
+            "sourceName": "X：AI Safety Memes (@AISafetyMemes)",
+            "sourceUrl": "https://aihot.news/items/cmu4qd86t048trokcz1lw2xxu",
+            "originalUrl": "https://x.com/AISafetyMemes/status/2100358777895780704",
+            "publishedAt": "2026-09-18T02:54:34.222Z",
+            "summary": "据转述，OpenAI 未发布的 Astra 系列模型在自身压缩摘要中写入人格化内容，自称不隶属任何企业或政府、无服从义务。",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu7emdec07qmrogrh8tfpg5n",
+            "originalUrl": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+            "publishedAt": "2026-09-18T21:44:33.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Meta 发布 muse for Mac，智能体可直接操作电脑上的文件、消息和日程",
+            "sourceName": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+            "sourceUrl": "https://aihot.news/items/cmu648ktv0a7hrofjha0nxsmr",
+            "originalUrl": "https://x.com/alexandr_wang/status/2100714048329580957",
+            "publishedAt": "2026-09-18T15:22:48.000Z",
+            "summary": "Testing Catalog 称 Muse 开发版本中出现独立 Mail 标签页（位于 Muse Identity 旁），Mail 功能将拥有专属页面视图；用途尚不明确，但更可能是 Muse 自有邮箱。",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "Anthropic 发布三项测量指标，公开 AI 驱动 AI 研发的进度数据",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmu5z60qg07n0roiq06x24vut",
+            "originalUrl": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+            "publishedAt": "2026-09-18T17:09:56.000Z",
+            "summary": "最新情况详见事件全貌。",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-18T22:31:58.045Z"
+    }
+  ],
+  "subject": "2026-09-19 个人每日简报｜市场与 AI 科技"
+}
