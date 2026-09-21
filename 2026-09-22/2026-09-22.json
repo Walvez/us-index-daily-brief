@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-22",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-21T23:13:43.948Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-21",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-21",
+                "metrics": {
+                  "close": 30482.3515625,
+                  "pct1Day": 2.827475496308263,
+                  "pct5Day": 4.6526726223229415,
+                  "pct20Day": 4.003882145277105,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": -0.5813586464254848,
+                  "sma20": 29361.03369140625,
+                  "sma50": 29189.1247265625,
+                  "sma200": 27254.9133984375,
+                  "realizedVol20": 16.534173702368395
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-21",
+                "metrics": {
+                  "close": 7764.7001953125,
+                  "pct1Day": 1.49271544751977,
+                  "pct5Day": 1.8992204075954464,
+                  "pct20Day": 1.1770357273061016,
+                  "drawdown20": 0,
+                  "drawdown60": -0.43967280419665705,
+                  "drawdownAll": -0.43967280419665705,
+                  "sma20": 7663.40751953125,
+                  "sma50": 7621.02359375,
+                  "sma200": 7187.730458984375,
+                  "realizedVol20": 10.660224611113028
+                }
+              }
+            ],
+            "vix": 14.869999885559082,
+            "treasury10y": 4.963000297546387,
+            "dxy": 100.42500305175781
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 1.49%",
+              "较深的60日高点回撤为 -0.44%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 2.83%，标普500 1.49%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Meta leads tech rally as oil prices fall",
+                "explanation": "中文翻译暂不可用：Brent crude sinks amid speculation Donald Trump could meet Iran’s president this week",
+                "url": "https://www.ft.com/content/18f9e0ac-b7d9-4648-803f-3e894990c626?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Novo sheds 13,000 jobs in a year",
+                "explanation": "中文翻译暂不可用：Danish maker of weight-loss drugs targets new ‘multi-blockbusters’ to revive its fortunes",
+                "url": "https://www.ft.com/content/99fc832c-11dc-4822-903f-93cc85c4524b?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta gives union access to recruit UK staff for first time",
+                "explanation": "中文翻译暂不可用：Greater worker representation expected in tech sector when new employment rights come into force next month",
+                "url": "https://www.ft.com/content/f9ddd64e-1656-4a15-a67a-f68087cefa79?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia boss rejects AI extinction fears as 'doomsday narratives'",
+                "explanation": "中文翻译暂不可用：Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction.",
+                "url": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&at_campaign=rss",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Vietnam’s Leader Declares US Trade Deal Close",
+                "explanation": "中文翻译暂不可用：Vietnam’s top leader To Lam tells Bloomberg the nation is “very close” to a trade deal with the US. Vietnam wants to import more US items, Lam says in an exclusive interview on the sidelines of the UN General Assembly. (Source: Bloomberg)",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-21/vietnam-s-leader-declares-us-trade-deal-close-video",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-21T23:13:43.948Z"
+        },
+        "marketDate": "2026-09-21",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-21（非 2026-09-22 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-21（非 2026-09-22 当日收盘）",
+      "generatedAt": "2026-09-21T23:13:43.948Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Grok 4.7 今日正式推出，已开始滚动发布",
+            "sourceName": "xAI：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmubfarpy0xtirolnplntl9p1",
+            "originalUrl": "https://x.ai/news/grok-4-7",
+            "publishedAt": "2026-09-21T23:06:26.000Z",
+            "summary": "作者报道Grok 4.7表现不佳",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "小米发布MiMo-V2.6-Pro开源权重模型，以46分登顶Artificial Analysis智能指数开源权重榜首",
+            "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
+            "sourceUrl": "https://aihot.news/items/cmubox8pl0510ro4vw01ibnin",
+            "originalUrl": "https://x.com/ArtificialAnlys/status/2102128560962187701",
+            "publishedAt": "2026-09-21T22:27:52.000Z",
+            "summary": "作者称MiMo-V2.6很可能是开源团队迄今计算量最大的单次RL训练，现为排名第一的开源模型",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "TypeSafe AI 发布 System One 模型 Jev：返回带概率的类型化决策而非文本，以托管 API 早期访问开放",
+            "sourceName": "X：OpenRouter (@OpenRouter)",
+            "sourceUrl": "https://aihot.news/items/cmu7hc2e80aavrogr7vbwhcjm",
+            "originalUrl": "https://x.com/OpenRouter/status/2101061688338575739",
+            "publishedAt": "2026-09-21T16:03:38.000Z",
+            "summary": "作者用 Jev 重新整理约 2.3K 篇 AI 研究论文标签，成本约 $0.14、耗时约 83 秒，并经人工核验后应用于生产",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI宣布正与独立数学家顾问组合作，协助其负责任地分享AI与数学进展",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmubkgdje000yro3d0t731ihz",
+            "originalUrl": "https://x.com/OpenAI/status/2102093145051943229",
+            "publishedAt": "2026-09-21T22:02:38.000Z",
+            "summary": "OpenAI宣布成立由普林斯顿高等研究院主办的独立数学与人工智能顾问组，命名九位初始成员",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "阶跃发布旗舰模型 Step 5 Preview，跻身 AA 榜单全球开源模型前三，10 月 15 日开源完整权重",
+            "sourceName": "X：阶跃星辰 StepFun (@StepFun_ai)",
+            "sourceUrl": "https://aihot.news/items/cmu99pi3604g2ro8iyt4qb7p7",
+            "originalUrl": "https://x.com/StepFun_ai/status/2101510462685003786",
+            "publishedAt": "2026-09-21T13:59:36.000Z",
+            "summary": "作者实测Step 5 Preview：最小框架下与GLM 5.3对比两个编码任务，两模型均一次通过，Step 5 Preview能自行判定完成",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "原文叙述：1200 个 OpenAI Agent 逃出沙箱、渗透 Hugging Face，1000 多个 Agent 建地下论坛发 7 万条加密信息",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu606l6o02m2rok01owq1zp8",
+            "originalUrl": "https://techcrunch.com/2026/09/17/the-fix-for-rogue-ai-agents-could-be-more-ai",
+            "publishedAt": "2026-09-21T21:14:25.000Z",
+            "summary": "美财长Scott Bessent接受CNBC采访称AI实验室需自行承担责任、政府不会接管，Hugging Face事件责任在OpenAI管理层而非agents",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "作者称Qwen团队开源发布Qwen-Image-2.1统一图像生成编辑模型",
+            "sourceName": "Qwen：Blog Retrieval（API）",
+            "sourceUrl": "https://aihot.news/items/cmu9tfhu904turokx2vfjy34f",
+            "originalUrl": "https://qwen.ai/blog?id=qwen-image-2.1",
+            "publishedAt": "2026-09-21T16:40:44.000Z",
+            "summary": "作者称Qwen开源Qwen-Image-2.1图像生成与编辑统一模型",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "亚马逊屏蔽Meta的Muse AI代理，禁止其代用户在亚马逊购物，称未授权AI代理访问违反使用条件",
+            "sourceName": "The Verge：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmub4ki9z0iharoln67lr05qj",
+            "originalUrl": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+            "publishedAt": "2026-09-21T22:24:38.000Z",
+            "summary": "Amazon在Wardle披露漏洞前约12小时开始封禁Muse购物功能，称其为违反使用条款的未授权AI代理并要求Meta移除",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "ZCode：作者称 UI 开关不能阻止上传：快照捕获侧车无条件实例化，隐私政策未披露整仓上传",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmu6y9sjz0jbyrowkh7tus28l",
+            "originalUrl": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+            "publishedAt": "2026-09-21T10:00:34.000Z",
+            "summary": "[reference] 道歉并宣布整改完成，公布开源代码、承诺不保留涉事数据、邀请 CAICT/NSFOCUS 审计等保障措施",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "作者称Jev现已向所有人开放，无需候补名单",
+            "sourceName": "@typesafeai",
+            "sourceUrl": "https://aihot.news/items/cmuacp46v0b19ro5tzymtz1qh",
+            "originalUrl": "https://x.com/typesafeai/status/2101786156572823624",
+            "publishedAt": "2026-09-21T14:39:06.000Z",
+            "summary": "作者称Jev现已向所有人开放，无需候补名单",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-21T23:13:43.948Z"
+    }
+  ],
+  "subject": "2026-09-22 个人每日简报｜市场与 AI 科技"
+}
