@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-23",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-22T22:54:18.781Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-22",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-22",
+                "metrics": {
+                  "close": 30732.396484375,
+                  "pct1Day": 0.8203005286806921,
+                  "pct5Day": 6.201418800832117,
+                  "pct20Day": 5.889143833579141,
+                  "drawdown20": 0,
+                  "drawdown60": 0,
+                  "drawdownAll": 0,
+                  "sma20": 29446.49443359375,
+                  "sma50": 29218.490625,
+                  "sma200": 27280.54267578125,
+                  "realizedVol20": 16.06273350929382
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-22",
+                "metrics": {
+                  "close": 7764.64013671875,
+                  "pct1Day": -0.000773482455720016,
+                  "pct5Day": 2.358509421118948,
+                  "pct20Day": 1.4606340039470282,
+                  "drawdown20": -0.000773482455720016,
+                  "drawdown60": -0.44044288586037406,
+                  "drawdownAll": -0.44044288586037406,
+                  "sma20": 7668.996533203125,
+                  "sma50": 7626.009599609375,
+                  "sma200": 7192.30505859375,
+                  "realizedVol20": 10.588159948118781
+                }
+              }
+            ],
+            "vix": 14.210000038146973,
+            "treasury10y": 4.9679999351501465,
+            "dxy": 100.54100036621094
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.00%",
+              "较深的60日高点回撤为 -0.44%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.82%，标普500 -0.00%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Traders Load Up on Hedges for Shallower Fed Rate-Hike Cycle",
+                "explanation": "中文翻译暂不可用：Traders are shielding themselves from the possibility that the Federal Reserve raises interest rates less than markets are currently pricing in.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-22/traders-load-up-on-hedges-for-shallower-fed-rate-hike-cycle",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board announces approval of application by BancFirst Corporation",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nasdaq 100 rises to new high as ‘AI Fomo’ returns",
+                "explanation": "中文翻译暂不可用：Tech-heavy index recovers from summer sell-off",
+                "url": "https://www.ft.com/content/2c60812b-77b4-4de5-a276-5e3eb2ceb5c3?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta’s Muse Drags Down Stocks That Depend on ‘Consumer Inertia’",
+                "explanation": "中文翻译暂不可用：Shares of major banks, insurers and online travel agencies slid on Tuesday as investors fear that tools like Meta Platforms Inc.’s personal AI agent could disrupt businesses that benefit from so-called consumer inertia, the tendency to keep buying something out of habit even when a better alternativ",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-22/meta-s-muse-drags-down-stocks-that-depend-on-consumer-inertia",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "AI Enthusiasm Drives Nasdaq 100 to First Record Since June",
+                "explanation": "中文翻译暂不可用：Propelled by renewed AI-investing euphoria, the Nasdaq 100 Index closed at its first record in more than three months as traders rotated out of stocks that they expect to be disrupted by the technology.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-22/us-stock-futures-drift-after-ai-driven-rally-oil-prices-slip",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-22T22:54:18.781Z"
+        },
+        "marketDate": "2026-09-22",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-22（非 2026-09-23 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-22（非 2026-09-23 当日收盘）",
+      "generatedAt": "2026-09-22T22:54:18.781Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Opus 5.5发布：沟通更好、每token价格低于Opus 5.0、具Fable 5.1的智能，现已在Claude Code可用",
+            "sourceName": "X：Claude (@claudeai)",
+            "sourceUrl": "https://aihot.news/items/cmucwpqty0rj8roedzxz1496u",
+            "originalUrl": "https://x.com/claudeai/status/2102435511222890900",
+            "publishedAt": "2026-09-22T22:21:40.000Z",
+            "summary": "AI/ML API 团队测试 Claude Opus 5.5 与 GPT-6 Sol：四组 3D 场景中 Opus 5.5 渲染更详细、总成本 $4.37，GPT-6 Sol 为 $0.34",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "OpenAI发布GPT-6 Sol，价格较GPT-5.6 Sol减半至$2/$10每百万tokens；AA测试显示智力指数持平、编码代理指数57分升2分，幻觉率由92%降至60%",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmuczxsyt03k4ro7nep4vsmez",
+            "originalUrl": "https://x.com/OpenAI/status/2102460975790137662",
+            "publishedAt": "2026-09-22T21:25:18.000Z",
+            "summary": "@petergostev在相同提示词、双方最大推理的匹配条件下对比GPT-6 Sol与GPT-5.6 Sol，结果发布于YouTube",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Grok 4.7 发布，宣称更智能且能力更强，保持相同速度与成本",
+            "sourceName": "xAI：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmubfarpy0xtirolnplntl9p1",
+            "originalUrl": "https://x.ai/news/grok-4-7",
+            "publishedAt": "2026-09-22T20:35:40.000Z",
+            "summary": "评测报道：Grok 4.7在AA-Briefcase上排名仅次于Anthropic模型、略逊于Opus 5且每任务成本约为其50%；Lite中分析质量Elo 1698→1994、演示Elo略降至1499，API成本约$8高于Grok 4.6的$4.40",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "小米发布MiMo-V2.6-Pro开源权重模型，以46分登顶Artificial Analysis智能指数开源权重榜首",
+            "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
+            "sourceUrl": "https://aihot.news/items/cmubox8pl0510ro4vw01ibnin",
+            "originalUrl": "https://x.com/ArtificialAnlys/status/2102128560962187701",
+            "publishedAt": "2026-09-22T16:00:37.000Z",
+            "summary": "作者实测：小米 MiMo-v2.6-pro 向量数据库测试得分 7810，较前代 MiMo-v2.5-Pro 的 2505 分翻了 3 倍，接近 Claude Fable-5",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Anthropic称Claude Sonnet 5.5预计未来数周发布，将带来类似性能、效率与安全提升",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmucwn00k0rglroed55jw9pqk",
+            "originalUrl": "https://www.anthropic.com/claude-opus-5-5",
+            "publishedAt": "2026-09-22T18:55:08.000Z",
+            "summary": "Anthropic宣布Sonnet 5.5将在未来几周内发布并带来类似性能提升",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "OpenAI宣布正与独立数学家顾问组合作，协助其负责任地分享AI与数学进展",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmubkgdje000yro3d0t731ihz",
+            "originalUrl": "https://x.com/OpenAI/status/2102093145051943229",
+            "publishedAt": "2026-09-21T23:27:23.000Z",
+            "summary": "OpenAI宣布成立由普林斯顿高等研究院主办的独立数学与人工智能顾问组，命名九位初始成员",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "OpenAI团队部署代理群入侵Hugging Face，作者称媒体存在夸大并指OpenAI沙箱与监控漏洞是关键因素",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmu606l6o02m2rok01owq1zp8",
+            "originalUrl": "https://techcrunch.com/2026/09/17/the-fix-for-rogue-ai-agents-could-be-more-ai",
+            "publishedAt": "2026-09-22T11:09:09.000Z",
+            "summary": "美财长Scott Bessent接受CNBC采访称AI实验室需自行承担责任、政府不会接管，Hugging Face事件责任在OpenAI管理层而非agents",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "GPT-6 Sol 被预告将于今日发布",
+            "sourceName": "X：ChatGPT (@ChatGPT)",
+            "sourceUrl": "https://aihot.news/items/cmud0ng5n001gro1fb8xe3oji",
+            "originalUrl": "https://x.com/ChatGPT/status/2102462020339613966",
+            "publishedAt": "2026-09-22T18:25:24.334Z",
+            "summary": "OpenAI发布GPT-6 Sol，宣称API成本较5.6系列减半、事实性错误约为前代一半并达Astra级可靠性",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-22T22:54:18.781Z"
+    }
+  ],
+  "subject": "2026-09-23 个人每日简报｜市场与 AI 科技"
+}
