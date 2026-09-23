@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-24",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-23T22:55:31.809Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-23",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-23",
+                "metrics": {
+                  "close": 30470.29296875,
+                  "pct1Day": -0.039552858554223524,
+                  "pct5Day": 5.29567214855873,
+                  "pct20Day": 4.986060441452104,
+                  "drawdown20": -0.039552858554223524,
+                  "drawdown60": -0.039552858554223524,
+                  "drawdownAll": -0.6206879286431518,
+                  "sma20": 29433.3892578125,
+                  "sma50": 29213.2485546875,
+                  "sma200": 27279.232158203125,
+                  "realizedVol20": 15.97479806739276
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-23",
+                "metrics": {
+                  "close": 7706.02978515625,
+                  "pct1Day": -0.755604320584959,
+                  "pct5Day": 1.5858698503273938,
+                  "pct20Day": 0.6947719261149883,
+                  "drawdown20": -0.755604320584959,
+                  "drawdown60": -1.191954938076669,
+                  "drawdownAll": -1.191954938076669,
+                  "sma20": 7666.066015625,
+                  "sma50": 7624.837392578125,
+                  "sma200": 7192.012006835937,
+                  "realizedVol20": 10.991619567247692
+                }
+              }
+            ],
+            "vix": 15.180000305175781,
+            "treasury10y": 5.113999843597412,
+            "dxy": 101.11499786376953
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.76%",
+              "较深的60日高点回撤为 -1.19%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 -0.04%，标普500 -0.76%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Apple’s ChatGPT tools ‘dramatically underperformed’, OpenAI claims",
+                "explanation": "中文翻译暂不可用：Court documents reveal how companies’ ties unravelled while the iPhone maker has since turned to a Google-powered ‘Siri AI’",
+                "url": "https://www.ft.com/content/256c4b36-a6c8-49ee-aa15-81cb089b2ced?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Rosneft billions fed Kremlin-backed money laundering network",
+                "explanation": "中文翻译暂不可用：FT investigation shows the state oil group’s hard currency was at heart of Russia’s efforts to circumvent sanctions",
+                "url": "https://www.ft.com/content/fb42c5dd-1550-402c-8881-49a3902710a0?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Nvidia Among Top Traded US Credit Swaps as Hedging Demand Soars",
+                "explanation": "中文翻译暂不可用：Derivatives tied to Nvidia Corp. are now among the most traded in the US credit default swaps market, as investors seek to hedge their exposure to the firm’s debt in the wake of June’s $25 billion bond sale.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-23/nvidia-among-top-traded-us-credit-swaps-as-hedging-demand-soars",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Zuckerberg to unveil new AI products as Meta’s Muse app tops charts",
+                "explanation": "中文翻译暂不可用：Social media group’s personal AI ‘agent’ that can shop and schedule has become most downloaded app in US",
+                "url": "https://www.ft.com/content/f4770cdf-626e-41e3-9db0-3dc0b64b8c00?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "USD rallies after US data aided case for Federal Reserve increases",
+                "explanation": "中文翻译暂不可用：The dollar jumped Wednesday after US business activity rose at the fastest pace in more than five years, fortifying the case for the Federal Reserve to continue raising interest rates.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-23/dollar-usd-notches-seasonal-end-of-september-gains-on-hawkish-fed",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-23T22:55:31.809Z"
+        },
+        "marketDate": "2026-09-23",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-23（非 2026-09-24 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-23（非 2026-09-24 当日收盘）",
+      "generatedAt": "2026-09-23T22:55:31.809Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Opus 5.5发布：沟通更好、每token价格低于Opus 5.0、具Fable 5.1的智能，现已在Claude Code可用",
+            "sourceName": "Artificial Analysis 完整文章（网页）",
+            "sourceUrl": "https://aihot.news/items/cmucyny580521roni2aiyh9xj",
+            "originalUrl": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+            "publishedAt": "2026-09-23T20:15:40.000Z",
+            "summary": "Arena 上展示 Anthropic Claude Opus 5.5 与 OpenAI GPT-6 Sol 的并排输出",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Google发布Gemini 3.8 Flash TTS语音合成模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmuea8xrm0t1nroghhxj2y3eg",
+            "originalUrl": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+            "publishedAt": "2026-09-23T19:55:11.000Z",
+            "summary": "Google推出Gemini 3.8 Flash-Lite TTS语音生成模型，今日起在Gemini API和Google AI Studio开放",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "OpenAI发布GPT-6 Sol，价格较GPT-5.6 Sol减半至$2/$10每百万tokens；AA测试显示智力指数持平、编码代理指数57分升2分，幻觉率由92%降至60%",
+            "sourceName": "Artificial Analysis 完整文章（网页）",
+            "sourceUrl": "https://aihot.news/items/cmud2ya2c03wnrov6lnmiq2dv",
+            "originalUrl": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+            "publishedAt": "2026-09-23T18:54:11.000Z",
+            "summary": "GPT-6 Sol发布，在帕累托前沿新增一个点，最高配置得分48、每任务1.06美元",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI发布GPT-6 Luna，API成本较5.6系列减半，并将向桌面应用和Free/Go用户开放",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmuczxsyt03k4ro7nep4vsmez",
+            "originalUrl": "https://x.com/OpenAI/status/2102460975790137662",
+            "publishedAt": "2026-09-23T00:00:00.000Z",
+            "summary": "OpenAI于7月将Luna降价80%，昨日再降50%",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Anthropic分享早期研究结果：Claude自主发现与CRISPR样重复阵列相关的新型酶系统ART",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmuefqp730041rovxbpewc3gn",
+            "originalUrl": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+            "publishedAt": "2026-09-23T22:17:39.000Z",
+            "summary": "Anthropic称Claude用约950个代理、2.1亿token、21小时搜索数据发现新酶系统",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "Grok 4.7 发布，宣称更智能且能力更强，保持相同速度与成本",
+            "sourceName": "xAI：News（网页）",
+            "sourceUrl": "https://aihot.news/items/cmubfarpy0xtirolnplntl9p1",
+            "originalUrl": "https://x.ai/news/grok-4-7",
+            "publishedAt": "2026-09-23T21:29:32.000Z",
+            "summary": "Grok 4.7 在排名中上升",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "小米发布MiMo-V2.6-Pro开源权重模型，以46分登顶Artificial Analysis智能指数开源权重榜首",
+            "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
+            "sourceUrl": "https://aihot.news/items/cmubox8pl0510ro4vw01ibnin",
+            "originalUrl": "https://x.com/ArtificialAnlys/status/2102128560962187701",
+            "publishedAt": "2026-09-23T18:54:11.000Z",
+            "summary": "小米发布 MiMo-V2.6，以大规模 RL 迈向自我提升，公开训练框架、任务环境和轻量 Harness",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "YouTube的AI功能Ask YouTube获得多项新功能并更突出展示",
+            "sourceName": "TechCrunch：AI（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmue83o0m0qjiroghk2uk1gyw",
+            "originalUrl": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app",
+            "publishedAt": "2026-09-23T19:35:53.000Z",
+            "summary": "YouTube的AI功能Ask YouTube获得多项新功能并更突出展示",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Anthropic称Claude Sonnet 5.5预计未来数周发布，将带来类似性能、效率与安全提升",
+            "sourceName": "Hacker News：AI 热帖",
+            "sourceUrl": "https://aihot.news/items/cmucwn00k0rglroed55jw9pqk",
+            "originalUrl": "https://www.anthropic.com/claude-opus-5-5",
+            "publishedAt": "2026-09-22T18:55:08.000Z",
+            "summary": "Anthropic计划在未来几周发布Claude Sonnet 5.5",
+            "summaryStatus": "curated",
+            "rank": 9
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-23T22:55:31.809Z"
+    }
+  ],
+  "subject": "2026-09-24 个人每日简报｜市场与 AI 科技"
+}
