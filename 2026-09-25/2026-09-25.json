@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "editionDate": "2026-09-25",
+  "timeZone": "Asia/Taipei",
+  "generatedAt": "2026-09-24T23:11:06.888Z",
+  "modules": [
+    {
+      "moduleId": "market",
+      "status": "success",
+      "data": {
+        "report": {
+          "market": {
+            "marketDate": "2026-09-24",
+            "indices": [
+              {
+                "id": "nasdaq100",
+                "name": "纳斯达克100",
+                "symbol": "^NDX",
+                "marketDate": "2026-09-24",
+                "metrics": {
+                  "close": 30478.85546875,
+                  "pct1Day": 0.028113964499741937,
+                  "pct5Day": 5.298986745566139,
+                  "pct20Day": 4.346656791791657,
+                  "drawdown20": -0.011462832326827455,
+                  "drawdown60": -0.011462832326827455,
+                  "drawdownAll": -0.5927612080013878,
+                  "sma20": 29496.8703125,
+                  "sma50": 29231.0998046875,
+                  "sma200": 27303.717919921874,
+                  "realizedVol20": 15.921182713054668
+                }
+              },
+              {
+                "id": "sp500",
+                "name": "标普500",
+                "symbol": "^GSPC",
+                "marketDate": "2026-09-24",
+                "metrics": {
+                  "close": 7704.1298828125,
+                  "pct1Day": -0.024654749549627868,
+                  "pct5Day": 2.016997554717551,
+                  "pct20Day": 0.34973452065878485,
+                  "drawdown20": -0.7800727777817605,
+                  "drawdown60": -1.2163158141215697,
+                  "drawdownAll": -1.2163158141215697,
+                  "sma20": 7667.408520507813,
+                  "sma50": 7628.048193359375,
+                  "sma200": 7196.247055664063,
+                  "realizedVol20": 10.94141914737869
+                }
+              }
+            ],
+            "vix": 15.670000076293945,
+            "treasury10y": 5.161999702453613,
+            "dxy": 101.24800109863281
+          },
+          "advice": {
+            "level": "normal",
+            "label": "正常定投",
+            "reasons": [
+              "两大指数中较弱单日表现为 -0.02%",
+              "较深的60日高点回撤为 -1.22%"
+            ],
+            "highVolatility": false
+          },
+          "commentary": {
+            "headline": "昨夜美股指数复盘",
+            "summary": "纳斯达克100 0.03%，标普500 -0.02%。规则观察为「正常定投」。新闻与行情之间未经过模型确认，以下仅列出近期相关信息。",
+            "adviceLabel": "正常定投",
+            "drivers": [
+              {
+                "title": "Bond Yields Soar, Spiking Fed Rate Hike Bets",
+                "explanation": "中文翻译暂不可用：\"Bloomberg Real Yield\" highlights the market-moving news you need to know. Today's guests: Parametric SMA Fixed Income Portfolio Manager Nisha Patel, Citi Head of Global Rates Deirdre Dun, Goldman Sachs Head of Multi Sector FI Investing Lindsay Sachs, Oaktree Capital Management Deputy CIO Strategic ",
+                "url": "https://www.bloomberg.com/news/videos/2026-09-24/real-yield-9-24-2026-video",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Meta’s Best Month Since 2013 Has It on Cusp of $2 Trillion Level",
+                "explanation": "中文翻译暂不可用：Meta Platforms Inc. is finally seeing the stock breakout that beleaguered bulls had been banking on.",
+                "url": "https://www.bloomberg.com/news/articles/2026-09-24/meta-s-best-month-since-2013-has-it-on-cusp-of-2-trillion-level",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+                "explanation": "中文翻译暂不可用：Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+                "relationship": "possibly-related"
+              },
+              {
+                "title": "Europe’s biggest stainless steelmaker finds new way to extract critical metal",
+                "explanation": "中文翻译暂不可用：Outokumpu says its method to produce chrome used in jet engines could also help build western supply chain of critical metals",
+                "url": "https://www.ft.com/content/ffb35fa4-b003-4d04-adeb-5aa67af294c5?syn-25a6b1a6=1",
+                "relationship": "possibly-related"
+              }
+            ],
+            "translationAvailable": false
+          },
+          "valuation": {
+            "status": "unavailable",
+            "reason": "stale",
+            "message": "官方估值数据暂未更新"
+          },
+          "generatedAt": "2026-09-24T23:11:06.888Z"
+        },
+        "marketDate": "2026-09-24",
+        "isLastTradingDay": true,
+        "staleLabel": "最近交易日 2026-09-24（非 2026-09-25 当日收盘）",
+        "editionKind": "weekday",
+        "isFresh": true
+      },
+      "userMessage": "最近交易日 2026-09-24（非 2026-09-25 当日收盘）",
+      "generatedAt": "2026-09-24T23:11:06.888Z"
+    },
+    {
+      "moduleId": "tech-news",
+      "status": "success",
+      "data": {
+        "items": [
+          {
+            "sourceTitle": "Anthropic分享早期研究结果：Claude自主发现与CRISPR样重复阵列相关的新型酶系统ART",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmuefqp730041rovxbpewc3gn",
+            "originalUrl": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+            "publishedAt": "2026-09-24T16:04:26.000Z",
+            "summary": "Anthropic称Claude用约950个代理、2.1亿token、21小时搜索数据发现新酶系统",
+            "summaryStatus": "curated",
+            "rank": 1
+          },
+          {
+            "sourceTitle": "Google 计划于10月1日发射搭载 TPUs 的 AI 卫星，测试其在太空环境中的表现",
+            "sourceName": "X：Viggle AI (@ViggleAI)",
+            "sourceUrl": "https://aihot.news/items/cmug4fiwq0ewjrogvaec7w7h7",
+            "originalUrl": "https://x.com/ViggleAI/status/2103247376399978746",
+            "publishedAt": "2026-09-24T22:17:05.000Z",
+            "summary": "Google 计划于10月1日发射搭载 TPUs 的 AI 卫星，测试其在太空环境中的表现",
+            "summaryStatus": "curated",
+            "rank": 2
+          },
+          {
+            "sourceTitle": "Google发布Gemini 3.8 Flash TTS语音合成模型",
+            "sourceName": "Google DeepMind：Blog（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmuea8xrm0t1nroghhxj2y3eg",
+            "originalUrl": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+            "publishedAt": "2026-09-24T16:28:57.255Z",
+            "summary": "Gemini 3.8系列在Hume AI总体质量指数中分列第一、第二",
+            "summaryStatus": "curated",
+            "rank": 3
+          },
+          {
+            "sourceTitle": "OpenAI 一款 AI 智能体 6 月未经授权侵入澳大利亚政府网站，访问公共和非公共文件",
+            "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+            "sourceUrl": "https://aihot.news/items/cmufjyocz04u6ro6ohojge69s",
+            "originalUrl": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
+            "publishedAt": "2026-09-24T16:01:16.000Z",
+            "summary": "OpenAI 于9月10日通过邮件向澳大利亚政府披露 breach，通知五天后才到澳大利亚网络安全中心",
+            "summaryStatus": "curated",
+            "rank": 4
+          },
+          {
+            "sourceTitle": "Opus 5.5发布：沟通更好、每token价格低于Opus 5.0、具Fable 5.1的智能，现已在Claude Code可用",
+            "sourceName": "Anthropic：Newsroom（网页）",
+            "sourceUrl": "https://aihot.news/items/cmucwy58v0rskroedmv35n8ji",
+            "originalUrl": "https://www.anthropic.com/claude-opus-5-5",
+            "publishedAt": "2026-09-24T16:38:37.757Z",
+            "summary": "Claude Code 缓存机制更新：缓存未命中输入下降超50%，支持中途改 effort 与一小时缓存",
+            "summaryStatus": "curated",
+            "rank": 5
+          },
+          {
+            "sourceTitle": "ChatGPT Voice升级为运行GPT-6 Astra、Sol、Luna模型并首次可访问邮件、日历和Slack插件",
+            "sourceName": "X：OpenAI (@OpenAI)",
+            "sourceUrl": "https://aihot.news/items/cmueup7f003m7royq61z93ftn",
+            "originalUrl": "https://x.com/OpenAI/status/2102808325742322002",
+            "publishedAt": "2026-09-24T06:55:33.000Z",
+            "summary": "ChatGPT Voice现可运行插件（邮件、日历、Slack）及GPT-6 Astra、Sol、Luna",
+            "summaryStatus": "curated",
+            "rank": 6
+          },
+          {
+            "sourceTitle": "Agora-2 现可让最多20个人类与智能体实时共享一个模拟世界",
+            "sourceName": "X：Odyssey (@odysseyml)",
+            "sourceUrl": "https://aihot.news/items/cmufvfq7y02yiro1964jtdq3v",
+            "originalUrl": "https://x.com/odysseyml/status/2103146841378586820",
+            "publishedAt": "2026-09-24T16:47:50.000Z",
+            "summary": "Agora-2 现可让最多20个人类与智能体实时共享一个模拟世界",
+            "summaryStatus": "curated",
+            "rank": 7
+          },
+          {
+            "sourceTitle": "Meta在Connect大会发布AI可穿戴设备Muse Charm，尚未发货，计划12月假期前发货",
+            "sourceName": "X：Testing Catalog (@testingcatalog)",
+            "sourceUrl": "https://aihot.news/items/cmueuqr3j03ovroyqbsx4c4nx",
+            "originalUrl": "https://x.com/testingcatalog/status/2102913764248998337",
+            "publishedAt": "2026-09-24T17:39:24.000Z",
+            "summary": "Meta计划今年12月假日季前推出Muse Charm AI手持设备，Bloomberg披露其可与其他Charm交互等功能",
+            "summaryStatus": "curated",
+            "rank": 8
+          },
+          {
+            "sourceTitle": "Claude Code Cloud sessions 正式结束研究预览并可用",
+            "sourceName": "X：Claude Devs (@ClaudeDevs)",
+            "sourceUrl": "https://aihot.news/items/cmueurvwl03tvroyqdzcth166",
+            "originalUrl": "https://x.com/ClaudeDevs/status/2102871550974427462",
+            "publishedAt": "2026-09-24T08:35:24.000Z",
+            "summary": "Cloud sessions结束研究预览，Pro获100美元、Max获250美元一次性额度，10月7日前领取",
+            "summaryStatus": "curated",
+            "rank": 9
+          },
+          {
+            "sourceTitle": "Meta Muse agent 正在准备集成 Telegram 和 Messenger，并可能集成 Signal",
+            "sourceName": "X：AI at Meta (@AIatMeta)",
+            "sourceUrl": "https://aihot.news/items/cmuf3ztrm09q7roodokekt1hr",
+            "originalUrl": "https://x.com/AIatMeta/status/2102997291732766943",
+            "publishedAt": "2026-09-24T13:10:54.000Z",
+            "summary": "finkd发布Muse Realtime Avatar，将Muse Realtime Voice转化为可交互数字人",
+            "summaryStatus": "curated",
+            "rank": 10
+          }
+        ],
+        "window": "24h",
+        "candidateCount": 10
+      },
+      "generatedAt": "2026-09-24T23:11:06.888Z"
+    }
+  ],
+  "subject": "2026-09-25 个人每日简报｜市场与 AI 科技"
+}
